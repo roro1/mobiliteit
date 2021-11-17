@@ -2,6 +2,15 @@
   box-sizing: border-box;
 }
 
+
+#pzhBlauw {color:#281f6b;}
+#pzhGeel {color:#efcc36;}
+#pzhRood {color:#d11f3d;}
+#p4 {background-color:#ffff00;}
+#p5 {background-color:#ff00ff;}
+
+
+
 body{
     background: white;
     font-family: "Open Sans", sans-serif;
@@ -12,6 +21,9 @@ body{
 h1{
     font-size: 2.5em;
     line-height: 1.35em;
+}
+h3{
+ color : #281f6b;
 }
 
 .content{
