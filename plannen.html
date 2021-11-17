@@ -10,6 +10,7 @@
         <img src="img/PZHlogo253x84.png" alt="Provincie Zuid-Holland logo" width="253" height="84">
       </div>
       <div class="topnav" id="myTopnav">
+        <a href="plannen.html">Plannen</a>
         <a href="map.html">Kaart</a>
         <a href="index.html">Home</a>
         <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
@@ -27,7 +28,13 @@
       <script src="mapdata.js"></script>
       <script src="scr/app.js"></script>
       <script>
-        renderLijst(mapData)
+        const queryString = window.location.search;
+        console.log(queryString);
+        const urlParams = new URLSearchParams(queryString);
+        const id = urlParams.get('id')
+        console.log(id);
+        renderLijst(mapData,id)
+
       </script>
     </body>
 </html>
