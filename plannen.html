@@ -25,11 +25,14 @@
       <script src="scr/app.js"></script>
       <script>
         const queryString = window.location.search;
+        console.log(window.location.host);
+        console.log(window.location.origin);
+        console.log(window.location.href);
         console.log(queryString);
         const urlParams = new URLSearchParams(queryString);
         const id = urlParams.get('id')
         console.log(id);
-        renderLijst(mapData,id)
+        renderLijst(mapData,id,"plannen")
 
       </script>
     </body>
