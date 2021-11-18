@@ -12,16 +12,17 @@
       <div class="topnav" id="myTopnav">
         <a href="plannen.html">Plannen</a>
         <a href="map.html">Kaart</a>
+        <a href="inspiratie.html">Inspiratie</a>
         <a href="index.html">Home</a>
         <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
           <span class="material-icons">dehaze</span>
         </a>
       </div>
       <div class="topImage">
-        <img src="img/Pontje.jpg" alt="Zuid-Holland" width="100%" height="auto" >
+        <img src="img/zandmotorstrand.jpg" alt="Zandmotor Zuid-Holland" width="100%" height="auto" >
       </div>
       <div class="content" id="content">      </div>
-      <script src="data/mapdata.js"></script>
+      <script src="data/snelstudiedata.js"></script>
       <script src="scr/app.js"></script>
       <script>
         const queryString = window.location.search;
@@ -29,7 +30,7 @@
         const urlParams = new URLSearchParams(queryString);
         const id = urlParams.get('id')
         console.log(id);
-        renderLijst(mapData,id)
+        renderLijst(snelstudieData,id,"snelstudies")
 
       </script>
     </body>

@@ -39,7 +39,10 @@ function plotDots(json) {
 function renderLijst(json,wat,optie){  // vul lijst met items op basis Json
   let xli = document.createElement('span');
   if (optie == "inspiratie") {
-  xli.innerHTML = "<H1>Inspiratie</H1><ul id='lijst'></ul>";
+  xli.innerHTML = "<H1>Inspiratie</H1><ul id='lijst'></ul>";}
+  else if (optie == "snelstudies") {
+    xli.innerHTML = "<H1>Snelstudies</H1><p>Snelstudies geven inzicht in de richtingen die we kunnen gaan. Snelstudies zijn als een fietstocht: Ver vooruitkijken en dichtbij sturen. We schetsen toekomstperspectieven voor transitievraagstukken en brengen die terug naar mogelijke keuzes van overheden in Zuid-Holland die nu al gemaakt kunnen worden. Deze Snelstudies vallen binnen de programma  kennis Zuid-Holland van de provincie Zuid-Holland.</p><ul id='lijst'></ul>";
+
 } else {
   xli.innerHTML = "<H1>Plannen in Midden Holland</H1><ul id='lijst'></ul>";
 
