@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Fetch</title>
+    <script>
+    function loadContent (urlx) {
+      // (A) FETCH "DUMMY.HTML"
+      fetch(urlx)
+      // (B) RETURN THE RESULT AS TEXT
+      .then((result) => {
+        if (result.status != 200) { throw new Error("Bad Server Response"); }
+        return result.text();
+      })
+      // (C) PUT LOADED CONTENT INTO <DIV>
+      .then((content) => {
+        console.log(content)
+        //document.getElementById("demoShow").innerHTML = content;
+        console.log("======================")
+        let pos = content.indexOf("Energie-transitie");
+        console.log(pos);
+        let part = content.slice(pos);
+        console.log("==++++++++++++++++++++====================")
+        console.log(part);
+
+      })
+      // (D) HANDLE ERRORS - OPTIONAL
+      .catch((error) => { console.log(error); });
+    }
+    </script>
+  </head>
+  <body>
+    <div id="demoShow"></div>
+    <input type="button" value="Load Content" onclick="loadContent('https://provincie-zuid-holland.github.io/mobiliteit/index.html')"/>
+  </body>
+</html>
