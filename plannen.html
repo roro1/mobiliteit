@@ -1,35 +1,36 @@
 <html>
-    <head>
+<head>
+  <title>Zuid-Holland plannen</title>
+  <link rel=icon href="img/favicon.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <div class="logobar">
+    <img src="img/PZHlogo253x84.png" alt="Provincie Zuid-Holland logo" width="253" height="84">
+  </div>
+  <div class="topnav" id="myTopnav">
+    <a href="plannen.html">Plannen</a>
+    <a href="map.html">Kaart</a>
+    <a href="index.html">Home</a>
+    <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+      <span class="material-icons">dehaze</span>
+    </a>
+  </div>
+  <div class="topImage">
+    <img src="img/Pontje.jpg" alt="Zuid-Holland" width="100%" height="auto" >
+  </div>
+  <div class="content" id="content">      </div>
+  <script src="data/mapdata.js"></script>
+  <script src="scr/app.js"></script>
+  <script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const id = urlParams.get('id')
+    console.log(id);
+    renderLijst(mapData,id,"plannen")
 
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-      <link rel="stylesheet" href="css/styles.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </head>
-    <body>
-      <div class="logobar">
-        <img src="img/PZHlogo253x84.png" alt="Provincie Zuid-Holland logo" width="253" height="84">
-      </div>
-      <div class="topnav" id="myTopnav">
-        <a href="plannen.html">Plannen</a>
-        <a href="map.html">Kaart</a>
-        <a href="index.html">Home</a>
-        <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
-          <span class="material-icons">dehaze</span>
-        </a>
-      </div>
-      <div class="topImage">
-        <img src="img/Pontje.jpg" alt="Zuid-Holland" width="100%" height="auto" >
-      </div>
-      <div class="content" id="content">      </div>
-      <script src="data/mapdata.js"></script>
-      <script src="scr/app.js"></script>
-      <script>
-        const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        const id = urlParams.get('id')
-        console.log(id);
-        renderLijst(mapData,id,"plannen")
-
-      </script>
-    </body>
+  </script>
+</body>
 </html>
