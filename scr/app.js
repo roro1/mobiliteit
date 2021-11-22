@@ -13,25 +13,23 @@ function menuFunction() {
 
 
 function plotDots(json) {
-    for(punti in json) {
-      punt = json[punti];
-
+  for(punti in json) {
+    punt = json[punti];
+    if (punt["geo"]  != null) {
       if (punt["geo"] == "cirkel") {
         marker =  L.circle(punt["latlon"], punt["straal"], {color: '#281f6b',fillColor: '#efcc36',fillOpacity: 0.1}).addTo(map);
-        } else {
-         if (punt["geo"] == "polygoon") {
+        } else if (punt["geo"] == "polygoon") {
            marker = L.polygon(punt["poly"],{color: '#281f6b',fillColor: '#efcc36',fillOpacity: 0.1}).addTo(map);
-         } else {
-      marker = L.marker(punt["latlon"]).addTo(map);
-      }
-    }
-            if (punt["id"] !=null ) {
+        } else {
+           marker = L.marker(punt["latlon"]).addTo(map);
+        }
+    if (punt["id"] !=null ) {
       text = "<a href='plannen.html?id="+punt["id"] + " ' > <b>" + punt["titel"] +  "</b></a> "
     } else {text = "."}
-      text = text + "<p>" + punt["link"]+ "</p>";
-      marker.bindPopup(text);
-
+    text = text + "<p>" + punt["link"]+ "</p>";
+    marker.bindPopup(text);
     }
+  }
 }
 
 function renderLijst(json,wat,optie){  // vul lijst met items op basis Json
