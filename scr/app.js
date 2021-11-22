@@ -68,8 +68,9 @@ function renderLijst(json,wat,optie){  // vul lijst met items op basis Json
         if (punt["idmslink"]  != null) {str = str + "<p><b>PZH IDMS links:</b> " + punt["idmslink"] +"</p>"}
         if (punt["lang"]  != null) {str = str + "<p>" + punt["lang"] +"</p>"}
 
-      } else {       if (punt["id"] !=null ) {
-      str = str + "<a href='plannen.html?id="+punt["id"] + "'> <b><i>Meer...</i></b></a> "
+      } else {
+          if (punt["id"] !=null && optie == "plannen" ) {
+               str = str + "<a href='plannen.html?id="+punt["id"] + "'> <b><i>Meer...</i></b></a> "
     }}
       task.innerHTML = str;
     }

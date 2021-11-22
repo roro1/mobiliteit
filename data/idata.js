@@ -1,4 +1,13 @@
 var inspiratieData = [
+  {"id":"2",
+   "titel":"Utrecht gaat voor ov-impuls vanaf 2025"  ,
+   "link" :"<a href='https://www.ovmagazine.nl/nieuws/utrecht-gaat-voor-ov-impuls-vanaf-2025' target='_blank' > brede-welvaart-en-mobiliteit </a>",
+   "kort": "Vanaf eind 2025 wil de provincie Utrecht veel vernieuwingen in het Utrechtse ov doorvoeren, zoals de inzet van snelbussen (U-liners) en zo'n 500 extra elektrische bussen. Om dit te financieren, wordt de provincie samen met de vervoerders opbrengstverantwoordelijk. "},
+
+
+
+
+
   {"id":"1",
    "titel":"Brede welvaart en Mobiliteit"  ,
    "link" :"<a href='https://www.pbl.nl/publicaties/brede-welvaart-en-mobiliteit' ' target='_blank' > brede-welvaart-en-mobiliteit </a>",
