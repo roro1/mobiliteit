@@ -1,13 +1,19 @@
 var mapData = [
+  {"id":"0",
+   "titel":"Regio Midden Holland"  ,
+   "link" :"<a href='https://www.regiomiddenholland.nl/default.aspx' ' target='_blank' > Regio Midden-Holland </a>; <a href='https://youtu.be/NXhC46ucpp0' ' target='_blank' > Filmpje Kracht van Midden-Holland </a> ",
+   "geo" :"punt","latlon":[52.075623, 4.658615],"straal": 3500,
+   "kort": "Regio Midden-Holland is een netwerk van de samenwerkende gemeenten <a href='https://www.bodegraven-reeuwijk.nl' target='_blank' >Bodegraven-Reeuwijk</a>; <a href='https://www.gouda.nl'  target='_blank'>Gouda</a>; <a href='https://www.krimpenerwaard.nl'  target='_blank'>Krimpenerwaard</a>; <a href='https://www.waddinxveen.nl'  target='_blank'>Waddinxveen</a>; <a href='http://www.zuidplas.nl' target='_blank'>Zuidplas</a>."
+  },
+
+
   {"id":"1",
    "titel":"Beter Bereikbaar Gouwe"  ,
    "link" :"<a href='https://www.beterbereikbaargouwe.nl/' ' target='_blank' > projectsite </a>",
    "geo" :"cirkel","latlon":[52.075623, 4.658615],"straal": 3500,
    "kort": "Gemeenten Alphen aan den Rijn, Waddinxveen en Bodegraven - Reeuwijk, de Regio Midden-Holland en de provincie Zuid-Holland werken samen in Beter Bereikbaar Gouwe. Het doel van dit programma is het verbeteren van de bereikbaarheid en leefbaarheid in het gebied rond de Gouwe en het versterken van de economie.",
-   "rel" : "project in de buurt .... .....",
-   "pzhlink" : "ruimte voor bijv powerpoint link op onedrive .... .....",
-   "idmslink" : "ruimt voor IDMS link .... .....",
-   "lang" : "Hier ruimte voor een toelichting ....."  },
+   "rel" : "De maatregelen uit het programma Beter Bereikbaar Gouwe raken inhoudelijk sterk aan andere studies, projecten en besluiten. Naast het project N207 Zuid, gaat het om: Doorgaand verkeer verminderen over de N206 en N209 ter hoogte van de kernen, mogelijk onderzoek tunnel in Hazerswoude-Dorp, De Bodegravenboog (BO MIRT)"
+  },
 
   {"id":"2",
    "titel":"MIRT onderzoek A12 Gouwe Oudenrijn / Bodegravenboog" ,
@@ -23,7 +29,9 @@ var mapData = [
    "titel":"N207 zuid / Vredenburghlaan / Bentwoudlaan" ,
    "link" :"<a href='https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/wegverkeer/alle-n-wegen/wegen/n207/n207-zuid/' target='_blank' > projectsite </a>",
    "geo" :"polygoon", "poly": [ [52.099209, 4.584457],[52.100896, 4.593727],[52.024487, 4.642136],[52.024909, 4.633896] ] ,
-   "kort" :"De regio tussen Alphen en Waddinxveen kent knelpunten op gebied van bereikbaarheid en leefbaarheid, waarbij de bereikbaarheid bestaat uit doorstroming (N207 en N209) en veiligheid (in de kernen en van aansluitingen op de provinciale wegen). N207 Zuid is een eerste stap in het aanpakken van deze knelpunten. nieuwe wegen zoals de Bentwoudlaan en Verlengde Bentwoudlaan, nieuwe fiets- en wandelpaden en een ecologische verbindingszone worden aangelegd. Daarnaast wordt de structuur en aansluitingen op de N209 in Hazerswoude-Dorp aangepakt ."},
+   "kort" :"De regio tussen Alphen en Waddinxveen kent knelpunten op gebied van bereikbaarheid en leefbaarheid, waarbij de bereikbaarheid bestaat uit doorstroming (N207 en N209) en veiligheid (in de kernen en van aansluitingen op de provinciale wegen). N207 Zuid is een eerste stap in het aanpakken van deze knelpunten. nieuwe wegen zoals de Bentwoudlaan en Verlengde Bentwoudlaan, nieuwe fiets- en wandelpaden en een ecologische verbindingszone worden aangelegd. Daarnaast wordt de structuur en aansluitingen op de N209 in Hazerswoude-Dorp aangepakt .",
+   "rel" : "Beter Bereikbaar Gouwe, Programma Fiets, NNN (ecologische verbindingszone) en N206-N209 studie. Nieuwe Omgevingswet i.r.t. MER en PIP",
+   "lang" : "Momenteel bereiden we het Provinciaal Inpassingsplan (PIP) N207 Zuid voor, planning besluitvorming PS in Q4 2022. Uitvoering 2023-2025. "},
 
   {"id":"5",
    "titel":"Zuidplaspolder / het vijfde dorp" ,
@@ -39,6 +47,12 @@ var mapData = [
     "titel":"Dijkversterking Krimpenerwaard" ,
     "link" :"<a href='https://www.schielandendekrimpenerwaard.nl/actueel/krachtige-ijsseldijken-krimpenerwaard/' target='_blank' > projectsite Hoogheemraadschap</a>",
     "geo" :"polygoon", "poly": [ [51.917591, 4.58844],[51.997776, 4.69384],[51.99989, 4.684982], [51.923732, 4.577522] ]},
+
+    {"id":"8",
+     "titel":"Algera corridor" ,
+     "kort" : "De Algeracorridor beslaat het gebied van de N210 vanuit de Krimpenerwaard, via Krimpen aan den IJssel over de Algerabrug naar het Capelseplein. Dit is inclusief de aansluiting op de A16 richting de Van Brienenoordbrug en de weg richting Capelle aan den IJssel of Rotterdam Alexanderpolder.",
+     "link" :"<a href='https://oeververbindingen.nl/project-overzicht/algeracorridor/' target='_blank' > Algera corridor</a>",
+     "geo" :"polygoon", "poly": [ [51.919673, 4.574749],[51.915721, 4.583579],[51.915085, 4.582548], [51.918897, 4.572503] ]},
 
 
 ];
