@@ -17,7 +17,7 @@ var mapData = [
   {"id":"3",
    "titel":"MIRT planuitwerkingA20 Nieuwerkerk-Gouda" ,
    "link" :"<a href='https://mirta20nieuwerkerkgouda.nl/over+het+project1/default.aspx' target='_blank' > projectsite </a>",
-   "type" :"polygoon","poly":[[52.031859,4.681618],[52.029789,4.684811],[52.020283,4.655972], [52.00286,4.655285],[51.978748,4.620438],[51.981285, 4.617004],[52.002109, 4.650667],[52.021762, 4.649963] ]},
+   "geo" :"polygoon","poly":[[52.031859,4.681618],[52.029789,4.684811],[52.020283,4.655972], [52.00286,4.655285],[51.978748,4.620438],[51.981285, 4.617004],[52.002109, 4.650667],[52.021762, 4.649963] ]},
 
   {"id":"4",
    "titel":"N207 zuid / Vredenburghlaan / Bentwoudlaan" ,
