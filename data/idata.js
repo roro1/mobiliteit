@@ -1,4 +1,13 @@
 var inspiratieData = [
+
+
+  {"id":"3",
+   "titel":"De stad van de toekomst staat al in de steigers"  ,
+   "link" :"<a href='https://destadvandetoekomststaatalindesteigers.nl/' target='_blank' >destadvandetoekomststaatalindesteigers.nl</a>",
+   "kort": "De steden wijzen op het keerpunt waar Nederland volgens hen voor staat: niet eerder is er een generatie geweest die aan de slag moest met zoveel verstrekkende maatschappelijke transities tegelijk: klimaatadaptatie, energietransitie, mobiliteitstransitie en hervorming van de landbouw en de ruimtelijke indeling van Nederland. Ondertussen moeten er ruim één miljoen woningen worden gebouwd, betaalbaar én naar woonbehoefte; de vergrijzende bevolkingssamenstelling en kleinere huishoudens zorgen immers voor een vraag naar andere type woningen. De trek naar de stad is daarbij een wereldwijde, langdurige trend die zich ook in Nederland blijft doorzetten. Steden spelen dan ook een grote rol bij al deze opgaven, zeker ook bij de woningbouwopgave, zo stellen de ondertekenaars van het document."},
+
+
+
   {"id":"3",
    "titel":"Minder vliegen, minder met de auto, meer met de trein in de Eurodelta"  ,
    "link" :"<a href='https://www.zuid-holland.nl/actueel/nieuws/november-2021/minder-vliegen-minder-auto-trein-eurodelta/' target='_blank' > Minder vliegen, minder met de auto, meer met de trein in de Eurodelta </a>",
