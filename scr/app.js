@@ -13,35 +13,66 @@ function menuFunction() {
 
 function parseMD(zin) {
   let zinUit ="";
+  let p2 ="";
   while (zin  != null && zin != "") {
-    let position1 = zin.indexOf("$[");
-    if (position1 >0 ) { // er zit gewone tekst voor md
-      zinUit = zinUit+ zin.slice(0,position1);
-      zin = zin.slice(position1);
-    } else if (position1 == 0) { //md op eerste positie
-      let position2 = zin.indexOf("](");
-      if (position2 != -1 ){
-        let position3 = zin.indexOf(")");
-        if (position3 != -1 && position3 > position2 ){ //ok md replacement!
-          let mdlabel = zin.slice(2,position2);
-          let mdurl = zin.slice(position2+2,position3);
-          zinUit = zinUit + "<a href='" + mdurl + "' target='_blank' >" + mdlabel + "</a>" ;
-          zin = zin.slice(position3+1);
+    let positiondol = zin.indexOf("$");
+    if (positiondol >0 ) { zinUit = zinUit+ zin.slice(0,positiondol); zin = zin.slice(positiondol); }// er zit gewone tekst voor de $ , eraf slicen
+    let positiond = zin.indexOf("$");
+    if (positiond ==-1 ) { zinUit = zinUit + zin; zin ="";}  // geen $ meer, klaar
+    else // $ op eerste positie
+    {
+      p2 = zin.slice(0,2);
+      if (p2 == "$[") {  // $[  replace link
+        let position2 = zin.indexOf("](");
+        if (position2 != -1 ){
+          let position3 = zin.indexOf(")");
+          if (position3 != -1 && position3 > position2 ){ //ok md replacement!
+            let mdlabel = zin.slice(2,position2);
+            let mdurl = zin.slice(position2+2,position3);
+            zinUit = zinUit + "<a href='" + mdurl + "' target='_blank' >" + mdlabel + "</a>" ;
+            zin = zin.slice(position3+1);
+          } else {
+              console.log("in MD $[ zit ) niet goed");
+              zinUit = zinUit + zin.slice(0,position2);
+              zin = zin.slice(position2);
+          }
         } else {
-            console.log("in MD $[ zit ) niet goed");
-            zinUit = zinUit + zin.slice(0,position2);
-            zin = zin.slice(position2);
+            console.log("in MD $[ zit ]( niet goed");
+            zinUit = zinUit + zin.slice(0,2);
+            zin = zin.slice(2);
         }
-      } else {
-          console.log("in MD $[ zit ]( niet goed");
-          zinUit = zinUit + zin.slice(0,2);
-          zin = zin.slice(2);
-      }
-    } else { // er zit geen md (meer) in
-        zinUit = zinUit + zin;
-        zin ="";
-      }
-  }
+      } // endif $[ replace link
+      else if (p2 == "$&")
+
+         {  // $&
+            console.log("start iframe");
+            let position2 = zin.indexOf("](");
+            if (position2 != -1 ){
+              let position3 = zin.indexOf(")");
+              if (position3 != -1 && position3 > position2 ){ //ok md replacement!
+                let mdlabel = zin.slice(2,position2);
+                let mdurl = zin.slice(position2+2,position3);
+                zinUit = zinUit + "<a href='" + mdurl + "' target='_blank' >" + mdlabel + "</a>" ;
+                zin = zin.slice(position3+1);
+              } else {
+                  console.log("in MD $[ zit ) niet goed");
+                  zinUit = zinUit + zin.slice(0,position2);
+                  zin = zin.slice(position2);
+              }
+            } else {
+                console.log("in MD $[ zit ]( niet goed");
+                zinUit = zinUit + zin.slice(0,2);
+                zin = zin.slice(2);
+            }
+          }  // endif $&  link
+
+
+        else { zinUit = zinUit + "$" ; zin = zin.slice(1);}  //  dollar zonder betekenis eruit
+    } // endif $ op eerste positie
+
+
+
+  }  // end while
   return zinUit;
 }
 
@@ -78,7 +109,7 @@ function renderLijst(json,wat,optie){  // vul lijst met items op basis Json
   else if (optie == "snelstudies") {
     xli.innerHTML = "<H1>Snelstudies</H1><p>Snelstudies geven inzicht in de richtingen die we kunnen gaan. Snelstudies zijn als een fietstocht: Ver vooruitkijken en dichtbij sturen. We schetsen toekomstperspectieven voor transitievraagstukken en brengen die terug naar mogelijke keuzes van overheden in Zuid-Holland die nu al gemaakt kunnen worden. Deze Snelstudies vallen binnen de programma  kennis Zuid-Holland van de provincie Zuid-Holland.</p><ul id='lijst'></ul>";
 } else if (wat == null) {
-  xli.innerHTML = "<H1>Plannen in Midden Holland</H1><ul id='lijst'></ul>";
+  xli.innerHTML = "<H1>Plannen in Zuid-Holland</H1> <p>Klik op kaart in het menu voor een grafische weergave. (Er is begonnen met Midden Holland + Alblasserwaard. De kaart+lijst vult zich regio voor regio verder in.)</p><ul id='lijst'></ul>";
 
 } else {
   xli.innerHTML = "<ul id='lijst'></ul>";
@@ -104,7 +135,7 @@ function renderLijst(json,wat,optie){  // vul lijst met items op basis Json
         if (punt["rel"]  != null) {str = str + "<p><b>Gerelateerd aan:</b> " + punt["rel"] +"</p>"}
         if (punt["pzhlink"]  != null) {str = str + "<p><b>PZH intranet:</b> " + punt["pzhlink"] +"</p>"}
         if (punt["idmslink"]  != null) {str = str + "<p><b>PZH IDMS links:</b> " + punt["idmslink"] +"</p>"}
-        if (punt["lang"]  != null) {str = str + "<p>" + punt["lang"] +"</p>"}
+        if (punt["lang"]  != null) {str = str + "<p>" + parseMD(punt["lang"]) +"</p>"}
 
       } else {
           if (punt["id"] !=null && optie == "plannen" ) {

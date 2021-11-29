@@ -61,5 +61,13 @@ var mapData = [
       "link" :"$[Website A12-corridor](https://a12-corridor.nl/)",
       "geo" :"polylijn", "polylijn": [ [52.040948, 4.518955],[52.018557, 4.608195]]},
 
+      {"id":"10",
+       "titel":"Citybarge " ,
+       "kort" : "Citibarge hernieuwt de vergeten grachten. Steden hebben te maken met verdichting en daardoor veel verkeer en logistiek in de binnenstad. Hierdoor krijgen we steden met een slechte leefbaarheid, luchtkwaliteit en veel CO2 uitstoot. CityBarge draagt bij aan de leefbaarheid van steden door duurzame, betaalbare en makkelijke waterlogistieke oplossingen voor de binnenstad. Hierbij maken we gebruik van de bestaande waterinfrastructuur in veel steden: de grachten.",
+       "link" :"$[Website Citybarge](https://citybarge.eu/nl_nl/)",
+         "lang": "<iframe width='560' height='315' src='https://www.youtube.com/embed/0VV3-O6FM4w' title='YouTube video player '' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
+       "geo" :"punt", "latlon": [52.00498, 4.360837]},
+
+
 
 ];
