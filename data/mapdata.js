@@ -9,15 +9,16 @@ var mapData = [
   {"id":"1",
    "titel":"Beter Bereikbaar Gouwe"  ,
    "link" :"$[projectsite](https://www.beterbereikbaargouwe.nl)",
-   "geo" :"cirkel","latlon":[52.075623, 4.658615],"straal": 3500,
+   "geo" :"cirkel","latlon":[52.075623, 4.658615],"straal": 4500,
    "kort": "Gemeenten Alphen aan den Rijn, Waddinxveen en Bodegraven - Reeuwijk, de Regio Midden-Holland en de provincie Zuid-Holland werken samen in Beter Bereikbaar Gouwe. Het doel van dit programma is het verbeteren van de bereikbaarheid en leefbaarheid in het gebied rond de Gouwe en het versterken van de economie.",
    "rel" : "De maatregelen uit het programma Beter Bereikbaar Gouwe raken inhoudelijk sterk aan andere studies, projecten en besluiten. Naast het project N207 Zuid, gaat het om: Doorgaand verkeer verminderen over de N206 en N209 ter hoogte van de kernen, mogelijk onderzoek tunnel in Hazerswoude-Dorp, De Bodegravenboog (BO MIRT)"
   },
 
   {"id":"2",
    "titel":"MIRT onderzoek A12 Gouwe Oudenrijn / Bodegravenboog" ,
-   "link" :"$[vervolgonderzoek](https://www.rijksoverheid.nl/documenten/rapporten/2020/11/26/eindrappport-vervolgonderzoek-a12-utrecht-gouda)",
-   "geo" :"polygoon","poly":[[52.078662,4.737378],[52.062201,4.733772],[52.066211,4.751458]] },
+   "link" :"$[vervolgonderzoek](https://www.rijksoverheid.nl/documenten/rapporten/2020/11/26/eindrappport-vervolgonderzoek-a12-utrecht-gouda) $[Inze bodegraven boog gaat door](https://www.zuid-holland.nl/actueel/nieuws/november-2021/beter-bereikbaar-gouwe-stap-dichterbij/)",
+   "geo" :"polygoon","poly":[[52.078662,4.737378],[52.062201,4.733772],[52.066211,4.751458]],
+   "rel":"Beter Bereikbaar Gouwe" },
 
   {"id":"3",
    "titel":"MIRT planuitwerkingA20 Nieuwerkerk-Gouda" ,
@@ -52,8 +53,8 @@ var mapData = [
 
     {"id":"8",
      "titel":"Algera corridor" ,
-     "kort" : "De Algeracorridor beslaat het gebied van de N210 vanuit de Krimpenerwaard, via Krimpen aan den IJssel over de Algerabrug naar het Capelseplein. Dit is inclusief de aansluiting op de A16 richting de Van Brienenoordbrug en de weg richting Capelle aan den IJssel of Rotterdam Alexanderpolder.",
-     "link" :"$[Algera corridor](https://oeververbindingen.nl/project-overzicht/algeracorridor)",
+     "kort" : "De Algeracorridor beslaat het gebied van de N210 vanuit de Krimpenerwaard, via Krimpen aan den IJssel over de Algerabrug naar het Capelseplein. Dit is inclusief de aansluiting op de A16 richting de Van Brienenoordbrug en de weg richting Capelle aan den IJssel of Rotterdam Alexanderpolder. Er is sprake van lange termijn maatregelen en een korte termijn maatregelenpakket.",
+     "link" :"$[Algera corridor](https://oeververbindingen.nl/project-overzicht/algeracorridor) $[degrotekruising](https://www.degrotekruising.nl/)",
      "geo" :"polygoon", "poly": [ [51.919673, 4.574749],[51.915721, 4.583579],[51.915085, 4.582548], [51.918897, 4.572503] ]},
 
      {"id":"9",
@@ -64,11 +65,33 @@ var mapData = [
 
       {"id":"10",
        "titel":"Citybarge " ,
-       "kort" : "Citibarge hernieuwt de vergeten grachten. Steden hebben te maken met verdichting en daardoor veel verkeer en logistiek in de binnenstad. Hierdoor krijgen we steden met een slechte leefbaarheid, luchtkwaliteit en veel CO2 uitstoot. CityBarge draagt bij aan de leefbaarheid van steden door duurzame, betaalbare en makkelijke waterlogistieke oplossingen voor de binnenstad. Hierbij maken we gebruik van de bestaande waterinfrastructuur in veel steden: de grachten.",
+       "kort" : "Citybarge hernieuwt de vergeten grachten. Steden hebben te maken met verdichting en daardoor veel verkeer en logistiek in de binnenstad. Hierdoor krijgen we steden met een slechte leefbaarheid, luchtkwaliteit en veel CO2 uitstoot. CityBarge draagt bij aan de leefbaarheid van steden door duurzame, betaalbare en makkelijke waterlogistieke oplossingen voor de binnenstad. Hierbij maken we gebruik van de bestaande waterinfrastructuur in veel steden: de grachten.",
        "link" :"$[Website Citybarge](https://citybarge.eu/nl_nl/)",
          "lang": "$&Citybarge](https://www.youtube.com/embed/0VV3-O6FM4w)",
        "geo" :"punt", "latlon": [52.00498, 4.360837]},
 
+       {"id":"11",
+        "titel":"Idee bushalte Nieuwerkerk aan de IJssel op N209 " ,
+        "kort" : "Wens Nieuwerkerk ad IJssel (niet per se Krimpenerwaard, maar ligt hier wel in de buurt) voor een bushalte langs de provinciale weg N219 ter hoogte van de rotonde met de ’s Gravenweg. Met de nieuwbouwwijk en afstand van 1,8 km tot het treinstation. Fysieke inpassingsruimte ontbreekt. Verbeteren van de fiets en loopbereikbaarheid van het station Nieuwerkerk is ook aantrekkelijk voor bewoners in de nieuwe wijk",
+        "geo" :"punt", "latlon": [51.959239280555124, 4.618806388376384]},
+
+        {"id":"12",
+         "titel":"Ambitieroute fiets Rotterdam – Gouda" ,
+         "kort" : "Betere fietsverbindingen zorgen ervoor dat mensen sneller de fiets in plaats van de auto pakken. Dit is niet alleen goed voor de gezondheid en het milieu, het draagt ook bij aan de bereikbaarheid van de provincie Zuid-Holland. Door de fietsroutes tussen Gouda en Rotterdam te verbeteren ontstaat een comfortabel, veilig en vlot alternatief voor de drukke A20 en N210/N219.",
+         "link" :"$[Verbeteren fietsroutes tussen Gouda en Rotterdam](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/samen-verder-fietsen/verbeteren/aanleg-0/)",
+         "geo" :"polylijn", "polylijn": [ [51.91985, 4.527618],[51.928319, 4.559882],[51.969724, 4.629275],[52.000383, 4.688997]]},
+
+         {"id":"13",
+          "titel":"De Grote Kruising (N210). " ,
+          "kort" : "De Algeracorridor is de enige rechtstreekse route van Krimpen aan den IJssel richting Capelle aan de IJssel en Rotterdam. Dagelijks gaan er grote auto-, OV- en fietsstromen over de corridor richting Capelle, Rotterdam, en verder de metropoolregio in.  In de ochtend- en avondspits zorgt dit voor stremmingen op de Algerabrug en kruisingen. Een van de grootste knelpunten in de ochtendspits voor autoverkeer is de Grote Kruising (N210). Ook voor fiets en openbaar vervoer (bussen) liggen er kansen om de doorstroming te verbeteren. Aanleiding voor de aanpassingen is de verzakking van de kruising. Het project draait om het bevorderen van de doorstroming van het auto-, fiets- en OV verkeer. De provincie draagt vanuit het programma KTA-MOVE bij aan de realisatie van dit project.",
+          "link" : "$[degrotekruising](https://www.degrotekruising.nl/)",
+          "geo" :"punt", "latlon": [51.91175, 4.589597]},
+
+          {"id":"14",
+           "titel":"N228 veiliger" ,
+           "kort" : "Op de N228 komen regelmatig gevaarlijke situaties voor en er gebeuren relatief veel ongevallen. Bewoners van Haastrecht en omgeving voelen zich lang niet altijd veilig op de weg. We willen met onze aanpak bereiken dat weggebruikers zich veiliger voelen op de N228. En we maken een punt van nul verkeersslachtoffers. ",
+           "link" :"$[N228 veiliger](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/wegverkeer/alle-n-wegen/wegen/n228/n228-veiliger/)",
+           "geo" :"polylijn", "polylijn": [ [52.005385, 4.724149],[52.000524, 4.774604],[52.01648, 4.845653]]},
 
 
 ];

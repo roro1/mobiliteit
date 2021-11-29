@@ -96,6 +96,7 @@ function plotDots(json) {
     if (punt["id"] !=null ) {
       text = "<a href='plannen.html?id="+punt["id"] + " ' > <b>" + punt["titel"] +  "</b></a> "
     } else {text = "."}
+    if (punt["kort"]  != null) {if ( punt["kort"].length >200)  {text = text + "<p>" + punt["kort"].substr(0, 200) +"...</p>"} else {text = text + "<p>" + punt["kort"] +"</p>"}}
     text = text + "<p>" + parseMD(punt["link"])+ "</p>";
     marker.bindPopup(text);
     }
