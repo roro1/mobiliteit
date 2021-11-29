@@ -1,5 +1,16 @@
 var inspiratieData = [
 
+  {"id":"4",
+   "titel":"Verkenning van het concept mobiliteitshub (KIM)"  ,
+   "link" :"<a href='https://www.waterstudio.nl/' target='_blank' >Waterstudio</a>",
+   "kort": "Drijvende wijken: The prognoses is that by 2050 approximately 70% of the world’s population will live in urbanized areas. Given the fact that about 90% of the world’s largest cities are situated on the waterfront, we have arrived to a situation where we are forced to rethink the way we live with water in the built environment."},
+
+
+  {"id":"4",
+   "titel":"Verkenning van het concept mobiliteitshub (KIM)"  ,
+   "link" :"<a href='https://www.kimnet.nl/publicaties/rapporten/2021/05/31/verkenning-van-het-concept-mobiliteitshub' target='_blank' >Verkenning van het concept mobiliteitshub</a>",
+   "kort": "Mobiliteitshubs zijn fysieke schakels tussen vervoersmodaliteiten, die naast hun mobiliteitsfunctie ook als concentratiepunt voor ruimtelijke ontwikkeling kunnen dienen. Lees het KIM rapport."},
+
 
   {"id":"3",
    "titel":"De stad van de toekomst staat al in de steigers"  ,
