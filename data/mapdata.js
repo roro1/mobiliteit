@@ -2,6 +2,7 @@ var mapData = [
   {"id":"0",
    "titel":"Regio Midden Holland"  ,
    "link" :"$[Regio Midden-Holland](https://www.regiomiddenholland.nl/default.aspx) ; $[Filmpje Kracht van Midden-Holland](https://youtu.be/NXhC46ucpp0)",
+     "lang" : "$&[..](https://www.youtube.com/embed/NXhC46ucpp0)",
    "kort": "<p>Regio Midden-Holland is een netwerk van de samenwerkende gemeenten <a href='https://www.bodegraven-reeuwijk.nl' target='_blank' >Bodegraven-Reeuwijk</a>; <a href='https://www.gouda.nl'  target='_blank'>Gouda</a>; <a href='https://www.krimpenerwaard.nl'  target='_blank'>Krimpenerwaard</a>; <a href='https://www.waddinxveen.nl'  target='_blank'>Waddinxveen</a>; <a href='http://www.zuidplas.nl' target='_blank'>Zuidplas</a>. In 2016 is een strategische agenda voor de regio Midden-Holland vastgesteld. Hieruit wordt nog volop gewerkt en er is een nieuwe versie verschenenen (voor periode vanaf 2020) onder de noemer ‘De kracht van Midden-Holland: de regio van verbinding’</p> <p>Hieronder staan een aantal plannen, projecten en programma's  die in deze regio spelen.</p>"
   },
 
@@ -15,7 +16,7 @@ var mapData = [
 
   {"id":"2",
    "titel":"MIRT onderzoek A12 Gouwe Oudenrijn / Bodegravenboog" ,
-   "link" :"$[projectsite](https://mirta20nieuwerkerkgouda.nl/over+het+project1/default.aspx)",
+   "link" :"$[vervolgonderzoek](https://www.rijksoverheid.nl/documenten/rapporten/2020/11/26/eindrappport-vervolgonderzoek-a12-utrecht-gouda)",
    "geo" :"polygoon","poly":[[52.078662,4.737378],[52.062201,4.733772],[52.066211,4.751458]] },
 
   {"id":"3",
@@ -65,7 +66,7 @@ var mapData = [
        "titel":"Citybarge " ,
        "kort" : "Citibarge hernieuwt de vergeten grachten. Steden hebben te maken met verdichting en daardoor veel verkeer en logistiek in de binnenstad. Hierdoor krijgen we steden met een slechte leefbaarheid, luchtkwaliteit en veel CO2 uitstoot. CityBarge draagt bij aan de leefbaarheid van steden door duurzame, betaalbare en makkelijke waterlogistieke oplossingen voor de binnenstad. Hierbij maken we gebruik van de bestaande waterinfrastructuur in veel steden: de grachten.",
        "link" :"$[Website Citybarge](https://citybarge.eu/nl_nl/)",
-         "lang": "<iframe width='560' height='315' src='https://www.youtube.com/embed/0VV3-O6FM4w' title='YouTube video player '' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
+         "lang": "$&Citybarge](https://www.youtube.com/embed/0VV3-O6FM4w)",
        "geo" :"punt", "latlon": [52.00498, 4.360837]},
 
 

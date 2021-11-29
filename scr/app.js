@@ -52,7 +52,7 @@ function parseMD(zin) {
               if (position3 != -1 && position3 > position2 ){ //ok md replacement!
                 let mdlabel = zin.slice(2,position2);
                 let mdurl = zin.slice(position2+2,position3);
-                zinUit = zinUit + "<a href='" + mdurl + "' target='_blank' >" + mdlabel + "</a>" ;
+                zinUit = zinUit + "<iframe width='560' height='315' src='" + mdurl+"' title='YouTube video player '' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>" ;
                 zin = zin.slice(position3+1);
               } else {
                   console.log("in MD $[ zit ) niet goed");
