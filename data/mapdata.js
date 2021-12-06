@@ -1,4 +1,5 @@
 var mapData = [
+
   {"id":"0",
    "titel":"Regio Midden Holland"  ,
    "link" :"$[Regio Midden-Holland](https://www.regiomiddenholland.nl/default.aspx) ; $[Filmpje Kracht van Midden-Holland](https://youtu.be/NXhC46ucpp0)",
@@ -71,7 +72,7 @@ var mapData = [
        "geo" :"punt", "latlon": [52.00498, 4.360837]},
 
        {"id":"11",
-        "titel":"Idee bushalte Nieuwerkerk aan de IJssel op N209 " ,
+        "titel":"Idee bushalte Nieuwerkerk aan de IJssel op N219 " ,
         "kort" : "Wens Nieuwerkerk ad IJssel (niet per se Krimpenerwaard, maar ligt hier wel in de buurt) voor een bushalte langs de provinciale weg N219 ter hoogte van de rotonde met de ’s Gravenweg. Met de nieuwbouwwijk en afstand van 1,8 km tot het treinstation. Fysieke inpassingsruimte ontbreekt. Verbeteren van de fiets en loopbereikbaarheid van het station Nieuwerkerk is ook aantrekkelijk voor bewoners in de nieuwe wijk",
         "geo" :"punt", "latlon": [51.959239280555124, 4.618806388376384]},
 
@@ -82,7 +83,7 @@ var mapData = [
          "geo" :"polylijn", "polylijn": [ [51.91985, 4.527618],[51.928319, 4.559882],[51.969724, 4.629275],[52.000383, 4.688997]]},
 
          {"id":"13",
-          "titel":"De Grote Kruising (N210). " ,
+          "titel":"Reconstructie Grote Kruising (N210)." ,
           "kort" : "De Algeracorridor is de enige rechtstreekse route van Krimpen aan den IJssel richting Capelle aan de IJssel en Rotterdam. Dagelijks gaan er grote auto-, OV- en fietsstromen over de corridor richting Capelle, Rotterdam, en verder de metropoolregio in.  In de ochtend- en avondspits zorgt dit voor stremmingen op de Algerabrug en kruisingen. Een van de grootste knelpunten in de ochtendspits voor autoverkeer is de Grote Kruising (N210). Ook voor fiets en openbaar vervoer (bussen) liggen er kansen om de doorstroming te verbeteren. Aanleiding voor de aanpassingen is de verzakking van de kruising. Het project draait om het bevorderen van de doorstroming van het auto-, fiets- en OV verkeer. De provincie draagt vanuit het programma KTA-MOVE bij aan de realisatie van dit project.",
           "link" : "$[degrotekruising](https://www.degrotekruising.nl/)",
           "geo" :"punt", "latlon": [51.91175, 4.589597]},
@@ -92,6 +93,12 @@ var mapData = [
            "kort" : "Op de N228 komen regelmatig gevaarlijke situaties voor en er gebeuren relatief veel ongevallen. Bewoners van Haastrecht en omgeving voelen zich lang niet altijd veilig op de weg. We willen met onze aanpak bereiken dat weggebruikers zich veiliger voelen op de N228. En we maken een punt van nul verkeersslachtoffers. ",
            "link" :"$[N228 veiliger](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/wegverkeer/alle-n-wegen/wegen/n228/n228-veiliger/)",
            "geo" :"polylijn", "polylijn": [ [52.005385, 4.724149],[52.000524, 4.774604],[52.01648, 4.845653]]},
+           {"id":"15",
+            "titel":" MIRT-Verkenning A15  Papendrecht-Gorinchem" ,
+            "kort" : "De A15 vormt een belangrijke logistieke verbinding tussen de haven van Rotterdam, Arnhem, Nijmegen en Duitsland. Deze MIRT-Verkenning onderzoekt hoe de doorstroming en verkeersveiligheid op de A15 tussen Papendrecht-Gorinchem voor de langere termijn kunnen verbeteren.  ",
+            "link" :"$[MIRT-Verkenning A15  Papendrecht-Gorinchem](https://www.mirta15papendrechtgorinchem.nl/)",
+            "geo" :"polylijn", "polylijn": [ [51.833373, 4.72495],[51.820218, 4.823801],[51.838465, 4.933635]]},
+
 
 
 ];
