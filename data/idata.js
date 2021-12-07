@@ -9,7 +9,7 @@ var inspiratieData = [
   {"id":"5",
    "titel":"Filmpje rit in onbemande taxi - IenW"  ,
    "link" :"$[Filmpje rit in onbemande taxi](https://www.linkedin.com/posts/luukverheul_autonomousvehicles-activity-6869348462668972032-fh-2/)",
-   "kort": "Ben je  benieuwd naar hoe het voelt om door een robot-auto rondgereden te worden? … check dan  dit filmpje van Luuk Verheul."},
+   "kort": "Ben je  benieuwd naar hoe het voelt om door een robot-auto rondgereden te worden? … check dan  dit filmpje van Luuk Verheul, Coordinator Dutch national policy and partnerships Smart Mobility."},
 
 
   {"id":"4",
