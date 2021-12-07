@@ -139,8 +139,9 @@ function renderLijst(json,wat,optie){  // vul lijst met items op basis Json
         if (punt["lang"]  != null) {str = str + "<p>" + parseMD(punt["lang"]) +"</p>"}
 
       } else {
-          if (punt["id"] !=null && optie == "plannen" ) {
-               str = str + "<a href='plannen.html?id="+punt["id"] + "'> <b><i>Meer...</i></b></a> "
+          if (punt["id"] !=null) {
+               if (punt["lang"]  != null || punt["rel"]  != null || punt["pzhlink"]  != null ) {tk="meer..." } else { tk =".."}
+               str = str + "<a href='?id="+punt["id"] + "'> <b><i>"+tk+"</i></b></a>"
     }}
       task.innerHTML = str;
     }

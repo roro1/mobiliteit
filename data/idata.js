@@ -1,9 +1,15 @@
 var inspiratieData = [
 
-  {"id":"4",
-   "titel":"Verkenning van het concept mobiliteitshub (KIM)"  ,
-   "link" :"<a href='https://www.waterstudio.nl/' target='_blank' >Waterstudio</a>",
-   "kort": "Drijvende wijken: The prognoses is that by 2050 approximately 70% of the world’s population will live in urbanized areas. Given the fact that about 90% of the world’s largest cities are situated on the waterfront, we have arrived to a situation where we are forced to rethink the way we live with water in the built environment."},
+  {"id":"6",
+   "titel":"NOS: 820.000 woningen gepland in gebied dat kwetsbaar is door klimaatverandering"  ,
+   "link" :"$[NOS: 820.000 woningen gepland in gebied dat kwetsbaar is door klimaatverandering](https://nos.nl/artikel/2408479-820-000-woningen-gepland-in-gebied-dat-kwetsbaar-is-door-klimaatverandering)",
+   "kort": "Bij het bouwen van nieuwe woningen wordt nog te weinig rekening gehouden met de langetermijngevolgen van klimaatverandering. Dat staat in een nieuw adviesrapport van Deltacommissaris Peter Glas aan de ministeries van Binnenlandse Zaken en Infrastructuur en Waterstaat. "},
+
+
+  {"id":"5",
+   "titel":"Filmpje rit in onbemande taxi - IenW"  ,
+   "link" :"$[Filmpje rit in onbemande taxi](https://www.linkedin.com/posts/luukverheul_autonomousvehicles-activity-6869348462668972032-fh-2/)",
+   "kort": "Ben je  benieuwd naar hoe het voelt om door een robot-auto rondgereden te worden? … check dan  dit filmpje van Luuk Verheul."},
 
 
   {"id":"4",
