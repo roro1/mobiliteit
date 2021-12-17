@@ -1,5 +1,12 @@
 var inspiratieData = [
 
+  {"id":"7",
+   "titel":"Mobiliteitstransitie Den Haag , filmpje dec 2021"  ,
+   "link" :"$[mobiliteitstransitie Den Haag , filmpje dec 2021](https://www.youtube.com/watch?v=M0RlJF08xGo&t=1s)",
+   "kort": "Mooi filmpje... Den Haag groeit. En daardoor zijn er steeds meer voetgangers, fietsers, automobilisten en OV-reizigers. In de Strategie Mobiliteitstransitie laat de gemeente zien hoe zij de groeiende stad bereikbaar, leefbaar en verkeersveilig wil houden.",
+    "lang" : "$&[mobiliteitstransitie Den Haag](https://www.youtube.com/embed/M0RlJF08xGo)"},
+
+
   {"id":"6",
    "titel":"NOS: 820.000 woningen gepland in gebied dat kwetsbaar is door klimaatverandering"  ,
    "link" :"$[NOS: 820.000 woningen gepland in gebied dat kwetsbaar is door klimaatverandering](https://nos.nl/artikel/2408479-820-000-woningen-gepland-in-gebied-dat-kwetsbaar-is-door-klimaatverandering)",

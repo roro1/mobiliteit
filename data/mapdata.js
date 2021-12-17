@@ -2,7 +2,7 @@ var mapData = [
 
   {"id":"0",
    "titel":"Regio Midden Holland"  ,
-   "link" :"$[Regio Midden-Holland](https://www.regiomiddenholland.nl/default.aspx) ; $[Filmpje Kracht van Midden-Holland](https://youtu.be/NXhC46ucpp0)",
+   "link" :"$[Regio Midden-Holland](https://www.regiomiddenholland.nl/default.aspx) ; $[Filmpje Kracht van Midden-Holland](https://youtu.be/NXhC46ucpp0) ; $[Agenda verstedelijking en mobiliteit](https://www.regiomiddenholland.nl/Nieuws/1875997.aspx)",
      "lang" : "$&[..](https://www.youtube.com/embed/NXhC46ucpp0)",
    "kort": "<p>Regio Midden-Holland is een netwerk van de samenwerkende gemeenten <a href='https://www.bodegraven-reeuwijk.nl' target='_blank' >Bodegraven-Reeuwijk</a>; <a href='https://www.gouda.nl'  target='_blank'>Gouda</a>; <a href='https://www.krimpenerwaard.nl'  target='_blank'>Krimpenerwaard</a>; <a href='https://www.waddinxveen.nl'  target='_blank'>Waddinxveen</a>; <a href='http://www.zuidplas.nl' target='_blank'>Zuidplas</a>. In 2016 is een strategische agenda voor de regio Midden-Holland vastgesteld. Hieruit wordt nog volop gewerkt en er is een nieuwe versie verschenenen (voor periode vanaf 2020) onder de noemer ‘De kracht van Midden-Holland: de regio van verbinding’</p> <p>Hieronder staan een aantal plannen, projecten en programma's  die in deze regio spelen.</p>"
   },
@@ -43,7 +43,7 @@ var mapData = [
 
   {"id":"6",
    "titel":"Veroerscirculatieplan Gouda" ,
-   "link" :"nog geen links",
+   "link" :"$[Veroerscirculatieplan Gouda](https://www.gouda.nl/gouda-werkt-aan-de-stad/verkeerscirculatieplan/)",
    "geo" :"punt" , "latlon":[ 52.01574, 4.709197]},
 
    {"id":"7",
