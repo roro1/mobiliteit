@@ -18,15 +18,20 @@ var snelstudieData = [
     "kort" : "<p;>Dichter bij huis werken (in zogenoemde 'thuiswerkhubs') kan bijdragen aan een beter bereikbare provincie waarin het goed toeven is. De maatschappelijke voordelen van thuiswerken zijn groot; het voorkomt files op de wegen, bespaart uitstoot van CO2 en bespaart (reis)tijd. Thuis in je eigen huis werken voldoet echter niet altijd voor iedereen; bijvoorbeeld door de aanwezigheid van gillende kinderen, het ontbreken van de juiste faciliteiten of het vervagen van de balans tussen werk en privé. Hiervoor kan het werken in een thuiswerkhub een oplossing zijn.</p>" },
 
     {"id":"4",
-     "titel":"Sneller reizen met de bus reizen in Zuid-Holland",
-     "link" :"$[Sneller met de bus reizen in Zuid-Holland](https://slides.com/roha/mobiliteitstraks/fullscreen?token=lsXGA6Co#/openbaarvervoer) ; $[Filmpje De keuze van de reiziger](https://www.youtube.com/watch?v=AJ_ufgNVHDA&feature=youtu.be)",
+     "titel":"Sneller reizen met de bus in Zuid-Holland",
+     "link" :"$[Sneller reizen met de bus in Zuid-Holland pdf](https://www.zuid-holland.nl/publish/pages/28794/snelstudiesnellerreizenmetdebusinzuid-holland.pdf) ; $[Filmpje De keuze van de reiziger](https://www.youtube.com/watch?v=AJ_ufgNVHDA&feature=youtu.be)",
      "kort" :"Het busvervoer staat onder druk door de grote overheidsbijdrage die nodig is om het systeem draaiende te houden. Corona heeft duidelijk gemaakt dat de situatie voor vervoerbedrijven en OV-autoriteiten (provincies en metropoolregio’s) onhoudbaar is. Ook verzuchten veel Zuid-Hollandse inwoners: <b><i>“Kon ik maar sneller reizen met de bus”</b></i>. Er zijn soms lange wachttijden en door kronkelroutes ligt de gemiddelde rijsnelheid van de reiziger vaak bedroevend laag. De fiets is vaak sneller (op kortere afstanden). De hoogwaardige R-netlijnen – die zich onderscheiden door hoge frequenties, hoge snelheden en directe routes – scoren beter. Reizigers hoeven maar kort te wachten op de volgende bus en hebben een kortere reistijd. Dat zorgt voor groeiende aantallen reizigers. De conclusies van dit onderzoek zijn in lijn met eerder KIM onderzoek (uit 2016) en worden prachtig verwoord in dit filmpje: <a href='https://www.youtube.com/watch?v=AJ_ufgNVHDA&feature=youtu.be' target='_blank' > De keuze van de reiziger.</a>" },
 
 
      {"id":"5",
-      "titel":"De ideale woonwijk, voorzieningen en OV nabij (studie loopt t/m jan2022)",
+      "titel":"De ideale woonwijk, voorzieningen en OV nabij (studie loopt t/m feb2022)",
       "link" :"$[What is a 15-minute city](https://youtu.be/McGyONofhi4)",
       "kort" :"In Zuid-Holland gaan we heel veel woningen bijbouwen. Waar en hoe kunnen we dat het beste doen ? Hoe ziet de ideale wijk er eigenlijk uit? Waar ligt die (dicht bij OV?) en hoe zit het met de nabijheid voorzieningen als winkels, gezondheidszorg, werkgelegenheid en recreatie. Hoeveel is bereikbaar binnen 15 minuten te voet of per fiets? In welke dichtheid moet er (minimaal) gebouwd worden? Speelt functiemenging (wonen/werken/recreatie) een belangrijke rol? Hoe verhogen we de kwaliteit van leven en de duurzaamheid?" },
+
+      {"id":"6",
+       "titel":"Zuid Holland in transitie (studie loopt t/m maart 2022)",
+       "link" :"$[What is a 15-minute city](https://youtu.be/McGyONofhi4); $[Valkenhorst ontwikkeling](https://www.zuid-holland.nl/actueel/nieuws/december-2021/ontwikkeling-valkenhorst-forse-stap-dichterbij/)",
+       "kort" :"In de laatste snelstudie van deze serie doen we een wrap-up van de inzichten tot nutoe, uit voorgaande snelstudies, en kijken hoe we dat kunnen omzetten in beleid, actie en realisatie. We verbinden het met speerpunten van beleid en actuele programma’s voor realisatie. We pakken de rode draad aan de hand van de case HOV Hubs Valkenhorst. En liefst nog een andere case." },
 
 
 ];
