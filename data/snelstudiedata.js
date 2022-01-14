@@ -14,7 +14,7 @@ var snelstudieData = [
 
    {"id":"3",
     "titel":"Dicht bij huis werken in de 'Thuiswerkhub'",
-    "link" :"$[Rapport-pdf](https://www.zuid-holland.nl/publish/pages/28172/kansenvoordichtbijhuiswerkeninthuiswerkhubs.pdf)",
+    "link" :"$[Rapport-pdf](https://www.zuid-holland.nl/publish/pages/28172/kansenvoordichtbijhuiswerkeninthuiswerkhubs.pdf); $[Seats2Meet - third spaces vanaf blz 24](https://issuu.com/seats2meet/docs/s2m_explained)",
     "kort" : "<p;>Dichter bij huis werken (in zogenoemde 'thuiswerkhubs') kan bijdragen aan een beter bereikbare provincie waarin het goed toeven is. De maatschappelijke voordelen van thuiswerken zijn groot; het voorkomt files op de wegen, bespaart uitstoot van CO2 en bespaart (reis)tijd. Thuis in je eigen huis werken voldoet echter niet altijd voor iedereen; bijvoorbeeld door de aanwezigheid van gillende kinderen, het ontbreken van de juiste faciliteiten of het vervagen van de balans tussen werk en privé. Hiervoor kan het werken in een thuiswerkhub een oplossing zijn.</p>" },
 
     {"id":"4",
@@ -30,8 +30,8 @@ var snelstudieData = [
 
       {"id":"6",
        "titel":"Zuid Holland in transitie (studie loopt t/m maart 2022)",
-       "link" :"$[What is a 15-minute city](https://youtu.be/McGyONofhi4); $[Valkenhorst ontwikkeling](https://www.zuid-holland.nl/actueel/nieuws/december-2021/ontwikkeling-valkenhorst-forse-stap-dichterbij/)",
-       "kort" :"In de laatste snelstudie van deze serie doen we een wrap-up van de inzichten tot nutoe, uit voorgaande snelstudies, en kijken hoe we dat kunnen omzetten in beleid, actie en realisatie. We verbinden het met speerpunten van beleid en actuele programma’s voor realisatie. We pakken de rode draad aan de hand van de case HOV Hubs Valkenhorst. En liefst nog een andere case." },
+       "link" :"$[Valkenhorst ontwikkeling](https://www.zuid-holland.nl/actueel/nieuws/december-2021/ontwikkeling-valkenhorst-forse-stap-dichterbij/)",
+       "kort" :"In de laatste snelstudie van deze serie doen we een wrap-up van de inzichten tot nu toe, uit voorgaande snelstudies, en kijken hoe we dat kunnen omzetten in beleid, actie en realisatie. We verbinden het met speerpunten van beleid en actuele programma’s voor realisatie. We pakken de rode draad aan de hand van de case HOV Hubs Valkenhorst. En liefst nog een andere case." },
 
 
 ];
