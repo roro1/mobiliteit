@@ -1,5 +1,12 @@
 var inspiratieData = [
 
+  {"id":"8",
+   "titel":"Deelfietsen : Wisselfiets Leiden PvE"  ,
+   "link" :"$[PvE Wisselfiets](img/WisselfietsPVE.pdf), $[Plan van aanpak realisatie wisselfiets](img/WisselfietsLeidenAanpak.pdf)",
+   "kort": "Bestaande stallingsruimte moet slimmer en beter benut worden. We streven ernaar om meer fietsers van en naar het OV-knooppunt te laten fietsen en hun fiets veilig te kunnen stallen. Om dat doel op effectieve wijze te bereiken moeten fietsen daar korter stilstaan tussen twee ritjes, waardoor er minder stallingsruimte nodig is. Kortom slimmer benutten van de stallingen faciliteert meer fietsritten bij gelijkblijvende stallingsruimte.",
+    "lang" : "Dit document beschrijft het programma van eisen voor Wisselfiets (PvE). Het is zodanig opgezet dat het eenvoudig bruikbaar is bij een (onderhandse) uitvraag aan potentiële exploitanten van deelfietsen. Er wordt onderscheid gemaakt in eisen en wensen. Aan de eisen moet (door aanbieder) sowieso voldaan worden. Hoe beter aan de wensen wordt voldaan hoe beter een aanbod is. Dit document staat niet op zichzelf maar is onderdeel van het Plan van Aanpak van de Wisselfiets Leiden."},
+
+
   {"id":"7",
    "titel":"Mobiliteitstransitie Den Haag , filmpje dec 2021"  ,
    "link" :"$[mobiliteitstransitie Den Haag , filmpje dec 2021](https://www.youtube.com/watch?v=M0RlJF08xGo&t=1s)",
