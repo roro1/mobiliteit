@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Zuid-Holland plannenkaart</title>
+  <link rel=icon href="img/favicon.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ </head>
+
+ <body>
+   <div class="logobar">
+     <img src="img/PZHlogo253x84.png" alt="Provincie Zuid-Holland logo" width="253" height="84">
+   </div>
+   <div class="topnav" id="myTopnav">
+     <a href="https://pzh.maps.arcgis.com/apps/webappviewer/index.html?id=74e23812a85e40b9be7d14e731ad0e4b" target="_blank">(Kaart DBI)</a>
+     <a href="plannen.html">Plannen</a>
+     <a href="map.html">Kaart</a>
+     <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+       <span class="material-icons">dehaze</span>
+     </a>
+   </div>
+
+    <div id = "map" style = "width: 100%; height: 600px"></div>
+    <script src="data/mapdata.js"></script>
+    <script src="data/gemeentes2.js"></script>
+
+    <script src="scr/app.js"></script>
+
+    <script>
+
+
+       // Creating map options
+       var mapOptions = {
+          center: [52.03, 4.584],
+          zoom: 11
+       }
+
+       var map = new L.map('map', mapOptions);         // Creating a map object
+       var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');         // Creating a Layer object
+       map.addLayer(layer);
+
+       var myStyle = {
+           "color": "Black",
+           "weight": 1,
+             "opacity": 0.3,
+          "fillOpacity" : 0,
+       };
+
+       L.geoJSON(gemeentes, {style: myStyle}).addTo(map);
+       plotDots(mapData); // functie ziet in script file
+
+
+
+    </script>
+ </body>
+
+</html>
