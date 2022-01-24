@@ -17,6 +17,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
  </head>
+ 
 
  <body>
    <div class="logobar">
@@ -46,42 +47,28 @@
        var map = new L.map('map', mapOptions);         // Creating a map object
        var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');         // Creating a Layer object
        map.addLayer(layer);
-//       plotDots(mapData); // functie ziet in script file
-//       L.geoJSON(tegels, {style: myStyle}).addTo(map);
 
-//       map.createPane('pane_PZHOpenOVv500_0');
-//       map.getPane('pane_PZHOpenOVv500_0').style.zIndex = 400;
-//       map.getPane('pane_PZHOpenOVv500_0').style['mix-blend-mode'] = 'normal';
-       //       L.geoJSON(tegels, {style: myStyle}).addTo(map);
        function style_1(feature) {
-           let vulkleur = 'rgba(35,35,35,1.0)';
+           const SchaalRood = ["#ffffff", "#ffbaba", "#ff7b7b","#ff5252","#ff0000","#a70000"];
+           let vulkleur = SchaalRood[0];
            switch(String(feature.properties['openov_cat'])) {
                case '1.OV = basis-OV op max 500m':
-                  vulkleur ="#ffbaba"; break;
+                  vulkleur =SchaalRood[1]; break;
                case '2.HOV = hoogwaardig OV op max 500m':
-                  vulkleur ="#ff7b7b"; break;
+                  vulkleur =SchaalRood[2]; break;
                case '3.SPR = secundair sprinter station op max 1km':
-                  vulkleur ="#ff5252"; break;
+                  vulkleur =SchaalRood[3]; break;
                case '4.SPR/IC = primair SPR/secundair IC station op max 1.75km':
-                  vulkleur ="#ff0000"; break;
+                  vulkleur =SchaalRood[4]; break;
                case '5.IC = primair IC station op max 2.5km':
-                  vulkleur ="#a70000"; break;
-               case 'NULL':
-                  vulkleur ="#ffbaba"; break;
+                  vulkleur =SchaalRood[5]; break;
            }
            return {
             fillOpacity: 0.7,
             fillColor: vulkleur,
-            stroke : false,
-
-        }
-
-
+            stroke : false, }
        }
-        L.geoJson(json_PZHOpenOVv500_0,{style: style_1,
-    }).addTo(map);
-
-       console.log("na ov tegels op kaart")
+       L.geoJson(json_PZHOpenOVv500_0,{style: style_1,}).addTo(map);
     </script>
  </body>
 
