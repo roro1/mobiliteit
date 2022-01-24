@@ -3,7 +3,7 @@
 <head>
   <meta name="robots" content="noindex">
   <meta charset="UTF-8">
-  <title>Zuid-Holland plannenkaart</title>
+  <title>Zuid-Holland</title>
   <link rel=icon href="img/favicon.png">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -31,9 +31,9 @@
  <body>
 
    <div class="topnav" id="myTopnav">
-     <a href="https://pzh.maps.arcgis.com/apps/webappviewer/index.html?id=74e23812a85e40b9be7d14e731ad0e4b" target="_blank">(Kaart DBI)</a>
-     <a href="plannen.html">Plannen</a>
-     <a href="map.html">Kaart</a>
+     <a href="toelichting.html" target="_blank">Toelichting</a>
+     <a href="mapOV.html">Nabij OV</a>
+     <a href="mapv.html">Geografische data</a>
      <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
        <span class="material-icons">dehaze</span>
      </a>
@@ -56,7 +56,8 @@
        map.addLayer(layer);
 
        function style_1(feature) {
-           const SchaalRood = ["#ffffff", "#ffbaba", "#ff7b7b","#ff5252","#ff0000","#a70000"];
+           // const SchaalRood = ["#ffffff", "#ffbaba", "#ff7b7b","#ff5252","#ff0000","#a70000"];
+           const SchaalRood = ["#ffffff", "#fee391", "#fec44f","#fe9929","#d95f0e","#993404"];
            let vulkleur = SchaalRood[0];
            switch(String(feature.properties['openov_cat'])) {
                case '1.OV = basis-OV op max 500m':

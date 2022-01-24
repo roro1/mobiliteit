@@ -31,10 +31,6 @@
 
 
  <body>
-  <!-- <div class="logobar">
-     <img src="img/PZHlogo253x84.png" alt="Provincie Zuid-Holland logo" width="253" height="84">
-   </div>
- -->
    <div class="topnav" id="myTopnav">
 
      <a href="toelichting.html" target="_blank">Toelichting</a>
@@ -49,14 +45,16 @@
     <script src="data/vkdata1.js"></script>
     <script src="scr/vierkant.js"></script>
     <script>
-
-       var mapOptions = {center: [52.03, 4.584],  zoom: 11 }
-       var map = new L.map('map', mapOptions);         // Creating a map object
-       var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{ attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> '});         // Creating a Layer object
-       map.addLayer(layer);
-       kolom = 1;
-       vulling =1;
-       plotVierkanten(vkdata,kolom,vulling);
+      const urlParams = new URLSearchParams(window.location.search);
+      const par = urlParams.get('par')
+      console.log(par);
+      var mapOptions = {center: [52.03, 4.584],  zoom: 11 }
+      var map = new L.map('map', mapOptions);         // Creating a map object
+      var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{ attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> '});         // Creating a Layer object
+      map.addLayer(layer);
+      kolom = 1;
+      vulling =1;
+      plotVierkanten(vkdata,kolom,vulling);
 
 
 
