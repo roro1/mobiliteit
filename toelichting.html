@@ -45,22 +45,10 @@
      </a>
    </div>
 
-    <div id = "map" style = "width: 100%; height: 650px"></div>
-    <script src="data/vkdata1.js"></script>
-    <script src="scr/vierkant.js"></script>
-    <script>
+    <div>
+<H2>Hier komt een toelichting</H2>
+  </div>
 
-       var mapOptions = {center: [52.03, 4.584],  zoom: 11 }
-       var map = new L.map('map', mapOptions);         // Creating a map object
-       var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{ attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> '});         // Creating a Layer object
-       map.addLayer(layer);
-       kolom = 1;
-       vulling =1;
-       plotVierkanten(vkdata,kolom,vulling);
-
-
-
-    </script>
  </body>
 
 </html>

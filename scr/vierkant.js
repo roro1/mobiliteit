@@ -15,6 +15,5 @@ const Schaalroodgroen = ["#a50026","#d73027","#f46d43","#fdae61","#fee08b","#fff
     var poptxt =  "<p>" + waarde + "</p>" + item[0] +  "<p>" + item[7] + " ; "+ item[8] + " ; " + "</p>" ;
     //console.log(polyg);
     marker = L.polygon(polyg,prop).addTo(map).bindPopup(poptxt);
-
   }
 }
