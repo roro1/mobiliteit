@@ -22,7 +22,7 @@ function parseMD(zin) {
     else // $ op eerste positie
     {
       p2 = zin.slice(0,2);
-      if (p2 == "$[") {  // $[  replace link
+      if (p2 == "$[") {  // $[  replace with link
         let position2 = zin.indexOf("](");
         if (position2 != -1 ){
           let position3 = zin.indexOf(")");
@@ -44,7 +44,7 @@ function parseMD(zin) {
       } // endif $[ replace link
       else if (p2 == "$&")
 
-         {  // $&
+         {  // $& dus embed video
             console.log("start iframe");
             let position2 = zin.indexOf("](");
             if (position2 != -1 ){
@@ -64,9 +64,31 @@ function parseMD(zin) {
                 zinUit = zinUit + zin.slice(0,2);
                 zin = zin.slice(2);
             }
-          }  // endif $&  link
+          }  // endif $&  embed video
 
+        else if (p2 == "$!")
 
+           {  // $! dus plaatje invoegen
+              console.log("afbeeldinge");
+              let position2 = zin.indexOf("](");
+              if (position2 != -1 ){
+                let position3 = zin.indexOf(")");
+                if (position3 != -1 && position3 > position2 ){ //ok md replacement!
+                  let mdlabel = zin.slice(2,position2);
+                  let mdurl = zin.slice(position2+2,position3);
+                  zinUit = zinUit + "<img src='" + mdurl+"' alt='"+mdlabel+"'>" ;
+                  zin = zin.slice(position3+1);
+                } else {
+                    console.log("in MD $[ zit ) niet goed");
+                    zinUit = zinUit + zin.slice(0,position2);
+                    zin = zin.slice(position2);
+                }
+              } else {
+                  console.log("in MD $[ zit ]( niet goed");
+                  zinUit = zinUit + zin.slice(0,2);
+                  zin = zin.slice(2);
+              }
+            }  // endif $&  embed video
         else { zinUit = zinUit + "$" ; zin = zin.slice(1);}  //  dollar zonder betekenis eruit
     } // endif $ op eerste positie
 
