@@ -122,6 +122,8 @@ function plotDots(json) {
     text = text + "<p>" + parseMD(punt["link"])+ "</p>";
     marker.bindPopup(text);
     }
+
+
   }
 }
 

@@ -42,7 +42,7 @@
           center: [52.03, 4.584],
           zoom: 11
        }
-
+       lijst =[]
        var map = new L.map('map', mapOptions);         // Creating a map object
        var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');         // Creating a Layer object
        map.addLayer(layer);
@@ -50,6 +50,12 @@
 
      	var popup = L.popup();
      	function onMapClick(e) {
+        console.log(e.latlng)
+        console.log(e.latlng.toString())
+        console.log(e.latlng.lat)
+        lijst.push([[e.latlng.lat],[e.latlng.lng]]);
+        console.log("lijst")
+        console.log(lijst)
      		popup
      			.setLatLng(e.latlng)
      			.setContent("." + e.latlng.toString())

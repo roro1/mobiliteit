@@ -12,6 +12,7 @@ var mapData = [
   {"id":"21",
    "titel":"Rijnlandroute",
    "regio":"rijnland",
+   "geo" :"polylijn", "polylijn": [[52.122036,4.477446],[52.152942,4.43852],[52.166702,4.451113],[52.187054,4.416309]],
    "link" :"$[Rijnland route projectsite](https://rijnlandroute.nl/)",
        "kort": "De RijnlandRoute is een nieuwe wegverbinding tussen Katwijk, via de A44, en de A4 bij Leiden. Zo komt er een nieuwe weg met een geboorde tunnel, de N434, en worden delen van de N206 in Leiden en Katwijk aangepast en vernieuwd. In de toekomst kan het verkeer in de regio Holland Rijnland dan beter doorrijden. Twee van de drie projecten van de RijnlandRoute zijn inmiddels in uitvoering. Het project N434/A44/A4, waarvan de geboorde tunnel onderdeel uitmaakt, wordt uitgevoerd door aannemerscombinatie Comol5, het project N206 Tjalmaweg door Boskalis. Het derde project van de RijnlandRoute, de N206 Europaweg, is nog in voorbereiding. De huidige planning is dat twee van de drie projecten van de RijnlandRoute (N434/A44/A4 en N206 Tjalmaweg) medio 2023 klaar zijn. Voor het project N206 Europaweg is de verwachting dat deze eind 2025 klaar is, afhankelijk van de planning van de toekomstige aannemer. ",
     "lang" : "$![kaart](https://rijnlandroute.nl/wp-content/uploads/2022/01/RijnlandRoute_Tracekaart.png)"
@@ -19,15 +20,16 @@ var mapData = [
 
   {"id":"22",
    "titel":"HOV Buslijn Leiden-Katwijk-Noordwijk",
-   "regio":"rijnland",
+   "geo" :"polylijn", "polylijn" : [[52.164526,4.483051],[52.166492,4.454657],[52.188527,4.417562],[52.19905,4.420081],[52.206905,4.398786],[52.196805,4.386421],[52.210412,4.396954],[52.198489,4.424432],[52.213778,4.443895],[52.224575,4.425119]],
    "link" :"$[HOV Buslijn Leiden-Katwijk-Noordwijk](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/openbaar-vervoer/r-net/buslijn-leiden-katwijk-noordwijk/)",
    "kort": "Wie met de bus van Leiden naar Katwijk wil, kan sinds zondag 9 mei 2021 reizen met een van de nieuwe R-netlijnen. Met de realisatie van de nieuwe R-net routes vergroot de provincie Zuid-Holland de bereikbaarheid tussen Leiden en Katwijk en Leiden en ESA Estec (Noordwijk). Iedere 5 minuten rijdt er in de spits een R-net bus, waardoor reizigers een kortere wachttijd hebben en daardoor sneller op hun eindbestemming zijn. Om ervoor te zorgen dat ook de toekomstige bewoners van de nieuwe woonwijk Valkenhorst (Katwijk) vanaf eind 2024 snel en comfortabel met het openbaar vervoer kunnen reizen, werken provincie Zuid-Holland en gemeente Katwijk samen aan de doorontwikkeling van deze R-net-corridor. Hieronder vallen de volgende maatregelen: -	aanleggen van het fiets- en voetgangersviaduct $[Oude Broekweg](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/openbaar-vervoer/r-net/buslijn-leiden-katwijk-noordwijk/viaduct-oude-broekweg/) over de N206 -	(deels) vrijliggende busbaan langs Valkenhorst en $[Duinvallei](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/openbaar-vervoer/r-net/buslijn-leiden-katwijk-noordwijk/busbaan-langs-duinvallei/) -	fietstunnel onder de N206 nabij de N441",
-  "lang": "$![kaart](https://www.zuid-holland.nl/publish/pages/28603/kaart_lkn.png)"   
+  "lang": "$![kaart](https://www.zuid-holland.nl/publish/pages/28603/kaart_lkn.png)"
   },
 
   {"id":"23",
    "titel":"Stationsgebied Leiden",
    "regio":"rijnland",
+   "geo" :"cirkel","latlon":[52.165965, 4.48263],"straal": 1000,
    "link" :"$[Stationsgebied Leiden gemeente](https://gemeente.leiden.nl/inwoners-en-ondernemers/werkzaamheden-in-leiden/bouwen-aan-de-stad/stationsgebied/)",
    "kort": "..."
   },
@@ -35,6 +37,7 @@ var mapData = [
   {"id":"24",
    "titel":"Buslijn Leiden-Zoetermeer",
    "regio":"rijnland",
+   "geo" :"polylijn", "polylijn" : [[52.161157,4.480661],[52.129695,4.491194],[52.118453,4.490736],[52.111706,4.495774],[52.09118,4.47196],[52.069236,4.483409],[52.056291,4.481119]],
    "link" :"$[Buslijn Leiden-Zoetermeer](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/openbaar-vervoer/r-net/r-net-buslijn-leiden/)",
    "kort": "..."
   },
@@ -42,6 +45,7 @@ var mapData = [
   {"id":"25",
    "titel":"Spoorcorridor Leiden-Utrecht",
    "regio":"rijnland",
+    "geo" :"polylijn", "polylijn" :[[52.146692,4.497757],[52.122528,4.582938],[52.131521,4.639725],[52.085976,4.741392],[52.073035,4.876032],[52.109598,4.961212],[52.097788,5.096769]]  ,
    "link" :"$[Spoorcorridor Leiden-Utrecht](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/openbaar-vervoer/spoorverbinding-leiden-utrecht/) ; $[overeenstemming over Leiden Utrecht](https://www.zuid-holland.nl/actueel/nieuws/januari-2022/overeenstemming-verdere-verbetering/)",
    "kort": "De spoorverbinding tussen Leiden en Utrecht wordt verbeterd. Dat is goed voor de bereikbaarheid van de regio. De provincie werkt hiervoor samen met het ministerie van Infrastructuur en Waterstaat, ProRail, NS, de provincie Utrecht, regio Holland Rijnland en alle gemeenten.",
    "lang": "Op 13 december 2021 is een eerste belangrijke stap gezet en sindsdien rijden er op werkdagen tussen Leiden en Utrecht in de brede spits (van circa 6 uur tot 10 uur en circa 15 tot 20 uur) vier treinen per uur in beide richtingen. De betrokken partijen hebben ingestemd met de verdere verbetering van de treinverbinding Leiden-Utrecht. Deze bestaat uit een uitbreiding van de frequentieverhoging naar vier keer per uur de hele dag (op werkdagen tot 20 uur), het realiseren van de daarbij horende ongelijkvloerse kruising met de Burgemeester Smeetsweg te Zoeterwoude en het nieuwe station Hazerswoude-Rijndijk. Het is de ambitie om alle maatregelen in 2026 te hebben gerealiseerd."
@@ -49,6 +53,7 @@ var mapData = [
 
   {"id":"26",
    "titel":"Mobiliteitsmaatregelen Noordelijke Duin- en Bollenstreek",
+   "geo" :"polygoon","poly":[[52.327926,4.494329],[52.308898,4.564786 ],[52.316874, 4.586975],[52.310997,4.608249 ],[52.269278, 4.567302],[52.224995, 4.548315],[52.22121,4.537793 ],[52.263255, 4.444461]],
    "regio":"rijnland",
    "link" :"$[Mobiliteitsmaatregelen Noordelijke Duin- en Bollenstreek](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/wegverkeer/mobiliteit-noordelijke-duin-bollenstreek/)",
    "kort": "..."
@@ -58,6 +63,7 @@ var mapData = [
   {"id":"27",
    "titel":"HOV Noordwijk-Schiphol",
    "regio":"rijnland",
+   "geo" :"polylijn", "polylijn" : [[52.239855,4.429073],[52.249384,4.435481],[52.226397,4.470723],[52.223033,4.485827],[52.212095,4.509627],[52.259192,4.564551],[52.293642,4.583774],[52.239855,4.657005],[52.292243,4.730693],[52.317994,4.74717]],
    "link" :"$[HOV Noordwijk-Schiphol](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/openbaar-vervoer/r-net/buslijn-noordwijk/ ; $[Filmpje: HOV Noordwijk-Schiphol](https://www.youtube.com/watch?v=69QePHTUo2s)",
    "kort": "<p>De huidige buslijn 361 van Noordwijk naar Schiphol wordt in een aantal stappen opgewaardeerd tot Hoogwaardig Openbaar Vervoer (HOV). Deze HOV-verbinding draagt bij aan de bereikbaarheid van de provincie en betekent voor reizigers dat de bus vaker, sneller en prettiger zal rijden.</p><p>De provincies Zuid-Holland en Noord-Holland willen de regionale bereikbaarheid vergroten. De komende jaren werken we daarvoor met gemeenten aan een betere, snellere en frequentere hoogwaardige openbaar vervoer-verbinding (HOV) tussen Noordwijk en Schiphol. Deze verbinding zorgt ervoor dat de bestaande kernen en de toekomstige wijken een goede aansluiting hebben op het openbaar vervoer.</P>",
    "lang": "Het project HOV Noordwijk-Schiphol bestaat uit 4 deelprojecten: 1. Aanpassing van bestaande infrastructuur; 2. Realiseren van een brug over de Ringvaart voor bus- en fietsverkeer; 3. Aanleg van een busbaan door nieuwbouw Lisserbroek-Noord; 4. Aanleg van een busbaan tot aan P&R Getsewoud-Zuid<br> $![kaartje](https://www.zuid-holland.nl/publish/pages/13592/2400px/noordwijk-schiphol_hov-net.jpg)"
@@ -67,6 +73,7 @@ var mapData = [
   {"id":"28",
    "titel":"MIRT A4-Burgerveen-N14",
    "regio":"rijnland",
+   "geo" :"polylijn", "polylijn" :[[52.076974,4.401154],[52.228641,4.649224]] ,
    "link" :"$[MIRT A4-Burgerveen-N14](https://www.a4burgerveen-n14.nl/default.aspx)",
    "kort": "..."
   },
