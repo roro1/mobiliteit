@@ -93,6 +93,14 @@ var mapData = [
    "kort": "..."
   },
 
+  {"id":"31",
+   "titel":"Valkenhorst  HOV-halte + Woningbouw + Unmanned Valley",
+   "regio":"midden",
+   "link" :"$[Valkenhorst](https://www.zuid-holland.nl/actueel/nieuws/december-2021/ontwikkeling-valkenhorst-forse-stap-dichterbij/)",
+   "geo" :"cirkel","latlon":[52.172809, 4.42071],"straal": 1000,
+   "kort": "Woningbouw (700 woningen) + Unmanned Valley"
+  },
+
   {"id":"0",
    "titel":"Regio Midden Holland"  ,
    "regio":"midden",
