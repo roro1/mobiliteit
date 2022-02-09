@@ -30,16 +30,16 @@ var mapData = [
    "titel":"Stationsgebied Leiden",
    "regio":"rijnland",
    "geo" :"cirkel","latlon":[52.165965, 4.48263],"straal": 1000,
-   "link" :"$[Stationsgebied Leiden gemeente](https://gemeente.leiden.nl/inwoners-en-ondernemers/werkzaamheden-in-leiden/bouwen-aan-de-stad/stationsgebied/)",
-   "kort": "..."
+   "link" :"$[Stationsgebied Leiden gemeente](https://gemeente.leiden.nl/inwoners-en-ondernemers/werkzaamheden-in-leiden/bouwen-aan-de-stad/stationsgebied/) ; $[Leiden Verbindt - startnotitie voor MIRT verkenning](https://leiden.notubiz.nl/document/9336244/1#search=%22leiden%20verbindt%22)",
+   "kort": "Knooppunt Leiden Centraal is volop in ontwikkeling. Het internationale, krachtige kenniscluster Leiden Bio Science Park (LBSP) ontwikkelt door tot Innovation District. Afspraken over stedelijke en regionale verstedelijking in de invloedssfeer van de OV-knoop zorgen voor verder groei van de reizigersstromen van OV, fiets en voetganger. De ontwikkeling van de historische binnenstad met kennis- en cultuurclusters en veel voorzieningen aan de ene zijde van het knooppunt en het dynamische LBSP aan de andere zijde van het knooppunt kunnen elkaar verder versterken."
   },
 
   {"id":"24",
-   "titel":"Buslijn Leiden-Zoetermeer",
+   "titel":"HOV verbinding Leiden-Zoetermeer (RNet)",
    "regio":"rijnland",
    "geo" :"polylijn", "polylijn" : [[52.161157,4.480661],[52.129695,4.491194],[52.118453,4.490736],[52.111706,4.495774],[52.09118,4.47196],[52.069236,4.483409],[52.056291,4.481119]],
    "link" :"$[Buslijn Leiden-Zoetermeer](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/openbaar-vervoer/r-net/r-net-buslijn-leiden/)",
-   "kort": "..."
+   "kort": "Maatregelen voor een betere doorstroming HOV Lijn Leiden Zoetermeer. LT perspectief is een geoptimaliseerd Bussysteem/BRT"
   },
 
   {"id":"25",
@@ -71,13 +71,22 @@ var mapData = [
   },
 
   {"id":"28",
+   "titel":"MoVe project Oude Lijn en Knooppunten -ontwikkeling Leiden",
+   "regio":"rijnland",
+   "geo" :"polylijn", "polylijn" : [[52.157506,4.468385],[52.105802,4.403404],[52.066422,4.31234],[52.053194,4.307307],[52.022783,4.34117],[51.963872,4.380524],[51.893444,4.472074],[51.814275,4.633152]],
+   "link" :"$[MoVe project Oude Lijn](https://www.move-rdh.nl/programmalijnen/schaalsprong+metropolitaan+ov+en+verstedelijking/default.aspx)",
+   "kort": "De MIRT-VerkenningOude Lijn en Knooppunten richt zich op integrale oplossingen voor het knooppunt Leiden welke binnen het projectgebied gerealiseerd kunnen worden. Voor het knooppunt Leiden Centraal zijn drie ‘Eindbeeldalternatieven’ en één ‘Benuttingsalternatief’ gedefinieerd. Zie  -meer- voor de bepalende elementen voor het knooppunt",
+   "lang": "De bepalende elementen voor het knooppunt zijn:<ul><li>De mate van verstedelijking in het projectgebied.</li><li>De vormgeving van stedelijke verbindingen en routes voor voetgangers, fietsers en bussen/HOV;</li><li>De inrichting en omvang van het busstation inclusief toeleidende routes, buffervoorzieningen en wel of niet een overbouwing/overkapping en de mate waarin.</li><li>De inrichting van het treinstation.</li><li>De beschikbare ruimte en mogelijkheden voor pleinen en hoogwaardige openbare ruimte met ruimte voor ontmoeting, verblijf en vergroening.</li><li>Maatregelen voor een betere doorstroming HOV Lijn Leiden Zoetermeer.</li></ul> LT perspectief is een geoptimaliseerd Bussysteem/BRT"
+  },
+
+  {"id":"29",
    "titel":"MIRT A4-Burgerveen-N14",
    "regio":"rijnland",
    "geo" :"polylijn", "polylijn" :[[52.076974,4.401154],[52.228641,4.649224]] ,
    "link" :"$[MIRT A4-Burgerveen-N14](https://www.a4burgerveen-n14.nl/default.aspx)",
    "kort": "..."
   },
-  {"id":"29",
+  {"id":"30",
    "titel":"Concessie Zuid-Holland Noord",
    "regio":"rijnland",
    "link" :"$[Concessie Zuid-Holland Noord](Concessie Zuid-Holland Noord)",
