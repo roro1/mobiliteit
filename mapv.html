@@ -53,7 +53,7 @@
       var map = new L.map('map', mapOptions);         // Creating a map object
       var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{ attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> '});         // Creating a Layer object
       map.addLayer(layer);
-      kolom = 1;
+      if (par == null) {kolom = 1; } else { kolom = parseInt(par) }
       vulling =1;
       plotVierkanten4(vkdata,kolom,vulling);
 
