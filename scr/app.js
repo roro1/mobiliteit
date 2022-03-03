@@ -22,7 +22,7 @@ function parseMD(zin) {
     else // $ op eerste positie
     {
       p2 = zin.slice(0,2);
-      if (p2 == "$[") {  // $[  replace link
+      if (p2 == "$[") {  // $[  replace with link
         let position2 = zin.indexOf("](");
         if (position2 != -1 ){
           let position3 = zin.indexOf(")");
@@ -44,7 +44,7 @@ function parseMD(zin) {
       } // endif $[ replace link
       else if (p2 == "$&")
 
-         {  // $&
+         {  // $& dus embed video
             console.log("start iframe");
             let position2 = zin.indexOf("](");
             if (position2 != -1 ){
@@ -64,9 +64,31 @@ function parseMD(zin) {
                 zinUit = zinUit + zin.slice(0,2);
                 zin = zin.slice(2);
             }
-          }  // endif $&  link
+          }  // endif $&  embed video
 
+        else if (p2 == "$!")
 
+           {  // $! dus plaatje invoegen
+              console.log("afbeeldinge");
+              let position2 = zin.indexOf("](");
+              if (position2 != -1 ){
+                let position3 = zin.indexOf(")");
+                if (position3 != -1 && position3 > position2 ){ //ok md replacement!
+                  let mdlabel = zin.slice(2,position2);
+                  let mdurl = zin.slice(position2+2,position3);
+                  zinUit = zinUit + "<img src='" + mdurl+"' alt='"+mdlabel+"'>" ;
+                  zin = zin.slice(position3+1);
+                } else {
+                    console.log("in MD $[ zit ) niet goed");
+                    zinUit = zinUit + zin.slice(0,position2);
+                    zin = zin.slice(position2);
+                }
+              } else {
+                  console.log("in MD $[ zit ]( niet goed");
+                  zinUit = zinUit + zin.slice(0,2);
+                  zin = zin.slice(2);
+              }
+            }  // endif $&  embed video
         else { zinUit = zinUit + "$" ; zin = zin.slice(1);}  //  dollar zonder betekenis eruit
     } // endif $ op eerste positie
 
@@ -100,6 +122,8 @@ function plotDots(json) {
     text = text + "<p>" + parseMD(punt["link"])+ "</p>";
     marker.bindPopup(text);
     }
+
+
   }
 }
 
@@ -108,9 +132,9 @@ function renderLijst(json,wat,optie){  // vul lijst met items op basis Json
   if (optie == "inspiratie") {
   xli.innerHTML = "<H1>Inspiratie</H1><ul id='lijst'></ul>";}
   else if (optie == "snelstudies") {
-    xli.innerHTML = "<H1>Snelstudies</H1><p>Snelstudies geven inzicht in de richtingen die we kunnen gaan. Snelstudies zijn als een fietstocht: Ver vooruitkijken en dichtbij sturen. We schetsen toekomstperspectieven voor transitievraagstukken en brengen die terug naar mogelijke keuzes van overheden in Zuid-Holland die nu al gemaakt kunnen worden. Deze Snelstudies vallen binnen de programma  kennis Zuid-Holland van de provincie Zuid-Holland.</p><ul id='lijst'></ul>";
+    xli.innerHTML = "<H1>Snelstudies</H1><p>Snelstudies geven inzicht in de richtingen die we kunnen gaan. Snelstudies zijn als een fietstocht: Ver vooruitkijken en dichtbij sturen. We schetsen toekomstperspectieven voor transitievraagstukken en brengen die terug naar mogelijke keuzes van overheden in Zuid-Holland die nu al gemaakt kunnen worden. Deze Snelstudies vallen binnen <a href='https://www.zuid-holland.nl/overons/kennis-zuid-holland/'>kennis Zuid-Holland</a> van de provincie Zuid-Holland.</p><ul id='lijst'></ul>";
 } else if (wat == null) {
-  xli.innerHTML = "<H1>Plannen in Zuid-Holland</H1> <p>Klik op kaart in het menu voor een grafische weergave. (Er is begonnen met Midden Holland + Alblasserwaard. De kaart+lijst vult zich regio voor regio verder in.)</p><ul id='lijst'></ul>";
+  xli.innerHTML = "<H1>Plannen in Zuid-Holland</H1> <p>Klik op kaart in het menu voor een grafische weergave.</p><p><a href='plannen.html?id=rijnland'>selecteer Holland Rijnland</a> ; <a href='plannen.html?id=midden'>selecteer Midden Holland </a></ol><ul id='lijst'></p>";
 
 } else {
   xli.innerHTML = "<ul id='lijst'></ul>";
@@ -122,7 +146,7 @@ function renderLijst(json,wat,optie){  // vul lijst met items op basis Json
 
   for(itemi in json) {
     punt = json[itemi];
-    if (wat == null || wat == punt["id"]) {
+    if (wat == null || wat == punt["id"] || wat ==punt["regio"]) {
       let li = document.createElement('li');
       PLijst.appendChild(li);
       let task = document.createElement('span');

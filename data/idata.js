@@ -1,5 +1,11 @@
 var inspiratieData = [
 
+  {"id":"10",
+   "titel":"Leidraad gemeentelijk beleid deelmobiliteit CROW"  ,
+   "link" :"$[Leidraad gemeentelijk beleid deelmobiliteit](https://fietsberaad.nl/Kennisbank/Fietsberaadpublicatie-37-Leidraad-gemeentelijk-bel?URLReferrer=searchtext%3dleidraad%26sort%3d0%26aliaspath%3d%252fKennisbank)",
+   "kort": "De Leidraad gaat over alle vormen van deelmobiliteit met lichte voertuigen. Fietsen, elektrische fietsen, snorfietsen, bromfietsen en bakfietsen",
+    "lang" : "."},
+
 
   {"id":"9",
    "titel":"Samen houden we Zuid-Holland in beweging (Zuid-Holland Bereikbaar)"  ,
