@@ -11,7 +11,8 @@ const Schaalroodgroen = ["#a50026","#d73027","#f46d43","#fdae61","#fee08b","#fff
     intwaarde= Math.min(Math.floor(waarde),9);
     vulkleur = Schaalroodgroen[intwaarde];
     var polyg = [ [item[1],item[2]], [item[1],item[4]], [item[3],item[4]],  [item[3],item[2]] ];
-    var prop = {fillColor: vulkleur ,fillOpacity: 0.7,stroke : false,}
+    var prop = {fillColor: vulkleur ,fillOpacity: 0.1,stroke : false,}
+    if (intwaarde <0 ) {prop = {fillColor: "#FFFFFF" ,fillOpacity: 0.3,stroke : false,}}
     var poptxt =  "<p>" + waarde + "</p>" + item[0] +  "<p>" + item[7] + " ; "+ item[8] + " ; " + "</p>" ;
     //console.log(polyg);
     marker = L.polygon(polyg,prop).addTo(map).bindPopup(poptxt);
@@ -25,17 +26,17 @@ const Schaalroodgroen = ["#a50026","#d73027","#f46d43","#fdae61","#fee08b","#fff
   for(itemi in json) {
     item = json[itemi];
     //console.log(item);
-    waarde = item[kolom+8];
+    waarde = item[kolom+8]; // kolom 0 = cel ID, kolom 1 t/m 8 cooordinaat
     intwaarde= Math.min(Math.floor(waarde),9);
     vulkleur = Schaalroodgroen[intwaarde];
     var polyg = [ [item[1],item[2]], [item[3],item[4]], [item[5],item[6]],  [item[7],item[8]] ];
     //console.log(polyg);
     var prop = {fillColor: vulkleur ,fillOpacity: 0.7,stroke : false,}
-    var poptxt =  "<p>" + waarde + "</p><ul>" ;
-    for (tel in labels) {
-      poptxt = poptxt + "<li>" + labels[tel] + ": </li>"
+    var poptxt =  "<p><b>Score: " + waarde + "</b> (kleurcode: "+intwaarde+")</p><ul>" ;
+    for (let tel = 0; tel < 7; tel++) {
+      poptxt = poptxt + "<li>" + labels[tel] + ": " + item[9+tel] +"</li>"
     }
-    poptxt = poptxt + "</ul>"
+    poptxt = poptxt + "</ul> Tegel: " + item[0]
     //console.log(polyg);
     marker = L.polygon(polyg,prop).addTo(map).bindPopup(poptxt);
   }

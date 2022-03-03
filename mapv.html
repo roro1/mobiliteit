@@ -42,10 +42,10 @@
    </div>
 
     <div id = "map" style = "width: 100%; height: 650px"></div>
-    <script src="data/vkdata2.js"></script>
+    <script src="data/vkdata4.js"></script>
     <script src="scr/vierkant.js"></script>
     <script>
-      const labels= ["Gemiddelde","Onderwijs","Gezondheidszorg","Winkels", "Horeca", "Cultuur+Recreatie" ]
+      const labels= ["Totaal","Winkels","Onderwijs","Zorg","Sport&Cultuur", "Horeca", "Groen" ]
       const urlParams = new URLSearchParams(window.location.search);
       const par = urlParams.get('par')
       console.log(par);
@@ -55,7 +55,7 @@
       map.addLayer(layer);
       kolom = 1;
       vulling =1;
-      plotVierkanten4(vkdata2,kolom,vulling);
+      plotVierkanten4(vkdata,kolom,vulling);
 
 
 
