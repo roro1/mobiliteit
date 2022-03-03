@@ -36,7 +36,7 @@ const Schaalroodgroen = ["#a50026","#d73027","#f46d43","#fdae61","#fee08b","#fff
     for (let tel = 0; tel < 7; tel++) {
       poptxt = poptxt + "<li>" + labels[tel] + ": " + item[9+tel] +"</li>"
     }
-    poptxt = poptxt + "</ul> Tegel: " + item[0]
+    poptxt = poptxt + "</ul> Tegel : " + item[0]
     //console.log(polyg);
     marker = L.polygon(polyg,prop).addTo(map).bindPopup(poptxt);
   }
