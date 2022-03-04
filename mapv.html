@@ -17,31 +17,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
-.topnav  {
-  background-image: url("img/PZHlogo253x84.png");
-  background-repeat: no-repeat;
-  background-position:0px -17px;
-   height: 55px;
-   align-items: center;
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  html,
+  body,
+  #map {
+    height: 100%;
+    width: 100%;
+  }
 
-}
+  /*Legend specific*/
+  .legend {
+    padding: 6px 8px;
+    font: 12px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);*/
+    /*border-radius: 5px;*/
+    color: #555;
+  }
+  .legend h4 {
+    text-align: center;
+    font-size: 16px;
+    margin: 0px 0px 8px;
+    color: #777;
+  }
+
+  .legend span {
+    position: relative;
+    bottom: 3px;
+  }
+
+  .legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin: 0 8px 0 0;
+    opacity: 0.7;
+  }
+
+  .legend i.icon {
+    background-size: 18px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+
 </style>
 
  </head>
 
 
  <body>
-   <div class="topnav" id="myTopnav">
 
-     <a href="toelichting.html" target="_blank">Toelichting</a>
-     <a href="mapOV.html">Nabij OV</a>
-     <a href="mapv.html">Geografische data</a>
-     <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
-       <span class="material-icons">dehaze</span>
-     </a>
-   </div>
+    <div id="map"></div>
 
-    <div id = "map" style = "width: 100%; height: 650px"></div>
     <script src="data/vkdata4.js"></script>
     <script src="scr/vierkant.js"></script>
     <script>
@@ -53,6 +83,33 @@
       var map = new L.map('map', mapOptions);         // Creating a map object
       var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{ attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> '});         // Creating a Layer object
       map.addLayer(layer);
+
+      /*Legend specific*/
+//      var legend = L.control({ position: "bottomleft" });
+var legend = L.control({ position: "topright" });
+
+      legend.onAdd = function(map) {
+        var div = L.DomUtil.create("div", "legend");
+        div.innerHTML += "<h4>Zuid-Holland</h4>";
+  //      div.innerHTML += '<i style="background: #477AC2"></i><span>Water</span><br>';
+  //      div.innerHTML += '<i style="background: #448D40"></i><span>Forest</span><br>';
+    //    div.innerHTML += '<i style="background: #E6E696"></i><span>Land</span><br>';
+  //      div.innerHTML += '<i style="background: #E8E6E0"></i><span>Residential</span><br>';
+        div.innerHTML += '<a href="mapvf2.html?" target="_blank">Totaal score</a><br>';
+        div.innerHTML += '<a href="mapvf2.html?par=2" target="_blank">Winkels</a><br>';
+        div.innerHTML += '<a href="mapvf2.html?par=3" target="_blank">Onderwijs</a><br>';
+        div.innerHTML += '<a href="mapvf2.html?par=4" target="_blank">Zorg</a><br>';
+        div.innerHTML += '<a href="mapvf2.html?par=5" target="_blank">Sport&C</a><br>';
+        div.innerHTML += '<a href="mapvf2.html?par=6" target="_blank">Horeca</a><br>';
+        div.innerHTML += '<a href="mapvf2.html?par=7" target="_blank">Groen</a><br>';
+
+        div.innerHTML += '<a href="toelichting.html" target="_blank">Toelichting</a><br>';
+
+        return div;
+      };
+
+      legend.addTo(map);
+
       if (par == null) {kolom = 1; } else { kolom = parseInt(par) }
       vulling =1;
       plotVierkanten4(vkdata,kolom,vulling);
