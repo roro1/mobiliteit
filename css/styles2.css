@@ -1,0 +1,212 @@
+* { box-sizing: border-box;}
+
+#pzhBlauw {color:#281f6b;}
+#pzhGeel {color:#efcc36;}
+#pzhRood {color:#d11f3d;}
+#p4 {background-color:#ffff00;}
+#p5 {background-color:#ff00ff;}
+
+body{
+    background: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+      margin: 0;
+}
+
+h1{
+    font-size: 2.5em;
+    line-height: 1.35em;
+}
+h3{
+ color : #281f6b;
+}
+
+.content{
+    background: #fff;
+    padding-top: 25px;
+
+    max-width: 866px;
+    margin: auto;
+    border-radius: 10px 100px 10px 10px;
+}
+
+
+
+
+
+.knop{
+    align-self: right;
+    margin-left: 0;
+    margin-right: 15;
+    float:right;
+    font-size: 1,5em;
+
+}
+
+
+
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* column */
+.b33 {
+  flex: 33%;
+  background-color: #f0f2f4;
+  padding: 20px;
+}
+
+.b50 {
+  flex: 50%;
+  padding: 20px;
+}
+
+/* Main column */
+.b66 {
+  flex: 66%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.activeCol, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.activeCol:after {
+  contCol: "\2212";
+}
+
+.contCol {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+/* dit is voor html only colaps */
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: Black;
+  text-align: center;
+  padding: 0px 16px 16px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  color: Red;
+}
+
+.topnav a.active {
+  background-color: Red;
+  color: Black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: lightblue;
+    margin: 0px;
+    border : 0px;
+    padding: 0px;
+
+  }
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .content{
+      border-radius: 0px;
+      padding-top: 10px;
+
+  }
+
+
+}

@@ -148,7 +148,7 @@ function renderCont(json,wat,optie){  // vul content met items op basis Json
 
     xblok.setAttribute("class", "b50");    }
 
-    xblok.innerHTML = zin;
+    xblok.innerHTML = parseMD(zin);
     xrow.appendChild(xblok); //append child in content blok
 
   }

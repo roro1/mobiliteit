@@ -1,11 +1,15 @@
 var contData = [
 
-"$6<h2>1. Zuid-Holland in transitie</h2><p>bla bla bla fhsjkfdh sdjhdfjk afjhdhfjsd</p><details><summary>I have keys but no doors. I have space but no room. You can enter but can’t leave. What am I?</summary>A keyboard.</details>"  ,
+"$6<h1>Zuid-Holland in transitie</h1><p>Er komen grote veranderingen op ons af. Oók in Zuid-Holland. In deze online publicatie/Snelstudie {we zoeken nog hipper woord} beschrijven we de uitdagingen en problemen die we zien. We komen ook met elementen die bij zouden kunnen dragen aan een oplossingen. We kunnen niet in een glazen bol kijken. Het gaat niet om vaststaand beleid van de provincie Zuid-Holland, maar om denk-lijnen, inspiratie en ideeën om samen op verder te borduren. En waar we graag met iedereen in Zuid-Holland over in gesprek gaan. Op weg naar een Zuid-Holland dat goed bereikbaar is en fijn is om in te leven. Nu en in de toekomst.</p><details><summary>Contact met de provincie Zuid-Holland?</summary>......</details>"  ,
 
 
-"$3<h2>2. About Me</h2><h5>Photo of me:</h5>",
-"$3<h2>3. Kol rechts</h2> <h5>Title description, Dec 7, 2017</h5>",
-"$6<h2>4 Kol </div><div class='b34'><h2>",
+"$3<h2>Inhoud</h2><ol><li>Aanleiding en problemen</li><li>Oplossingsrichtingen</li><li>Drie (voorbeeld)situaties</li><li>Conclusies en aanbevelingen</li></ol>",
+"$3<img src='https://www.europoortkringen.nl/wp-content/uploads/2014/01/Shell-Pernis.png' width='100%' height='auto'>",
+"$6<h2>Afhankelijkheid van fossiele brandstoffen</h2> <p>Om met het meest actuele reden voor een transitie te beginnen: De enorme afhankelijkheid van fossiele brandstoffen (olie, benzine, gas) maakt ons kwetsbaar voor de grillen van buitenlandse regiems. {{verwijzen LINKS} afhankelijkheid Russisch gas en olie.</p>",
+"$3<img src='https://images0.persgroep.net/rcs/ROk4o885KNFBqCyJcWzTMzic3Ag/diocontent/66626232/_fill/1600/876/?appId=21791a8992982cd8da851550a453bd7f&quality=0.9' width='100%' height='auto'>",
+
+"$6<h2>Veel nieuwe woningen nodig in Zuid-Holland </h2>{Uitklapding?}",
+
 "$35. Kol ",
 
 
