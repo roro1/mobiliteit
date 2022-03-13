@@ -6,14 +6,15 @@
 #p4 {background-color:#ffff00;}
 #p5 {background-color:#ff00ff;}
 
-
 body{
     background: white;
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 25px;
+      margin: 0;
 }
+
 h1{
     font-size: 2.5em;
     line-height: 1.35em;
@@ -69,41 +70,105 @@ li span{
 
 }
 
-.flex-container {
+
+/* Column container */
+.row {
   display: flex;
-  flex-flow: row wrap;
   flex-wrap: wrap;
-  text-align: left;
-
 }
 
-.flex-item-left {
-  background-color: #f1f1f1;
-  padding: 10px;
-  margin-top: 10px;
+/* Create two unequal columns that sits next to each other */
+/* column */
+.b33 {
+  flex: 33%;
+  background-color: #f0f2f4;
+  padding: 20px;
+}
+
+.b50 {
   flex: 50%;
+  padding: 20px;
 }
 
-.flex-item-right {
-  background-color: dodgerblue;
-  padding: 10px;
-  margin-top: 10px;
-  flex: 50%;
+/* Main column */
+.b66 {
+  flex: 66%;
+  background-color: white;
+  padding: 20px;
 }
 
-.pictLeft {
-  float: left;
-  width:300px;
-  height:200px;
-  margin-right:15px;"
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
 }
 
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 800px) {
-  .flex-item-right, .flex-item-left {
-    flex: 100%;
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
   }
 }
+
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.activeCol, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.activeCol:after {
+  contCol: "\2212";
+}
+
+.contCol {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+/* dit is voor html only colaps */
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
 
 
 
