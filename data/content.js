@@ -13,7 +13,7 @@ var contData = [
 
 
 
-"$6<H2>Samenvatting (uitdagingen)</h2><p>Zuid-Holland staat voor grote veranderingen, net als de rest van Nederland en gorte delen van de wereld. Daar zijn tal van redenen voor. Gelukkig zijn er ook Oplossingsrichtingen. Een aantal daarvan bespreken we in het volgende hoofdstuk. Denk je met ons mee?</p>",
-"$3...."
+"$6<H2>Samenvatting (uitdagingen)</h2><p>Zuid-Holland staat voor grote veranderingen, net als de rest van Nederland en gorte delen van de wereld. Daar zijn tal van redenen voor. Gelukkig zijn er ook Oplossingsrichtingen. Een aantal daarvan bespreken we in het volgende hoofdstuk. Denk je met ons mee? Ter inspiratie hiernaast een filmpje van de Gemeente Den Haag over mobiliteitstransitie.</p>",
+"$v<iframe width='100%' height='230' src='https://www.youtube.com/embed/M0RlJF08xGo?start=12' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
 
 ];

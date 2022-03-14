@@ -77,11 +77,15 @@ h1,h3,h2{
   background-color: #f0f2f4;
   padding: 3px;
 }
+
 .bb { flex: 66%;
   background-color: #f0f2f4;
   padding: 3px;
 }
-
+.bv { flex: 33%;
+  background-color: #f0f2f4;
+  padding: 3px;
+}
 
 /* Fake image, just for this example */
 .fakeimg {
