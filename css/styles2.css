@@ -72,6 +72,7 @@ h1,h3,h2{
   flex: 66%;
   background-color: white;
   padding: 20px;
+  border-bottom: thin solid #f0f2f4;
 }
 .ba { flex: 33%;
   background-color: #f0f2f4;
