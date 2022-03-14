@@ -143,7 +143,12 @@ function renderCont(json,wat,optie){  // vul content met items op basis Json
     } else if (p2=="$6") {
       xblok.setAttribute("class", "b66");
       zin = zin.slice(2);
-
+    } else if (p2=="$a") {
+      xblok.setAttribute("class", "ba");
+      zin = zin.slice(2);
+    } else if (p2=="$A") {
+      xblok.setAttribute("class", "bb");
+      zin = zin.slice(2);
     } else {
 
     xblok.setAttribute("class", "b50");    }
