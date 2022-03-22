@@ -1,5 +1,93 @@
 var mapData = [
 
+  {"id":"30",
+   "titel":"Metropoolregio Rotterdam Den Haag"  ,
+   "regio":"mrdh",
+   "link" :"$[MRDH website](https://mrdh.nl/) ; ",
+   "kort": "Met 23 gemeenten, 2,4 miljoen mensen, 1,2 miljoen banen en een bijdrage van 15% aan het BNP is de metropoolregio een regio die er toe doet. Het Rijk gaf de Metropoolregio Rotterdam Den Haag de status van vervoerregio en daarmee ook wettelijke taken rond verkeer en vervoer. De Metropoolregio is bovendien directe ontvanger van de rijksmiddelen voor regionaal verkeer en vervoer. Om die reden is de Metropoolregio Rotterdam Den Haag ook opdrachtgever van het regionale en stedelijke openbaar vervoer in de 23 gemeenten. "
+  },
+
+  {"id":"31",
+   "titel":"Trace A16 (A13) Rotterdam"  ,
+   "regio":"mrdh",
+   "link" :"$[a16rotterdam.nl](https://www.a16rotterdam.nl/default.aspx) ",
+   "kort": "A16 Rotterdam: een 11 kilometer lange rijksweg tussen de A16/A20 bij het Terbregseplein en de A13 bij Rotterdam The Hague Airport.",
+    "geo" :"polylijn", "polylijn": [[51.953858,4.417305],[51.967115,4.454384],[51.972897,4.482994],[51.972051,4.501305],[51.962039,4.519615],[51.953294,4.529686]]
+  },
+
+  {"id":"32",
+   "titel":"Blankenburgverbinding kwaliteitsimpuls"  ,
+   "regio":"mrdh",
+   "link" :"$[blankenburgverbinding.nl](https://www.blankenburgverbinding.nl/default.aspx) ",
+   "kort": "De Blankenburgverbinding is een nieuwe snelweg (de A24), die vanaf 2024 de A20 bij Vlaardingen met de A15 bij Rozenburg verbindt. Dit project is met name gericht op de 25 miljoen die is uitgetrokken voor landschappelijke inpassing van de nieuwe verbinding",
+  "geo" :"polylijn", "polylijn": [[51.903754,4.21277],[51.930154,4.257188]]
+  },
+
+  {"id":"33",
+   "titel":"Bleizo west"  ,
+   "regio":"mrdh",
+   "link" :"$[Factsheet Interne PZH link](https://pzh-my.sharepoint.com/:w:/g/personal/ra_haverman_pzh_nl/ERiBzNumBaNMl635WrFPq7YBBuAesmBvFJJ9Sy1QKJ88YQ?e=VwC6Ld) ",
+   "kort": "Er is grote discussie over de invulling van de locatie Bleizo-West, in het verleden aangewezen als bedrijventerrein met opties voor windenergie. Dit terwijl er nu een gemeentelijke wens ligt om hier duizenden woningen te realiseren. Vanuit mobiliteit heeft dit grote gevolgen voor de N209 (en ook N471) en er ligt een directe relatie met het nieuwe station Lansingerland",
+   "lang" : "",
+   "geo": "punt" , "latlon":[4.523004,52.0432]
+  },
+
+  {"id":"34",
+   "titel":"Schie-oevers / N470 Kruithuisweg"  ,
+   "regio":"mrdh",
+   "link" :"$[delft over Schieovers] (https://www.delft.nl/wonen/bouwen/bouwprojecten-de-stad/schieoevers)",
+   "kort": "De gemeente Delft wil grote stedelijke ontwikkelingen rond de Schieoevers realiseren. Deze plannen hebben een directe relatie met de situatie op de provinciale weg N470"
+  },
+
+  {"id":"35",
+   "titel":"A4 Haaglanden"  ,
+   "regio":"mrdh",
+    "link" :"$[projectsite](https://www.a4haaglanden-n14.nl/bibliotheek/overige+projecten/998555.aspx?t=MRT-Verkenning-A4-Passage-en-Poorten-Inprikkers) ",
+     "kort": "In het kader van het MIRT gaat rijkwaterstaat de A4 tussen Den Haag en Rotterdam verbreden. Provincie is betrokken vanuit meekoppelkansen en de effecten op het provinciale netwerk, alsmede is er een directe relatie met het project Wippolderlaan N211",
+"geo" :"polylijn", "polylijn":  [[51.946452,4.355998],[51.988334,4.325317],[52.005526,4.310206],[52.021726,4.318449]]
+    },
+
+    {"id":"36",
+     "titel":"Wippolderlaan N211"  ,
+     "regio":"mrdh",
+     "link" : "$[N211 Wippolderlaan](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/wegverkeer/alle-n-wegen/wegen/n211/n211-wippolderlaan/) ",
+     "kort": "In het kader van het MIRT traject A4 Haaglanden zijn afspraken gemaakt over de verbeteren van de capaciteit op de N211, de zogenaamde Veilingroute"
+    },
+
+
+    {"id":"37",
+     "titel":"N222 rotonde Zwethlaan"  ,
+     "regio":"mrdh",
+     "link" :"$[..](..) ",
+     "kort": "De rotonde Zwethlaan is onderdeel van de zogenaamde veilingroute. Er ligt een wens om deze uit te breiden tot een turbo rotonde om de doorstroming te verbeteren. Inmiddels op dit dossier diverse ontwikkelingen die voortgang onzeker maken ",
+     "geo": "punt" , "latlon":[ 51.995642, 4.26355021]
+    },
+    {"id":"38",
+     "titel":"Fiets en MRDH"  ,
+     "regio":"mrdh",
+     "link" :"$[MRDH fietsroutes]((https://mrdh.nl/fietsroutes)) ",
+     "kort": "De MRDH is primair verantwoordelijk voor de fietsinfrastructuur binnen hun gebied. Zij zijn vanuit die rol gestart met het project metropolitane fietsroutes, waar wij als provincie in meerdere gevallen direct bij betrokken zijn."
+    },
+
+  {"id":"39",
+   "titel":"Provinciale bediencentrale Delft"  ,
+   "regio":"mrdh",
+   "link" :"$[uitvoeringsbesluit](https://www.zuid-holland.nl/@28584/uitvoeringsbesluit-slimme-centrale-delft/) ",
+   "kort": "nieuwe bediencentrale "
+  },
+
+  {"id":"40",
+   "titel":"Kickersbloem"  ,
+   "regio":"mrdh",
+   "link" :"$[Kickersbloem](https://www.kickersbloem3.nl/) ",
+   "kort": ""
+  },
+
+
+
+
+
+
 
   {"id":"20",
    "titel":"Regio Holland Rijnland"  ,
