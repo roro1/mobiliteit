@@ -39,7 +39,7 @@ var mapData = [
    "regio":"mrdh",
    "link" :"$[delft over Schieovers] (https://www.delft.nl/wonen/bouwen/bouwprojecten-de-stad/schieoevers)",
    "kort": "De gemeente Delft wil grote stedelijke ontwikkelingen rond de Schieoevers realiseren. Deze plannen hebben een directe relatie met de situatie op de provinciale weg N470",
-   "geo" :"polygoon","poly": [[51.998921,4.360228],[51.999837,4.36492], [51.982501,4.377337], [, 51.981338,4.370241],[ 51.998921,4.360228]]
+   "geo" :"polygoon","poly": [[51.998921,4.360228],[51.999837,4.36492], [51.982501,4.377337], [ 51.981338,4.370241],[ 51.998921,4.360228]]
   },
 
 
