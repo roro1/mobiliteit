@@ -87,7 +87,6 @@
       /*Legend specific*/
 //      var legend = L.control({ position: "bottomleft" });
 var legend = L.control({ position: "topright" });
-
       legend.onAdd = function(map) {
         var div = L.DomUtil.create("div", "legend");
         div.innerHTML += "<h4>Zuid-Holland</h4>";
@@ -102,11 +101,8 @@ var legend = L.control({ position: "topright" });
         div.innerHTML += '<a href="mapv.html?par=5" target="_blank">Sport&C</a><br>';
         div.innerHTML += '<a href="mapv.html?par=6" target="_blank">Horeca</a><br>';
         div.innerHTML += '<a href="mapv.html?par=7" target="_blank">Groen</a><br>';
+        div.innerHTML += '<a href="mapOV.html" target="_blank">OV</a><br>';
         div.innerHTML += '<a href="toelichting.html" target="_blank">Toelichting</a><br>';
-        div.innerHTML += '<a href="plannen.html" target="_blank">Plannen lijst</a><br>';
-        div.innerHTML += '<a href="index.html">Home</a><br>';
-
-
         return div;
       };
 

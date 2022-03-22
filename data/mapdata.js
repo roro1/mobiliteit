@@ -29,7 +29,7 @@ var mapData = [
    "link" :"$[Factsheet Interne PZH link](https://pzh-my.sharepoint.com/:w:/g/personal/ra_haverman_pzh_nl/ERiBzNumBaNMl635WrFPq7YBBuAesmBvFJJ9Sy1QKJ88YQ?e=VwC6Ld) ",
    "kort": "Er is grote discussie over de invulling van de locatie Bleizo-West, in het verleden aangewezen als bedrijventerrein met opties voor windenergie. Dit terwijl er nu een gemeentelijke wens ligt om hier duizenden woningen te realiseren. Vanuit mobiliteit heeft dit grote gevolgen voor de N209 (en ook N471) en er ligt een directe relatie met het nieuwe station Lansingerland",
    "lang" : "",
-   "geo": "punt" , "latlon":[4.523004,52.0432]
+   "geo": "punt" , "latlon":[52.0432,4.523004]
   },
 
   {"id":"34",
