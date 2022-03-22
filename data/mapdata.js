@@ -12,6 +12,7 @@ var mapData = [
    "regio":"mrdh",
    "link" :"$[a16rotterdam.nl](https://www.a16rotterdam.nl/default.aspx) ",
    "kort": "A16 Rotterdam: een 11 kilometer lange rijksweg tussen de A16/A20 bij het Terbregseplein en de A13 bij Rotterdam The Hague Airport.",
+   "lang" : "In de figuur de aansluiting op de N471 $!](https://www.a16rotterdam.nl/over+het+project/aansluiting+n471/Schermafbeelding%202020-09-09%20om%2013.51.26.png)",
     "geo" :"polylijn", "polylijn": [[51.953858,4.417305],[51.967115,4.454384],[51.972897,4.482994],[51.972051,4.501305],[51.962039,4.519615],[51.953294,4.529686]]
   },
 
@@ -20,6 +21,7 @@ var mapData = [
    "regio":"mrdh",
    "link" :"$[blankenburgverbinding.nl](https://www.blankenburgverbinding.nl/default.aspx) ",
    "kort": "De Blankenburgverbinding is een nieuwe snelweg (de A24), die vanaf 2024 de A20 bij Vlaardingen met de A15 bij Rozenburg verbindt. Dit project is met name gericht op de 25 miljoen die is uitgetrokken voor landschappelijke inpassing van de nieuwe verbinding",
+"lang" : "$!](https://www.blankenburgverbinding.nl/media/sectionimages/21c420d3-cfa7-4efe-8a37-10200a979f78/2f28c379-df7d-43ae-aad6-99bcda3ee233/Overzichtkaart%202019%20kaal.jpg?Width=900&Height=-1)",
   "geo" :"polylijn", "polylijn": [[51.903754,4.21277],[51.930154,4.257188]]
   },
 
@@ -36,8 +38,10 @@ var mapData = [
    "titel":"Schie-oevers / N470 Kruithuisweg"  ,
    "regio":"mrdh",
    "link" :"$[delft over Schieovers] (https://www.delft.nl/wonen/bouwen/bouwprojecten-de-stad/schieoevers)",
-   "kort": "De gemeente Delft wil grote stedelijke ontwikkelingen rond de Schieoevers realiseren. Deze plannen hebben een directe relatie met de situatie op de provinciale weg N470"
+   "kort": "De gemeente Delft wil grote stedelijke ontwikkelingen rond de Schieoevers realiseren. Deze plannen hebben een directe relatie met de situatie op de provinciale weg N470",
+   "geo" :"polygoon","poly": [[51.998921,4.360228],[51.999837,4.36492], [51.982501,4.377337], [, 51.981338,4.370241],[ 51.998921,4.360228]]
   },
+
 
   {"id":"35",
    "titel":"A4 Haaglanden"  ,
@@ -174,14 +178,14 @@ var mapData = [
    "link" :"$[MIRT A4-Burgerveen-N14](https://www.a4burgerveen-n14.nl/default.aspx)",
    "kort": "..."
   },
-  {"id":"30",
+  {"id":"2A",
    "titel":"Concessie Zuid-Holland Noord",
    "regio":"rijnland",
    "link" :"$[Concessie Zuid-Holland Noord](Concessie Zuid-Holland Noord)",
    "kort": "..."
   },
 
-  {"id":"31",
+  {"id":"2B",
    "titel":"Valkenhorst  HOV-halte + Woningbouw + Unmanned Valley",
    "regio":"midden",
    "link" :"$[Valkenhorst](https://www.zuid-holland.nl/actueel/nieuws/december-2021/ontwikkeling-valkenhorst-forse-stap-dichterbij/)",
