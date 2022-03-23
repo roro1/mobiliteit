@@ -37,14 +37,14 @@ var mapData = [
   {"id":"34",
    "titel":"Schie-oevers / N470 Kruithuisweg"  ,
    "regio":"mrdh",
-   "link" :"$[delft over Schieovers] (https://www.delft.nl/wonen/bouwen/bouwprojecten-de-stad/schieoevers)",
+   "link" :"$[delft over Schieovers](https://www.delft.nl/wonen/bouwen/bouwprojecten-de-stad/schieoevers) , $[Site Schieoevers](https://schieoeversnoord.nl/)",
    "kort": "De gemeente Delft wil grote stedelijke ontwikkelingen rond de Schieoevers realiseren. Deze plannen hebben een directe relatie met de situatie op de provinciale weg N470",
    "geo" :"polygoon","poly": [[51.998921,4.360228],[51.999837,4.36492], [51.982501,4.377337], [ 51.981338,4.370241],[ 51.998921,4.360228]]
   },
 
 
   {"id":"35",
-   "titel":"A4 Haaglanden"  ,
+   "titel":"A4 Haaglanden Passage poorten en inprikkers"  ,
    "regio":"mrdh",
     "link" :"$[projectsite](https://www.a4haaglanden-n14.nl/bibliotheek/overige+projecten/998555.aspx?t=MRT-Verkenning-A4-Passage-en-Poorten-Inprikkers) ",
      "kort": "In het kader van het MIRT gaat rijkwaterstaat de A4 tussen Den Haag en Rotterdam verbreden. Provincie is betrokken vanuit meekoppelkansen en de effecten op het provinciale netwerk, alsmede is er een directe relatie met het project Wippolderlaan N211",
