@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+ <head>
   <meta name="robots" content="noindex">
   <meta charset="UTF-8">
   <title>Zuid-Holland plannenkaart</title>
@@ -9,63 +9,12 @@
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
     crossorigin=""/>
     <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
       crossorigin=""></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mapstyles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <style>
-  body {
-    padding: 0;
-    margin: 0;
-  }
-  html,
-  body,
-  #map {
-    height: 100%;
-    width: 100%;
-  }
-
-  /*Legend specific*/
-  .legend {
-    padding: 6px 8px;
-    font: 12px Arial, Helvetica, sans-serif;
-    background: white;
-    background: rgba(255, 255, 255, 0.8);
-    /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);*/
-    /*border-radius: 5px;*/
-    color: #555;
-  }
-  .legend h4 {
-    text-align: center;
-    font-size: 16px;
-    margin: 0px 0px 8px;
-    color: #777;
-  }
-
-  .legend span {
-    position: relative;
-    bottom: 3px;
-  }
-
-  .legend i {
-    width: 18px;
-    height: 18px;
-    float: left;
-    margin: 0 8px 0 0;
-    opacity: 0.7;
-  }
-
-  .legend i.icon {
-    background-size: 18px;
-    background-color: rgba(255, 255, 255, 1);
-  }
-
-
-</style>
-
  </head>
 
  <body>
@@ -75,8 +24,6 @@
     <script src="scr/app.js"></script>
 
     <script>
-
-
        // Creating map options
        var mapOptions = {
           center: [51.9, 4.584],
@@ -111,5 +58,4 @@
 
     </script>
  </body>
-
 </html>

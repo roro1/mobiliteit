@@ -20,7 +20,7 @@
            src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js">
        </script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mapstyles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
         body {
@@ -54,19 +54,7 @@
  </head>
 
  <body>
-   <div class="logobar">
-     <img src="img/PZHlogo253x84.png" alt="Provincie Zuid-Holland logo" width="253" height="84">
-   </div>
-   <div class="topnav" id="myTopnav">
-     <a href="https://pzh.maps.arcgis.com/apps/webappviewer/index.html?id=74e23812a85e40b9be7d14e731ad0e4b" target="_blank">(Kaart DBI)</a>
-     <a href="plannen.html">Plannen</a>
-     <a href="map.html">Kaart</a>
-     <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
-       <span class="material-icons">dehaze</span>
-     </a>
-   </div>
-
-    <div id = "map" style = "width: 80%; height: 600px"></div>
+    <div id = "map"></div>
     <div id='delete'>Delete Features</div>
   <a href='#' id='export'>Export Features</a>
     <script src="data/mapdata.js"></script>
