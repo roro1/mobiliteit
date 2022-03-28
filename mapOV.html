@@ -61,7 +61,7 @@
 
        function style_1(feature) {
            // const SchaalRood = ["#ffffff", "#ffbaba", "#ff7b7b","#ff5252","#ff0000","#a70000"];
-           const SchaalRood = ["#ffffff", "#fee391", "#fec44f","#fe9929","#d95f0e","#993404"];
+           const SchaalRood = ["#ffffff", "#ffffe5", "#fee391","#fec44f","#addd8e","#41ab5d"];
            let vulkleur = SchaalRood[0];
            switch(String(feature.properties['openov_cat'])) {
                case '1.OV = basis-OV op max 500m':
@@ -76,7 +76,7 @@
                   vulkleur =SchaalRood[5]; break;
            }
            return {
-            fillOpacity: 0.7,
+            fillOpacity: 0.5,
             fillColor: vulkleur,
             stroke : false, }
        }
