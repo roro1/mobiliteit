@@ -24,7 +24,9 @@ const Schaalgroengeel = ["#ffffe5","#fff7bc","#fee391","#fec44f","#fe9929","#d9f
 function plotVierkanten4(json,kolom,vulling) {
 // voorbeeld item in json: ["E0930N4825",...
 const Schaalroodgroen = ["#a50026","#d73027","#f46d43","#fdae61","#fee08b","#ffffbf","#d9ef8b","#a6d96a","#66bd63","#1a9850"]; // bron: https://colorbrewer2.org/#type=diverging&scheme=RdYlGn&n=9 met 1 rood toegevoegd
-const Schaalgroengeel = ["#ffffe5","#ffffe5","#ffffe5","#fff7bc","#fee391","#fec44f","#d9f0a3","#74c476","#41ab5d","#238443"]; // bron: https://colorbrewer2.org/#type=sequential&scheme=YlOrBr&n=9   https://colorbrewer2.org/#type=sequential&scheme=Greens&n=9
+const Schaalgroengeel = ['#ffffe5','#ffffe5','#f7fcb9','#d9f0a3','#addd8e','#78c679','#41ab5d','#238443','#006837','#004529'];
+
+//["#ffffe5","#ffffe5","#ffffe5","#fff7bc","#fee391","#fec44f","#d9f0a3","#74c476","#41ab5d","#238443"]; // bron: https://colorbrewer2.org/#type=sequential&scheme=YlOrBr&n=9   https://colorbrewer2.org/#type=sequential&scheme=Greens&n=9
 
 //const Schaalgroengeel = ["#ffffe5","#ffffe5","#fff7bc","#fee391","#fec44f","#d9f0a3","#a1d99b","#74c476","#41ab5d","#238443"]; // bron: https://colorbrewer2.org/#type=sequential&scheme=YlOrBr&n=9   https://colorbrewer2.org/#type=sequential&scheme=Greens&n=9
 
@@ -37,7 +39,7 @@ const Schaalgroengeel = ["#ffffe5","#ffffe5","#ffffe5","#fff7bc","#fee391","#fec
     var polyg = [ [item[1],item[2]], [item[3],item[4]], [item[5],item[6]],  [item[7],item[8]] ];
     //console.log(polyg);
     //var prop = {fillColor: vulkleur ,fillOpacity: 0.5,stroke : false,}
-    if (intwaarde >3 ) { var prop ={fillColor: vulkleur ,fillOpacity: 0.5,stroke : false,}}
+    if (intwaarde >2 ) { var prop ={fillColor: vulkleur ,fillOpacity: 0.5,stroke : false,}}
       else
     { var prop = {fillColor: vulkleur ,fillOpacity: 0.1,stroke : false,}}
 
