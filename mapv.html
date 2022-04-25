@@ -42,7 +42,6 @@
       map.addLayer(layer);
 
       /*Legend specific*/
-
       var legendHTML = '<H4><img src="img/favicon.png"style="float:left;">Nabijheid '
       legendHTML += labelK[kolom-1];
       legendHTML +='</H4><details open><summary>klapin/meer</summary>Deze kaarten horen bij de Snelstudie de Ideale woonwijk die gaat over nabijheid van voorzieningen en OV. Klik in de kaart om de scores van een tegel (van 500 x 500 meter) te zien. Er is een kaart met een totaalscore voor voorzieningen zoals die ook in het rapport is afgedrukt. En er zijn kaarten per deelaspect. De score voor voorzieningen loopt van 1(slecht) tot 9(uitstekend), voor OV loopt de schaal andersom: van 1 (primair IC station binnen 2,5km) tot 6 (laagste klasse). Tevens is het aantal inwoners, woningen en banen per tegel vermeld.<BR>';
@@ -80,10 +79,8 @@
         div.innerHTML += legendHTML;
         div.style.maxWidth = "30%";
         div.style.minWidth = "200px";
-
         return div;
       };
-
       legend.addTo(map);
 
       vulling =1;

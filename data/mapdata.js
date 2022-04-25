@@ -9,6 +9,7 @@ var mapData = [
 
   {"id":"31",
    "titel":"Trace A16 (A13) Rotterdam"  ,
+   "type" :"weg",
    "regio":"mrdh",
    "link" :"$[a16rotterdam.nl](https://www.a16rotterdam.nl/default.aspx) ",
    "kort": "A16 Rotterdam: een 11 kilometer lange rijksweg tussen de A16/A20 bij het Terbregseplein en de A13 bij Rotterdam The Hague Airport.",
@@ -19,6 +20,7 @@ var mapData = [
   {"id":"32",
    "titel":"Blankenburgverbinding kwaliteitsimpuls"  ,
    "regio":"mrdh",
+   "type" :"weg",
    "link" :"$[blankenburgverbinding.nl](https://www.blankenburgverbinding.nl/default.aspx) ",
    "kort": "De Blankenburgverbinding is een nieuwe snelweg (de A24), die vanaf 2024 de A20 bij Vlaardingen met de A15 bij Rozenburg verbindt. Dit project is met name gericht op de 25 miljoen die is uitgetrokken voor landschappelijke inpassing van de nieuwe verbinding",
 "lang" : "$!](https://www.blankenburgverbinding.nl/media/sectionimages/21c420d3-cfa7-4efe-8a37-10200a979f78/2f28c379-df7d-43ae-aad6-99bcda3ee233/Overzichtkaart%202019%20kaal.jpg?Width=900&Height=-1)",
@@ -37,6 +39,7 @@ var mapData = [
   {"id":"34",
    "titel":"Schie-oevers / N470 Kruithuisweg"  ,
    "regio":"mrdh",
+   "type" :"wonen",
    "link" :"$[delft over Schieovers](https://www.delft.nl/wonen/bouwen/bouwprojecten-de-stad/schieoevers) , $[Site Schieoevers](https://schieoeversnoord.nl/)",
    "kort": "De gemeente Delft wil grote stedelijke ontwikkelingen rond de Schieoevers realiseren. Deze plannen hebben een directe relatie met de situatie op de provinciale weg N470",
    "geo" :"polygoon","poly": [[51.998921,4.360228],[51.999837,4.36492], [51.982501,4.377337], [ 51.981338,4.370241],[ 51.998921,4.360228]]
@@ -46,6 +49,7 @@ var mapData = [
   {"id":"35",
    "titel":"A4 Haaglanden Passage poorten en inprikkers"  ,
    "regio":"mrdh",
+   "type" :"weg",
     "link" :"$[projectsite](https://www.a4haaglanden-n14.nl/bibliotheek/overige+projecten/998555.aspx?t=MRT-Verkenning-A4-Passage-en-Poorten-Inprikkers) ",
      "kort": "In het kader van het MIRT gaat rijkwaterstaat de A4 tussen Den Haag en Rotterdam verbreden. Provincie is betrokken vanuit meekoppelkansen en de effecten op het provinciale netwerk, alsmede is er een directe relatie met het project Wippolderlaan N211",
 "geo" :"polylijn", "polylijn":  [[51.946452,4.355998],[51.988334,4.325317],[52.005526,4.310206],[52.021726,4.318449]]
@@ -53,6 +57,7 @@ var mapData = [
 
     {"id":"36",
      "titel":"Wippolderlaan N211"  ,
+     "type" :"weg",
      "regio":"mrdh",
      "link" : "$[N211 Wippolderlaan](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/wegverkeer/alle-n-wegen/wegen/n211/n211-wippolderlaan/) ",
      "kort": "In het kader van het MIRT traject A4 Haaglanden zijn afspraken gemaakt over de verbeteren van de capaciteit op de N211, de zogenaamde Veilingroute"
@@ -61,6 +66,7 @@ var mapData = [
 
     {"id":"37",
      "titel":"N222 rotonde Zwethlaan"  ,
+     "type" :"weg",
      "regio":"mrdh",
      "link" :"$[..](..) ",
      "kort": "De rotonde Zwethlaan is onderdeel van de zogenaamde veilingroute. Er ligt een wens om deze uit te breiden tot een turbo rotonde om de doorstroming te verbeteren. Inmiddels op dit dossier diverse ontwikkelingen die voortgang onzeker maken ",
@@ -104,6 +110,7 @@ var mapData = [
   {"id":"21",
    "titel":"Rijnlandroute",
    "regio":"rijnland",
+   "type" :"weg",
    "geo" :"polylijn", "polylijn": [[52.122036,4.477446],[52.152942,4.43852],[52.166702,4.451113],[52.187054,4.416309]],
    "link" :"$[Rijnland route projectsite](https://rijnlandroute.nl/)",
        "kort": "De RijnlandRoute is een nieuwe wegverbinding tussen Katwijk, via de A44, en de A4 bij Leiden. Zo komt er een nieuwe weg met een geboorde tunnel, de N434, en worden delen van de N206 in Leiden en Katwijk aangepast en vernieuwd. In de toekomst kan het verkeer in de regio Holland Rijnland dan beter doorrijden. Twee van de drie projecten van de RijnlandRoute zijn inmiddels in uitvoering. Het project N434/A44/A4, waarvan de geboorde tunnel onderdeel uitmaakt, wordt uitgevoerd door aannemerscombinatie Comol5, het project N206 Tjalmaweg door Boskalis. Het derde project van de RijnlandRoute, de N206 Europaweg, is nog in voorbereiding. De huidige planning is dat twee van de drie projecten van de RijnlandRoute (N434/A44/A4 en N206 Tjalmaweg) medio 2023 klaar zijn. Voor het project N206 Europaweg is de verwachting dat deze eind 2025 klaar is, afhankelijk van de planning van de toekomstige aannemer. ",
@@ -112,6 +119,7 @@ var mapData = [
 
   {"id":"22",
    "titel":"HOV Buslijn Leiden-Katwijk-Noordwijk",
+   "type" :"OV",
    "geo" :"polylijn", "polylijn" : [[52.164526,4.483051],[52.166492,4.454657],[52.188527,4.417562],[52.19905,4.420081],[52.206905,4.398786],[52.196805,4.386421],[52.210412,4.396954],[52.198489,4.424432],[52.213778,4.443895],[52.224575,4.425119]],
    "link" :"$[HOV Buslijn Leiden-Katwijk-Noordwijk](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/openbaar-vervoer/r-net/buslijn-leiden-katwijk-noordwijk/)",
    "kort": "Wie met de bus van Leiden naar Katwijk wil, kan sinds zondag 9 mei 2021 reizen met een van de nieuwe R-netlijnen. Met de realisatie van de nieuwe R-net routes vergroot de provincie Zuid-Holland de bereikbaarheid tussen Leiden en Katwijk en Leiden en ESA Estec (Noordwijk). Iedere 5 minuten rijdt er in de spits een R-net bus, waardoor reizigers een kortere wachttijd hebben en daardoor sneller op hun eindbestemming zijn. Om ervoor te zorgen dat ook de toekomstige bewoners van de nieuwe woonwijk Valkenhorst (Katwijk) vanaf eind 2024 snel en comfortabel met het openbaar vervoer kunnen reizen, werken provincie Zuid-Holland en gemeente Katwijk samen aan de doorontwikkeling van deze R-net-corridor. Hieronder vallen de volgende maatregelen: -	aanleggen van het fiets- en voetgangersviaduct $[Oude Broekweg](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/openbaar-vervoer/r-net/buslijn-leiden-katwijk-noordwijk/viaduct-oude-broekweg/) over de N206 -	(deels) vrijliggende busbaan langs Valkenhorst en $[Duinvallei](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/openbaar-vervoer/r-net/buslijn-leiden-katwijk-noordwijk/busbaan-langs-duinvallei/) -	fietstunnel onder de N206 nabij de N441",
@@ -120,6 +128,7 @@ var mapData = [
 
   {"id":"23",
    "titel":"Stationsgebied Leiden",
+   "type" :"OV",
    "regio":"rijnland",
    "geo" :"cirkel","latlon":[52.165965, 4.48263],"straal": 1000,
    "link" :"$[Stationsgebied Leiden gemeente](https://gemeente.leiden.nl/inwoners-en-ondernemers/werkzaamheden-in-leiden/bouwen-aan-de-stad/stationsgebied/) ; $[Leiden Verbindt - startnotitie voor MIRT verkenning](https://leiden.notubiz.nl/document/9336244/1#search=%22leiden%20verbindt%22)",
@@ -128,6 +137,7 @@ var mapData = [
 
   {"id":"24",
    "titel":"HOV verbinding Leiden-Zoetermeer (RNet)",
+   "type" :"OV",
    "regio":"rijnland",
    "geo" :"polylijn", "polylijn" : [[52.161157,4.480661],[52.129695,4.491194],[52.118453,4.490736],[52.111706,4.495774],[52.09118,4.47196],[52.069236,4.483409],[52.056291,4.481119]],
    "link" :"$[Buslijn Leiden-Zoetermeer](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/openbaar-vervoer/r-net/r-net-buslijn-leiden/)",
@@ -136,6 +146,7 @@ var mapData = [
 
   {"id":"25",
    "titel":"Spoorcorridor Leiden-Utrecht",
+   "type" :"OV",
    "regio":"rijnland",
     "geo" :"polylijn", "polylijn" :[[52.146692,4.497757],[52.122528,4.582938],[52.131521,4.639725],[52.085976,4.741392],[52.073035,4.876032],[52.109598,4.961212],[52.097788,5.096769]]  ,
    "link" :"$[Spoorcorridor Leiden-Utrecht](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/openbaar-vervoer/spoorverbinding-leiden-utrecht/) ; $[overeenstemming over Leiden Utrecht](https://www.zuid-holland.nl/actueel/nieuws/januari-2022/overeenstemming-verdere-verbetering/)",
@@ -154,6 +165,7 @@ var mapData = [
 
   {"id":"27",
    "titel":"HOV Noordwijk-Schiphol",
+   "type" :"OV",
    "regio":"rijnland",
    "geo" :"polylijn", "polylijn" : [[52.239855,4.429073],[52.249384,4.435481],[52.226397,4.470723],[52.223033,4.485827],[52.212095,4.509627],[52.259192,4.564551],[52.293642,4.583774],[52.239855,4.657005],[52.292243,4.730693],[52.317994,4.74717]],
    "link" :"$[HOV Noordwijk-Schiphol](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/openbaar-vervoer/r-net/buslijn-noordwijk/ ; $[Filmpje: HOV Noordwijk-Schiphol](https://www.youtube.com/watch?v=69QePHTUo2s)",
@@ -173,6 +185,7 @@ var mapData = [
 
   {"id":"29",
    "titel":"MIRT A4-Burgerveen-N14",
+   "type" :"weg",
    "regio":"rijnland",
    "geo" :"polylijn", "polylijn" :[[52.076974,4.401154],[52.228641,4.649224]] ,
    "link" :"$[MIRT A4-Burgerveen-N14](https://www.a4burgerveen-n14.nl/default.aspx)",
@@ -187,6 +200,7 @@ var mapData = [
 
   {"id":"2B",
    "titel":"Valkenhorst  HOV-halte + Woningbouw + Unmanned Valley",
+   "type" :"wonen",
    "regio":"midden",
    "link" :"$[Valkenhorst](https://www.zuid-holland.nl/actueel/nieuws/december-2021/ontwikkeling-valkenhorst-forse-stap-dichterbij/)",
    "geo" :"cirkel","latlon":[52.172809, 4.42071],"straal": 1000,
@@ -283,6 +297,7 @@ var mapData = [
         {"id":"12",
          "titel":"Ambitieroute fiets Rotterdam – Gouda" ,
          "regio":"midden",
+         "type" :"fiets",
          "kort" : "Betere fietsverbindingen zorgen ervoor dat mensen sneller de fiets in plaats van de auto pakken. Dit is niet alleen goed voor de gezondheid en het milieu, het draagt ook bij aan de bereikbaarheid van de provincie Zuid-Holland. Door de fietsroutes tussen Gouda en Rotterdam te verbeteren ontstaat een comfortabel, veilig en vlot alternatief voor de drukke A20 en N210/N219.",
          "link" :"$[Verbeteren fietsroutes tussen Gouda en Rotterdam](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/samen-verder-fietsen/verbeteren/aanleg-0/)",
          "geo" :"polylijn", "polylijn": [ [51.91985, 4.527618],[51.928319, 4.559882],[51.969724, 4.629275],[52.000383, 4.688997]]},

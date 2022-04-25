@@ -102,15 +102,21 @@ function parseMD(zin) {
 
 function plotDots(json) {
   for(itemi in json) {
+    kleur = '#efcc36'
     punt = json[itemi];
     if (punt["geo"]  != null) {
+      if (punt["type"] == "weg") {kleur = '#d11f3d'}
+      else if (punt["type"] == "fiets") {kleur = '#629623'}
+      else if (punt["type"] == "OV") {kleur = '#847062'}
+      else if (punt["type"] == "wonen") {kleur = '#281f6b'};
+
       if (punt["geo"] == "cirkel") {
-        marker =  L.circle(punt["latlon"], punt["straal"], {color: '#281f6b',fillColor: '#efcc36',fillOpacity: 0.1}).addTo(map);
+        marker =  L.circle(punt["latlon"], punt["straal"], {color: kleur ,fillColor: kleur,fillOpacity: 0.1}).addTo(map);
       } else if (punt["geo"] == "polygoon") {
-        marker = L.polygon(punt["poly"],{color: '#281f6b',fillColor: '#efcc36',fillOpacity: 0.1}).addTo(map);
+        marker = L.polygon(punt["poly"],{color: kleur, fillColor: kleur,fillOpacity: 0.1}).addTo(map);
       }
       else if (punt["geo"] == "polylijn") {
-        marker = L.polyline(punt["polylijn"],{color: '#efcc36', weight: 5}).addTo(map);
+        marker = L.polyline(punt["polylijn"],{color: kleur , weight: 5}).addTo(map);
       }
       else {
         marker = L.marker(punt["latlon"]).addTo(map);
