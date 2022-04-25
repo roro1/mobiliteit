@@ -6,7 +6,6 @@ function plotVierkanten4(json,kolom,vulling) {
 // voorbeeld item in json: ["E0930N4825",...
 const Schaalroodgroen = ["#a50026","#d73027","#f46d43","#fdae61","#fee08b","#ffffbf","#d9ef8b","#a6d96a","#66bd63","#1a9850"]; // bron: https://colorbrewer2.org/#type=diverging&scheme=RdYlGn&n=9 met 1 rood toegevoegd
 const Schaalgroengeel = ['#ffffe5','#ffffe5','#f7fcb9','#d9f0a3','#addd8e','#78c679','#41ab5d','#238443','#006837','#004529'];
-//const SchaalOV =        ['#ffffe5','#006837','#41ab5d','#addd8e','#f7fcb9','#ffffe5','#ffffe5','#ffffe5','#006837','#004529'];
 const SchaalOV =        ['#ffffe5','#004529','#238443','#78c679','#addd8e','#d9f0a3','#ffffe5','#ffffe5','#ffffe5','#004529'];
 //                          0           1          2      3         4          5        6          7        8          9
 //["#ffffe5","#ffffe5","#ffffe5","#fff7bc","#fee391","#fec44f","#d9f0a3","#74c476","#41ab5d","#238443"]; // bron: https://colorbrewer2.org/#type=sequential&scheme=YlOrBr&n=9   https://colorbrewer2.org/#type=sequential&scheme=Greens&n=9
