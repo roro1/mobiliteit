@@ -43,9 +43,11 @@ const Schaalgroengeel = ['#ffffe5','#ffffe5','#f7fcb9','#d9f0a3','#addd8e','#78c
       else
     { var prop = {fillColor: vulkleur ,fillOpacity: 0.1,stroke : false,}}
 
-    var poptxt =  "<p><b>Score: " + waarde + "</b> (kleurcode: "+intwaarde+")</p><ul>" ;
+    var poptxt =  "<p><b>Score: " + waarde + "</b></p><ul>" ;
     for (let tel = 0; tel < 13; tel++) {
-      poptxt = poptxt + "<li>" + labels[tel] + ": " + item[9+tel] +"</li>"
+      if (item[9+tel] > 0){
+        poptxt = poptxt + "<li>" + labels[tel] + ": " + item[9+tel] +"</li>"
+      }
     }
     poptxt = poptxt + "</ul> Tegel : " + item[0]
     //console.log(polyg);

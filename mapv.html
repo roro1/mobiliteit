@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <title>Zuid-Holland </title>
   <link rel=icon href="img/favicon.png">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""/>
-    <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-      crossorigin=""></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="css/mapstyles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,7 +21,7 @@
     <script src="data/vkdata4.js"></script>
     <script src="scr/vierkant.js"></script>
     <script>
-      const labels= ["Totaal","Winkels","Onderwijs","Zorg","Sport&Cultuur", "Horeca", "Groen", "OV lokaal","OV omgeving","Nabijheidklasse","#inwoners","#woningen","#banen" ]
+      const labels= ["Totaal","Winkels","Onderwijs","Zorg","Sport&Cultuur", "Horeca", "Groen", "OV lokaal(6=max)","OV omg(6=max)","Nabijheidklasse","aantal inwoners","aantal woningen","aantal banen" ]
       const urlParams = new URLSearchParams(window.location.search);
       const par = urlParams.get('par')
       console.log(par);
@@ -32,23 +32,37 @@
 
       /*Legend specific*/
 //      var legend = L.control({ position: "bottomleft" });
+
+      var legendHTML = '<details open><summary>klapin/meer</summary><H4><img src="img/favicon.png"style="float:left;" >De ideale wijk in Zuid-Holland</H4>Deze kaarten horen bij de Snelstudie de Ideale woonwijk die gaat over nabijheid van voorzieningen en OV. Klik in de kaart om de scores van een tegel (van 500 x 500 meter) te zien. Er is een kaart met een totaalscore voor voorzieningen zoals die ook in het rapport is afgedrukt. En er zijn kaarten per deelaspect. De score voor voorzieningen loopt van 1 tot 9, voor OV van 0 (geen OV) tot 6 (primair IC station binnen 2,5km). Tevens is het aantal inwoners, woningen en banen per tegel vermeld.<BR></details>';
+      legendHTML += '<i style="background: #004529; text-align: center">9</i> ';
+      legendHTML += '<i style="background: #006837; text-align: center">8</i> ';
+      legendHTML += '<i style="background: #238443; text-align: center">7</i> ';
+      legendHTML += '<i style="background: #41ab5d; text-align: center">6</i> ';
+      legendHTML += '<i style="background: #78c679; text-align: center">5</i> ';
+      legendHTML += '<i style="background: #addd8e; text-align: center">4</i> ';
+      legendHTML += '<i style="background: #d9f0a3; text-align: center">3</i> ';
+      legendHTML += '<i style="background: #f7fcb9; text-align: center">2</i> ';
+      legendHTML += '<i style="background: #ffffe5; text-align: center">1</i> ';
+      legendHTML += '<br><br><a href="mapv.html" target="_blank">Totaal score</a><br>';
+      legendHTML += '<a href="mapv.html?par=2" target="_blank">Winkels</a><br>';
+      legendHTML += '<a href="mapv.html?par=3" target="_blank">Onderwijs</a><br>';
+      legendHTML += '<a href="mapv.html?par=4" target="_blank">Zorg</a><br>';
+      legendHTML += '<a href="mapv.html?par=5" target="_blank">Sport&C</a><br>';
+      legendHTML += '<a href="mapv.html?par=6" target="_blank">Horeca</a><br>';
+      legendHTML += '<a href="mapv.html?par=7" target="_blank">Groen</a><br>';
+      legendHTML += '<a href="mapOV.html" target="_blank">OV</a><br>';
+
+
+      //legendHTML += '<a href="toelichting.html" target="_blank">Toelichting</a><br>';
+      //legendHTML += '<details><summary>meer..</summary>...bla bla... lange tekst gaat maar door</details>'
+
+
       var legend = L.control({ position: "topright" });
       legend.onAdd = function(map) {
         var div = L.DomUtil.create("div", "legend");
-        div.innerHTML += "<h4>Zuid-Holland</h4>";
-  //      div.innerHTML += '<i style="background: #477AC2"></i><span>Water</span><br>';
-  //      div.innerHTML += '<i style="background: #448D40"></i><span>Forest</span><br>';
-    //    div.innerHTML += '<i style="background: #E6E696"></i><span>Land</span><br>';
-  //      div.innerHTML += '<i style="background: #E8E6E0"></i><span>Residential</span><br>';
-        div.innerHTML += '<a href="mapv.html?" target="_blank">Totaal score</a><br>';
-        div.innerHTML += '<a href="mapv.html?par=2" target="_blank">Winkels</a><br>';
-        div.innerHTML += '<a href="mapv.html?par=3" target="_blank">Onderwijs</a><br>';
-        div.innerHTML += '<a href="mapv.html?par=4" target="_blank">Zorg</a><br>';
-        div.innerHTML += '<a href="mapv.html?par=5" target="_blank">Sport&C</a><br>';
-        div.innerHTML += '<a href="mapv.html?par=6" target="_blank">Horeca</a><br>';
-        div.innerHTML += '<a href="mapv.html?par=7" target="_blank">Groen</a><br>';
-        div.innerHTML += '<a href="mapOV.html" target="_blank">OV</a><br>';
-        div.innerHTML += '<a href="toelichting.html" target="_blank">Toelichting</a><br>';
+        div.innerHTML += legendHTML;
+        div.style.maxWidth = "50%";
+
         return div;
       };
 
