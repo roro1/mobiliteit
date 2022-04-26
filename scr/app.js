@@ -111,12 +111,12 @@ function plotDots(json) {
       else if (punt["type"] == "wonen") {kleur = '#281f6b'};
 
       if (punt["geo"] == "cirkel") {
-        marker =  L.circle(punt["latlon"], punt["straal"], {color: kleur ,fillColor: kleur,fillOpacity: 0.1}).addTo(map);
+        marker =  L.circle(punt["latlon"], punt["straal"], {color: kleur ,fillColor: kleur,fillOpacity: 0.2,weight: 1,opacity: 0.6}).addTo(map);
       } else if (punt["geo"] == "polygoon") {
-        marker = L.polygon(punt["poly"],{color: kleur, fillColor: kleur,fillOpacity: 0.1}).addTo(map);
+        marker = L.polygon(punt["poly"],{color: kleur, fillColor: kleur,fillOpacity: 0.2,opacity: 0.6, weight: 1}).addTo(map);
       }
       else if (punt["geo"] == "polylijn") {
-        marker = L.polyline(punt["polylijn"],{color: kleur , weight: 5}).addTo(map);
+        marker = L.polyline(punt["polylijn"],{color: kleur , weight: 5, opacity: 0.6}).addTo(map);
       }
       else {
         marker = L.marker(punt["latlon"]).addTo(map);

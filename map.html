@@ -44,8 +44,14 @@
        map.addLayer(layer);
 
        /*Legend specific*/
-       var legendHTML = '<H4><img src="img/favicon.png"style="float:left;">Kaart </H4>'
+       var legendHTML = '<H4><img src="img/favicon.png"style="float:left;">Projecten </H4>'
        //legendHTML +='<details open><summary>klap in/uit</summary> ...<BR>';
+       legendHTML += '<i style="background: #629623; text-align: center"></i><span>Fiets</span><BR>';
+       legendHTML += '<i style="background: #847062; text-align: center"></i><span>Openbaar vervoer</span><BR>';
+       legendHTML += '<i style="background: #d11f3d; text-align: center"></i><span>Weg</span><BR>';
+       legendHTML += '<i style="background: #281f6b; text-align: center">3</i><span>Woningen</span><BR>';
+       legendHTML += '<i style="background: #efcc36; text-align: center">3</i><span>Diversen / mix</span><BR><BR>';
+
        legendHTML += '<a href="plannen.html?id=mrdh" target="_blank">Lijst met plannen</a><br>';
        legendHTML += '<a href="https://pzh.maps.arcgis.com/apps/webappviewer/index.html?id=74e23812a85e40b9be7d14e731ad0e4b target="_blank">DBI kaart</a><br>'
 
