@@ -4,10 +4,40 @@ var mapData = [
    "titel":"Goeree-Overflakkee & Hoeksche Waard"  ,
    "regio":"GH",
    "link" :"$[..](..) ; ",
-   "kort": ".... "
+   "kort": "Goeree-Overflakkee & Hoeksche Waard"
   },
 
   {"id":"41",
+   "titel":"Haringvlietbrug A29, Maatregelen"  ,
+   "type" :"weg",
+   "regio":"GH",
+   "link" :"$[Maatregelen Haringvlietbrug A29](https://www.rijkswaterstaat.nl/wegen/wegenoverzicht/a29/maatregelen-haringvlietbrug) ; ",
+   "kort": "Sinds augustus 2021 gelden er verkeersmaatregelen op de Haringvlietbrug A29. De maatregelen zijn ingesteld omdat de klemmen lostrillen door al het verkeer dat over de brug rijdt. De maximumsnelheid is verlaagd naar 50 km/h. In beide richtingen zijn de rijstroken versmald. Er is een inhaalverbod voor vrachtwagens.",
+   "geo" :"polylijn", "polylijn": [[51.708737,4.396248],[51.726168,4.406776]],
+   "lang": "Vanaf de start van het nieuwe vaarseizoen op 1 april 2022, gaat de Haringvlietbrug doordeweeks tweemaal per dag open voor de hoge scheepvaart (>13 m) en in het weekend driemaal per dag. $![..](https://rijkswaterstaat-live-prd.imgix.net/haringvlietbrug_tcm26-307052.jpg?q=20&fit=crop&crop=entropy&ar=&dpr=2&auto=format&w=1200)  $![..](https://rijkswaterstaat-live-prd.imgix.net/situatie-haringvlietbrug_tcm26-308318.jpg?crop=entropy) "
+  },
+
+  {"id":"42",
+   "titel":"N215 Omleiding Melissant-Dirksland en N215 B en C"  ,
+   "type" :"weg",
+   "regio":"GH",
+   "link" :"$[N215](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/wegverkeer/alle-n-wegen/wegen/n215/) ; ",
+   "kort": "Project Dirksland-Oude-Tonge. Om de bereikbaarheid, doorstroming en verkeersveiligheid op dit gedeelte van de N215 te verbeteren worden een aantal maatregelen genomen door de provincie, gemeente Goeree-Overflakkee en het Waterschap Hollandse Delta.",
+   "geo" :"polylijn", "polylijn": [[51.718457,4.174576],[51.750191,4.161301],[51.749483,4.122162],[51.754014,4.11026],[51.755147,4.09584],[51.772844,4.088058],[51.776099,4.074097],[51.78077,4.052811],[51.79874,4.020767]],
+   "lang": " $&[..](https://www.youtube.com/embed/PnXZhp1wU6s) $![..](https://flakkeenieuws.nl/site/afbeeldingen/20-07-17-n215.jpg) "
+  },
+
+  {"id":"43",
+   "titel":"waterstoftankstation Heinenoord"  ,
+   "type" :"OV",
+   "regio":"GH",
+   "link" :"$[Nieuw waterstoftankstation voor bussen in Heinenoord](https://www.ovpro.nl/bus/2022/03/14/nieuw-waterstoftankstation-voor-connexxion-bussen-in-heinenoord/) ; ",
+   "kort": "Twintig bussen tanken voortaan bij het nieuwe waterstoftankstation in het Zuid-Hollandse Heinenoord. Dat kunnen er nog meer worden, want het tankstation heeft capaciteit om ruim vijftig bussen te voorzien van waterstof. ",
+    "geo": "punt" , "latlon":[51.815047, 4.49589],
+    "lang": "Het tankstation is tot stand gekomen door een samenwerking tussen de provincie Zuid-Holland, de gemeente Hoeksche Waard, Connexxion en Everfuel. De waterstofleverancier gaat minimaal twaalf jaar groene waterstof leveren aan het tankstation. In de toekomst kunnen ook vrachtwagens er gebruik van maken. Volgens Everfuel is Heinenoord één van de grootste waterstoftankstations in Europa.$![..](https://www.ovpro.nl/wp-content/uploads/2022/03/Opening-waterstoftankstation-Heinenoord-scaled.jpg)"
+  },
+
+  {"id":"44",
    "titel":"N59 Energy Highway"  ,
    "type" :"weg",
    "regio":"GH",
@@ -16,7 +46,7 @@ var mapData = [
    "geo" :"polylijn", "polylijn": [[51.653948,3.924866],[51.647419,3.967896],[51.646567,4.003143],[51.681757,4.154663],[51.701042,4.191742],[51.693953,4.263153],[51.701326,4.295654],[51.702744,4.389038]]
   },
 
-  {"id":"42",
+  {"id":"45",
    "titel":"Thuiswerkhub Middelharnis"  ,
    "regio":"GH",
    "geo": "punt" , "latlon":[51.762606, 4.189653],

@@ -76,7 +76,9 @@ function parseMD(zin) {
                 if (position3 != -1 && position3 > position2 ){ //ok md replacement!
                   let mdlabel = zin.slice(2,position2);
                   let mdurl = zin.slice(position2+2,position3);
-                  zinUit = zinUit + "<img src='" + mdurl+"' alt='"+mdlabel+"'>" ;
+              //    zinUit = zinUit + "<img src='" + mdurl+"' alt='"+mdlabel+"'>" ;
+                  zinUit = zinUit + "<img src='" + mdurl+"' style='max-width:100%'; alt='"+mdlabel+"'>" ;
+
                   zin = zin.slice(position3+1);
                 } else {
                     console.log("in MD $[ zit ) niet goed");
