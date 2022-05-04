@@ -1,5 +1,30 @@
 var mapData = [
 
+  {"id":"40",
+   "titel":"Goeree-Overflakkee & Hoeksche Waard"  ,
+   "regio":"GH",
+   "link" :"$[..](..) ; ",
+   "kort": ".... "
+  },
+
+  {"id":"41",
+   "titel":"N59 Energy Highway"  ,
+   "type" :"weg",
+   "regio":"GH",
+   "link" :"$[N59 van de toekomst](https://www.n59vandetoekomst.nl/) ; ",
+   "kort": "Tot 2024 werken we aan de verbetering van de veiligheid, doorstroming, duurzaamheid en ecologie op en rondom de N59. Het verbeteren van de N59 is een samenwerking van de provincie Zuid-Holland, Rijkswaterstaat, de gemeenten Goeree-Overflakkee en Schouwen-Duiveland en de provincie Zeeland.",
+   "geo" :"polylijn", "polylijn": [[51.653948,3.924866],[51.647419,3.967896],[51.646567,4.003143],[51.681757,4.154663],[51.701042,4.191742],[51.693953,4.263153],[51.701326,4.295654],[51.702744,4.389038]]
+  },
+
+  {"id":"42",
+   "titel":"Thuiswerkhub Middelharnis"  ,
+   "regio":"GH",
+   "geo": "punt" , "latlon":[51.762606, 4.189653],
+   "link" :"$[Thuiswerkhub](https://www.thuiswerkhub.nl/nieuws/) ; $[Thuiswerkhub bericht + rapport](https://www.zuid-holland.nl/actueel/nieuws/november-2021/dichtbij-huis-werken-thuiswerkhub/) ",
+   "kort": "De eerste Thuiswerkhub heeft zijn deuren geopend. Op een toplocatie in Middelharnis kun je nu thuiswerken in de buurt van je huis. Handelsgebouw De Oostplaat, zoals de thuiswerkhub heet, combineert de voordelen van werken op kantoor met het gemak van thuiswerken. Zie ook de Snelstudie Thuiswerkhubs.",
+   "lang" : "$![..](https://www.zuid-holland.nl/publish/pages/28510/546px/afbeelding-thuiswerkhub-bij-bericht-thuiswerkhub-in-middelharnis_1.jpg)"
+  },
+
   {"id":"30",
    "titel":"Metropoolregio Rotterdam Den Haag"  ,
    "regio":"mrdh",
