@@ -28,6 +28,16 @@ var mapData = [
   },
 
   {"id":"43",
+   "titel":"Renovatie Heinenoordtunnel"  ,
+   "type" :"weg",
+   "regio":"GH",
+   "link" :"$[renovatie Heinenoordtunnel](https://www.rijkswaterstaat.nl/wegen/projectenoverzicht/a29-renovatie-eerste-heinenoordtunnel) ; ",
+   "kort": "De Heinenoordtunnel uit 1969 is toe aan groot onderhoud hinder tijdens de renovatie in 2023 en 2024 is hinder niet te voorkomen.",
+   "geo" :"polylijn", "polylijn": [[51.829301,4.509058],[51.836563,4.513979]],
+   "lang": " $![Heinenoordtunnel](https://rijkswaterstaat-live-prd.imgix.net/eerste-heinenoordtunnel_tcm26-278235.jpg) "
+  },
+
+  {"id":"44",
    "titel":"waterstoftankstation Heinenoord"  ,
    "type" :"OV",
    "regio":"GH",
@@ -37,7 +47,7 @@ var mapData = [
     "lang": "Het tankstation is tot stand gekomen door een samenwerking tussen de provincie Zuid-Holland, de gemeente Hoeksche Waard, Connexxion en Everfuel. De waterstofleverancier gaat minimaal twaalf jaar groene waterstof leveren aan het tankstation. In de toekomst kunnen ook vrachtwagens er gebruik van maken. Volgens Everfuel is Heinenoord één van de grootste waterstoftankstations in Europa.$![..](https://www.ovpro.nl/wp-content/uploads/2022/03/Opening-waterstoftankstation-Heinenoord-scaled.jpg)"
   },
 
-  {"id":"44",
+  {"id":"45",
    "titel":"N59 Energy Highway"  ,
    "type" :"weg",
    "regio":"GH",
@@ -46,7 +56,7 @@ var mapData = [
    "geo" :"polylijn", "polylijn": [[51.653948,3.924866],[51.647419,3.967896],[51.646567,4.003143],[51.681757,4.154663],[51.701042,4.191742],[51.693953,4.263153],[51.701326,4.295654],[51.702744,4.389038]]
   },
 
-  {"id":"45",
+  {"id":"46",
    "titel":"Thuiswerkhub Middelharnis"  ,
    "regio":"GH",
    "geo": "punt" , "latlon":[51.762606, 4.189653],
