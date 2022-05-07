@@ -65,6 +65,65 @@ var mapData = [
    "lang" : "$![..](https://www.zuid-holland.nl/publish/pages/28510/546px/afbeelding-thuiswerkhub-bij-bericht-thuiswerkhub-in-middelharnis_1.jpg)"
   },
 
+  {"id":"47",
+   "titel":"Kiltunnel groot onderhoud"  ,
+   "type" :"weg",
+   "regio":"GH",
+   "link" :"$[Kiltunnel (groot onderhoud)](https://www.kiltunnel.nl/) ; ",
+   "kort": "De Kiltunnel vormt de verbinding tussen het Eiland van Dordrecht en het eiland Hoeksche Waard. De in 1977 geopende tunnel is in eerste instantie een lokale hoofdverkeersader voor zowel autoverkeer als (brom)fietsers. Het groot onderhoud is in 2021 van start gegaan en moet midden 2022 zijn afgerond. Het groot onderhoud aan de Kiltunnel is afgerond voordat Rijkswaterstaat in 2023 start met de renovatie van de Heinenoordtunnel.",
+   "geo" :"polylijn", "polylijn": [[51.772644,4.624171],[51.772644,4.630237]]
+  },
+
+  {"id":"48",
+   "titel":"Pontje Oud Beijerland – Rhoon"  ,
+   "type" :"fiets",
+   "regio":"GH",
+   "link" :"$[Blue Amigo Veerdienst](https://www.blueamigo.com/veerdienstrhoon/) ; ",
+   "kort": "Pontje Oud Beijerland – Rhoon geeft verbinding per fiets naar metrostation Rhoon.",
+   "geo" :"polylijn", "polylijn": [[51.828961,4.412441],[51.829632,4.413128],[51.829774,4.420452],[51.834297,4.428635],[51.83769,4.428864],[51.841329,4.42337],[51.842425,4.423428]]
+  },
+
+  {"id":"49",
+   "titel":"N217 Parallelweg Maasdam - 's-Gravendeel"  ,
+   "type" :"weg",
+   "regio":"GH",
+   "link" :"$[N217 Parallelweg Maasdam - 's-Gravendeel](https://www.gemeentehw.nl/direct-regelen/wonen-bouwen-en-omgeving/verkeer-en-vervoer/parallelweg-maasdam-sgravendeel/) ; ",
+   "kort": "De provinciale weg N217 is de belangrijkste oost-westverbinding in de Hoeksche Waard. Over deze weg rijdt veel verkeer van en naar de A29/A16 maar ook tussen de verschillende dorpen. Langs het grootste gedeelte van de N217 loopt ook een parallelweg voor langzaam verkeer (landbouwverkeer en fietsers). Tussen Maasdam en ’s-Gravendeel ontbreekt deze weg. Het landbouwverkeer maakt daar gebruik van de hoofdrijbaan. Gemeente en provincie realiseren daarom een parallelweg en nieuw vrijliggend fietspad",
+   "lang": "$![..](https://openpdc.gemeentehw.nl/wp-content/uploads/2021/02/Paralleweg-fietspad-Noord-met-bomen.jpg)",
+   "geo" :"polylijn", "polylijn": [[51.786181,4.567308],[51.784483,4.571772],[51.78236,4.603586],[51.781652,4.605932]]
+  },
+
+  {"id":"50",
+   "titel":"Verruimen rotonde ’s-Gravendeel."  ,
+   "regio":"GH",
+   "type" : "weg",
+   "geo": "punt" , "latlon":[51.78149, 4.605803],
+   "link" :"$[Werkzaamheden N217](https://www.gemeentehw.nl/direct-regelen/wonen-bouwen-en-omgeving/verkeer-en-vervoer/werkzaamheden-n217) ",
+   "kort": "De provinciale weg N217 is de belangrijkste oost-westverbinding in de Hoeksche Waard. Over deze weg rijdt veel verkeer van en naar de A29/A16 maar ook tussen de verschillende dorpen. Op verschillende punten langs de N217 zijn aanpassingen gewenst. ",
+   "lang" : "$![..](https://openpdc.gemeentehw.nl/wp-content/uploads/2021/07/Kruising-N217-Blaakseweg-Mijnsheerenland-1536x974.jpg)"
+  },
+
+  {"id":"51",
+   "titel":"P&R Numansdorp en Heinenoord "  ,
+   "regio":"GH",
+   "type" : "OV",
+   "geo": "punt" , "latlon":[51.81534, 4.494009],
+   "link" :"$[PZH site PenR](https://www.zuid-holland.nl/actueel/nieuws/februari-2022/parkeer-reis-verder-stad-ov/) ",
+   "kort": "Zuid-Holland heeft in samenwerking met de gemeente Hoeksche Waard 2 P+R’s gerealiseerd: 1 in Heinenoord en 1 in Numansdorp. Op een P+R kunnen automobilisten hun auto parkeren en met het openbaar vervoer verder de stad in reizen. Hiermee dragen P+R’s bij aan de bereikbaarheid en leefbaarheid van steden.",
+   "lang" : "$![..](https://www.hoekschnieuws.nl/wp-content/uploads/2021/01/3032_1200_1200_overlay-scaled.jpg)"
+  },
+
+  {"id":"52",
+   "titel":"Veer Nieuw-Beijerland – Hekelingen frequentieverhogen"  ,
+   "type" :"fiets",
+   "regio":"GH",
+   "link" :"$[thequeenjacqueline.nl/](https://www.thequeenjacqueline.nl/) ; ",
+   "kort": "Veer Hekelingen – Nieuw-Beijerland vormt een cruciale verbinding voor vitale beroepen. Hogere frequentie voor met name tbv fietsverkeer naar metro Spijkenisse. ",
+   "lang" : "$![](https://www.thequeenjacqueline.nl/wpsite/wp-content/uploads/2011/12/escohoogehuis.jpg)",
+   "geo" :"polylijn", "polylijn": [[51.816251,4.338541],[51.81729,4.338105]]
+  },
+
+
   {"id":"30",
    "titel":"Metropoolregio Rotterdam Den Haag"  ,
    "regio":"mrdh",
