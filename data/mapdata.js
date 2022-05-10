@@ -3,7 +3,7 @@ var mapData = [
   {"id":"40",
    "titel":"Goeree-Overflakkee & Hoeksche Waard"  ,
    "regio":"GH",
-   "link" :"$[..](..) ; ",
+   "link" :"$[NK Tegelwippen 2022: Goeree-Overflakkee gaat strijd met Hoeksche Waard aan](https://www.goeree-overflakkee.nl/nk-tegelwippen-2022-goeree-overflakkee-gaat-strijd-met-hoeksche-waard-aan) ; ",
    "kort": "Goeree-Overflakkee & Hoeksche Waard"
   },
 
@@ -38,7 +38,7 @@ var mapData = [
   },
 
   {"id":"44",
-   "titel":"waterstoftankstation Heinenoord"  ,
+   "titel":"Waterstoftankstation Heinenoord"  ,
    "type" :"OV",
    "regio":"GH",
    "link" :"$[Nieuw waterstoftankstation voor bussen in Heinenoord](https://www.ovpro.nl/bus/2022/03/14/nieuw-waterstoftankstation-voor-connexxion-bussen-in-heinenoord/) ; ",
@@ -69,7 +69,7 @@ var mapData = [
    "titel":"Kiltunnel groot onderhoud"  ,
    "type" :"weg",
    "regio":"GH",
-   "link" :"$[Kiltunnel (groot onderhoud)](https://www.kiltunnel.nl/) ; ",
+   "link" :"$[Kiltunnel groot onderhoud](https://www.kiltunnel.nl/) ; ",
    "kort": "De Kiltunnel vormt de verbinding tussen het Eiland van Dordrecht en het eiland Hoeksche Waard. De in 1977 geopende tunnel is in eerste instantie een lokale hoofdverkeersader voor zowel autoverkeer als (brom)fietsers. Het groot onderhoud is in 2021 van start gegaan en moet midden 2022 zijn afgerond. Het groot onderhoud aan de Kiltunnel is afgerond voordat Rijkswaterstaat in 2023 start met de renovatie van de Heinenoordtunnel.",
    "geo" :"polylijn", "polylijn": [[51.772644,4.624171],[51.772644,4.630237]]
   },
