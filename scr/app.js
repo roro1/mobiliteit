@@ -146,6 +146,7 @@ function renderLijst(json,wat,optie){  // vul lijst met items op basis Json
 
 } else {
   xli.innerHTML = "<ul id='lijst'></ul>";
+  if (wat=="GH") {document.getElementById("topI").innerHTML = '<img src="img/Goeree_Hoekse.png" alt="Zuid-Holland" width="100%" height="auto" >'}
 
 }
   PContent.appendChild(xli); //append child in content blok

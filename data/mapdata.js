@@ -210,7 +210,7 @@ var mapData = [
    "kort": "nieuwe bediencentrale "
   },
 
-  {"id":"40",
+  {"id":"4A",
    "titel":"Kickersbloem"  ,
    "regio":"mrdh",
    "link" :"$[Kickersbloem](https://www.kickersbloem3.nl/) ",
