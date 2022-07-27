@@ -21,7 +21,7 @@ var mapData = [
    "titel":"N215 Omleiding Melissant-Dirksland en N215 B en C"  ,
    "type" :"weg",
    "regio":"GH",
-   "link" :"$[N215](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/wegverkeer/alle-n-wegen/wegen/n215/) ; ",
+   "link" :"$[N215](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/wegverkeer/alle-n-wegen/wegen/n215/) ; $[N215 Dirksland-Oude-Tonge](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/wegverkeer/alle-n-wegen/wegen/n215/n215-dirksland-oude/) ",
    "kort": "Project Dirksland-Oude-Tonge. Om de bereikbaarheid, doorstroming en verkeersveiligheid op dit gedeelte van de N215 te verbeteren worden een aantal maatregelen genomen door de provincie, gemeente Goeree-Overflakkee en het Waterschap Hollandse Delta.",
    "geo" :"polylijn", "polylijn": [[51.718457,4.174576],[51.750191,4.161301],[51.749483,4.122162],[51.754014,4.11026],[51.755147,4.09584],[51.772844,4.088058],[51.776099,4.074097],[51.78077,4.052811],[51.79874,4.020767]],
    "lang": " $&[..](https://www.youtube.com/embed/PnXZhp1wU6s) $![..](https://flakkeenieuws.nl/site/afbeeldingen/20-07-17-n215.jpg) "
@@ -48,7 +48,7 @@ var mapData = [
   },
 
   {"id":"45",
-   "titel":"N59 Energy Highway"  ,
+   "titel":"N59 van de Toekomst"  ,
    "type" :"weg",
    "regio":"GH",
    "link" :"$[N59 van de toekomst](https://www.n59vandetoekomst.nl/) ; ",
