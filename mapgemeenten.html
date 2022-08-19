@@ -21,7 +21,8 @@
 
     <div id="map"></div>
     <script src="data/mapdata.js"></script>
-    <script src="data/gemeentes2.js"></script>
+    <script src="data/gemeentesZH.js"></script>
+    <script src="data/gemDat.js"></script>
 
     <script src="scr/app.js"></script>
 
@@ -47,7 +48,21 @@
     //   L.geoJSON(gemeentes, {style: myStyle}).addTo(map);
 
       function regioKleur(str) {
-        return "Red"
+        if (str < 60 ) {
+          console.log(str)
+          test = gemData[str];
+          console.log(test);
+          tst2 = test["regio"];
+
+          console.log("dus niet undef tst2");
+          console.log(tst2);
+
+          tst3 = regio[tst2];
+          console.log(tst3);
+          tst4 = tst3["kleur"];
+          console.log(tst4);
+        } else tst4 ="purple"
+        return tst4
       }
 
        L.geoJSON(gemeentes, {
