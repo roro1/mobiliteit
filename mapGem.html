@@ -84,7 +84,10 @@
        }).bindPopup(function (layer) {
          nr = layer.feature.properties.code
          nrRegio = gemData[nr]["regio"]
-         txt = gemData[nr]["naam"]+"<br>regio: "+regio[nrRegio]["naam"];
+         gem = gemData[nr]["naam"]
+         link = gemData[nr]["site"]
+         //<a href="https://www.w3schools.com">Visit W3Schools</a>
+         txt =  "<a href='"+link+"'>"+gem+"</a><br>regio: "+regio[nrRegio]["naam"];
     return txt;
 }).addTo(map);
 
