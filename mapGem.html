@@ -86,8 +86,15 @@
          nrRegio = gemData[nr]["regio"]
          gem = gemData[nr]["naam"]
          link = gemData[nr]["site"]
-         //<a href="https://www.w3schools.com">Visit W3Schools</a>
-         txt =  "<a href='"+link+"'>"+gem+"</a><br>regio: "+regio[nrRegio]["naam"];
+         linkC1 = "https://allecijfers.nl/gemeente/" + gem.toLowerCase();
+         let linkC2 = linkC1.replace(" ", "-");
+         let linkC3 = linkC2.replace(" ", "-");
+         let linkCijfers = linkC3.replace(" ", "-");
+
+         linkVerkiezing = linkCijfers +"#verkiezingsuitslagen"
+         //<a href="https://www.w3schools.com" target="_blank">Visit W3Schools</a>
+         txt ="<b>"+gem+"</b><br>regio: "+regio[nrRegio]["naam"]+ "<br><a href='"+link+"' target='_blank'>website van gemeente</a><br><a href='"+linkCijfers+"' target='_blank'>alleCijfers van gemeente</a><br>";
+         txt = txt + "<a href='"+linkVerkiezing +"' target='_blank'>verkiezingsuitslag</a><br>"
     return txt;
 }).addTo(map);
 
@@ -99,3 +106,4 @@
  </body>
 
 </html>
+.

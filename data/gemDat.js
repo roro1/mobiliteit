@@ -3,10 +3,14 @@ regio = [
   {"code": 1, "kleur": "green", "naam" :"Midden Holland"},
   {"code": 2, "kleur": "red", "naam" :"MRDH"},
   {"code": 3, "kleur": "Magenta", "naam" :"Goeree-O en Hoekse Waard"},
-  {"code": 4, "kleur": "blue", "naam" :"Drechtsteden en Alblasserwaard"},
-  {"code": 5, "kleur": "black", "naam" :"WEETNIET"}
-
+  {"code": 4, "kleur": "blue", "naam" :"Drechtsteden"},
+  {"code": 5, "kleur": "#76448A", "naam" :"Alblasserwaard"}
 ];
+let regioLegenda = "";
+for (let x in regio) {
+  regioLegenda += regio[x]["kleur"] + " ";
+}
+console.log(regioLegenda);
 
 gemData =  [
 {"code": "0",   "naam": "Alblasserdam", "regio": 4, "site": "http://www.alblasserdam.nl/"},
@@ -20,9 +24,9 @@ gemData =  [
 {"code": "8",   "naam": "Den Haag", "regio": 2, "site": "http://www.denhaag.nl/"},
 {"code": "9",   "naam": "Dordrecht", "regio": 4, "site": "http://www.dordrecht.nl/"},
 {"code": "10",   "naam": "Goeree-Overflakkee", "regio": 3, "site": "http://www.goeree-overflakkee.nl/"},
-{"code": "11",   "naam": "Gorinchem", "regio": "4", "site": "http://www.gorinchem.nl/"},
+{"code": "11",   "naam": "Gorinchem", "regio": "5", "site": "http://www.gorinchem.nl/"},
 {"code": "12",   "naam": "Gouda", "regio": "1", "site": "http://www.gouda.nl/"},
-{"code": "13",   "naam": "Hardinxveld-Giessendam", "regio": "5", "site": "http://www.hardinxveld-giessendam.nl/"},
+{"code": "13",   "naam": "Hardinxveld-Giessendam", "regio": "4", "site": "http://www.hardinxveld-giessendam.nl/"},
 {"code": "14",   "naam": "Hellevoetsluis", "regio": "2", "site": "http://www.hellevoetsluis.nl/"},
 {"code": "15",   "naam": "Hendrik-Ido-Ambacht", "regio": "4", "site": "http://www.h-i-ambacht.nl/"},
 {"code": "16",   "naam": "Hillegom", "regio": "0", "site": "http://www.hillegom.nl/"},
@@ -38,7 +42,7 @@ gemData =  [
 {"code": "26",   "naam": "Lisse", "regio": "0", "site": "http://www.lisse.nl/"},
 {"code": "27",   "naam": "Maassluis", "regio": "2", "site": "http://www.maassluis.nl/"},
 {"code": "28",   "naam": "Midden-Delfland", "regio": "2", "site": "http://www.middendelfland.nl/"},
-{"code": "29",   "naam": "Molenlanden", "regio": "4", "site": "http://www.molenlanden.nl/"},
+{"code": "29",   "naam": "Molenlanden", "regio": "5", "site": "http://www.molenlanden.nl/"},
 {"code": "30",   "naam": "Nieuwkoop", "regio": "0", "site": "http://www.nieuwkoop.nl/"},
 {"code": "31",   "naam": "Nissewaard", "regio": "2", "site": "http://www.nissewaard.nl/"},
 {"code": "32",   "naam": "Noordwijk", "regio": "0", "site": "http://www.noordwijk.nl/"},
