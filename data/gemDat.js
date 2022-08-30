@@ -2,9 +2,11 @@ regio = [
   {"code": 0, "kleur": "orange", "naam" : "Holland Rijnland"},
   {"code": 1, "kleur": "green", "naam" :"Midden Holland"},
   {"code": 2, "kleur": "red", "naam" :"MRDH"},
-  {"code": 3, "kleur": "Magenta", "naam" :"Goeree-O en Hoekse Waard"},
+  {"code": 3, "kleur": "yellow", "naam" :"Goeree-Overflakkee"},
   {"code": 4, "kleur": "blue", "naam" :"Drechtsteden"},
-  {"code": 5, "kleur": "#76448A", "naam" :"Alblasserwaard"}
+  {"code": 5, "kleur": "#76448A", "naam" :"Alblasserwaard"},
+  {"code": 6, "kleur": "Magenta", "naam" :"Hoeksche Waard"}
+
 ];
 let regioLegenda = "";
 for (let x in regio) {
@@ -16,7 +18,7 @@ gemData =  [
 {"code": "0",   "naam": "Alblasserdam", "regio": 4, "site": "http://www.alblasserdam.nl/"},
 {"code": "1",   "naam": "Albrandswaard", "regio": 2, "site": "http://www.albrandswaard.nl/"},
 {"code": "2",   "naam": "Alphen aan den Rijn", "regio": 0, "site": "https://www.alphenaandenrijn.nl/"},
-{"code": "3",   "naam": "Barendrecht", "regio": 4, "site": "http://www.barendrecht.nl/"},
+{"code": "3",   "naam": "Barendrecht", "regio": 2, "site": "http://www.barendrecht.nl/"},
 {"code": "4",   "naam": "Bodegraven-Reeuwijk", "regio": "1", "site": "http://www.bodegraven-reeuwijk.nl/"},
 {"code": "5",   "naam": "Brielle", "regio": "2", "site": "http://www.brielle.nl/"},
 {"code": "6",   "naam": "Capelle aan den IJssel", "regio": "2", "site": "http://www.capelleaandenijssel.nl/"},
@@ -30,7 +32,7 @@ gemData =  [
 {"code": "14",   "naam": "Hellevoetsluis", "regio": "2", "site": "http://www.hellevoetsluis.nl/"},
 {"code": "15",   "naam": "Hendrik-Ido-Ambacht", "regio": "4", "site": "http://www.h-i-ambacht.nl/"},
 {"code": "16",   "naam": "Hillegom", "regio": "0", "site": "http://www.hillegom.nl/"},
-{"code": "17",   "naam": "Hoeksche Waard", "regio": "3", "site": "http://www.gemeentehw.nl/"},
+{"code": "17",   "naam": "Hoeksche Waard", "regio": "6", "site": "http://www.gemeentehw.nl/"},
 {"code": "18",   "naam": "Kaag en Braassem", "regio": "0", "site": "http://www.kaagenbraassem.nl/"},
 {"code": "19",   "naam": "Katwijk", "regio": "0", "site": "http://www.katwijk.nl/"},
 {"code": "20",   "naam": "Krimpen aan den IJssel", "regio": "2", "site": "http://www.krimpenaandenijssel.nl/"},
@@ -49,7 +51,7 @@ gemData =  [
 {"code": "33",   "naam": "Oegstgeest", "regio": "0", "site": "http://www.oegstgeest.nl/"},
 {"code": "34",   "naam": "Papendrecht", "regio": "4", "site": "http://www.papendrecht.nl/"},
 {"code": "35",   "naam": "Pijnacker-Nootdorp", "regio": "2", "site": "http://www.pijnackernootdorp.nl/"},
-{"code": "36",   "naam": "Ridderkerk", "regio": "4", "site": "http://www.ridderkerk.nl/"},
+{"code": "36",   "naam": "Ridderkerk", "regio": "2", "site": "http://www.ridderkerk.nl/"},
 {"code": "37",   "naam": "Rijswijk", "regio": "2", "site": "http://www.rijswijk.nl/"},
 {"code": "38",   "naam": "Rotterdam", "regio": "2", "site": "http://www.rotterdam.nl/"},
 {"code": "39",   "naam": "Schiedam", "regio": "2", "site": "http://www.schiedam.nl/"},
