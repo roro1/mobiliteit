@@ -23,51 +23,25 @@
     <script src="data/mapdata.js"></script>
     <script src="data/gemeentesZH.js"></script>
     <script src="data/gemDat.js"></script>
-
     <script src="scr/app.js"></script>
 
     <script>
-
-
-       // Creating map options
        var mapOptions = { center: [52.03, 4.584], zoom: 10 }
 
-       var map = new L.map('map', mapOptions);         // Creating a map object
-       var layer = new L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-         attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> © <a href="https://www.mapbox.com/">Mapbox</a>',
-         maxZoom: 18,
-         id: 'mapbox/light-v10',
-         tileSize: 512,
-         zoomOffset: -1,
-         accessToken: 'pk.eyJ1Ijoicm9yb3JvIiwiYSI6ImNsMWIzcjhiZDI0ZG8zaXF6eXE4dXE5emUifQ.gt3tunhffMqPmsInRj0mGQ'
-         });         // Creating a Layer object
-       map.addLayer(layer);
+       </script>
+       <script src="scr/map.js"> //creeer en teken de map inc legenda </script>
+     <script>
 
-
-
-    //   L.geoJSON(gemeentes, {style: myStyle}).addTo(map);
 
       function regioKleur(str) {
         if (str < 60 ) {
-          test = gemData[str];
-          console.log(test);
-          tst2 = test["regio"];
-
-          console.log(tst2);
-
-          tst3 = regio[tst2];
-          console.log(tst3);
-          tst4 = tst3["kleur"];
-          console.log(tst4);
+          tst2 = gemData[str]["regio"];
+          tst4 = regio[tst2]["kleur"];
         } else tst4 ="purple"
         return tst4
       }
 
-      function maakPopUp(xx) {
-        console.log("popup maken ");
-        console.log(xx)
-        return xx.features.properties.gemeentenaam;
-    }
+
        L.geoJSON(gemeentes, {
            style: function(feature) {
              var myStyle = {
@@ -90,9 +64,7 @@
          let linkC2 = linkC1.replace(" ", "-");
          let linkC3 = linkC2.replace(" ", "-");
          let linkCijfers = linkC3.replace(" ", "-");
-
          linkVerkiezing = linkCijfers +"#verkiezingsuitslagen"
-         //<a href="https://www.w3schools.com" target="_blank">Visit W3Schools</a>
          txt ="<b>"+gem+"</b><br>regio: "+regio[nrRegio]["naam"]+ "<br><a href='"+link+"' target='_blank'>website van gemeente</a><br><a href='"+linkCijfers+"' target='_blank'>alleCijfers van gemeente</a><br>";
          txt = txt + "<a href='"+linkVerkiezing +"' target='_blank'>verkiezingsuitslag</a><br>"
     return txt;
@@ -106,4 +78,3 @@
  </body>
 
 </html>
-.

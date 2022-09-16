@@ -1,18 +1,18 @@
 regio = [
-  {"code": 0, "kleur": "orange", "naam" : "Holland Rijnland"},
-  {"code": 1, "kleur": "green", "naam" :"Midden Holland"},
-  {"code": 2, "kleur": "red", "naam" :"MRDH"},
+  {"code": 0, "kleur": "orange", "naam" : "Holland Rijnland", "site" : "https://hollandrijnland.nl/"},
+  {"code": 1, "kleur": "green", "naam" :"Midden Holland", "site": "https://www.regiomiddenholland.nl/"},
+  {"code": 2, "kleur": "red", "naam" :"MRDH", "site":"https://mrdh.nl/"},
   {"code": 3, "kleur": "yellow", "naam" :"Goeree-Overflakkee"},
   {"code": 4, "kleur": "blue", "naam" :"Drechtsteden"},
   {"code": 5, "kleur": "#76448A", "naam" :"Alblasserwaard"},
   {"code": 6, "kleur": "Magenta", "naam" :"Hoeksche Waard"}
-
 ];
-let regioLegenda = "";
+var legendHTML = '<H4><img src="img/favicon.png"style="float:left;">Regio</H4>'
 for (let x in regio) {
-  regioLegenda += regio[x]["kleur"] + " ";
+  legendHTML += '<i style=" opacity: 0.1; background-color:' + regio[x]["kleur"] + '; text-align: center"></i><span>'+regio[x]["naam"] +'</span><BR>' ;
 }
-console.log(regioLegenda);
+legendHTML += '<BR><a href="map.html" target="_blank">Plannen kaart</a><br><br>';
+legendHTML += '<button onclick="openFullscreen();">Fullscreen Mode</button>;';
 
 gemData =  [
 {"code": "0",   "naam": "Alblasserdam", "regio": 4, "site": "http://www.alblasserdam.nl/"},
