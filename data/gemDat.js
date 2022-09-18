@@ -7,12 +7,12 @@ regio = [
   {"code": 5, "kleur": "#76448A", "naam" :"Alblasserwaard"},
   {"code": 6, "kleur": "Magenta", "naam" :"Hoeksche Waard"}
 ];
-var legendHTML = '<H4><img src="img/favicon.png"style="float:left;">Regio</H4>'
+var legendHTML = '<H4><img src="img/favicon.png"style="float:left;">Zuid-Holland</H4>'
 for (let x in regio) {
   legendHTML += '<i style=" opacity: 0.1; background-color:' + regio[x]["kleur"] + '; text-align: center"></i><span>'+regio[x]["naam"] +'</span><BR>' ;
 }
-legendHTML += '<BR><a href="map.html" target="_blank">Plannen kaart</a><br><br>';
-legendHTML += '<button onclick="openFullscreen();">Fullscreen Mode</button>;';
+// legendHTML += '<BR><a href="map.html" target="_blank">Plannen kaart</a><br><br>';
+legendHTML += '<br><button onclick="openFullscreen();">Fullscreen</button>;';
 
 gemData =  [
 {"code": "0",   "naam": "Alblasserdam", "regio": 4, "site": "http://www.alblasserdam.nl/"},
