@@ -142,7 +142,7 @@ function renderLijst(json,wat,optie){  // vul lijst met items op basis Json
   else if (optie == "snelstudies") {
     xli.innerHTML = "<H1>Snelstudies</H1><p>Snelstudies geven inzicht in de richtingen die we kunnen gaan. Snelstudies zijn als een fietstocht: Ver vooruitkijken en dichtbij sturen. We schetsen toekomstperspectieven voor transitievraagstukken en brengen die terug naar mogelijke keuzes van overheden in Zuid-Holland die nu al gemaakt kunnen worden. Deze Snelstudies vallen binnen <a href='https://www.zuid-holland.nl/overons/kennis-zuid-holland/'>kennis Zuid-Holland</a> van de provincie Zuid-Holland.</p><ul id='lijst'></ul>";
 } else if (wat == null) {
-  xli.innerHTML = "<H1>Plannen in Zuid-Holland</H1> <p>Klik op kaart in het menu voor een grafische weergave.</p><p><a href='plannen.html?id=mrdh'>selecteer MRDH</a> ;  <a href='plannen.html?id=rijnland'>selecteer Holland Rijnland</a> ; <a href='plannen.html?id=midden'>selecteer Midden Holland </a>; <a href='plannen.html?id=GH'>Goeree-O & Hoekse Waard</a> </ol><ul id='lijst'></p>";
+  xli.innerHTML = "<H1>Plannen in Zuid-Holland</H1> <p>Klik op kaart in het menu voor een grafische weergave.</p><p><a href='plannen.html?id=Drecht'>Drechtsteden</a>; <a href='plannen.html?id=mrdh'> MRDH</a> ;  <a href='plannen.html?id=rijnland'>Holland Rijnland</a> ; <a href='plannen.html?id=midden'>Midden Holland </a>; <a href='plannen.html?id=GH'>Goeree-O & Hoekse Waard</a> </ol><ul id='lijst'></p>";
 
 } else {
   xli.innerHTML = "<ul id='lijst'></ul>";
