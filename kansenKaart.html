@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta name="robots" content="noindex">
+  <meta charset="UTF-8">
+  <title>Zuid-Holland plannenkaart</title>
+  <link rel=icon href="img/favicon.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/mapstyles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ </head>
+
+ <body>
+
+    <div id="map"></div>
+    <script src="data/kansen.js"></script>
+    <script src="data/gemeentesZH.js"></script>
+    <script src="data/gemDat.js"></script>
+    <script src="scr/app.js"></script>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlP = urlParams.get('p')
+      console.log(urlP);
+      var mapOptions = { center: [52.03, 4.584], zoom: 10 }
+      legendHTML += '<br><br><H4>Kansen Kaart</H4><p>Waar liggen de kansen volgens jou? Laat het ons weten, dan zetten we ze op de kaart!</p>';
+
+
+       </script>
+       <script src="scr/map.js"> //creeer en teken de map inc legenda </script>
+     <script>
+
+
+      function regioKleur(str) {
+        if (str < 60 ) {
+          tst2 = gemData[str]["regio"];
+          tst4 = regio[tst2]["kleur"];
+        } else tst4 ="purple"
+        return tst4
+      }
+
+
+       L.geoJSON(gemeentes, {
+           style: function(feature) {
+             var myStyle = {
+                 "color": "Black",
+                 "fillColor" : regioKleur(feature.properties.code),
+                 "weight": 1,
+                   "opacity": 0.3,
+                "fillOpacity" : 0.1,
+             };
+                return myStyle;
+
+
+           }
+       }).bindPopup(function (layer) {
+         nr = layer.feature.properties.code
+         nrRegio = gemData[nr]["regio"]
+         gem = gemData[nr]["naam"]
+         link = gemData[nr]["site"]
+         linkC1 = "https://allecijfers.nl/gemeente/" + gem.toLowerCase();
+         let linkC2 = linkC1.replace(" ", "-");
+         let linkC3 = linkC2.replace(" ", "-");
+         let linkCijfers = linkC3.replace(" ", "-");
+         linkVerkiezing = linkCijfers +"#verkiezingsuitslagen"
+         let extra ="";
+         if  (regio[nrRegio]["extra"]!= null) {extra =regio[nrRegio]["extra"] }
+         txt ="<b>"+gem+"</b><br>regio: "+regio[nrRegio]["naam"]+ "<br><a href='"+link+"' target='_blank'>website van gemeente</a><br><a href='"+linkCijfers+"' target='_blank'>alleCijfers van gemeente</a><br>";
+         txt = txt + "<a href='"+linkVerkiezing +"' target='_blank'>verkiezingsuitslag</a><br>"+extra
+    return txt;
+}).addTo(map);
+
+
+  if (urlP != 0 ) {
+       plotDots(kansen); // functie zit in script file
+}
+       // plotDots(mapData); // functie ziet in script file
+
+
+
+    </script>
+ </body>
+
+</html>
