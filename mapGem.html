@@ -65,8 +65,10 @@
          let linkC3 = linkC2.replace(" ", "-");
          let linkCijfers = linkC3.replace(" ", "-");
          linkVerkiezing = linkCijfers +"#verkiezingsuitslagen"
+         let extra ="";
+         if  (regio[nrRegio]["extra"]!= null) {extra =regio[nrRegio]["extra"] }
          txt ="<b>"+gem+"</b><br>regio: "+regio[nrRegio]["naam"]+ "<br><a href='"+link+"' target='_blank'>website van gemeente</a><br><a href='"+linkCijfers+"' target='_blank'>alleCijfers van gemeente</a><br>";
-         txt = txt + "<a href='"+linkVerkiezing +"' target='_blank'>verkiezingsuitslag</a><br>"
+         txt = txt + "<a href='"+linkVerkiezing +"' target='_blank'>verkiezingsuitslag</a><br>"+extra
     return txt;
 }).addTo(map);
 
