@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta name="robots" content="noindex">
+  <meta charset="UTF-8">
+  <title>Zuid-Holland plannenkaart</title>
+  <link rel=icon href="img/favicon.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/mapstyles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ </head>
+
+ <body>
+    <div id="map"></div>
+    <script src="data/deelmdata.js"></script>
+    <script src="data/gemeentesZH.js"></script>
+    <script src="data/gemDat.js"></script>
+    <script src="scr/app.js"></script>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlP = urlParams.get('p')
+      console.log(urlP);
+       var mapOptions = { center: [52.18, 4.5], zoom: 12 }
+       //var legendHTML = '<H4><img src="img/favicon.png"style="float:left;">Projecten </H4>'
+       //legendHTML +='<details open><summary>klap in/uit</summary> ...<BR>';
+       if (urlP != 0 ) {
+
+       legendHTML += '<br><br><i style="background: #629623; text-align: center"></i><span>Fiets</span><BR>';
+       legendHTML += '<i style="background: #847062; text-align: center"></i><span>Openbaar vervoer</span><BR>';
+       legendHTML += '<i style="background: #d11f3d; text-align: center"></i><span>Weg</span><BR>';
+       legendHTML += '<i style="background: #281f6b; text-align: center"></i><span>Woningen</span><BR>';
+       legendHTML += '<i style="background: #efcc36; text-align: center"></i><span>Diversen / mix</span><BR><BR>';
+       legendHTML += '<a href="plannen.html" target="_blank">Lijst met plannen</a><br>';
+     } else {   legendHTML += '<br><a href="map.html">Kaart met plannen</a><br>';}
+legendHTML += '<a href="https://kennis.zuid-holland.nl/brede-kansen-voor-slimme-mobiliteit/" target="_blank">Brede kansen slimme mobiliteit</a><br>';
+
+       //legendHTML += '<a href="mapGem.html" target="_blank">Gemeenten kaart</a><br>';
+       legendHTML += '<a href="https://pzh.maps.arcgis.com/apps/webappviewer/index.html?id=74e23812a85e40b9be7d14e731ad0e4b target="_blank">DBI kaart</a><br>'
+       //legendHTML += '<button onclick="openFullscreen();">Fullscreen Mode</button>;';
+    </script>
+    <script src="scr/map.js"> //creeer en teken de map inc legenda </script>
+  <script>
+
+        function regioKleur(str) {
+          if (str < 60 ) {
+            tst2 = gemData[str]["regio"];
+            tst4 = regio[tst2]["kleur"];
+          } else tst4 ="purple"
+          return tst4
+        }
+
+
+         L.geoJSON(gemeentes, {
+             style: function(feature) {
+               var myStyle = {
+                   "color": "Black",
+                   "fillColor" : regioKleur(feature.properties.code),
+                   "weight": 1,
+                     "opacity": 0.3,
+                  "fillOpacity" : 0.1,
+               };
+                  return myStyle;
+
+
+             }
+         }).bindPopup(function (layer) {
+           nr = layer.feature.properties.code
+           nrRegio = gemData[nr]["regio"]
+           gem = gemData[nr]["naam"]
+           link = gemData[nr]["site"]
+           linkC1 = "https://allecijfers.nl/gemeente/" + gem.toLowerCase();
+           let linkC2 = linkC1.replace(" ", "-");
+           let linkC3 = linkC2.replace(" ", "-");
+           let linkCijfers = linkC3.replace(" ", "-");
+           linkVerkiezing = linkCijfers +"#verkiezingsuitslagen"
+           txt ="<b>"+gem+"</b><br>regio: "+regio[nrRegio]["naam"]+ "<br><a href='"+link+"' target='_blank'>website van gemeente</a><br><a href='"+linkCijfers+"' target='_blank'>alleCijfers van gemeente</a><br>";
+           txt = txt + "<a href='"+linkVerkiezing +"' target='_blank'>verkiezingsuitslag</a><br>"
+      return txt;
+  }).addTo(map);
+
+
+  if (urlP != 0 ) {
+       plotDots(mapData); // functie zit in script file
+}
+       /* Get the documentElement (<html>) to display the page in fullscreen */
+
+
+
+    </script>
+ </body>
+</html>
