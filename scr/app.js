@@ -180,3 +180,39 @@ function renderLijst(json,wat,optie){  // vul lijst met items op basis Json
     }
 }
 }
+
+function renderGemeenten(json,wat,optie){  // vul lijst met items op basis Json
+  let xli = document.createElement('span');
+  xli.innerHTML = "<H1>Titel</H1><ul id='lijst'></ul>";
+  
+  PContent.appendChild(xli); //append child in content blok
+  const PLijst = document.querySelector('#lijst');
+
+
+  for(itemi in json) {
+    punt = json[itemi];
+    if (wat == null || wat == punt["id"] || wat ==punt["regio"]) {
+      let li = document.createElement('li');
+      PLijst.appendChild(li);
+      let task = document.createElement('span');
+      task.classList.add("tekst");
+      li.appendChild(task);
+      str = "<h3>" + punt["titel"] +"</h3>"
+      if (punt["kort"]  != null) {str = str + "<p>" + punt["kort"] +"</p>"}
+      if (punt["link"]  != null) {str = str + "<p><b>Links:</b> " + parseMD(punt["link"]) +"</p>"}
+      str = str + parseMD(punt["mdlink"]);
+      if (wat == punt["id"]) {
+        if (punt["rel"]  != null) {str = str + "<p><b>Gerelateerd aan:</b> " + punt["rel"] +"</p>"}
+        if (punt["pzhlink"]  != null) {str = str + "<p><b>PZH intranet:</b> " + punt["pzhlink"] +"</p>"}
+        if (punt["idmslink"]  != null) {str = str + "<p><b>PZH IDMS links:</b> " + punt["idmslink"] +"</p>"}
+        if (punt["lang"]  != null) {str = str + "<p>" + parseMD(punt["lang"]) +"</p>"}
+
+      } else {
+          if (punt["id"] !=null) {
+               if (punt["lang"]  != null || punt["rel"]  != null || punt["pzhlink"]  != null ) {tk="meer..." } else { tk =".."}
+               str = str + "<a href='?id="+punt["id"] + "'> <b><i>"+tk+"</i></b></a>"
+    }}
+      task.innerHTML = str;
+    }
+}
+}
