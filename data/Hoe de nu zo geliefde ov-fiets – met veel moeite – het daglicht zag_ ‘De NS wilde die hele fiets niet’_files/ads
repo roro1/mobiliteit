@@ -1,0 +1,11 @@
+(function () {
+		var aPixel = ["https://cm.g.doubleclick.net/pixel?google_nid=smartclip_dbm&google_cm&google_sc&gdpr=1&gdpr_consent=", "https://secure.adnxs.com/getuid?https://sync.sxp.smartclip.net/sync?type=host&dsp=43&uuid=a35c8c8d-ac19-4e65-1392-be6af8d2a1eb&dspuuid=$UID&gdpr=&gdpr_consent=", "", "https://c1.adform.net/serving/cookie/match?party=20&gdpr=&gdpr_consent=&id=a35c8c8d-ac19-4e65-1392-be6af8d2a1eb&forward=https%3A%2F%2Fsync.sxp.smartclip.net%2Fsync%3Ftype%3Dhost%26dsp%3D31%26uuid%3Da35c8c8d-ac19-4e65-1392-be6af8d2a1eb%26dspuuid%3D{dspuuid}", "https://match.adsrvr.org/track/cmf/generic?ttd_pid=smartclip&ttd_tpi=1&ttd_puid=a35c8c8d-ac19-4e65-1392-be6af8d2a1eb&gdpr=&gdpr_consent=", "https://csyn.cxense.com/smc.png?userId=a35c8c8d-ac19-4e65-1392-be6af8d2a1eb"];
+	var a;
+	for(a=0; a<aPixel.length; a++)
+	{
+		var oPixel = document.createElement("img");
+		oPixel.style.cssText = "height:0px;width:1px;display:none";
+		oPixel.src = aPixel[a];
+		document.body.appendChild(oPixel);
+	}
+}());
