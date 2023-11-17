@@ -15,11 +15,11 @@
  <body>
 
     <div id="map"></div>
-    <script src="data/mapdata.js"></script>
+    <script src="data/deelmdata.js"></script>
     <script src="data/gemeentesZH.js"></script>
     <script src="data/gemDat.js"></script>
     <script src="scr/parseW.js"></script>
-    <script src="scr/app.js"></script>
+    <script src="scr/mapFunctions.js"></script>
 
     <script>
        var mapOptions = { center: [52.03, 4.584], zoom: 10 }
@@ -28,6 +28,15 @@
        <script src="scr/map.js"> //creeer en teken de map inc legenda </script>
        <script src="scr/tekenGem.js"> //teken de gemeeentes in </script>
 
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlP = urlParams.get('p')
+      console.log(urlP);
+      
+      if (urlP != 0 ) {
+            plotDots(mapData); // functie zit in script file
+     }
+       </script>
  </body>
 
 </html>
