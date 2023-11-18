@@ -23,16 +23,19 @@
 
     <script>
        var mapOptions = { center: [52.03, 4.584], zoom: 10 }
+       var mapInstellingen = { gemOpacity : 0.2 , gemFill : 0.04 }
+       console.log(mapInstellingen);
 
        </script>
        <script src="scr/map.js"> //creeer en teken de map inc legenda </script>
-       <script src="scr/tekenGem.js"> //teken de gemeeentes in </script>
+       <script src="scr/tekenGem.js"> //laad tekenroutine de gemeeentes in </script>
 
     <script>
+      tekenGemeentes();
       const urlParams = new URLSearchParams(window.location.search);
       const urlP = urlParams.get('p')
       console.log(urlP);
-      
+
       if (urlP != 0 ) {
             plotDots(mapData); // functie zit in script file
      }

@@ -24,8 +24,8 @@
       const urlP = urlParams.get('p')
       console.log(urlP);
        var mapOptions = { center: [51.95, 4.584], zoom: 10 }
-       //var legendHTML = '<H4><img src="img/favicon.png"style="float:left;">Projecten </H4>'
-       //legendHTML +='<details open><summary>klap in/uit</summary> ...<BR>';
+       var mapInstellingen = { gemOpacity : 0.2 , gemFill : 0.05 }
+
        if (urlP != 0 ) {
 
        legendHTML += '<br><br><i style="background: #629623; text-align: center"></i><span>Fiets</span><BR>';
@@ -45,6 +45,7 @@ legendHTML += '<a href="https://kennis.zuid-holland.nl/brede-kansen-voor-slimme-
     <script src="scr/tekenGem.js"> //teken de gemeeentes in </script>
 
   <script>
+  tekenGemeentes();
 
 
   if (urlP != 0 ) {

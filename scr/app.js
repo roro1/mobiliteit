@@ -1,7 +1,5 @@
 const PContent = document.querySelector('#content');
 
-
-
 function menuFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -184,7 +182,7 @@ function renderLijst(json,wat,optie){  // vul lijst met items op basis Json
 function renderGemeenten(json,wat,optie){  // vul lijst met items op basis Json
   let xli = document.createElement('span');
   xli.innerHTML = "<H1>Titel</H1><ul id='lijst'></ul>";
-  
+
   PContent.appendChild(xli); //append child in content blok
   const PLijst = document.querySelector('#lijst');
 

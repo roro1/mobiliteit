@@ -1,14 +1,19 @@
 
-gemOpacity= 0.2
-gemFill= 0
 
-      function regioKleur(str) {
-        if (str < 60 ) {
-          tst2 = gemData[str]["regio"];
-          tst4 = regio[tst2]["kleur"];
-        } else tst4 ="purple"
-        return tst4
-      }
+function regioKleur(str) {
+  if (str < 60 ) {
+    tst2 = gemData[str]["regio"];
+    tst4 = regio[tst2]["kleur"];
+  } else tst4 ="purple"
+  return tst4
+}
+
+function tekenGemeentes() {
+  console.log('mapInstellingen');
+  console.log(mapInstellingen);
+  if (mapInstellingen['gemFill'] != null ) {gemFill = mapInstellingen['gemFill'] } else {gemFill= 0.2}
+  if (mapInstellingen['gemOpacity'] != null ) {gemOpacity = mapInstellingen['gemOpacity'] } else {gemOpacity= 0.1}
+
 
 
        L.geoJSON(gemeentes, {
@@ -40,3 +45,4 @@ gemFill= 0
          txt = txt + "<a href='"+linkVerkiezing +"' target='_blank'>verkiezingsuitslag</a><br>"+extra
     return txt;
 }).addTo(map);
+}
