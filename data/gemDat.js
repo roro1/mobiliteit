@@ -7,14 +7,6 @@ regio = [
   {"code": 5, "kleur": "#76448A", "naam" :"Alblasserwaard","extra":"Acounthouder Edwin"},
   {"code": 6, "kleur": "Magenta", "naam" :"Hoeksche Waard","extra":"Acounthouder Frans"}
 ];
-var legendHTML = '<H4><img src="img/favicon.png"style="float:left;">Zuid-Holland</H4>'
-for (let x in regio) {
-  if (regio[x]["site"]  != null) {strx  =  '<a href="'+regio[x]["site"]+'"target="_blank">'+regio[x]["naam"]+'</a>'}
-  else {strx  =  regio[x]["naam"]}
-  legendHTML += '<i style=" opacity: 0.1; background-color:' + regio[x]["kleur"] + '; text-align: center"></i><span>'+strx +'</span><BR>' ;
-}
-// legendHTML += '<BR><a href="map.html" target="_blank">Plannen kaart</a><br><br>';
-legendHTML += '<br><button onclick="openFullscreen();">Fullscreen</button>;';
 
 gemData =  [
 {"code": "0",   "naam": "Alblasserdam", "regio": 4, "site": "http://www.alblasserdam.nl/","WM":"[https://www.alblasserdam.nl/Bestuur_Organisatie/Alle_onderwerpen/Portefeuilleverdeling Ramon Pardo]"},

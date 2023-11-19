@@ -13,32 +13,36 @@
  </head>
 
  <body>
-
     <div id="map"></div>
     <script src="data/deelmdata.js"></script>
     <script src="data/gemeentesZH.js"></script>
     <script src="data/gemDat.js"></script>
     <script src="scr/parseW.js"></script>
     <script src="scr/mapFunctions.js"></script>
-
     <script>
        var mapOptions = { center: [52.03, 4.584], zoom: 10 }
-       var mapInstellingen = { gemOpacity : 0.2 , gemFill : 0.04 }
+       var mapInstellingen = { gemOpacity : 0.2 , gemFill : 0.07 }
        console.log(mapInstellingen);
 
        </script>
-       <script src="scr/map.js"> //creeer en teken de map inc legenda </script>
+       <script src="scr/map.js"> //creeer en teken de map inc basis legenda </script>
        <script src="scr/tekenGem.js"> //laad tekenroutine de gemeeentes in </script>
 
     <script>
-      tekenGemeentes();
+
+//      console.log("URL parameters start")
       const urlParams = new URLSearchParams(window.location.search);
       const urlP = urlParams.get('p')
-      console.log(urlP);
+      const urlG = urlParams.get('g')
+      if (urlG != 0 ) {   tekenGemeentes();} // functie zit in script file
+      if (urlP != 0 ) { plotDots(mapData);
+        const legC = document.getElementById("legendContent");
+        legC.innerHTML += "Cirkels van 1 en 3 km rond OV-fiets uitgifte"  //"<details>  <summary>opties & toelichting</summary>  <p>... </p></details>"
+      } // functie zit in script file
 
-      if (urlP != 0 ) {
-            plotDots(mapData); // functie zit in script file
-     }
+//const legSpan = document.getElementById("legendSpan");
+//legSpan.innerHTML = legSpan.innerHTML + "<details>  <summary>opties & toelichting</summary>  <p>... </p></details>"
+
        </script>
  </body>
 

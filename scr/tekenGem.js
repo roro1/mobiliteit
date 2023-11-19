@@ -14,8 +14,6 @@ function tekenGemeentes() {
   if (mapInstellingen['gemFill'] != null ) {gemFill = mapInstellingen['gemFill'] } else {gemFill= 0.2}
   if (mapInstellingen['gemOpacity'] != null ) {gemOpacity = mapInstellingen['gemOpacity'] } else {gemOpacity= 0.1}
 
-
-
        L.geoJSON(gemeentes, {
            style: function(feature) {
              var myStyle = {
@@ -44,5 +42,14 @@ function tekenGemeentes() {
          txt = txt +"<a href='"+linkCijfers+"' target='_blank'>alleCijfers van gemeente</a><br>";
          txt = txt + "<a href='"+linkVerkiezing +"' target='_blank'>verkiezingsuitslag</a><br>"+extra
     return txt;
-}).addTo(map);
+  }).addTo(map);
+// legenda uitbreiden
+  var legendHTML = ''
+  for (let x in regio) {
+    if (regio[x]["site"]  != null) {strx  =  '<a href="'+regio[x]["site"]+'"target="_blank">'+regio[x]["naam"]+'</a>'}
+    else {strx  =  regio[x]["naam"]}
+    legendHTML += '<i style=" opacity: 0.1; background-color:' + regio[x]["kleur"] + '; text-align: center"></i><span>'+strx +'</span><BR>' ;
+  }
+  const legC = document.getElementById("legendContent");
+  legC.innerHTML = legendHTML
 }

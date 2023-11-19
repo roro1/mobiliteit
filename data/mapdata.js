@@ -3,7 +3,7 @@ var mapData = [
    "titel":"Doorfietsroute Papendrecht-Gorinchemn"  ,
    "type" :"fiets",
    "regio":"Drecht",
-   "link" :"$[rapport 2020](https://files.fietsersbond.nl/app/uploads/sites/13/2020/11/16134851/20201030.Notitie-SFR-Papendrecht-Gorinchem1.pdf) ; ",
+   "link" :"[https://files.fietsersbond.nl/app/uploads/sites/13/2020/11/16134851/20201030.Notitie-SFR-Papendrecht-Gorinchem1.pdf rapport 2020]",
    "kort": "Er zijn diverse verkenningen en vervolgonderzoeken gedaan naar een geschikte ligging voor een doorfietsroute tussen Papendrecht en Gorinchem. Dit heeft een voorkeurstracé opgeleverd langs de A15, via de Tiendweg en volgt voor een groot de al bestaande fietsroute. Ambitie is om deze naar het niveau van een doorfietsroute te promoveren. De route sluit aan op eerder ontwikkelde fietsroutes: Beneden Merwede Route en de F15 IJsselmonde.",
    "geo" :"polylijn", "polylijn": [[51.838323,4.712787],[51.832492,4.724113],[51.826979,4.766674],[51.821571,4.808033],[51.821253,4.821248],[51.822631,4.845617],[51.830924,4.897131],[51.836012,4.927679],[51.837921,4.935916],[51.837374,4.94607]],
    "lang": "Deze fietsroute is opgenomen in de provinciale Toekomstsagenda Snelfietsroutes met als doel een alternatief te bieden voor de auto aan forensen en scholieren. Nu al wordt veel van de route gebruik gemaakt, maar de verwachting is dat zeker 2000 nieuwe fietsers per etmaal de route zullen waarderen. De fietsroute staat niet op zichzelf. De afgelopen twee jaar in innig met het ministerie I&W en Rijkswaterstaat samengewerkt in de MIRT-verkenning naar verbreding van de A15. Een eventuele verbreding heeft consequenties voor de fietsroute, met name tussen Giessendam-Hardinxveld. Een verbrede A15 komt dan volledig over het fietspad te liggen. Binnen de MIRT-verkenning is de fietsroute als een van de drie Meekoppelkansen opgenomen. Procesafspraken hierover konden bestuurders in de laatste stuurgroep van juli 2022 nog niet maken. Het ministerie wil eerst een Voorkeursalternatief voor de A15. De MIRT-verkenning kan hier ondanks “de stikstoflijst” van het ministerie gewoon doorgang vinden. De ontwikkelingen voor de fietsroute staan tot 2023/2024 even stil, alleen no-regret maatregelen op het trajectdeel bij Sliedrecht lijken een mogelijkheid om een start te maken met de ambitie deze route op het niveau van een doorfietsroute te brengen. PZH trekt samen op met de gemeente Papendrecht, Sliedrecht, Hardinxveld-Giessendam en Gorinchem en het Waterschap Rivierland en de Fietsersbond."
@@ -12,7 +12,7 @@ var mapData = [
    "titel":"Metropolitane Fietsroute Dordrecht - Rotterdam"  ,
    "type" :"fiets",
    "regio":"Drecht",
-   "link" :"$[Metropolitane Fietsroutes](https://mrdh.nl/fietsroutes) ; ",
+   "link" :"[https://mrdh.nl/fietsroutes Metropolitane Fietsroutes]",
    "kort": "..",
    "geo" :"polylijn", "polylijn":[[51.920158,4.492621],[51.889674,4.523168],[51.892827,4.57008],[51.877579,4.599941],[51.860632,4.640936],[51.847068,4.652949],[51.829047,4.660157],[51.812716,4.646428],[51.793173,4.678362]]
   },
@@ -20,7 +20,7 @@ var mapData = [
    "titel":"Vernieuwing Peursumsebrug"  ,
    "type" :"weg",
    "regio":"Drecht",
-   "link" :"$[Vernieuwing Peursumsebrug](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/wegverkeer/alle-n-wegen/wegen/n216/vernieuwing-peursumsebrug/) ; ",
+   "link" :"[https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/wegverkeer/alle-n-wegen/wegen/n216/vernieuwing-peursumsebrug/ Vernieuwing Peursumsebrug]",
    "kort": "De provincie Zuid-Holland is van plan de Peursumsebrug te vernieuwen. De brug, waarmee de N216 over de Giessen gaat, wordt verbreed. Het verkeer op en rond de brug wordt veiliger en fietsers onder de brug krijgen een hoger plafond.",
    "geo" :"polylijn", "polylijn": [[51.868307,4.901276],[51.866771,4.902906]],
   },
@@ -28,7 +28,7 @@ var mapData = [
    "titel":"N214/N216 Gelijkvloerse Kruising"  ,
    "type" :"weg",
    "regio":"Drecht",
-   "link" :"$[N214/N216 Gelijkvloerse Kruising](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/wegverkeer/alle-n-wegen/wegen/n214/n214-n216/) ; ",
+   "link" :"[https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/wegverkeer/alle-n-wegen/wegen/n214/n214-n216/N214/N216 Gelijkvloerse Kruising]",
    "kort": "Het aanpassen van de gelijkvloerse kruising N214/N216 is een van de maatregelen om de doorstroming in de regio te verbeteren. Met deze aanpassingen worden de huidige wachttijden in de spits verminderd.",
    "geo": "punt" , "latlon": [51.881381,4.895564],
   },
@@ -36,7 +36,7 @@ var mapData = [
    "titel":"Werkzaamheden N214"  ,
    "type" :"weg",
    "regio":"Drecht",
-   "link" :"$[N214](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/wegverkeer/alle-n-wegen/wegen/n214/) ; ",
+   "link" :"[https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/wegverkeer/alle-n-wegen/wegen/n214/ N214]",
    "kort": "De provincie gaat werkzaamheden uitvoeren aan N214 tussen de aansluiting op de A15 en de kruising met de Gorissenweg. Naast groot onderhoud komen op dit traject aanpassingen die bijdragen aan de vlotte en veilige doorstroming van het verkeer.",
    "geo" :"polylijn", "polylijn": [[51.840429,4.713739],[51.84658,4.730562],[51.852094,4.731592],[51.853367,4.740518],[51.856335,4.750131],[51.857608,4.777597],[51.853579,4.808839],[51.853367,4.816736],[51.879019,4.878534],[51.881138,4.895013],[51.887919,4.910806],[51.900208,4.925912],[51.897666,4.970201],[51.898089,4.978097]],
   },
@@ -44,7 +44,7 @@ var mapData = [
    "titel":"Concordiabrug"  ,
    "type" :"weg",
    "regio":"Drecht",
-   "link" :"$[Concordiabrug](https://nl.wikipedia.org/wiki/Bestand:Concordiabrug_Gorinchem.jpg) ; ",
+   "link" :"[https://nl.wikipedia.org/wiki/Bestand:Concordiabrug_Gorinchem.jpg Concordiabrug]",
    "kort": "...",
    "geo": "punt" , "latlon": [51.836261,4.974052],
   },
@@ -52,7 +52,7 @@ var mapData = [
    "titel":"Windpark Avelingen"  ,
    //"type" :"weg",
    "regio":"Drecht",
-   "link" :"$[Windpark Avelingen](https://www.gorinchem.nl/gorinchem-duurzaam/klimaatakkoord/windenergie-gorinchem) ; ",
+   "link" :"[https://www.gorinchem.nl/gorinchem-duurzaam/klimaatakkoord/windenergie-gorinchem Windpark Avelingen]",
    "kort": "...",
    "geo" :"polygoon","poly":  [[51.828192,4.951744],[51.828086,4.950971],[51.830314,4.935779],[51.830261,4.926166],[51.833019,4.925566],[51.832913,4.933805],[51.83103,4.934964]],
   },
@@ -60,7 +60,7 @@ var mapData = [
   {"id":"40",
    "titel":"Goeree-Overflakkee & Hoeksche Waard"  ,
    "regio":"GH",
-   "link" :"$[NK Tegelwippen 2022: Goeree-Overflakkee gaat strijd met Hoeksche Waard aan](https://www.goeree-overflakkee.nl/nk-tegelwippen-2022-goeree-overflakkee-gaat-strijd-met-hoeksche-waard-aan) ; ",
+   "link" :"[https://www.goeree-overflakkee.nl/nk-tegelwippen-2022-goeree-overflakkee-gaat-strijd-met-hoeksche-waard-aan NK Tegelwippen 2022: Goeree-Overflakkee gaat strijd met Hoeksche Waard aan]",
    "kort": "Goeree-Overflakkee & Hoeksche Waard"
   },
 
@@ -68,7 +68,7 @@ var mapData = [
    "titel":"Haringvlietbrug A29, Maatregelen"  ,
    "type" :"weg",
    "regio":"GH",
-   "link" :"$[Maatregelen Haringvlietbrug A29](https://www.rijkswaterstaat.nl/wegen/wegenoverzicht/a29/maatregelen-haringvlietbrug) ; ",
+   "link" :"[https://www.rijkswaterstaat.nl/wegen/wegenoverzicht/a29/maatregelen-haringvlietbrug) [Maatregelen Haringvlietbrug A29]",
    "kort": "Sinds augustus 2021 gelden er verkeersmaatregelen op de Haringvlietbrug A29. De maatregelen zijn ingesteld omdat de klemmen lostrillen door al het verkeer dat over de brug rijdt. De maximumsnelheid is verlaagd naar 50 km/h. In beide richtingen zijn de rijstroken versmald. Er is een inhaalverbod voor vrachtwagens.",
    "geo" :"polylijn", "polylijn": [[51.708737,4.396248],[51.726168,4.406776]],
    "lang": "Vanaf de start van het nieuwe vaarseizoen op 1 april 2022, gaat de Haringvlietbrug doordeweeks tweemaal per dag open voor de hoge scheepvaart (>13 m) en in het weekend driemaal per dag. $![..](https://rijkswaterstaat-live-prd.imgix.net/haringvlietbrug_tcm26-307052.jpg?q=20&fit=crop&crop=entropy&ar=&dpr=2&auto=format&w=1200)  $![..](https://rijkswaterstaat-live-prd.imgix.net/situatie-haringvlietbrug_tcm26-308318.jpg?crop=entropy) "
@@ -78,7 +78,7 @@ var mapData = [
    "titel":"N215 Omleiding Melissant-Dirksland en N215 B en C"  ,
    "type" :"weg",
    "regio":"GH",
-   "link" :"$[N215](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/wegverkeer/alle-n-wegen/wegen/n215/) ; $[N215 Dirksland-Oude-Tonge](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/wegverkeer/alle-n-wegen/wegen/n215/n215-dirksland-oude/) ",
+   "link" :"[https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/wegverkeer/alle-n-wegen/wegen/n215/ N215]; [https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/wegverkeer/alle-n-wegen/wegen/n215/n215-dirksland-oude/ N215 Dirksland-Oude-Tonge]",
    "kort": "Project Dirksland-Oude-Tonge. Om de bereikbaarheid, doorstroming en verkeersveiligheid op dit gedeelte van de N215 te verbeteren worden een aantal maatregelen genomen door de provincie, gemeente Goeree-Overflakkee en het Waterschap Hollandse Delta.",
    "geo" :"polylijn", "polylijn": [[51.718457,4.174576],[51.750191,4.161301],[51.749483,4.122162],[51.754014,4.11026],[51.755147,4.09584],[51.772844,4.088058],[51.776099,4.074097],[51.78077,4.052811],[51.79874,4.020767]],
    "lang": " $&[..](https://www.youtube.com/embed/PnXZhp1wU6s) $![..](https://flakkeenieuws.nl/site/afbeeldingen/20-07-17-n215.jpg) "
@@ -88,7 +88,7 @@ var mapData = [
    "titel":"Renovatie Heinenoordtunnel"  ,
    "type" :"weg",
    "regio":"GH",
-   "link" :"$[renovatie Heinenoordtunnel](https://www.rijkswaterstaat.nl/wegen/projectenoverzicht/a29-renovatie-eerste-heinenoordtunnel) ; ",
+   "link" :"[https://www.rijkswaterstaat.nl/wegen/projectenoverzicht/a29-renovatie-eerste-heinenoordtunnel) renovatie Heinenoordtunnel]",
    "kort": "De Heinenoordtunnel uit 1969 is toe aan groot onderhoud hinder tijdens de renovatie in 2023 en 2024 is hinder niet te voorkomen.",
    "geo" :"polylijn", "polylijn": [[51.829301,4.509058],[51.836563,4.513979]],
    "lang": " $![Heinenoordtunnel](https://rijkswaterstaat-live-prd.imgix.net/eerste-heinenoordtunnel_tcm26-278235.jpg) "
@@ -98,7 +98,7 @@ var mapData = [
    "titel":"Waterstoftankstation Heinenoord"  ,
    "type" :"OV",
    "regio":"GH",
-   "link" :"$[Nieuw waterstoftankstation voor bussen in Heinenoord](https://www.ovpro.nl/bus/2022/03/14/nieuw-waterstoftankstation-voor-connexxion-bussen-in-heinenoord/) ; ",
+   "link" :"[https://www.ovpro.nl/bus/2022/03/14/nieuw-waterstoftankstation-voor-connexxion-bussen-in-heinenoord/ Nieuw waterstoftankstation voor bussen in Heinenoord]",
    "kort": "Twintig bussen tanken voortaan bij het nieuwe waterstoftankstation in het Zuid-Hollandse Heinenoord. Dat kunnen er nog meer worden, want het tankstation heeft capaciteit om ruim vijftig bussen te voorzien van waterstof. ",
     "geo": "punt" , "latlon":[51.815047, 4.49589],
     "lang": "Het tankstation is tot stand gekomen door een samenwerking tussen de provincie Zuid-Holland, de gemeente Hoeksche Waard, Connexxion en Everfuel. De waterstofleverancier gaat minimaal twaalf jaar groene waterstof leveren aan het tankstation. In de toekomst kunnen ook vrachtwagens er gebruik van maken. Volgens Everfuel is Heinenoord één van de grootste waterstoftankstations in Europa.$![..](https://www.ovpro.nl/wp-content/uploads/2022/03/Opening-waterstoftankstation-Heinenoord-scaled.jpg)"
@@ -108,7 +108,7 @@ var mapData = [
    "titel":"N59 van de Toekomst"  ,
    "type" :"weg",
    "regio":"GH",
-   "link" :"$[N59 van de toekomst](https://www.n59vandetoekomst.nl/) ; ",
+   "link" :"[(https://www.n59vandetoekomst.nl/ N59 van de toekomst]",
    "kort": "Tot 2024 werken we aan de verbetering van de veiligheid, doorstroming, duurzaamheid en ecologie op en rondom de N59. Het verbeteren van de N59 is een samenwerking van de provincie Zuid-Holland, Rijkswaterstaat, de gemeenten Goeree-Overflakkee en Schouwen-Duiveland en de provincie Zeeland.",
    "geo" :"polylijn", "polylijn": [[51.653948,3.924866],[51.647419,3.967896],[51.646567,4.003143],[51.681757,4.154663],[51.701042,4.191742],[51.693953,4.263153],[51.701326,4.295654],[51.702744,4.389038]]
   },
@@ -117,7 +117,7 @@ var mapData = [
    "titel":"Thuiswerkhub Middelharnis"  ,
    "regio":"GH",
    "geo": "punt" , "latlon":[51.762606, 4.189653],
-   "link" :"$[Thuiswerkhub](https://www.thuiswerkhub.nl/nieuws/) ; $[Thuiswerkhub bericht + rapport](https://www.zuid-holland.nl/actueel/nieuws/november-2021/dichtbij-huis-werken-thuiswerkhub/) ",
+   "link" :"[https://www.thuiswerkhub.nl/nieuws/ Thuiswerkhub] ; [https://www.zuid-holland.nl/actueel/nieuws/november-2021/dichtbij-huis-werken-thuiswerkhub/ Thuiswerkhub bericht + rapport] ",
    "kort": "De eerste Thuiswerkhub heeft zijn deuren geopend. Op een toplocatie in Middelharnis kun je nu thuiswerken in de buurt van je huis. Handelsgebouw De Oostplaat, zoals de thuiswerkhub heet, combineert de voordelen van werken op kantoor met het gemak van thuiswerken. Zie ook de Snelstudie Thuiswerkhubs.",
    "lang" : "$![..](https://www.zuid-holland.nl/publish/pages/28510/546px/afbeelding-thuiswerkhub-bij-bericht-thuiswerkhub-in-middelharnis_1.jpg)"
   },
@@ -126,7 +126,7 @@ var mapData = [
    "titel":"Kiltunnel groot onderhoud"  ,
    "type" :"weg",
    "regio":"GH",
-   "link" :"$[Kiltunnel groot onderhoud](https://www.kiltunnel.nl/) ; ",
+   "link" :"[https://www.kiltunnel.nl/ Kiltunnel groot onderhoud]",
    "kort": "De Kiltunnel vormt de verbinding tussen het Eiland van Dordrecht en het eiland Hoeksche Waard. De in 1977 geopende tunnel is in eerste instantie een lokale hoofdverkeersader voor zowel autoverkeer als (brom)fietsers. Het groot onderhoud is in 2021 van start gegaan en moet midden 2022 zijn afgerond. Het groot onderhoud aan de Kiltunnel is afgerond voordat Rijkswaterstaat in 2023 start met de renovatie van de Heinenoordtunnel.",
    "geo" :"polylijn", "polylijn": [[51.772644,4.624171],[51.772644,4.630237]]
   },
@@ -135,7 +135,7 @@ var mapData = [
    "titel":"Pontje Oud Beijerland – Rhoon"  ,
    "type" :"fiets",
    "regio":"GH",
-   "link" :"$[Blue Amigo Veerdienst](https://www.blueamigo.com/veerdienstrhoon/) ; ",
+   "link" :"[https://www.blueamigo.com/veerdienstrhoon/ Blue Amigo Veerdienst]",
    "kort": "Pontje Oud Beijerland – Rhoon geeft verbinding per fiets naar metrostation Rhoon.",
    "geo" :"polylijn", "polylijn": [[51.828961,4.412441],[51.829632,4.413128],[51.829774,4.420452],[51.834297,4.428635],[51.83769,4.428864],[51.841329,4.42337],[51.842425,4.423428]]
   },
@@ -144,7 +144,7 @@ var mapData = [
    "titel":"N217 Parallelweg Maasdam - 's-Gravendeel"  ,
    "type" :"weg",
    "regio":"GH",
-   "link" :"$[N217 Parallelweg Maasdam - 's-Gravendeel](https://www.gemeentehw.nl/direct-regelen/wonen-bouwen-en-omgeving/verkeer-en-vervoer/parallelweg-maasdam-sgravendeel/) ; ",
+   "link" :"[https://www.gemeentehw.nl/direct-regelen/wonen-bouwen-en-omgeving/verkeer-en-vervoer/parallelweg-maasdam-sgravendeel/ N217 Parallelweg Maasdam - 's-Gravendeel]",
    "kort": "De provinciale weg N217 is de belangrijkste oost-westverbinding in de Hoeksche Waard. Over deze weg rijdt veel verkeer van en naar de A29/A16 maar ook tussen de verschillende dorpen. Langs het grootste gedeelte van de N217 loopt ook een parallelweg voor langzaam verkeer (landbouwverkeer en fietsers). Tussen Maasdam en ’s-Gravendeel ontbreekt deze weg. Het landbouwverkeer maakt daar gebruik van de hoofdrijbaan. Gemeente en provincie realiseren daarom een parallelweg en nieuw vrijliggend fietspad",
    "lang": "$![..](https://openpdc.gemeentehw.nl/wp-content/uploads/2021/02/Paralleweg-fietspad-Noord-met-bomen.jpg)",
    "geo" :"polylijn", "polylijn": [[51.786181,4.567308],[51.784483,4.571772],[51.78236,4.603586],[51.781652,4.605932]]
@@ -155,7 +155,7 @@ var mapData = [
    "regio":"GH",
    "type" : "weg",
    "geo": "punt" , "latlon":[51.78149, 4.605803],
-   "link" :"$[Werkzaamheden N217](https://www.gemeentehw.nl/direct-regelen/wonen-bouwen-en-omgeving/verkeer-en-vervoer/werkzaamheden-n217) ",
+   "link" :"[https://www.gemeentehw.nl/direct-regelen/wonen-bouwen-en-omgeving/verkeer-en-vervoer/werkzaamheden-n217 Werkzaamheden N217]",
    "kort": "De provinciale weg N217 is de belangrijkste oost-westverbinding in de Hoeksche Waard. Over deze weg rijdt veel verkeer van en naar de A29/A16 maar ook tussen de verschillende dorpen. Op verschillende punten langs de N217 zijn aanpassingen gewenst. ",
    "lang" : "$![..](https://openpdc.gemeentehw.nl/wp-content/uploads/2021/07/Kruising-N217-Blaakseweg-Mijnsheerenland-1536x974.jpg)"
   },
@@ -165,7 +165,7 @@ var mapData = [
    "regio":"GH",
    "type" : "OV",
    "geo": "punt" , "latlon":[51.81534, 4.494009],
-   "link" :"$[PZH site PenR](https://www.zuid-holland.nl/actueel/nieuws/februari-2022/parkeer-reis-verder-stad-ov/) ",
+   "link" :"[https://www.zuid-holland.nl/actueel/nieuws/februari-2022/parkeer-reis-verder-stad-ov/ PZH site PenR]",
    "kort": "Zuid-Holland heeft in samenwerking met de gemeente Hoeksche Waard 2 P+R’s gerealiseerd: 1 in Heinenoord en 1 in Numansdorp. Op een P+R kunnen automobilisten hun auto parkeren en met het openbaar vervoer verder de stad in reizen. Hiermee dragen P+R’s bij aan de bereikbaarheid en leefbaarheid van steden.",
    "lang" : "$![..](https://www.hoekschnieuws.nl/wp-content/uploads/2021/01/3032_1200_1200_overlay-scaled.jpg)"
   },
@@ -174,7 +174,7 @@ var mapData = [
    "titel":"Veer Nieuw-Beijerland – Hekelingen frequentieverhogen"  ,
    "type" :"fiets",
    "regio":"GH",
-   "link" :"$[thequeenjacqueline.nl/](https://www.thequeenjacqueline.nl/) ; ",
+   "link" :"[ttps://www.thequeenjacqueline.nl/ thequeenjacqueline.nl/](",
    "kort": "Veer Hekelingen – Nieuw-Beijerland vormt een cruciale verbinding voor vitale beroepen. Hogere frequentie voor met name tbv fietsverkeer naar metro Spijkenisse. ",
    "lang" : "$![](https://www.thequeenjacqueline.nl/wpsite/wp-content/uploads/2011/12/escohoogehuis.jpg)",
    "geo" :"polylijn", "polylijn": [[51.816251,4.338541],[51.81729,4.338105]]
@@ -184,7 +184,7 @@ var mapData = [
   {"id":"30",
    "titel":"Metropoolregio Rotterdam Den Haag"  ,
    "regio":"mrdh",
-   "link" :"$[MRDH website](https://mrdh.nl/) ; ",
+   "link" :"[https://mrdh.nl/ MRDH website]",
    "kort": "Met 23 gemeenten, 2,4 miljoen mensen, 1,2 miljoen banen en een bijdrage van 15% aan het BNP is de metropoolregio een regio die er toe doet. Het Rijk gaf de Metropoolregio Rotterdam Den Haag de status van vervoerregio en daarmee ook wettelijke taken rond verkeer en vervoer. De Metropoolregio is bovendien directe ontvanger van de rijksmiddelen voor regionaal verkeer en vervoer. Om die reden is de Metropoolregio Rotterdam Den Haag ook opdrachtgever van het regionale en stedelijke openbaar vervoer in de 23 gemeenten. "
   },
 
@@ -192,7 +192,7 @@ var mapData = [
    "titel":"Trace A16 (A13) Rotterdam"  ,
    "type" :"weg",
    "regio":"mrdh",
-   "link" :"$[a16rotterdam.nl](https://www.a16rotterdam.nl/default.aspx) ",
+   "link" :"[https://www.a16rotterdam.nl/default.aspx a16rotterdam.nl]",
    "kort": "A16 Rotterdam: een 11 kilometer lange rijksweg tussen de A16/A20 bij het Terbregseplein en de A13 bij Rotterdam The Hague Airport.",
    "lang" : "In de figuur de aansluiting op de N471 $!](https://www.a16rotterdam.nl/over+het+project/aansluiting+n471/Schermafbeelding%202020-09-09%20om%2013.51.26.png)",
     "geo" :"polylijn", "polylijn": [[51.953858,4.417305],[51.967115,4.454384],[51.972897,4.482994],[51.972051,4.501305],[51.962039,4.519615],[51.953294,4.529686]]
@@ -202,7 +202,7 @@ var mapData = [
    "titel":"Blankenburgverbinding kwaliteitsimpuls"  ,
    "regio":"mrdh",
    "type" :"weg",
-   "link" :"$[blankenburgverbinding.nl](https://www.blankenburgverbinding.nl/default.aspx) ",
+   "link" :"[https://www.blankenburgverbinding.nl/default.aspx blankenburgverbinding.nl]",
    "kort": "De Blankenburgverbinding is een nieuwe snelweg (de A24), die vanaf 2024 de A20 bij Vlaardingen met de A15 bij Rozenburg verbindt. Dit project is met name gericht op de 25 miljoen die is uitgetrokken voor landschappelijke inpassing van de nieuwe verbinding",
 "lang" : "$!](https://www.blankenburgverbinding.nl/media/sectionimages/21c420d3-cfa7-4efe-8a37-10200a979f78/2f28c379-df7d-43ae-aad6-99bcda3ee233/Overzichtkaart%202019%20kaal.jpg?Width=900&Height=-1)",
   "geo" :"polylijn", "polylijn": [[51.903754,4.21277],[51.930154,4.257188]]
@@ -211,7 +211,7 @@ var mapData = [
   {"id":"33",
    "titel":"Bleizo west"  ,
    "regio":"mrdh",
-   "link" :"$[Factsheet Interne PZH link](https://pzh-my.sharepoint.com/:w:/g/personal/ra_haverman_pzh_nl/ERiBzNumBaNMl635WrFPq7YBBuAesmBvFJJ9Sy1QKJ88YQ?e=VwC6Ld) ",
+   "link" :"[https://pzh-my.sharepoint.com/:w:/g/personal/ra_haverman_pzh_nl/ERiBzNumBaNMl635WrFPq7YBBuAesmBvFJJ9Sy1QKJ88YQ?e=VwC6Ld Factsheet Interne PZH link] ",
    "kort": "Er is grote discussie over de invulling van de locatie Bleizo-West, in het verleden aangewezen als bedrijventerrein met opties voor windenergie. Dit terwijl er nu een gemeentelijke wens ligt om hier duizenden woningen te realiseren. Vanuit mobiliteit heeft dit grote gevolgen voor de N209 (en ook N471) en er ligt een directe relatie met het nieuwe station Lansingerland",
    "lang" : "",
    "geo": "punt" , "latlon":[52.0432,4.523004]
@@ -221,7 +221,7 @@ var mapData = [
    "titel":"Schie-oevers / N470 Kruithuisweg"  ,
    "regio":"mrdh",
    "type" :"wonen",
-   "link" :"$[delft over Schieovers](https://www.delft.nl/wonen/bouwen/bouwprojecten-de-stad/schieoevers) , $[Site Schieoevers](https://schieoeversnoord.nl/)",
+   "link" :"[https://www.delft.nl/wonen/bouwen/bouwprojecten-de-stad/schieoevers delft over Schieovers], [https://schieoeversnoord.nl/ Site Schieoevers]",
    "kort": "De gemeente Delft wil grote stedelijke ontwikkelingen rond de Schieoevers realiseren. Deze plannen hebben een directe relatie met de situatie op de provinciale weg N470",
    "geo" :"polygoon","poly": [[51.998921,4.360228],[51.999837,4.36492], [51.982501,4.377337], [ 51.981338,4.370241],[ 51.998921,4.360228]]
   },
@@ -231,7 +231,7 @@ var mapData = [
    "titel":"A4 Haaglanden Passage poorten en inprikkers"  ,
    "regio":"mrdh",
    "type" :"weg",
-    "link" :"$[projectsite](https://www.a4haaglanden-n14.nl/bibliotheek/overige+projecten/998555.aspx?t=MRT-Verkenning-A4-Passage-en-Poorten-Inprikkers) ",
+    "link" :"[https://www.a4haaglanden-n14.nl/bibliotheek/overige+projecten/998555.aspx?t=MRT-Verkenning-A4-Passage-en-Poorten-Inprikkers projectsite] ",
      "kort": "In het kader van het MIRT gaat rijkwaterstaat de A4 tussen Den Haag en Rotterdam verbreden. Provincie is betrokken vanuit meekoppelkansen en de effecten op het provinciale netwerk, alsmede is er een directe relatie met het project Wippolderlaan N211",
 "geo" :"polylijn", "polylijn":  [[51.946452,4.355998],[51.988334,4.325317],[52.005526,4.310206],[52.021726,4.318449]]
     },
@@ -240,7 +240,7 @@ var mapData = [
      "titel":"Wippolderlaan N211"  ,
      "type" :"weg",
      "regio":"mrdh",
-     "link" : "$[N211 Wippolderlaan](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/wegverkeer/alle-n-wegen/wegen/n211/n211-wippolderlaan/) ",
+     "link" : "[https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/wegverkeer/alle-n-wegen/wegen/n211/n211-wippolderlaan/ N211 Wippolderlaan] ",
      "kort": "In het kader van het MIRT traject A4 Haaglanden zijn afspraken gemaakt over de verbeteren van de capaciteit op de N211, de zogenaamde Veilingroute"
     },
 
@@ -249,36 +249,24 @@ var mapData = [
      "titel":"N222 rotonde Zwethlaan"  ,
      "type" :"weg",
      "regio":"mrdh",
-     "link" :"$[..](..) ",
+     "link" :".",
      "kort": "De rotonde Zwethlaan is onderdeel van de zogenaamde veilingroute. Er ligt een wens om deze uit te breiden tot een turbo rotonde om de doorstroming te verbeteren. Inmiddels op dit dossier diverse ontwikkelingen die voortgang onzeker maken ",
      "geo": "punt" , "latlon":[ 51.995642, 4.26355021]
     },
     {"id":"38",
      "titel":"Fiets en MRDH"  ,
      "regio":"mrdh",
-     "link" :"$[MRDH fietsroutes]((https://mrdh.nl/fietsroutes)) ",
+     "link" :"[(https://mrdh.nl/fietsroutes MRDH fietsroutes]",
      "kort": "De MRDH is primair verantwoordelijk voor de fietsinfrastructuur binnen hun gebied. Zij zijn vanuit die rol gestart met het project metropolitane fietsroutes, waar wij als provincie in meerdere gevallen direct bij betrokken zijn."
     },
 
-  {"id":"39",
-   "titel":"Provinciale bediencentrale Delft"  ,
-   "regio":"mrdh",
-   "link" :"$[uitvoeringsbesluit](https://www.zuid-holland.nl/@28584/uitvoeringsbesluit-slimme-centrale-delft/) ",
-   "kort": "nieuwe bediencentrale "
-  },
 
   {"id":"4A",
    "titel":"Kickersbloem"  ,
    "regio":"mrdh",
-   "link" :"$[Kickersbloem](https://www.kickersbloem3.nl/) ",
+   "link" :"[https://www.kickersbloem3.nl/ Kickersbloem]",
    "kort": ""
   },
-
-
-
-
-
-
 
   {"id":"20",
    "titel":"Regio Holland Rijnland"  ,
@@ -293,7 +281,7 @@ var mapData = [
    "regio":"rijnland",
    "type" :"weg",
    "geo" :"polylijn", "polylijn": [[52.122036,4.477446],[52.152942,4.43852],[52.166702,4.451113],[52.187054,4.416309]],
-   "link" :"$[Rijnland route projectsite](https://rijnlandroute.nl/)",
+   "link" :"[https://rijnlandroute.nl/ Rijnland route projectsite]",
        "kort": "De RijnlandRoute is een nieuwe wegverbinding tussen Katwijk, via de A44, en de A4 bij Leiden. Zo komt er een nieuwe weg met een geboorde tunnel, de N434, en worden delen van de N206 in Leiden en Katwijk aangepast en vernieuwd. In de toekomst kan het verkeer in de regio Holland Rijnland dan beter doorrijden. Twee van de drie projecten van de RijnlandRoute zijn inmiddels in uitvoering. Het project N434/A44/A4, waarvan de geboorde tunnel onderdeel uitmaakt, wordt uitgevoerd door aannemerscombinatie Comol5, het project N206 Tjalmaweg door Boskalis. Het derde project van de RijnlandRoute, de N206 Europaweg, is nog in voorbereiding. De huidige planning is dat twee van de drie projecten van de RijnlandRoute (N434/A44/A4 en N206 Tjalmaweg) medio 2023 klaar zijn. Voor het project N206 Europaweg is de verwachting dat deze eind 2025 klaar is, afhankelijk van de planning van de toekomstige aannemer. ",
     "lang" : "$![kaart](https://rijnlandroute.nl/wp-content/uploads/2022/01/RijnlandRoute_Tracekaart.png)"
   },
@@ -302,7 +290,7 @@ var mapData = [
    "titel":"HOV Buslijn Leiden-Katwijk-Noordwijk",
    "type" :"OV",
    "geo" :"polylijn", "polylijn" : [[52.164526,4.483051],[52.166492,4.454657],[52.188527,4.417562],[52.19905,4.420081],[52.206905,4.398786],[52.196805,4.386421],[52.210412,4.396954],[52.198489,4.424432],[52.213778,4.443895],[52.224575,4.425119]],
-   "link" :"$[HOV Buslijn Leiden-Katwijk-Noordwijk](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/openbaar-vervoer/r-net/buslijn-leiden-katwijk-noordwijk/)",
+   "link" :"[https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/openbaar-vervoer/r-net/buslijn-leiden-katwijk-noordwijk/ HOV Buslijn Leiden-Katwijk-Noordwijk]",
    "kort": "Wie met de bus van Leiden naar Katwijk wil, kan sinds zondag 9 mei 2021 reizen met een van de nieuwe R-netlijnen. Met de realisatie van de nieuwe R-net routes vergroot de provincie Zuid-Holland de bereikbaarheid tussen Leiden en Katwijk en Leiden en ESA Estec (Noordwijk). Iedere 5 minuten rijdt er in de spits een R-net bus, waardoor reizigers een kortere wachttijd hebben en daardoor sneller op hun eindbestemming zijn. Om ervoor te zorgen dat ook de toekomstige bewoners van de nieuwe woonwijk Valkenhorst (Katwijk) vanaf eind 2024 snel en comfortabel met het openbaar vervoer kunnen reizen, werken provincie Zuid-Holland en gemeente Katwijk samen aan de doorontwikkeling van deze R-net-corridor. Hieronder vallen de volgende maatregelen: -	aanleggen van het fiets- en voetgangersviaduct $[Oude Broekweg](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/openbaar-vervoer/r-net/buslijn-leiden-katwijk-noordwijk/viaduct-oude-broekweg/) over de N206 -	(deels) vrijliggende busbaan langs Valkenhorst en $[Duinvallei](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/openbaar-vervoer/r-net/buslijn-leiden-katwijk-noordwijk/busbaan-langs-duinvallei/) -	fietstunnel onder de N206 nabij de N441",
   "lang": "$![kaart](https://www.zuid-holland.nl/publish/pages/28603/kaart_lkn.png)"
   },
