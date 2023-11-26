@@ -4,9 +4,7 @@ var mapData = [
    "titel":"HOV Buslijn Leiden-Katwijk-Noordwijk",
    "type" :"OV",
    "geo" :"ovEnDeel", "polylijn" : [[52.165965, 4.48263],[52.172809, 4.42071],[52.188527,4.417562],[52.19905,4.420081],[52.206905,4.398786],[52.196805,4.386421]],
-   "link" :"$[HOV Buslijn Leiden-Katwijk-Noordwijk](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/openbaar-vervoer/r-net/buslijn-leiden-katwijk-noordwijk/)",
-   "kort": "Wie met de bus van Leiden naar Katwijk wil, kan sinds zondag 9 mei 2021 reizen met een van de nieuwe R-netlijnen. Met de realisatie van de nieuwe R-net routes vergroot de provincie Zuid-Holland de bereikbaarheid tussen Leiden en Katwijk en Leiden en ESA Estec (Noordwijk). Iedere 5 minuten rijdt er in de spits een R-net bus, waardoor reizigers een kortere wachttijd hebben en daardoor sneller op hun eindbestemming zijn. Om ervoor te zorgen dat ook de toekomstige bewoners van de nieuwe woonwijk Valkenhorst (Katwijk) vanaf eind 2024 snel en comfortabel met het openbaar vervoer kunnen reizen, werken provincie Zuid-Holland en gemeente Katwijk samen aan de doorontwikkeling van deze R-net-corridor. Hieronder vallen de volgende maatregelen: -	aanleggen van het fiets- en voetgangersviaduct $[Oude Broekweg](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/openbaar-vervoer/r-net/buslijn-leiden-katwijk-noordwijk/viaduct-oude-broekweg/) over de N206 -	(deels) vrijliggende busbaan langs Valkenhorst en $[Duinvallei](https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/openbaar-vervoer/r-net/buslijn-leiden-katwijk-noordwijk/busbaan-langs-duinvallei/) -	fietstunnel onder de N206 nabij de N441",
-  "lang": "$![kaart](https://www.zuid-holland.nl/publish/pages/28603/kaart_lkn.png)"
+
   },
 */
   {"id":"1",
@@ -29,8 +27,19 @@ var mapData = [
 
   },
 
+  {"id":"4",
+   "titel":"Merwede Lingelijn",
+   "type" :"Donkey",
+   "geo" :"ovEnDeel", "polylijn" : [[51.802135189315884, 4.716376224950551],[51.83225267845797, 4.74254817524502],[51.829589941963086, 4.778222069131888],[51.83072666073815, 4.814990782152732],[51.830514491289804, 4.835418485600605],[51.832447552907546, 4.878553253788742],[51.833760637461054, 4.967400796117128],[51.872415654910135, 4.992948194269259],[51.89443784206065, 5.09252607934622]],
 
+  },
 
+  {"id":"5",
+   "titel":"Bus 388",
+   "type" :"Donkey",
+   "geo" :"ovEnDeel", "polylijn" : [[51.85878909243056, 4.789618728338324],[51.871576200876156, 4.855819334345095],[51.90084653845438, 4.9398137434685845],[51.89953663849121, 4.979668557272204]],
+
+  },
 
 
 ];

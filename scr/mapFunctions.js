@@ -21,9 +21,12 @@ function plotDots(json) {
       }
       else if (punt["geo"] == "ovEnDeel") {
         marker = L.polyline(punt["polylijn"],{color: kleur , weight: 3, opacity: 0.4}).addTo(map);
+        straal = 3000
+        if (punt["type"] == "OV") {kleur = '#000080';}
+        else if (punt["type"] == "Donkey") {kleur = 'Orange'; straal = 2500}
         for(itemx in punt["polylijn"]) {
                           marker =  L.circle(punt["polylijn"][itemx], 1000, {color: kleur ,fillColor: kleur,fillOpacity: 0,weight: 1,opacity: 0.6}).addTo(map);
-                          marker =  L.circle(punt["polylijn"][itemx], 3000, {color: kleur ,fillColor: '#000080',fillOpacity: 0.1,weight: 1,opacity: 0.6}).addTo(map);
+                          marker =  L.circle(punt["polylijn"][itemx], straal, {color: kleur ,fillColor: kleur ,fillOpacity: 0.1,weight: 1,opacity: 0.6}).addTo(map);
 
 
         }

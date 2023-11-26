@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="robots" content="noindex">
+  <meta charset="UTF-8">
+  <title>Boot</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 7px;
+}
+ </style>
+</head>
+<body>
+  <div class="row">
+       <div class="topnav" id="myTopnav">
+        <a href="map.html">opt 1</a>
+        <a href="index.html">Home</a>
+        <a href="javascript:fetchURL('s/C400000');">SwitchUit</a>
+        <a href="javascript:fetchURL('s/C41100000');">Sw41100</a>
+
+
+        <a href="javascript:setInterval(getInfo,3000);" class="icon2"><span class="material-icons">autorenew</span></a>
+        <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+          <span class="material-icons">dehaze</span>
+        </a>
+       </div>
+  </div>
+  <div class="row">
+  </div>
+  <div class="content100" id="content">
+    <div class="row">
+        <div class="b50" id="inhoud">>
+
+
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+
+var vars =  []
+
+function menuFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+}
+
+function url(set,txt)
+
+{
+ return "<a href='https://roro1.eu.pythonanywhere.com/s/"+set+"' target='_blank'>"+txt+"</a> "
+
+}
+
+function render(){
+
+
+  xHTML = "<H2>" ;
+  xHTML +=vars[2] +' volt ('+ vars[3] + ' - '+ vars[4]  +")";
+  if (vars[4] > 14.1  ) { xHTML += " laden"}
+  else if (vars[4] > 13.5 ) { xHTML += " float"}
+  else if (vars[4] > 13.0 ) { xHTML += " Motor"}
+  else {xHTML += " Zeilen"}
+
+  xHTML +="</H2><H2>"+ vars[5] +' volt ('+ vars[6] + ' - '+ vars[7]  +")</H2>";
+  xHTML += "<H2>" + vars[8]+ "&#176  " + "("+ vars[9]+ "&#176  " + vars[10]+ "&#176 " +vars[11]+"&#176) "+ vars[13]+ "%   "+": " + vars[12]+ "&#176</H2>  ";
+  //if (vars['water'] !=0 || vars['water2'] !=0 ) { xHTML += "<H2>water: " + vars['water'] + "  " + vars['water2'] + "</H2><br>";}
+
+  xHTML += "<H3><table style='width:100%>'"
+  xHTML += "<tr><td>Interval</td><td>" + vars[1].substring(0,1) +  "</td><td>"+url('C1---','1')+url('C2---','2')+url('C3---','3')+url('C4---','4')+"</td></tr>"
+  xHTML += "<tr><td>koelkast</td><td>" + vars[1].substring(1,2) +  "</td><td>"+url('C-0---','0')+url('C-1--','1')+"</td></tr>"
+  xHTML += "<tr><td>rest</td><td>"     + vars[1].substring(2,8) +  "</td></tr>"
+
+
+  xHTML += "</table></H3>"
+
+
+  const d = new Date(vars[0] );
+  const d2 = new Date();
+  var Difference_In_Time = d2.getTime() - d.getTime();
+  var Diff_Sec  = Difference_In_Time / 1000;
+  var Diff_Min  = Math.floor(Diff_Sec / 60);
+  var modSec = Math.round(Diff_Sec - (60*Diff_Min));
+
+  xHTML +="<details><summary>"+"update van " + Diff_Min +" minuten "+modSec +" sec geleden ";
+  if (Diff_Min > 12) {xHTML += " !!!!!!!";}
+
+  xHTML +="</summary><p>"
+  xHTML += "respStr: "+vars[15]+"<br>";
+  //xHTML += "setStr: "+vars[1]+"<br>";
+
+  //xHTML += vars['log'] +"<br><br>";
+  xHTML += vars[1] +"<br>";
+
+
+
+
+  xHTML += " (" + vars[0] +" ) "+ d2.toLocaleTimeString();
+
+  xHTML +="</p></details>"
+
+
+  document.getElementById("inhoud").innerHTML = xHTML;
+
+}
+
+
+
+async function getInfo() {
+  console.log("begin getinfo")
+  strx ="https://roro1.eu.pythonanywhere.com/tsk/b"
+  let myObject = await fetch(strx);
+  vars = await myObject.json();
+  console.log("vars")
+  console.log(vars);
+  render();
+}
+
+
+
+getInfo();
+setInterval(getInfo,30000);
+
+// A setting string   A0123456
+// 0 = update freq
+// 1 = meet interv
+// loglevel
+// geluid
+// dispScherm
+// relais 1
+// relais 2
+
+
+// 0= wifiNr            [meet
+// 1 = geluid           [set]
+// 2 = dispScherm       [set]
+// 3 = # one wires      [meet]
+// 4 = update count (0-9)[meet]
+// 5 = loglevel         [set]
+// !
+// # uur aan het runnen [meet]
+
+
+
+</script>
+
+
+  </script>
+</body>
+</html>
