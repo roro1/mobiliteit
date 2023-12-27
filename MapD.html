@@ -31,10 +31,15 @@
       const urlParams = new URLSearchParams(window.location.search);
       const urlP = urlParams.get('p')
       const urlG = urlParams.get('g')
+      const legC = document.getElementById("legendContent");
       if (urlG != 0 ) {   tekenGemeentes();}
-      if (urlP != 0 ) { plotDots(mapData);
-        const legC = document.getElementById("legendContent");
-        legC.innerHTML += "Cirkels van 1 en 3 km rond (grote) OV-fiets uitgifte"  //"<details>  <summary>opties & toelichting</summary>  <p>... </p></details>"
+      if (urlP == 'donkey' ) {
+        plotDots(mapDonkeys);
+        legC.innerHTML += "Cirkels van 1 en 3 km rond Donkey stationsuitgifte"
+      }
+        else if (urlP != 0 ) {
+        plotDots(mapData);
+        legC.innerHTML += "Cirkels van 1 en 3 km rond (grote) OV-fiets uitgifte" 
       } //teken opjecten zoals ov lijnen
 
        </script>

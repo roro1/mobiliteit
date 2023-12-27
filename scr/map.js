@@ -23,6 +23,16 @@ legend.onAdd = function(map) {
 };
 legend.addTo(map);
 
+// test 2e legenda
+var legend2 = L.control({ position: "bottomleft" });
+legend2.onAdd = function(map) {
+  var div = L.DomUtil.create("div", "legend");
+  div.innerHTML= "test";
+
+  return div;
+};
+legend2.addTo(map);
+
 var elem = document.getElementById("map");
 function openFullscreen() {
   if (elem.requestFullscreen) {

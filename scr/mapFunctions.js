@@ -31,6 +31,18 @@ function plotDots(json) {
 
         }
       }
+      else if (punt["geo"] == "deelfiets") {
+        straal = 3000; kleur = 'Orange'
+//        if (punt["type"] == "OV") {kleur = '#000080';}
+//        else if (punt["type"] == "Donkey") {kleur = 'Orange'; straal = 2500}
+        marker =  L.circle(punt["latlon"], 1000, {color: kleur ,fillColor: kleur,fillOpacity: 0,weight: 1,opacity: 0.6}).addTo(map);
+        marker =  L.circle(punt["latlon"], straal, {color: kleur ,fillColor: kleur ,fillOpacity: 0.1,weight: 1,opacity: 0.6}).addTo(map);
+
+
+      }
+
+
+
       else {
         marker = L.marker(punt["latlon"]).addTo(map);
       }
