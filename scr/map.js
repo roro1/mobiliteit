@@ -1,6 +1,6 @@
 var map = new L.map('map', mapOptions);         // Creating a map object
-var legendHTML = '<span id="legendSpan"><H4><img src="img/favicon.png"style="float:left;">Zuid-Holland</H4><span id="legendContent">'
-legendHTML += '</span><br><button onclick="openFullscreen();">Fullscreen</button></span>';
+var legendHTML = '<span id="legendSpan"><H4><img src="img/favicon.png"style="float:left;">Zuid-Holland</H4><span id="legendContent"></span><br>'
+if (window.location == window.parent.location) { legendHTML += '<button onclick="openFullscreen();">Fullscreen</button></span>';}
 
 var layer = new L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
   attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> © <a href="https://www.mapbox.com/">Mapbox</a>',
