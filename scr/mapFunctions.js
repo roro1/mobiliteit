@@ -17,7 +17,7 @@ function plotDots(json) {
         marker = L.polygon(punt["poly"],{color: kleur, fillColor: kleur,fillOpacity: 0.2,opacity: 0.6, weight: 1}).addTo(map);
       }
       else if (punt["geo"] == "polylijn") {
-        marker = L.polyline(punt["polylijn"],{color: kleur , weight: 5, opacity: 0.6}).addTo(map);
+        marker = L.polyline(punt["polylijn"],{color: kleur , weight: 4, opacity: 0.6}).addTo(map);
       }
       else if (punt["geo"] == "ovEnDeel") {
         marker = L.polyline(punt["polylijn"],{color: kleur , weight: 3, opacity: 0.4}).addTo(map);
@@ -33,8 +33,6 @@ function plotDots(json) {
       }
       else if (punt["geo"] == "deelfiets") {
         straal = 3000; kleur = 'Orange'
-//        if (punt["type"] == "OV") {kleur = '#000080';}
-//        else if (punt["type"] == "Donkey") {kleur = 'Orange'; straal = 2500}
         marker =  L.circle(punt["latlon"], straal, {color: kleur ,fillColor: kleur ,fillOpacity: 0.1,weight: 1,opacity: 0.6}).addTo(map);
   //      marker =  L.circle(punt["latlon"], 1000, {color: kleur ,fillColor: kleur,fillOpacity: 0,weight: 1,opacity: 0.6}).addTo(map);
         var marker = L.circleMarker(punt["latlon"],{radius: 5,color:'Orange',fillOpacity: 0.8}).addTo(map);

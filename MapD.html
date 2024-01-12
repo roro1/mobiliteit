@@ -24,9 +24,8 @@
        const urlP = urlParams.get('p')
        const urlG = urlParams.get('g')
        var mapOptions = { center: [52.03, 4.584], zoom: 10 }
-       var mapInstellingen = { gemOpacity : 0.2 , gemFill : 0.07 }
-       if (urlP == 'oranje' || 'donkey' ) { mapOptions = { center: [51.95, 4.584], zoom: 10 }}
-       console.log(mapInstellingen);
+       var mapInstellingen = { gemOpacity : 0.2 , gemFill : 0.07, popup : 9 }
+       if (urlP == 'oranje' ||urlP == 'donkey' ) { mapInstellingen["popup"]=1; mapOptions = { center: [51.95, 4.584], zoom: 10 };   }
     </script>
        <script src="scr/map.js"> //creeer en teken de map inc basis legenda </script>
        <script src="scr/tekenGem.js"> //laad tekenroutine de gemeeentes in </script>

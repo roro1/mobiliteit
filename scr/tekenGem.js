@@ -29,18 +29,22 @@ function tekenGemeentes() {
          nr = layer.feature.properties.code
          nrRegio = gemData[nr]["regio"]
          gem = gemData[nr]["naam"]
-         link = gemData[nr]["site"]
-         linkC1 = "https://allecijfers.nl/gemeente/" + gem.toLowerCase();
-         let linkC2 = linkC1.replace(" ", "-");
-         let linkC3 = linkC2.replace(" ", "-");
-         let linkCijfers = linkC3.replace(" ", "-");
-         linkVerkiezing = linkCijfers +"#verkiezingsuitslagen"
-         let extra ="";
-         if  (regio[nrRegio]["extra"]!= null) {extra =regio[nrRegio]["extra"] }
-         txt ="<b>"+gem+"</b><br>regio: "+regio[nrRegio]["naam"]+ "<br><a href='"+link+"' target='_blank'>website van gemeente</a><br>";
-         if (gemData[nr]["WM"]!=null) { txt = txt+"Wethouder mobiliteit: "+ parseW(gemData[nr]["WM"]) +"<BR>" }
-         txt = txt +"<a href='"+linkCijfers+"' target='_blank'>alleCijfers van gemeente</a><br>";
-         txt = txt + "<a href='"+linkVerkiezing +"' target='_blank'>verkiezingsuitslag</a><br>"+extra
+         if (mapInstellingen["popup"]==1) {
+           txt =gem;
+         } else {
+           link = gemData[nr]["site"]
+           linkC1 = "https://allecijfers.nl/gemeente/" + gem.toLowerCase();
+           let linkC2 = linkC1.replace(" ", "-");
+           let linkC3 = linkC2.replace(" ", "-");
+           let linkCijfers = linkC3.replace(" ", "-");
+           linkVerkiezing = linkCijfers +"#verkiezingsuitslagen"
+           let extra ="";
+           if  (regio[nrRegio]["extra"]!= null) {extra =regio[nrRegio]["extra"] }
+           txt ="<b>"+gem+"</b><br>regio: "+regio[nrRegio]["naam"]+ "<br><a href='"+link+"' target='_blank'>website van gemeente</a><br>";
+           if (gemData[nr]["WM"]!=null) { txt = txt+"Wethouder mobiliteit: "+ parseW(gemData[nr]["WM"]) +"<BR>" }
+           txt = txt +"<a href='"+linkCijfers+"' target='_blank'>alleCijfers van gemeente</a><br>";
+           txt = txt + "<a href='"+linkVerkiezing +"' target='_blank'>verkiezingsuitslag</a><br>"+extra
+          }
     return txt;
   }).addTo(map);
 // legenda uitbreiden
