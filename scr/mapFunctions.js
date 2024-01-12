@@ -35,9 +35,9 @@ function plotDots(json) {
         straal = 3000; kleur = 'Orange'
 //        if (punt["type"] == "OV") {kleur = '#000080';}
 //        else if (punt["type"] == "Donkey") {kleur = 'Orange'; straal = 2500}
-        marker =  L.circle(punt["latlon"], 1000, {color: kleur ,fillColor: kleur,fillOpacity: 0,weight: 1,opacity: 0.6}).addTo(map);
         marker =  L.circle(punt["latlon"], straal, {color: kleur ,fillColor: kleur ,fillOpacity: 0.1,weight: 1,opacity: 0.6}).addTo(map);
-
+  //      marker =  L.circle(punt["latlon"], 1000, {color: kleur ,fillColor: kleur,fillOpacity: 0,weight: 1,opacity: 0.6}).addTo(map);
+        var marker = L.circleMarker(punt["latlon"],{radius: 5,color:'Orange',fillOpacity: 0.8}).addTo(map);
 
       }
 
@@ -48,7 +48,8 @@ function plotDots(json) {
       }
     if (punt["id"] !=null ) {
       text = "<a href='plannen.html?id="+punt["id"] + " ' > <b>" + punt["titel"] +  "</b></a> "
-    } else {text = "."}
+    } else {text = ""}
+    text = text + punt["titel"];
     if (punt["kort"]  != null) {if ( punt["kort"].length >200)  {text = text + "<p>" + punt["kort"].substr(0, 200) +"...</p>"} else {text = text + "<p>" + punt["kort"] +"</p>"}}
     text = text + "<p>" + parseW(punt["link"])+ "</p>";
     marker.bindPopup(text);
