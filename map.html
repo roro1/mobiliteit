@@ -19,42 +19,25 @@
     <script src="data/gemDat.js"></script>
     <script src="scr/parseW.js"></script>
     <script src="scr/mapFunctions.js"></script>
+
     <script>
-      const urlParams = new URLSearchParams(window.location.search);
-      const urlP = urlParams.get('p')
-      console.log(urlP);
-       var mapOptions = { center: [51.95, 4.584], zoom: 10 }
-       var mapInstellingen = { gemOpacity : 0.2 , gemFill : 0.05 }
+    var Instellingen = {gemeentes:'regio' ,deelmob:'geen', gemOpacity : 0.2 , gemFill : 0.1, popup : 9 }
+    var mapOptions = { center: [52.03, 4.584], zoom: 10 }
+    leesURL(); // om instellingen aan te passen
+    console.log("mapOptions: ");
+    console.log(mapOptions);
+    var map = new L.map('map', mapOptions);  createMap(); maakLegenda();      // Creating a map object
+    if (Instellingen['gemeentes'] != 'geen' ) { tekenGemeentes();}
+    //  if (Instellingen['deelm'] == 'oranje' ) { plotDots(ovLijnen); plotDots(mapDonkeys);legC.innerHTML = "" }
+    if (Instellingen["pointer"] !=null) {plaatsPointer();}
+    if (Instellingen["project"] =='ja') { plotDots(mapData);}
 
-       if (urlP != 0 ) {
-
-       legendHTML += '<br><br><i style="background: #629623; text-align: center"></i><span>Fiets</span><BR>';
-       legendHTML += '<i style="background: #847062; text-align: center"></i><span>Openbaar vervoer</span><BR>';
-       legendHTML += '<i style="background: #d11f3d; text-align: center"></i><span>Weg</span><BR>';
-       legendHTML += '<i style="background: #281f6b; text-align: center"></i><span>Woningen</span><BR>';
-       legendHTML += '<i style="background: #efcc36; text-align: center"></i><span>Diversen / mix</span><BR><BR>';
-       legendHTML += '<a href="plannen.html" target="_blank">Lijst met plannen</a><br>';
-     } else {   legendHTML += '<br><a href="map.html">Kaart met plannen</a><br>';}
-legendHTML += '<a href="https://kennis.zuid-holland.nl/brede-kansen-voor-slimme-mobiliteit/" target="_blank">Brede kansen slimme mobiliteit</a><br>';
-
-       //legendHTML += '<a href="mapGem.html" target="_blank">Gemeenten kaart</a><br>';
-       legendHTML += '<a href="https://pzh.maps.arcgis.com/apps/webappviewer/index.html?id=74e23812a85e40b9be7d14e731ad0e4b target="_blank">DBI kaart</a><br>'
-       //legendHTML += '<button onclick="openFullscreen();">Fullscreen Mode</button>;';
-    </script>
-    <script src="scr/map.js"> //creeer en teken de map inc legenda </script>
-    <script src="scr/tekenGem.js"> //teken de gemeeentes in </script>
-
-  <script>
-  tekenGemeentes();
-
-
-  if (urlP != 0 ) {
-       plotDots(mapData); // functie zit in script file
-}
-       /* Get the documentElement (<html>) to display the page in fullscreen */
-
-
-
+  //     legendHTML += '<br><br><i style="background: #629623; text-align: center"></i><span>Fiets</span><BR>';
+  //     legendHTML += '<i style="background: #847062; text-align: center"></i><span>Openbaar vervoer</span><BR>';
+  //     legendHTML += '<i style="background: #d11f3d; text-align: center"></i><span>Weg</span><BR>';
+  //     legendHTML += '<i style="background: #281f6b; text-align: center"></i><span>Woningen</span><BR>';
+  //     legendHTML += '<i style="background: #efcc36; text-align: center"></i><span>Diversen / mix</span><BR><BR>';
+  //     legendHTML += '<a href="plannen.html" target="_blank">Lijst met plannen</a><br>';
     </script>
  </body>
 </html>

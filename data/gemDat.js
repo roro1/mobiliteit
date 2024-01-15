@@ -1,11 +1,17 @@
 regio = [
-  {"code": 0, "kleur": "orange", "naam" : "Holland Rijnland", "site" : "https://hollandrijnland.nl/", "extra":"Acounthouder Minke"},
-  {"code": 1, "kleur": "green", "naam" :"Midden Holland", "site": "https://www.regiomiddenholland.nl/","extra":"Acounthouder Edwin+Jordy"},
-  {"code": 2, "kleur": "red", "naam" :"MRDH", "site":"https://mrdh.nl/", "extra":"Acounthouder Jordy"},
-  {"code": 3, "kleur": "yellow", "naam" :"Goeree-Overflakkee","extra":"Acounthouder Frans"},
-  {"code": 4, "kleur": "blue", "naam" :"Drechtsteden","extra":"Acounthouder Jolanda"},
-  {"code": 5, "kleur": "#76448A", "naam" :"Alblasserwaard","extra":"Acounthouder Edwin"},
-  {"code": 6, "kleur": "Magenta", "naam" :"Hoeksche Waard","extra":"Acounthouder Frans"}
+  {"code": 0, "kleur": "orange", "naam" : "Holland Rijnland","concessie" : 0, "site" : "https://hollandrijnland.nl/", "extra":"Acounthouder Minke"},
+  {"code": 1, "kleur": "green", "naam" :"Midden Holland","concessie" : 0, "site": "https://www.regiomiddenholland.nl/","extra":"Acounthouder Edwin+Jordy"},
+  {"code": 2, "kleur": "red", "naam" :"MRDH","concessie" : 2, "site":"https://mrdh.nl/", "extra":"Acounthouder Jordy"},
+  {"code": 3, "kleur": "yellow", "naam" :"Goeree-Overflakkee","concessie" : 3,"extra":"Acounthouder Frans"},
+  {"code": 4, "kleur": "blue", "naam" :"Drechtsteden","concessie" : 1,"extra":"Acounthouder Jolanda"},
+  {"code": 5, "kleur": "#76448A", "naam" :"Alblasserwaard","concessie" : 1,"extra":"Acounthouder Edwin"},
+  {"code": 6, "kleur": "Magenta", "naam" :"Hoeksche Waard","concessie" : 3,"extra":"Acounthouder Frans"}
+];
+concessie = [
+  {"code": 0, "kleur": "green", "naam" : "Zuid-Holland Noord (bus)"},
+  {"code": 1, "kleur": "brown", "naam" :"Drechtsteden Molenlanden en Gorinchem"},
+  {"code": 2, "kleur": "gray", "naam" :"MRDH"},
+  {"code": 3, "kleur": "purple", "naam" :"Hoeksche Waard Goeree-Overflakkee"}
 ];
 
 gemData =  [
