@@ -40,7 +40,7 @@ function maakLegenda(){
 }
 
 function gemKleur(str) {
-  if (str < 60 ) {
+  if (str < 60 &&  Instellingen["gemeentes"] !='grijs'  ) {
     reg = gemData[str]["regio"];
     if (Instellingen["gemeentes"]=='regio'){
       klr = regio[reg]["kleur"];
@@ -50,7 +50,7 @@ function gemKleur(str) {
       klr = concessie[conse]["kleur"];
 
     }
-  } else klr ="purple"
+  } else klr =0
   return klr
 }
 
@@ -164,9 +164,11 @@ function leesURL() {
   const urlParams = new URLSearchParams(window.location.search);
   const urlP = urlParams.get('p')
   const urlC = urlParams.get('@')
-  if (urlP == 'oranje' ||urlP == 'donkey' ) {Instellingen["deelm"]='oranje'; Instellingen["popup"]=1; mapOptions = { center: [51.95, 4.584], zoom: 10 };   }
+  if (urlP == 'oranje' ||urlP == 'donkey' ) { Instellingen["deelm"]='oranje'; Instellingen["popup"]=1; mapOptions = { center: [51.95, 4.584], zoom: 10 };   }
   if (urlP == 'proj') {Instellingen["project"]='ja'; }
   if (urlP == 'c') { Instellingen["gemeentes"]='concessie'; Instellingen["popup"]=1;   }
+  if (urlP == 'g') { Instellingen["gemeentes"]='grijs'; Instellingen["popup"]=1;   }
+
   if (urlC != null ){
     const myArray = urlC.split(",");
     mapOptions['center'] =  [Number(myArray[0]), Number(myArray[1])]
