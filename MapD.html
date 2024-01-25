@@ -31,7 +31,7 @@
       if (Instellingen['gemeentes'] != 'geen' ) { tekenGemeentes();}
       if (Instellingen['deelm'] == 'oranje' ) { plotDots(ovLijnen); plotDots(mapDonkeys);}
       if (Instellingen["pointer"] !=null) {plaatsPointer();}
-
+      if (Instellingen["click"] ==1) {map.on('click', onMapClick);}
 
   </script>
  </body>

@@ -73,6 +73,12 @@ var mapDonkeys = [
     "donkey" :"ja",
     "geo": "deelfiets" , "latlon": [51.88759075243992, 4.488369652894389]
   },
+  { "titel":"Slinge metro",
+    "donkey" :"ja",
+    "geo": "deelfiets" , "latlon": [51.876390653747166, 4.478323178755014]
+  },
+
+
  { "titel":"Den Haag Mariahoeve",
    "donkey" :"ja",
    "geo": "deelfiets" , "latlon": [52.09063589979453, 4.369300358237248]

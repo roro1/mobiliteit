@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="robots" content="noindex">
+ <meta charset="UTF-8">
+ <title>Zuid-Holland</title>
+ <link rel=icon href="img/favicon.png">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<style>
+#myContainer {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  background:   #bfbfbf;
+}
+#myAnimation {
+  position: absolute;
+}
+#myAnimation2 {
+
+  position: absolute;
+  background-color:#838383 ;
+  top: 100px;
+  left: 100px;
+  padding: 10px;
+
+}
+img {
+  max-height: 1200px;
+}
+
+@media  (max-height: 1500px) {
+  #myAnimation2 {
+    background-color: lightblue;
+  }
+  img {
+    max-height: 600px;
+  }
+  #myContainer {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background:   #bfbfbf;
+  }
+}
+
+
+
+</style>
+
+<body>
+
+
+
+<div id ="myContainer">
+  <div id ="myAnimation">
+    <img src="img/fietsen in delft.jpg" id="im">
+</div>
+  <div id ="myAnimation2">
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p>
+    <button onclick="myMove(elAni)">Click</button>
+    <button onclick="openFullscreen();">Fullscreen</button>
+    </p>
+  </div>
+</div>
+
+<script>
+var fotos = [
+{"file": "img/fietsen in delft.jpg", "x":1500 , "y":1000 }];
+
+document.getElementById("demo").innerHTML =
+  "Screen width: " + screen.width +   " (available: " + screen.availWidth +   ")<br>heigth: " + screen.height+   " (available: " + screen.availHeight+   ")";
+var elContainer = document.getElementById("myContainer");
+var elAni = document.getElementById("myAnimation");
+var elDemo2 = document.getElementById("demo2")
+var elImg = document.querySelector("#im");
+var xTot = screen.availWidth;
+var yTot = screen.availHeight;
+var xImg = 900;
+var yImg = 600;
+var pos = -500;
+var yPos = -500;
+if (yTot > 1500) {   yImg =1200; xImg = 1800; };
+var xMax = xTot - xImg;
+var yMax = yTot - yImg;
+
+elDemo2.innerHTML = "xImg:"+xImg + " yImg: " + yImg + " pos: " + pos;
+elAni.style.top = pos + 'px';
+elAni.style.left = pos + 'px';
+myMove(elAni);
+
+var id = null;
+function myMove(elA) {
+  clearInterval(id);
+  pos = - 500;
+  var yPos = -500;
+
+  id = setInterval(frame, 10);
+  function frame() {
+    if (pos == xMax) {
+      pos = -500;
+      yPos= -500;
+    } else {
+      pos++;
+      if ( yPos < yMax) { yPos++}
+      elA.style.top = yPos + 'px';
+      elA.style.left = pos + 'px';
+      xImg = elImg.clientWidth;
+      elDemo2.innerHTML = "X:"+pos + " box width: " + xImg + " height: " + elImg.clientHeight +"<br>container width: "+elContainer.clientWidth +" height: "+elContainer.clientHeight
+    }
+  }
+}
+
+
+function openFullscreen() {
+  if (elContainer.requestFullscreen) {
+    elContainer.requestFullscreen();
+  } else if (elContainer.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elContainer.msRequestFullscreen) { /* IE11 */
+    elContainer.msRequestFullscreen();
+  }
+}
+
+</script>
+
+</body>
+</html>

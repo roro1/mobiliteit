@@ -164,6 +164,8 @@ function leesURL() {
   const urlParams = new URLSearchParams(window.location.search);
   const urlP = urlParams.get('p')
   const urlC = urlParams.get('@')
+  const urlI = urlParams.get('i')
+
   if (urlP == 'oranje' ||urlP == 'donkey' ) { Instellingen["deelm"]='oranje'; Instellingen["popup"]=1; mapOptions = { center: [51.95, 4.584], zoom: 10 };   }
   if (urlP == 'proj') {Instellingen["project"]='ja'; }
   if (urlP == 'c') { Instellingen["gemeentes"]='concessie'; Instellingen["popup"]=1;   }
@@ -175,6 +177,9 @@ function leesURL() {
     if (myArray[2] !=null) {mapOptions['zoom'] =  Number(myArray[2])}
     if (myArray[3] !=null) {Instellingen["pointer"]=myArray[3]}
   }
+  if (urlI == 'c') { Instellingen["gemeentes"]='geen'; Instellingen["click"]=1;   }
+
+
 }
 
 function plaatsPointer(e) {
@@ -196,4 +201,12 @@ function openFullscreen() {
   } else if (elem.msRequestFullscreen) { /* IE11 */
     elem.msRequestFullscreen();
   }
+}
+
+function onMapClick(e) {
+  var popupC = L.popup();
+    popupC
+        .setLatLng(e.latlng)
+        .setContent(e.latlng.toString())
+        .openOn(map);
 }
