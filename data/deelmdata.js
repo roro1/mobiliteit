@@ -120,6 +120,13 @@ var mapDonkeys = [
    "geo": "deelfiets" , "latlon": [51.8807451037946, 4.531411340915773]
  },
 
+ { "titel":"Hendrik-Ido-Ambacht (Cascade)",
+   "donkey" :"ja",
+   "geo": "deelfiets" , "latlon": [51.8446894168296, 4.638234338259371]
+ },
+
+
+
  { "titel":"Gorinchem",
    "donkey" :"ja",
    "geo": "deelfiets" , "latlon": [51.81506194320336, 4.641696790109819]
