@@ -124,6 +124,14 @@ var mapDonkeys = [
    "donkey" :"ja",
    "geo": "deelfiets" , "latlon": [51.8446894168296, 4.638234338259371]
  },
+ { "titel":"Waterbus Merwekade",
+   "donkey" :"ja",
+   "geo": "deelfiets" , "latlon": [51.819059895598805, 4.674119526284006]
+ },
+ { "titel":"Waterbus Noordeinde",
+   "donkey" :"ja",
+   "geo": "deelfiets" , "latlon": [51.849689983937864, 4.656647055838872]
+ },
 
 
 
