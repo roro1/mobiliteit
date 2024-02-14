@@ -135,7 +135,7 @@ var mapDonkeys = [
 
 
 
- { "titel":"Gorinchem",
+ { "titel":"Zwijndrecht",
    "donkey" :"ja",
    "geo": "deelfiets" , "latlon": [51.81506194320336, 4.641696790109819]
  },
