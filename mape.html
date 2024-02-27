@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta name="robots" content="noindex">
+  <meta charset="UTF-8">
+  <title>Zuid-Holland</title>
+  <link rel=icon href="img/favicon.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/mapstyles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ </head>
+
+ <body>
+  <div id="map"></div>
+  <script src="data/deelmdata.js"></script>
+  <script src="data/gemeentesZH.js"></script>
+  <script src="data/gemDat.js"></script>
+  <script src="scr/parseW.js"></script>
+  <script src="scr/mapFunctions.js"></script>
+
+  <script>
+
+  function plotBikes(json) {
+    console.log("start plotbikes")
+    for(nr in json) {
+      console.log(json[nr])
+      bike = json[nr]
+      console.log(bike[0])
+      console.log(bike[1])
+
+      punt = [bike[0],bike[1]];
+      console.log(punt)
+
+      var marker = L.circleMarker(punt,{radius: 5,color:'Orange',fillOpacity: 0.8}).addTo(map);
+
+      }
+    }
+
+
+
+
+
+  async function getInfo() {
+  strx ="https://roro1.eu.pythonanywhere.com/slider/1"
+  let myObject = await fetch(strx);
+  bikes = await myObject.json();
+  console.log("- na laden bikes-")
+  console.log(bikes);
+  plotBikes(bikes);
+}
+
+
+
+      var Instellingen = {gemeentes:'regio' ,deelmob:'geen', gemOpacity : 0.2 , gemFill : 0.07, popup : 9 }
+      var mapOptions = { center: [52.03, 4.584], zoom: 10 }
+      leesURL(); // om instellingen aan te passen
+      console.log("mapOptions: ");
+      console.log(mapOptions);
+      var map = new L.map('map', mapOptions);  createMap(); maakLegenda();      // Creating a map object
+//      const legC = document.getElementById("legendContent");
+      if (Instellingen['gemeentes'] != 'geen' ) { tekenGemeentes();}
+      if (Instellingen['deelm'] == 'oranje' ) { plotDots(ovLijnen); plotDots(mapDonkeys);}
+      if (Instellingen["pointer"] !=null) {plaatsPointer();}
+      if (Instellingen["click"] ==1) {map.on('click', onMapClick);}
+getInfo();
+  </script>
+ </body>
+</html>
