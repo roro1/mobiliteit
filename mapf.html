@@ -22,7 +22,7 @@
 
   <script>
 
-  function plotBikes(json) {
+  function plotHubs(json) {
     console.log("start plotbikes")
     for(nr in json) {
       console.log(json[nr])
@@ -32,19 +32,47 @@
 
       punt = [bike[0],bike[1]];
       console.log(punt)
-
-      var marker = L.circleMarker(punt,{radius: 5,color:'Orange',fillOpacity: 0.8}).addTo(map);
-
+      kleur = 'Orange'
+      if (bike[3] == 0) {kleur = 'red'}
+      else if (bike[3]  == 1) {kleur = 'yellow'};
+      var marker = L.circleMarker(punt,{radius: 5,color:kleur,fillOpacity: 0.8}).addTo(map);
+      text =  "<p>" +bike[2] +"</p><p>"+bike[3]+ "</p>";
+      marker.bindPopup(text);
       }
     }
 
+    function plotBikes(json) {
+      console.log("start plotbikes")
+      for(nr in json) {
+        console.log(json[nr])
+        bike = json[nr]
+        console.log(bike[0])
+        console.log(bike[1])
+
+        punt = [bike[0],bike[1]];
+        console.log(punt)
+        kleur = 'grey'
+//        if (bike[3] == 0) {kleur = 'red'}
+//        else if (bike[3]  == 1) {kleur = 'yellow'};
+        var marker = L.circleMarker(punt,{radius: 1,color:kleur,fillOpacity: 0.1}).addTo(map);
+        text =  "<p>" +bike[2] +"</p><p>"+bike[3]+ "</p>";
+        marker.bindPopup(text);
+        }
+      }
+
   async function getInfo() {
-  strx ="https://roro1.eu.pythonanywhere.com/slider/1"
+  strx ="https://roro1.eu.pythonanywhere.com/slider/hubs"
   let myObject = await fetch(strx);
   bikes = await myObject.json();
-  console.log("- na laden bikes-")
+  console.log("- na laden hubs-")
   console.log(bikes);
+  plotHubs(bikes);
+  strx ="https://roro1.eu.pythonanywhere.com/slider/1"
+  let myObject2 = await fetch(strx);
+  bikes = await myObject2.json();
+  console.log("- na laden hubs-")
   plotBikes(bikes);
+
 }
 
 
@@ -60,6 +88,7 @@
       if (Instellingen['deelm'] == 'oranje' ) { plotDots(ovLijnen); plotDots(mapDonkeys);}
       if (Instellingen["pointer"] !=null) {plaatsPointer();}
       if (Instellingen["click"] ==1) {map.on('click', onMapClick);}
+ plotDots(ovLijnen);
 getInfo();
   </script>
  </body>
