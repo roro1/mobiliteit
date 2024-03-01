@@ -1,7 +1,6 @@
 //  parse  [http://www.example.org linktext]  wiki external link
 //  hiden van [+.....]  dus tweede teken een +
 //  [!   ]  =img
-// vroeger parste we $[    = link  , $&  = video  ,  $!  = img
 
 function parseW(zin) {
   let zinUit ="";

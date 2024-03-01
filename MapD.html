@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="css/mapstyles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
  </head>
-
  <body>
   <div id="map"></div>
   <script src="data/deelmdata.js"></script>
@@ -19,17 +18,14 @@
   <script src="data/gemDat.js"></script>
   <script src="scr/parseW.js"></script>
   <script src="scr/mapFunctions.js"></script>
-
   <script>
       var Instellingen = {gemeentes:'regio' ,deelmob:'geen', gemOpacity : 0.2 , gemFill : 0.07, popup : 9 }
       var mapOptions = { center: [52.03, 4.584], zoom: 10 }
       leesURL(); // om instellingen aan te passen
-      console.log("mapOptions: ");
-      console.log(mapOptions);
       var map = new L.map('map', mapOptions);  createMap(); maakLegenda();      // Creating a map object
-//      const legC = document.getElementById("legendContent");
       if (Instellingen['gemeentes'] != 'geen' ) { tekenGemeentes();}
-      if (Instellingen['deelm'] == 'oranje' ) { plotDots(ovLijnen); plotDots(mapDonkeys);}
+      plotOVLijnen(ovLijnen);
+      if (Instellingen['deelm'] == 'oranje' ) {  plotDots(mapDonkeys);}
       if (Instellingen["pointer"] !=null) {plaatsPointer();}
       if (Instellingen["click"] ==1) {map.on('click', onMapClick);}
 

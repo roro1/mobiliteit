@@ -12,7 +12,7 @@ function createMap() {
 
 function maakLegenda(){
   var legendHTML = '<span id="legendSpan"><H4><img src="img/favicon.png"style="float:left;">Zuid-Holland</H4><span id="legendContent"></span>'
-  if (Instellingen['deelm'] == 'oranje' ) { }
+  if (Instellingen['deelm'] == 'oranje' || Instellingen['deelm'] == 'live' ) { }
   else if (Instellingen['gemeentes'] == 'regio' ) {
     for (let x in regio) {
       if (regio[x]["site"]  != null) {strx  =  '<a href="'+regio[x]["site"]+'"target="_blank">'+regio[x]["naam"]+'</a>'}
@@ -44,11 +44,9 @@ function gemKleur(str) {
     reg = gemData[str]["regio"];
     if (Instellingen["gemeentes"]=='regio'){
       klr = regio[reg]["kleur"];
-    }
-    else {
+    }  else {
       conse = regio[reg]["concessie"];
       klr = concessie[conse]["kleur"];
-
     }
   } else klr =0
   return klr
@@ -79,7 +77,6 @@ function tekenGemeentes() {
            txt ='<b>' + gem + '</b>';
            conse = regio[nrRegio]["concessie"];
            txt = txt + '<br>'+ concessie[conse]["naam"];
-
          }
          else if (Instellingen["popup"]==1) {
            txt =gem;
@@ -101,6 +98,22 @@ function tekenGemeentes() {
   }).addTo(map);
 
 }
+
+
+function plotOVLijnen(json) {
+  for(itemi in json) {
+    kleur = '#efcc36' ; gewicht = 3;
+    item = json[itemi];
+    if (item["type"] == "OV") {kleur = '#847062';gewicht = 4}
+    if (item["type"] == "waterbus") {kleur = 'blue';gewicht = 2}
+    if (item["type"] == "bus") {kleur = 'brown';gewicht = 2}
+
+    marker = L.polyline(item["polylijn"],{color: kleur , weight: gewicht, opacity: 0.6}).addTo(map);
+    text =  item["titel"];
+    marker.bindPopup(text);
+  }
+}
+
 
 function plotDots(json) {
   for(itemi in json) {  //eerst al keer doorlopen voor grote vlakken zonder marker zodat die onder liggen
@@ -163,23 +176,19 @@ function plotDots(json) {
 function leesURL() {
   const urlParams = new URLSearchParams(window.location.search);
   const urlP = urlParams.get('p')
-  const urlC = urlParams.get('@')
-  const urlI = urlParams.get('i')
-
-  if (urlP == 'oranje' ||urlP == 'donkey' ) { Instellingen["deelm"]='oranje'; Instellingen["popup"]=1; mapOptions = { center: [51.95, 4.584], zoom: 10 };   }
+  if (urlP == 'oranje') { Instellingen["deelm"]='oranje'; Instellingen["popup"]=1; mapOptions = { center: [51.95, 4.584], zoom: 10 };   }
   if (urlP == 'proj') {Instellingen["project"]='ja'; }
   if (urlP == 'c') { Instellingen["gemeentes"]='concessie'; Instellingen["popup"]=1;   }
   if (urlP == 'g') { Instellingen["gemeentes"]='grijs'; Instellingen["popup"]=1;   }
-
+  const urlC = urlParams.get('@')  //mapcenter + pointer
   if (urlC != null ){
     const myArray = urlC.split(",");
     mapOptions['center'] =  [Number(myArray[0]), Number(myArray[1])]
     if (myArray[2] !=null) {mapOptions['zoom'] =  Number(myArray[2])}
     if (myArray[3] !=null) {Instellingen["pointer"]=myArray[3]}
   }
+  const urlI = urlParams.get('i') // edit functie : click geeft coordinaten
   if (urlI == 'c') { Instellingen["gemeentes"]='geen'; Instellingen["click"]=1;   }
-
-
 }
 
 function plaatsPointer(e) {

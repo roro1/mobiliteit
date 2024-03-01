@@ -32,188 +32,65 @@ var ovLijnen = [
     {"titel":"Metro",
      "type" :"metro",
      "geo" :"polylijn", "polylijn" : [[51.92027958230492, 4.4889277519742],[51.923354062287146, 4.532835932607881],[51.952293969035935, 4.551658753831037],[51.979837421589, 4.586636069178529]],
+   },
+    {"titel":"Waterbus",
+     "type" :"waterbus",
+     "geo" :"polylijn", "polylijn" : [[51.909512, 4.483044],[51.918553, 4.502764],[51.899714, 4.520016],[51.904518, 4.57469],[51.886865, 4.619451],[51.849453, 4.657516],[51.834014, 4.67361],[51.819609, 4.674082]],
+   },
+    {"titel":"Bus 488",
+     "type" :"bus",
+     "geo" :"polylijn", "polylijn" : [[51.921325, 4.531957],[51.91738596757898, 4.529378043634545],[51.83799511239848, 4.620921972703742],[51.8446894168296, 4.638234338259371],[51.81506194320336, 4.641696790109819]],
     }
+
+
 ];
 
 var mapDonkeys = [
-  { "titel":"Ypenburg",
-    "donkey" :"ja",
-    "geo": "deelfiets" , "latlon": [52.056359606148426, 4.389901821771526]
-  },
-  { "titel":"Leidschendam Voorburg",
-    "donkey" :"ja",
-    "geo": "deelfiets" , "latlon": [52.07865738880415, 4.381937191358247]
-  },
 
-  { "titel":"Airport Meijersplein",
-    "donkey" :"ja",
-    "geo": "deelfiets" , "latlon": [51.956792020822974, 4.4619187347775595]
-  },
-  { "titel":"Melanchthonweg",
-    "donkey" :"ja",
-    "geo": "deelfiets" , "latlon": [51.949014732148115, 4.464490209649158]
-  },
-  { "titel":"Blijdorp",
-    "donkey" :"ja",
-    "geo": "deelfiets" , "latlon": [51.930804843718846, 4.459333459440203]
-  },
-  { "titel":"Whilhelminaplein",
-    "donkey" :"ja",
-    "geo": "deelfiets" , "latlon": [51.90749339641972, 4.492983550557377]
-  },
-  { "titel":"Rijnhaven",
-    "donkey" :"ja",
-    "geo": "deelfiets" , "latlon": [51.90384222090894, 4.4968399961544865]
-  },
-  { "titel":"Maashaven",
-    "type" :"OV",
-    "geo": "deelfiets" , "latlon": [51.897389445208155, 4.494770611499257]
-  },
-  { "titel":"Zuidplein",
-    "donkey" :"ja",
-    "geo": "deelfiets" , "latlon": [51.88759075243992, 4.488369652894389]
-  },
-  { "titel":"Slinge metro",
-    "donkey" :"ja",
-    "geo": "deelfiets" , "latlon": [51.876390653747166, 4.478323178755014]
-  },
-
-
- { "titel":"Den Haag Mariahoeve",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [52.09063589979453, 4.369300358237248]
- },
- { "titel":"Den Haag NOI",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [52.07989205121431, 4.344047612151633]
- },
- { "titel":"Den Haag CS",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [52.081321305373784, 4.324184255081014]
- },
- { "titel":"Den Haag HS",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [52.069802324316655, 4.3224289683992785]
- },
- { "titel":"Den Haag Moerwijk",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [52.05492572618603, 4.308439237444782]
- },
- { "titel":"Schiedam",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon":[51.92150381011887, 4.40851624766996]
- },
- { "titel":"Rotterdam CS",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon":[51.92508736093765, 4.469071430985969]
- },
- { "titel":"RDam Blaak",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [51.919948726680005, 4.489035041566223]
- },
- { "titel":"Rdam Zuid",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [51.90510468463293, 4.509740174199188]
- },
- { "titel":"RDam Lombardijen   ",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [51.8807451037946, 4.531411340915773]
- },
-
- { "titel":"Hendrik-Ido-Ambacht (Cascade)",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [51.8446894168296, 4.638234338259371]
- },
- { "titel":"Waterbus Merwekade",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [51.819059895598805, 4.674119526284006]
- },
- { "titel":"Waterbus Noordeinde",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [51.849689983937864, 4.656647055838872]
- },
-
-
-
- { "titel":"Zwijndrecht",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [51.81506194320336, 4.641696790109819]
- },
- { "titel":"Dordrecht",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [51.80767271185024, 4.667714210886361]
- },
- { "titel":"Voorburg",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [52.06687334517669, 4.359293696438608]
- },
- { "titel":"Dordrecht Stadspolders",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [51.802135189315884, 4.716376224950551]
- },
- { "titel":"Sliedrecht Baanhoek",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [51.83225267845797, 4.74254817524502]
- },
- { "titel":"Sliedrecht",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [51.829589941963086, 4.778222069131888]
- },
- { "titel":"Hardinxveld Blauwe Zoom",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [51.83072666073815, 4.814990782152732]
- },
- { "titel":"Hardinxveld-Giessendam",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [51.830514491289804, 4.835418485600605]
- },
- { "titel":"Boven Hardinxveld",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [51.832447552907546, 4.878553253788742]
- },
- { "titel":"Gorinchem",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [51.833760637461054, 4.967400796117128]
- },
- { "titel":"Arkel",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [51.872415654910135, 4.992948194269259]
- } ,
- { "titel":"Dordrecht zuid",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [51.7905381683977, 4.6719972961454115]
- } ,
- { "titel":"Kralingse Zoom (metro)",
-   "donkey" :"ja",
-   "geo": "deelfiets" , "latlon": [51.923354062287146, 4.532835932607881]
- } ,
-{ "titel":"Rdam Alexander",
-  "donkey" :"ja",
-  "geo": "deelfiets" , "latlon": [51.952293969035935, 4.551658753831037]
-},
-{ "titel":"Rdam Noord",
- "donkey" :"ja",
- "geo": "deelfiets" , "latlon": [51.94273174878803, 4.481070712318002]
-},
-{ "titel":"Amsterdam zuid",
- "donkey" :"ja",
- "geo": "deelfiets" , "latlon": [52.34096358282013, 4.873827303167813]
-},
-{ "titel":"Amsterdam Sloterdijk",
- "donkey" :"ja",
- "geo": "deelfiets" , "latlon": [52.38920514069126, 4.838274125541185]
-},
-{ "titel":"Amsterdam CS",
- "donkey" :"ja",
- "geo": "deelfiets" , "latlon": [52.3792738442001, 4.900289210450816]
-},
-{ "titel":"Amsterdam Amstel",
- "donkey" :"ja",
- "geo": "deelfiets" , "latlon": [52.34661398841303, 4.9175568908830956]
-},
-
-
-
+  { "titel":"Ypenburg", "latlon": [52.056359606148426, 4.389901821771526]},
+  { "titel":"Leidschendam Voorburg", "latlon": [52.07865738880415, 4.381937191358247] },
+  { "titel":"Airport Meijersplein", "latlon": [51.956792020822974, 4.4619187347775595] },
+  { "titel":"Melanchthonweg", "latlon": [51.949014732148115, 4.464490209649158] },
+  { "titel":"Blijdorp", "latlon": [51.930804843718846, 4.459333459440203] },
+  { "titel":"Whilhelminaplein", "latlon": [51.90749339641972, 4.492983550557377]  },
+  { "titel":"Rijnhaven","latlon": [51.90384222090894, 4.4968399961544865] },
+  { "titel":"Maashaven", "latlon": [51.897389445208155, 4.494770611499257] },
+  { "titel":"Zuidplein", "latlon": [51.88759075243992, 4.488369652894389] },
+  { "titel":"Slinge metro", "latlon": [51.876390653747166, 4.478323178755014] },
+ { "titel":"Den Haag Mariahoeve", "latlon": [52.09063589979453, 4.369300358237248] },
+ { "titel":"Den Haag NOI" , "latlon": [52.0793300, 4.3430130] },
+ { "titel":"Den Haag CS", "latlon": [52.081321305373784, 4.324184255081014] },
+ { "titel":"Den Haag HS", "latlon": [52.069802324316655, 4.3224289683992785] },
+ { "titel":"Den Haag Moerwijk", "latlon": [52.05492572618603, 4.308439237444782] },
+ { "titel":"Schiedam" , "latlon":[51.92150381011887, 4.40851624766996] },
+ { "titel":"Rotterdam CS", "latlon":[51.9228244,4.469580] },
+ { "titel":"RDam Blaak", "latlon": [51.919948726680005, 4.489035041566223] },
+ { "titel":"Rdam Zuid", "latlon": [51.90510468463293, 4.509740174199188] },
+ { "titel":"RDam Lombardijen   " , "latlon": [51.8807451037946, 4.531411340915773] },
+ { "titel":"Hendrik-Ido-Ambacht (Cascade)" , "latlon": [51.8446894168296, 4.638234338259371] },
+ { "titel":"Waterbus Merwekade", "latlon": [51.819059895598805, 4.674119526284006] },
+ { "titel":"Waterbus Noordeinde" , "latlon": [51.849689983937864, 4.656647055838872] },
+ { "titel":"Zwijndrecht", "latlon": [51.81506194320336, 4.641696790109819] },
+ { "titel":"Dordrecht", "latlon": [51.80767271185024, 4.667714210886361] },
+ { "titel":"Voorburg" , "latlon": [52.06687334517669, 4.359293696438608] },
+ { "titel":"Dordrecht Stadspolders", "latlon": [51.802135189315884, 4.716376224950551] },
+ { "titel":"Sliedrecht Baanhoek", "latlon": [51.83225267845797, 4.74254817524502] },
+ { "titel":"Sliedrecht", "latlon": [51.829589941963086, 4.778222069131888] },
+ { "titel":"Hardinxveld Blauwe Zoom", "latlon": [51.83072666073815, 4.814990782152732] },
+ { "titel":"Hardinxveld-Giessendam", "latlon": [51.830514491289804, 4.835418485600605] },
+ { "titel":"Boven Hardinxveld", "latlon": [51.832447552907546, 4.878553253788742] },
+ { "titel":"Gorinchem", "latlon": [51.833760637461054, 4.967400796117128] },
+ { "titel":"Arkel" , "latlon": [51.872415654910135, 4.992948194269259] } ,
+ { "titel":"Dordrecht zuid", "latlon": [51.7905381683977, 4.6719972961454115] } ,
+ { "titel":"Kralingse Zoom (metro)", "latlon": [51.921325, 4.531957] } ,
+{ "titel":"Rdam Alexander", "latlon": [51.952293969035935, 4.551658753831037]},
+{ "titel":"Rdam Noord", "latlon": [51.94273174878803, 4.481070712318002]},
+{ "titel":"Amsterdam zuid", "latlon": [52.34096358282013, 4.873827303167813]},
+{ "titel":"Amsterdam Sloterdijk", "latlon": [52.38920514069126, 4.838274125541185]},
+{ "titel":"Amsterdam CS", "latlon": [52.3792738442001, 4.900289210450816]},
+{ "titel":"Amsterdam Amstel" , "latlon": [52.34661398841303, 4.9175568908830956]},
+{ "titel":"Noordhoek waterbus" , "latlon":[51.834014, 4.67361]},
+{ "titel":"Erasmusbrug waterbus" , "latlon":[51.909512, 4.483044]}
 ];
 
 var mapData = [
@@ -250,14 +127,8 @@ var mapData = [
    "type" :"Donkey",
    "geo" :"ovEnDeel", "polylijn" : [[51.802135189315884, 4.716376224950551],[51.83225267845797, 4.74254817524502],[51.829589941963086, 4.778222069131888],[51.83072666073815, 4.814990782152732],[51.830514491289804, 4.835418485600605],[51.832447552907546, 4.878553253788742],[51.833760637461054, 4.967400796117128],[51.872415654910135, 4.992948194269259],[51.89443784206065, 5.09252607934622]],
 
-  },
+  }
 
-  {"id":"5",
-   "titel":"Bus 388",
-   "type" :"Donkey",
-   "geo" :"ovEnDeel", "polylijn" : [[51.85878909243056, 4.789618728338324],[51.871576200876156, 4.855819334345095],[51.90084653845438, 4.9398137434685845],[51.89953663849121, 4.979668557272204]],
-
-  },
 
 
 ];
