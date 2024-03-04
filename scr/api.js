@@ -1,7 +1,5 @@
 function plotHubs(json) {
-  console.log("start plotbikes")
   for(nr in json) {
-    console.log(json[nr])
     bike = json[nr]
     punt = [bike[0],bike[1]];
     kleur = 'Orange'
@@ -14,15 +12,10 @@ function plotHubs(json) {
   }
 
 function plotBikes(json) {
-  console.log("start plotbikes")
   for(nr in json) {
     console.log(json[nr])
     bike = json[nr]
-    console.log(bike[0])
-    console.log(bike[1])
-
     punt = [bike[0],bike[1]];
-    console.log(punt)
     kleur = 'grey'
     var marker = L.circleMarker(punt,{radius: 1,color:kleur,fillOpacity: 0.1}).addTo(map);
     text =  "<p>" +bike[0] +" "+bike[1]+ " "+bike[2]+ "</p>";

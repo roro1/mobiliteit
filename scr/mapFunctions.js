@@ -102,20 +102,36 @@ function tekenGemeentes() {
 
 function plotOVLijnen(json) {
   for(itemi in json) {
-    kleur = '#efcc36' ; gewicht = 3;
+    kleur = '#efcc36' ; gewicht = 3;opac= 0.6;
     item = json[itemi];
     if (item["type"] == "OV") {kleur = '#847062';gewicht = 4}
-    if (item["type"] == "waterbus") {kleur = 'blue';gewicht = 2}
-    if (item["type"] == "bus") {kleur = 'brown';gewicht = 2}
+    if (item["type"] == "waterbus") {kleur = 'blue';gewicht = 2;opac=0.3}
+    if (item["type"] == "bus") {kleur = 'brown';gewicht = 2;opac=0.4}
 
-    marker = L.polyline(item["polylijn"],{color: kleur , weight: gewicht, opacity: 0.6}).addTo(map);
+    marker = L.polyline(item["polylijn"],{color: kleur , weight: gewicht, opacity: opac}).addTo(map);
     text =  item["titel"];
     marker.bindPopup(text);
   }
 }
 
+function plotOVDonkeys(json) {
+    for(itemi in json) {  //eerst al keer doorlopen voor grote vlakken zonder marker zodat die onder liggen
+      punt = json[itemi];
+        straal = 3000; kleur = 'Orange'
+        marker =  L.circle(punt["latlon"], straal, {color: kleur ,fillColor: kleur ,fillOpacity: 0.05,weight: 1,opacity: 0.6}).addTo(map);
+      }
+    for(itemi in json) {
+      kleur = '#efcc36'
+      punt = json[itemi];
+      kleur = 'Orange'; straal = 2500
+      var marker = L.circleMarker(punt["latlon"],{radius: 5,color:'Orange',fillOpacity: 0.8}).addTo(map);
+      text = punt["titel"];
+      marker.bindPopup(text);
+    }
+  }
 
 function plotDots(json) {
+  console.log("start in plotDots")
   for(itemi in json) {  //eerst al keer doorlopen voor grote vlakken zonder marker zodat die onder liggen
     punt = json[itemi];
     if (punt["geo"] == "deelfiets") {

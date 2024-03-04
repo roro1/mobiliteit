@@ -25,7 +25,7 @@
       var map = new L.map('map', mapOptions);  createMap(); maakLegenda();      // Creating a map object
       if (Instellingen['gemeentes'] != 'geen' ) { tekenGemeentes();}
       plotOVLijnen(ovLijnen);
-      if (Instellingen['deelm'] == 'oranje' ) {  plotDots(mapDonkeys);}
+      if (Instellingen['deelm'] == 'oranje' ) {console.log("start plot donkeys");  plotOVDonkeys(mapDonkeys);}
       if (Instellingen["pointer"] !=null) {plaatsPointer();}
       if (Instellingen["click"] ==1) {map.on('click', onMapClick);}
 

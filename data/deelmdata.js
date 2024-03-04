@@ -64,6 +64,8 @@ var mapDonkeys = [
  { "titel":"Den Haag Moerwijk", "latlon": [52.05492572618603, 4.308439237444782] },
  { "titel":"Schiedam" , "latlon":[51.92150381011887, 4.40851624766996] },
  { "titel":"Rotterdam CS", "latlon":[51.9228244,4.469580] },
+  { "titel":"Den Haag CS Anna vB", "latlon": [52.0803275593331, 4.326528744281359] },
+  { "titel":"Den Haag CS Turfmarkt", "latlon": [52.079779516932355, 4.32222784612741] },
  { "titel":"RDam Blaak", "latlon": [51.919948726680005, 4.489035041566223] },
  { "titel":"Rdam Zuid", "latlon": [51.90510468463293, 4.509740174199188] },
  { "titel":"RDam Lombardijen   " , "latlon": [51.8807451037946, 4.531411340915773] },
