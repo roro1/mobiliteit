@@ -1,10 +1,11 @@
+verloopRoodGroen = ['red','#ffcc00','##fff400','#a3ff00','#2cba00'];
 function plotHubs(json) {
   for(nr in json) {
     bike = json[nr]
     punt = [bike[0],bike[1]];
-    kleur = 'Orange'
-    if (bike[3] == 0) {kleur = 'red'}
-    else if (bike[3]  == 1) {kleur = 'yellow'};
+    i = bike[3]
+    if (i > 4) {i = 4};
+    kleur = verloopRoodGroen[i];
     var marker = L.circleMarker(punt,{radius: 5,color:kleur,fillOpacity: 0.8}).addTo(map);
     text =  "<p>" +bike[2] +"</p><p>"+bike[3]+ "</p>";
     marker.bindPopup(text);
@@ -24,12 +25,13 @@ function plotBikes(json) {
   }
 
 async function getInfo() {
-  strx ="https://roro1.eu.pythonanywhere.com/slider/hubs"
-  let myObject = await fetch(strx);
-  bikes = await myObject.json();
-  plotHubs(bikes);
+
   strx ="https://roro1.eu.pythonanywhere.com/slider/nothub"
   let myObject2 = await fetch(strx);
   bikes = await myObject2.json();
   plotBikes(bikes);
+  strx ="https://roro1.eu.pythonanywhere.com/slider/hubs"
+  let myObject = await fetch(strx);
+  bikes = await myObject.json();
+  plotHubs(bikes);
 }
