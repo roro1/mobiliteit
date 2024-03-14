@@ -23,8 +23,14 @@
       var Instellingen = {gemeentes:'regio' ,deelm:'live', gemOpacity : 0.2 , gemFill : 0.07, popup : 1 }
       var mapOptions = { center: [52.03, 4.584], zoom: 10 }
       leesURL(); // om instellingen aan te passen
-      var map = new L.map('map', mapOptions);  createMap(); maakLegenda();      // Creating a map object
-      if (Instellingen['gemeentes'] != 'geen' ) { tekenGemeentes();}
+      var map = new L.map('map', mapOptions);  createMap();
+      leg ='Aantal bij Hub<br>';
+      for (let i in verloopRoodGroen) {
+        strx  = verloopLeg[i];
+        leg += '<i style=" opacity: 0.8; background-color:' + verloopRoodGroen[i] + '; text-align: center"></i><span>'+strx +'</span><BR>' ;
+        }
+      maakLegenda(leg);      // Creating a map object
+//      if (Instellingen['gemeentes'] != 'geen' ) { tekenGemeentes();}
       if (Instellingen["pointer"] !=null) {plaatsPointer();}
       if (Instellingen["click"] ==1) {map.on('click', onMapClick);}
  plotOVLijnen(ovLijnen);

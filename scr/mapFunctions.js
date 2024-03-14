@@ -10,9 +10,10 @@ function createMap() {
   map.addLayer(layer);
 }
 
-function maakLegenda(){
+function maakLegenda(inp){
   var legendHTML = '<span id="legendSpan"><H4><img src="img/favicon.png"style="float:left;">Zuid-Holland</H4><span id="legendContent"></span>'
-  if (Instellingen['deelm'] == 'oranje' || Instellingen['deelm'] == 'live' ) { }
+  if (inp != null) {legendHTML += inp;}
+  if (Instellingen['deelm'] == 'oranje' || Instellingen['deelm'] == 'live' || inp != null ) { }
   else if (Instellingen['gemeentes'] == 'regio' ) {
     for (let x in regio) {
       if (regio[x]["site"]  != null) {strx  =  '<a href="'+regio[x]["site"]+'"target="_blank">'+regio[x]["naam"]+'</a>'}
