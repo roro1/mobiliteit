@@ -45,6 +45,9 @@ function gemKleur(str) {
     reg = gemData[str]["regio"];
     if (Instellingen["gemeentes"]=='regio'){
       klr = regio[reg]["kleur"];
+    } else if (Instellingen["gemeentes"]=='fiets'){
+//       klr = 'Tomato';
+      if ( groepDeelfiets.includes(gemData[str]["naam"]) ) {  klr = 'orange'} else {klr = 'grey'}
     }  else {
       conse = regio[reg]["concessie"];
       klr = concessie[conse]["kleur"];
@@ -197,6 +200,7 @@ function leesURL() {
   if (urlP == 'proj') {Instellingen["project"]='ja'; }
   if (urlP == 'c') { Instellingen["gemeentes"]='concessie'; Instellingen["popup"]=1;   }
   if (urlP == 'g') { Instellingen["gemeentes"]='grijs'; Instellingen["popup"]=1;   }
+  if (urlP == 'f') { Instellingen["gemeentes"]='fiets'; Instellingen['gemFill'] = 0.2; Instellingen["deelm"]='oranje' }
   const urlC = urlParams.get('@')  //mapcenter + pointer
   if (urlC != null ){
     const myArray = urlC.split(",");

@@ -67,4 +67,6 @@ gemData =  [
 {"code": "49",   "naam": "Zoeterwoude", "regio": "0", "site": "http://www.zoeterwoude.nl/","WM":"[https://www.zoeterwoude.nl/gemeenteraad-en-bestuur/het-college/collegeleden Mathieu Paardekooper, VVD]"},
 {"code": "50",   "naam": "Zuidplas", "regio": "1", "site": "http://www.zuidplas.nl/","WM":"[https://www.zuidplas.nl/wethouder-daan-de-haas Daan de Haas, VVD]"},
 {"code": "51",   "naam": "Zwijndrecht", "regio": "4", "site": "http://www.zwijndrecht.nl/","WM":"[https://www.zwijndrecht.nl/Bestuur_en_organisatie/Alle_onderwerpen/College_van_BW/Samenstelling_portefeuilleverdeling/R_Robert_Kreukniet Robert Kreukniet, VVD]"}
-]
+];
+
+groepDeelfiets = ["Capelle aan den IJssel","Den Haag","Dordrecht","Gorinchem","Hardinxveld-Giessendam","Hendrik-Ido-Ambacht","Katwijk","Leiden","Leidschendam-Voorburg","Molenlanden","Oegstgeest","Papendrecht","Rijswijk","Rotterdam","Schiedam","Sliedrecht","Zwijndrecht"];
