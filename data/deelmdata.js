@@ -91,7 +91,9 @@ var mapDonkeys = [
 { "titel":"Amsterdam CS", "latlon": [52.3792738442001, 4.900289210450816]},
 { "titel":"Amsterdam Amstel" , "latlon": [52.34661398841303, 4.9175568908830956]},
 { "titel":"Noordhoek waterbus" , "latlon":[51.834014, 4.67361]},
-{ "titel":"Erasmusbrug waterbus" , "latlon":[51.909512, 4.483044]}
+{ "titel":"Erasmusbrug waterbus" , "latlon":[51.909512, 4.483044]},
+{ "titel":"Leiden CS" , "latlon":[52.16658273, 4.4820674385]}
+
 ];
 
 var mapData = [
