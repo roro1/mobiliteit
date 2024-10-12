@@ -103,7 +103,6 @@ function tekenGemeentes() {
 
 }
 
-
 function plotOVLijnen(json) {
   for(itemi in json) {
     kleur = '#efcc36' ; gewicht = 3;opac= 0.6;
@@ -133,6 +132,22 @@ function plotOVDonkeys(json) {
       marker.bindPopup(text);
     }
   }
+
+  function plotSuggesties(json) {
+      for(itemi in json) {  //eerst al keer doorlopen voor grote vlakken zonder marker zodat die onder liggen
+        punt = json[itemi];
+          straal = 3000; kleur = 'Purple'
+          marker =  L.circle(punt["latlon"], straal, {color: kleur ,fillColor: kleur ,fillOpacity: 0.05,weight: 1,opacity: 0.6}).addTo(map);
+        }
+      for(itemi in json) {
+        kleur = '#efcc36'
+        punt = json[itemi];
+        kleur = 'Purple'; straal = 2500
+        var marker = L.circleMarker(punt["latlon"],{radius: 5,color:'Purple',fillOpacity: 0.8}).addTo(map);
+        text = punt["titel"];
+        marker.bindPopup(text);
+      }
+    }
 
 function plotDots(json) {
   console.log("start in plotDots")
@@ -197,6 +212,8 @@ function leesURL() {
   const urlParams = new URLSearchParams(window.location.search);
   const urlP = urlParams.get('p')
   if (urlP == 'oranje') { Instellingen["deelm"]='oranje'; Instellingen["popup"]=1; mapOptions = { center: [51.95, 4.584], zoom: 10 };   }
+  if (urlP == 'os') { Instellingen["deelm"]='os'; Instellingen["popup"]=1; mapOptions = { center: [51.95, 4.584], zoom: 10 };   }
+
   if (urlP == 'proj') {Instellingen["project"]='ja'; }
   if (urlP == 'c') { Instellingen["gemeentes"]='concessie'; Instellingen["popup"]=1;   }
   if (urlP == 'g') { Instellingen["gemeentes"]='grijs'; Instellingen["popup"]=1;   }

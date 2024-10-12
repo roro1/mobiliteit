@@ -15,7 +15,8 @@ function plotHubs(json) {
 
     kleur = verloopRoodGroen[kleurNr];
     var marker = L.circleMarker(punt,{radius: 5,color:kleur,fillOpacity: 0.8}).addTo(map);
-    text =  "<p>" +bike[2] +"</p><p>"+bike[3]+ "</p>";
+    text =  "<p>" +bike[2] +"</p><p>"+bike[3]+" deelfietsen (min wens "+bike[5]+ ")<br>"+bike[4]+" bij start dag";
+    if (bike[6] == null) { text += "</p>"}  else {text += "(min wens "+bike[6]+ ")</p>"}
     marker.bindPopup(text);
     }
   }
@@ -40,6 +41,6 @@ async function getInfo() {
   plotBikes(bikes);
   strx ="https://roro1.eu.pythonanywhere.com/slider/hubs"
   let myObject = await fetch(strx);
-  bikes = await myObject.json();
-  plotHubs(bikes);
+  hubs = await myObject.json();
+  plotHubs(hubs);
 }
