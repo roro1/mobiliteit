@@ -43,4 +43,8 @@ async function getInfo() {
   let myObject = await fetch(strx);
   hubs = await myObject.json();
   plotHubs(hubs);
+  if ( Instellingen["deelm"]=='issues') {
+    console.log("zet de issues op het scherm")
+    console.log()
+  }
 }

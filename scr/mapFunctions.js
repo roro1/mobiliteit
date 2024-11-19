@@ -213,6 +213,7 @@ function leesURL() {
   const urlP = urlParams.get('p')
   if (urlP == 'oranje') { Instellingen["deelm"]='oranje'; Instellingen["popup"]=1; mapOptions = { center: [51.95, 4.584], zoom: 10 };   }
   if (urlP == 'os') { Instellingen["deelm"]='os'; Instellingen["popup"]=1; mapOptions = { center: [51.95, 4.584], zoom: 10 };   }
+  if (urlP == 'issues') { Instellingen["deelm"]='issues'; }
 
   if (urlP == 'proj') {Instellingen["project"]='ja'; }
   if (urlP == 'c') { Instellingen["gemeentes"]='concessie'; Instellingen["popup"]=1;   }
