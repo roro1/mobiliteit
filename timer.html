@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:#E7E9EB;
+}
+#demo {
+  height:420px;
+  padding:0px;
+  border:0px;
+  background-color:orange;
+    text-align: center;
+  font-size: 400px;
+     color: #5C4033;
+}
+</style>
+</head>
+<body>
+<!-- Display the countdown timer in an element -->
+<img src="img/zandmotorstrand.jpg" width="100%" height="300px">
+<div id="demo"></div>
+<script>
+// Set the date we're counting down to
+var distance = 61;
+
+// Update the count down every 1 second
+var x = setInterval(counting, 1000);
+const demoE = document.getElementById("demo")
+demoE.style.backgroundColor = "#FAF9F6";
+
+//document.getElementById("demo").style.background = "#f3f3f3 url('img_tree.png') no-repeat right top";
+
+function counting() {
+  console.log(" start counting loop")
+  // Get today's date and time
+
+  distance = distance -1;
+
+  document.getElementById("demo").innerHTML = distance;
+  if (distance <= 0) {  demoE.style.backgroundColor = "red"; }
+    else if (distance <= 5) {  demoE.style.backgroundColor = "orange"; }
+    else if (distance <= 10) {  demoE.style.backgroundColor = "#EADDCA"; }
+
+
+
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    demoE.style.backgroundColor = "red";
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "STOP";
+  }
+}
+
+</script>
