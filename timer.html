@@ -3,7 +3,7 @@
 <head>
     <meta name="robots" content="noindex">
     <meta charset="UTF-8">
-    <title>Zuid-Holland plannen</title>
+    <title>Zuid-Holland timer</title>
     <link rel=icon href="img/favicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/styles.css">
@@ -23,22 +23,41 @@ body {
   font-size: 400px;
      color: #5C4033;
 }
+#klok {
+  font-size: 40px;
+     color: #5C4033;
+     justify-content: right;
+
+}
+.center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 </style>
 </head>
 <body>
-  <div class="logobar">
+  <div class="center">
     <img src="img/PZHlogo253x84.png" alt="Provincie Zuid-Holland logo" width="253" height="84">
-    <a href="timer.html?s=10">10</a>
-    <a href="timer.html?s=30">30</a>
-    <a href="timer.html?s=60">60</a>
-    <a href="timer.html?s=90">90</a>
+<div>
+    <a href="timer.html?s=10">10 </a>.
+    <a href="timer.html?s=30">30 </a>.
+    <a href="timer.html?s=60">60 </a>.
+    <a href="timer.html?s=90">90 </a>.
+    <a href="timer.html?s=300">5min </a>.
+    <a href="timer.html?s=600">10min </a>.
+
+  </div>
+    <div id="klok"></div>
+
   </div>
   <div class="topImage" id="topI">
   <img src="img/zandmotorstrand.jpg" alt="Zuid-Holland" width="100%" height="auto" >
-
+</div>
 <!--  <img src="img/zandmotorstrand.jpg" width="100%" height="300px">/Pontje.jpg
   Display the countdown timer in an element -->
 <div id="demo"></div>
+
 <script>
 // Set the date we're counting down to
 var distance = 62;
@@ -49,7 +68,17 @@ if (urlS != null ){ distance = urlS;}
 var x = setInterval(counting, 1000);
 const demoE = document.getElementById("demo")
 const TopE = document.getElementById("topI")
+const  afb = [
+  '<img src="img/zandmotorstrand.jpg" alt="Zuid-Holland" width="100%" height="auto" >',
+  '<img src="img/VoorkantPZH.jpg" alt="Zuid-Holland" width="100%" height="auto" >',
+  '<img src="img/pzhwaterenweg.jpg" alt="Zuid-Holland" width="100%" height="auto" >',
+  '<img src="img/banner-goederenvervoer.jpg" alt="Zuid-Holland" width="100%" height="auto" >',
+  '<img src="img/stationsporen.jpg" alt="Zuid-Holland" width="100%" height="300" >',
+  '<img src="img/Pontje.jpg" alt="Zuid-Holland" width="100%" height="auto" >'
+];
+kies = Math.floor(Math.random() * 6);
 
+TopE.innerHTML =afb[kies];
 demoE.style.backgroundColor = "#FAF9F6";
 
 //document.getElementById("demo").style.background = "#f3f3f3 url('img_tree.png') no-repeat right top";
@@ -59,21 +88,36 @@ function counting() {
   // Get today's date and time
 
   distance = distance -1;
-
+  klok()
   demoE.innerHTML = distance;
   if (distance <= 0) {  demoE.style.backgroundColor = "red"; }
     else if (distance <= 5) {  demoE.style.backgroundColor = "orange"; }
     else if (distance <= 10) {   demoE.style.backgroundColor = "#EADDCA"; }
 
-
-
-
   // If the count down is finished, write some text
   if (distance < 0) {
     demoE.style.backgroundColor = "red";
-    clearInterval(x);
+    // clearInterval(x);
     demoE.innerHTML = "STOP";
   }
 }
+
+function klok() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('klok').innerHTML =  h + ":" + m +"  .";
+//  document.getElementById('klok').innerHTML =  h + ":" + m + ":" + s;
+
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+
 
 </script>
