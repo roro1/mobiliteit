@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <title>Zuid-Holland plannen</title>
+    <link rel=icon href="img/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
 <style>
 body {
   background-color:#E7E9EB;
@@ -17,16 +26,30 @@ body {
 </style>
 </head>
 <body>
-<!-- Display the countdown timer in an element -->
-<img src="img/zandmotorstrand.jpg" width="100%" height="300px">
+  <div class="logobar">
+    <img src="img/PZHlogo253x84.png" alt="Provincie Zuid-Holland logo" width="253" height="84">
+    <a href="timer.html?s=10">10</a>
+    <a href="timer.html?s=30">30</a>
+    <a href="timer.html?s=60">60</a>
+    <a href="timer.html?s=90">90</a>
+  </div>
+  <div class="topImage" id="topI">
+  <img src="img/zandmotorstrand.jpg" alt="Zuid-Holland" width="100%" height="auto" >
+
+<!--  <img src="img/zandmotorstrand.jpg" width="100%" height="300px">/Pontje.jpg
+  Display the countdown timer in an element -->
 <div id="demo"></div>
 <script>
 // Set the date we're counting down to
-var distance = 61;
-
+var distance = 62;
+const urlParams = new URLSearchParams(window.location.search);
+const urlS = urlParams.get('s')
+if (urlS != null ){ distance = urlS;}
 // Update the count down every 1 second
 var x = setInterval(counting, 1000);
 const demoE = document.getElementById("demo")
+const TopE = document.getElementById("topI")
+
 demoE.style.backgroundColor = "#FAF9F6";
 
 //document.getElementById("demo").style.background = "#f3f3f3 url('img_tree.png') no-repeat right top";
@@ -37,10 +60,10 @@ function counting() {
 
   distance = distance -1;
 
-  document.getElementById("demo").innerHTML = distance;
+  demoE.innerHTML = distance;
   if (distance <= 0) {  demoE.style.backgroundColor = "red"; }
     else if (distance <= 5) {  demoE.style.backgroundColor = "orange"; }
-    else if (distance <= 10) {  demoE.style.backgroundColor = "#EADDCA"; }
+    else if (distance <= 10) {   demoE.style.backgroundColor = "#EADDCA"; }
 
 
 
@@ -49,7 +72,7 @@ function counting() {
   if (distance < 0) {
     demoE.style.backgroundColor = "red";
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "STOP";
+    demoE.innerHTML = "STOP";
   }
 }
 
