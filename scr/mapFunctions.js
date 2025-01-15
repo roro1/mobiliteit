@@ -117,6 +117,23 @@ function plotOVLijnen(json) {
   }
 }
 
+function plotHaltes(json) {
+  for(itemi in json) {
+    kleur = '#efcc36'
+    punt = json[itemi];
+    kleur = 'Orange'; straal = 2500
+    var marker = L.circleMarker(punt["latlon"],{radius: 2,color:'Orange',fillOpacity: 0.8}).addTo(map);
+    text = "";
+    for (var key in punt) {
+      if (key !== 'latlon') {  // 'latlon' is geen label om weer te geven
+        text += key + ": " + punt[key] + "<br>";
+      }
+    }
+    marker.bindPopup(text);
+  }
+}
+
+
 function plotOVDonkeys(json) {
     for(itemi in json) {  //eerst al keer doorlopen voor grote vlakken zonder marker zodat die onder liggen
       punt = json[itemi];

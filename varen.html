@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta name="robots" content="noindex">
+  <meta charset="UTF-8">
+  <title>Zuid-Holland</title>
+  <link rel=icon href="img/favicon.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/mapstyles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ </head>
+ <body>
+  <div id="map"></div>
+  <script src="data/deelmdata.js"></script>
+  <script src="data/gemeentesZH.js"></script>
+  <script src="data/gemDat.js"></script>
+  <script src="scr/parseW.js"></script>
+  <script src="scr/mapFunctions.js"></script>
+  <script>
+      var Instellingen = {gemeentes:'regio' ,deelmob:'geen', gemOpacity : 0.2 , gemFill : 0.07, popup : 9 }
+      var mapOptions = { center: [52.03, 4.584], zoom: 10 }
+      leesURL(); // om instellingen aan te passen
+      console.log(Instellingen)
+      var map = new L.map('map', mapOptions);  createMap();
+      maakLegenda();      // Creating a map object
+      // if (Instellingen['gemeentes'] != 'geen' ) { tekenGemeentes();}
+      plotOVLijnen(ovLijnen);
+      if (Instellingen['deelm'] == 'oranje' ) {console.log("start plot donkeys");  plotOVDonkeys(mapDonkeys);}
+      if (Instellingen["pointer"] !=null) {plaatsPointer();}
+      if (Instellingen["click"] ==1) {map.on('click', onMapClick);}
+
+
+      /// bouwen hovers//
+      var info = L.control();
+      info.onAdd = function (map) {
+          this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+          this.update();
+          return this._div;
+      };
+      // method that we will use to update the control based on feature properties passed
+      info.update = function (props) {
+         console.log(props)
+         if (props) {
+           console.log("props bestaan")
+           if (props.code) {   console.log("props.code bestaan")
+           nr = props.code
+         console.log(nr)
+         nrRegio = gemData[nr]["regio"]
+         console.log(nrRegio)
+         gem = gemData[nr]["naam"]
+         nrRegio = gemData[nr]["regio"]
+         gem = gemData[nr]["naam"]
+         WM = parseW(gemData[nr]["WM"])
+         console.log(WM)
+         console.log(props.code)
+         legengdINH.innerHTML = "<BR><H4>" + gem + "</H4><BR>" + WM + "<BR><BR>"
+
+
+
+          } else  {console.log("props.code bestaat NIET")}
+
+
+
+
+         } else {console.log("geen props code")}
+
+          this._div.innerHTML = '<h4>Varen</h4>' +  (props ?
+              '<b>' + props.gemeentenaam + '</b><br />' + props.code + ' people / mi<sup>2</sup>'
+              : 'Hover over a state');
+      };
+
+      info.addTo(map);
+
+      function highlightFeature(e) {
+        const layer = e.target;
+      		layer.setStyle({
+      			fillOpacity: 0.4
+      		});
+
+      		layer.bringToFront();
+          info.update(layer.feature.properties);
+      }
+
+function resetHighlight(e) {
+  const layer = e.target;
+    layer.setStyle({
+
+      fillOpacity: 0.1
+    });
+    legengdINH.innerHTML = "<BR>" + "<BR>" + "<BR>"
+}
+function onEachFeature(feature, layer) {
+		layer.on({
+			mouseover: highlightFeature,
+			mouseout: resetHighlight,
+			//click: zoomToFeature
+		});
+	}
+
+  function tekenGemeentesVaren() {
+    console.log('Instellingen');
+    console.log(Instellingen);
+    if (Instellingen['gemFill'] != null ) {gemFill = Instellingen['gemFill'] } else {gemFill= 0.2}
+    if (Instellingen['gemOpacity'] != null ) {gemOpacity = Instellingen['gemOpacity'] } else {gemOpacity= 0.1}
+
+         L.geoJSON(gemeentes, {
+             style: function(feature) {
+               var myStyle = {
+                   "color": "Black",
+                   "fillColor" : gemKleur(feature.properties.code),
+                   "weight": 1,
+                     "opacity": gemOpacity,
+                  "fillOpacity" : gemFill,
+               };
+                  return myStyle;
+             },onEachFeature: onEachFeature
+         }).addTo(map);
+
+  }
+
+ tekenGemeentesVaren();
+ var legengdINH = document.getElementById("legendContent");
+  legengdINH.innerHTML = "TEST"
+
+      // einde bouwen hover
+  </script>
+ </body>
+</html>
