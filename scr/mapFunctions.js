@@ -137,7 +137,6 @@ function plotHaltesArray(json) {
   for(itemi in json) {
     kleur = '#efcc36'
     punt = json[itemi];
-    console.log(punt);
     kleur = 'Orange'; straal = 2500
     var marker = L.circleMarker(punt[0],{radius: 2,color:'Orange',fillOpacity: 0.8}).addTo(map);
     text = "<H3>"+punt[1]+"</H3>";
