@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
  <head>
@@ -18,10 +20,13 @@
   <script src="data/gemDat.js"></script>
   <script src="scr/parseW.js"></script>
   <script src="scr/mapFunctions.js"></script>
-  <script>
+  <script> 
+      console.log("start js")
+
       var Instellingen = {gemeentes:'regio' ,deelmob:'geen', gemOpacity : 0.2 , gemFill : 0.07, popup : 9 }
       var mapOptions = { center: [52.03, 4.584], zoom: 10 }
       leesURL(); // om instellingen aan te passen
+      console.log("instellingen")
       console.log(Instellingen)
       var map = new L.map('map', mapOptions);  createMap(); maakLegenda();      // Creating a map object
       if (Instellingen['gemeentes'] != 'geen' ) { tekenGemeentes();}

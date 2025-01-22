@@ -133,6 +133,28 @@ function plotHaltes(json) {
   }
 }
 
+function plotHaltesArray(json) {
+  for(itemi in json) {
+    kleur = '#efcc36'
+    punt = json[itemi];
+    console.log(punt);
+    kleur = 'Orange'; straal = 2500
+    var marker = L.circleMarker(punt[0],{radius: 2,color:'Orange',fillOpacity: 0.8}).addTo(map);
+    text = "<H3>"+punt[1]+"</H3>";
+    text +="fiets-score: "+ (punt[10] / 1000).toFixed(0) +"  ov-score: "+ (punt[15] / 1000).toFixed(0) + "<br>"
+
+    text +="Rank1,5km: "+ punt[8]+" ;Rank3km: - "+punt[9]+ "<br>"
+    text +="<details><summary>meer...</summary>"
+  
+
+    for (let i = 11; i < punt.length; i++) {
+      text += labels[i] +": "+ punt[i] + "<br>"
+    }
+   
+    text +="</details>"
+    marker.bindPopup(text);
+  }
+}
 
 function plotOVDonkeys(json) {
     for(itemi in json) {  //eerst al keer doorlopen voor grote vlakken zonder marker zodat die onder liggen

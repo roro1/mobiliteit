@@ -16,19 +16,21 @@
   <script src="data/gemeentesZH.js"></script>
   <script src="data/gemDat.js"></script>
   <script src="data/deelmdata.js"></script>
-  <script src="data/haltes.js"></script>
+  <script src="data/haltesa.js"></script>
   <script src="scr/parseW.js"></script>
   <script src="scr/mapFunctions.js"></script>
   <script>
       var Instellingen = {gemeentes:'regio' ,deelmob:'geen', gemOpacity : 0.2 , gemFill : 0.07, popup : 9 }
       var mapOptions = { center: [52.03, 4.584], zoom: 10 }
       leesURL(); // om instellingen aan te passen
+      console.log("instellingen:")
       console.log(Instellingen)
       var map = new L.map('map', mapOptions);  createMap(); maakLegenda();      // Creating a map object
       if (Instellingen['gemeentes'] != 'geen' ) { tekenGemeentes();}
       plotOVLijnen(ovLijnen);
       if (Instellingen['deelm'] == 'oranje' ) {console.log("start plot donkeys");  plotOVDonkeys(mapDonkeys);}
-      console.log("start plot haltes");  plotHaltes(haltes);
+      labels =["latlon", "haltenaam", "ov-niveau", "id-gtfs", "cbs-vrk500", "pc4", "woonplaats", "gemeente", "rank-1.5km", "rank-3km", "fiets-score", "fiets-rank-1.5km", "fiets-rank-3km", "nearby-fiets-rank1-1.5km", "nearby-fiets-rank1-3km", "ov-score", "ov-rank-1.5km", "ov-rank-3km", "nearby-ov-rank1-1.5km", "nearby-ov-rank1-3km"]
+      console.log("start plot haltes");  plotHaltesArray(haltes);
 
       if (Instellingen['deelm'] == 'os' ) {console.log("start plot donkeys");  plotOVDonkeys(mapDonkeys);console.log("start plot suggesties");  plotSuggesties(deelfietsSuggesties);}
       if (Instellingen["pointer"] !=null) {plaatsPointer();}
