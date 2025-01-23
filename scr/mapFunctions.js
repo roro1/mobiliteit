@@ -27,7 +27,7 @@ function maakLegenda(inp){
           legendHTML += '<i style=" opacity: 0.1; background-color:' + concessie[x]["kleur"] + '; text-align: center"></i><span>'+strx +'</span><BR>' ;
         }
     }
-    else if (Instellingen['schaal'] == 'A' ) {  // test schaal 
+    else if (Instellingen['schaal'] == 'A' ) {  // test schaal voor fiets-score
       legendHTML += "fiets-score (x1000): <br>"
       for (let x in range) {
         strx = range_legenda[x]

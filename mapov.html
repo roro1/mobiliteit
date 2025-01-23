@@ -28,7 +28,7 @@
       if (Instellingen['deelm'] == 'oranje' ) {console.log("start plot donkeys");  plotOVDonkeys(mapDonkeys);}
       labels =["latlon", "haltenaam", "ov-niveau", "id-gtfs", "cbs-vrk500", "pc4", "woonplaats", "gemeente", "rank-1.5km", "rank-3km", "fiets-score", "fiets-rank-1.5km", "fiets-rank-3km", "nearby-fiets-rank1-1.5km", "nearby-fiets-rank1-3km", "ov-score", "ov-rank-1.5km", "ov-rank-3km", "nearby-ov-rank1-1.5km", "nearby-ov-rank1-3km"]
       console.log("start plot haltes");  plotHaltesArray(haltes);
- maakLegenda();
+    maakLegenda();
       if (Instellingen['deelm'] == 'os' ) {console.log("start plot donkeys");  plotOVDonkeys(mapDonkeys);console.log("start plot suggesties");  plotSuggesties(deelfietsSuggesties);}
       if (Instellingen["pointer"] !=null) {plaatsPointer();}
       if (Instellingen["click"] ==1) {map.on('click', onMapClick);}
