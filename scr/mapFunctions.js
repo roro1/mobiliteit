@@ -27,6 +27,15 @@ function maakLegenda(inp){
           legendHTML += '<i style=" opacity: 0.1; background-color:' + concessie[x]["kleur"] + '; text-align: center"></i><span>'+strx +'</span><BR>' ;
         }
     }
+    else if (Instellingen['schaal'] == 'A' ) {  // test schaal 
+      legendHTML += "fiets-score (x1000): <br>"
+      for (let x in range) {
+        strx = range_legenda[x]
+        legendHTML += '<i style=" opacity: 0.8; background-color:' + range[x] + '; text-align: center"></i><span>'+strx +'</span><BR>' ;
+        }
+      }
+
+
     if (window.location == window.parent.location) { legendHTML += '<BR><button onclick="openFullscreen();">Fullscreen</button></span>';}
 
   var legend = L.control({ position: "topright" });
@@ -40,7 +49,7 @@ function maakLegenda(inp){
   legend.addTo(map);
 }
 
-function gemKleur(str) {
+function gemKleur(erin) {
   if (str < 60 &&  Instellingen["gemeentes"] !='grijs'  ) {
     reg = gemData[str]["regio"];
     if (Instellingen["gemeentes"]=='regio'){
@@ -117,29 +126,45 @@ function plotOVLijnen(json) {
   }
 }
 
-function plotHaltes(json) {
-  for(itemi in json) {
-    kleur = '#efcc36'
-    punt = json[itemi];
-    kleur = 'Orange'; straal = 2500
-    var marker = L.circleMarker(punt["latlon"],{radius: 2,color:'Orange',fillOpacity: 0.8}).addTo(map);
-    text = "";
-    for (var key in punt) {
-      if (key !== 'latlon') {  // 'latlon' is geen label om weer te geven
-        text += key + ": " + punt[key] + "<br>";
-      }
-    }
-    marker.bindPopup(text);
-  }
+range =        ['#ffffe5','#fff7bc','#fee391','#fec44f','#fe9929','#ec7014','#cc4c02','#993404','#662506']
+range_legenda =[ '<1'    ,'<5'     ,'<10'     ,'<20'   ,'<30'    ,'<40'    ,'<50'    ,'<60'    ,'>60']
+
+function kiesKleur(wat,hoeveel) {
+  hoeveel= hoeveel / 1000
+  if (hoeveel < 1 ) { klr = 0  } 
+  else if (hoeveel < 5) {klr = 1  } 
+  else if (hoeveel < 10) { klr = 2  } 
+  else if (hoeveel < 20) {klr = 3  } 
+  else if (hoeveel < 30) {klr = 4  } 
+  else if (hoeveel < 40) {klr = 5  } 
+  else if (hoeveel < 50) {klr = 6  } 
+  else if (hoeveel < 60) {klr = 7  } 
+
+
+
+  else {  klr = 8  }
+  return range[klr]
+}
+
+function kiesRadius(wat,hoeveel) {
+  hoeveel= hoeveel / 1000
+  if (hoeveel < 50 ) {  klr = 2  } 
+  else if (hoeveel < 100) { klr = 3  } 
+  else if (hoeveel < 100) {  klr = 4 } 
+  else if (hoeveel < 1000) { klr = 5  }  
+  else { klr = 6  }
+  return klr
 }
 
 function plotHaltesArray(json) {
   for(itemi in json) {
     kleur = '#efcc36'
     punt = json[itemi];
-    kleur = 'Orange'; straal = 2500
-    var marker = L.circleMarker(punt[0],{radius: 2,color:'Orange',fillOpacity: 0.8}).addTo(map);
+    kleur = kiesKleur("A",punt[10]); // kleur afhankelijk van fiets-score
+    straal = kiesRadius("A",punt[15])
+    var marker = L.circleMarker(punt[0],{radius: straal,color:kleur,fillOpacity: 0.8}).addTo(map);
     text = "<H3>"+punt[1]+"</H3>";
+    text += punt[7] + " - "+ punt[2] +"<br>"
     text +="fiets-score: "+ (punt[10] / 1000).toFixed(0) +"  ov-score: "+ (punt[15] / 1000).toFixed(0) + "<br>"
 
     text +="Rank1,5km: "+ punt[8]+" ;Rank3km: - "+punt[9]+ "<br>"
