@@ -71,7 +71,9 @@
   <table>
     <thead>
       <tr>
-        <th>Parallelsessies Innovatie & Bereikbaar</th>
+        <th>Parallelsessies Innovatie & Bereikbaar</th>  
+        <th>Tijd</th>
+        <th>Zaal</th>
       </tr>
     </thead>
     <tbody id="sessionsTable">
@@ -113,7 +115,9 @@
         if (session) {
           const row = document.createElement('tr');
           row.innerHTML = `
-            <td>${session.session}. ${session.title}</td>
+            <td>${session.title}</td>
+            <td>${session.tijd || ''}</td>
+            <td>${session.zaal || ''}</td>
           `;
           if (session["mouse-over"]) {
             row.title = session["mouse-over"]; // Mouse-over tekst instellen
@@ -123,6 +127,7 @@
         }
       });
     }
+
 
     // Functie om de pop-up te tonen
     function showPopup(session) {

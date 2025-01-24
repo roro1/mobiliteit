@@ -5,7 +5,7 @@ const data = {
           title: "De kracht van nabijheid", 
           details: "Nabijheid van voorzieningen en goed openbaar vervoer zijn cruciaal voor een goede bereikbaarheid. Waar mensen wonen, werken en recreëren, bepaalt grotendeels hun mobiliteit. Het Laboratorium voor verantwoorde mobiliteit en de provincie Zuid-Holland delen de resultaten van de [https://kennis.zuid-holland.nl/nabijheid/ snelstudie De kracht van nabijheid] en vragen input bij het compleet maken van de studie <br><br> [!https://kennis.zuid-holland.nl/wp-content/uploads/2024/11/compactestad-1536x864.png]", 
           tijd: "14:30 - 15:00", 
-          zaal: "volgt", 
+          zaal: "Schoonoord", 
           spreker: "Igor en Sean", 
           "mouse-over": "wordt interessant!"
         },
@@ -14,7 +14,7 @@ const data = {
             title: "Het loopt allemaal 🙂 De potentie van lopen ", 
             details: "Provincie, Krimpen aan de IJssel en Goudappel nemen jullie mee om lopen op de kaart te zetten. Goudappel gaat met de deelnemers aan de slag gaat om een eerste aanzet en plannetje te maken om tot zo’n kaart te komen. Meer info volgt binnenkort.<BR><BR>[!https://ruimtevoorlopen.nl/wordpress/wp-content/uploads/2024/12/Schermafbeelding-2024-12-30-113223-720x400.png]", 
             tijd: "15:00 - 16:00 (duur 1 uur)", 
-            zaal: "volgt", 
+            zaal: "Schoonoord", 
             spreker: "Hetti Hamersveld en anderen", 
             "mouse-over": "wordt interessant!"
           },
@@ -23,14 +23,16 @@ const data = {
             title: "Zuid-Holland: Ga gewoon fietsen!", 
             details: "volgt<BR><BR>[!https://kennis.zuid-holland.nl/wp-content/uploads/2022/06/Fietsers-op-een-brug-edited.jpg]", 
             tijd: "16:00 - 16:30", 
-            zaal: "volgt", 
+            zaal: "Schoonoord", 
             spreker: "Wiesje Hofstede en Joost de Kruijf ", 
           }, 
           { 
             session: "4", 
             title: "Innovatie van Woon-werk verkeer in de Rotterdamse haven ", 
             details: "Een sessie over wat er gebeurt op het gebied van innovatie met betrekking tot het woon-werk verkeer bij de Port of Rotterdam.<BR><BR>[!https://rotterdammakeithappen.nl/app/uploads/2018/06/Havenbedrijf-Rotterdam-N.V.-1111x700.jpg]", 
-            zaal: "volgt", 
+            zaal: "Evenementenhal", 
+            tijd: "16:00 - 16:30", 
+
             spreker: "Aral Voskamp (Port of Rotterdam)", 
           },
           { 
@@ -72,7 +74,9 @@ const data = {
             session: "10", 
             title: "X Car City - Werken aan een betere stad met minder auto's ", 
             details: "Meer info [https://xcarcity.nl Website van X Car City ] <br><br> [!https://xcarcity.nl/wp-content/uploads/xcarcity-logo-300x223.png] ", 
-            zaal: "volgt", 
+            zaal: "Evenementenhal", 
+            tijd: "15:30 - 16:00", 
+
             spreker: " ", 
           },         
           { 
