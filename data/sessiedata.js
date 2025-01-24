@@ -104,7 +104,7 @@ const data = {
           },         
           { 
             session: "15", 
-            title: "Varen als het kan, rijden als het moet & electrisch varen", 
+            title: "Varen als het kan, rijden als het moet & elektrisch varen", 
             details: "Peter de Bruijn, van Metropolitan Hub System,gaat voor betere bereikbaarheid van het stedelijk gebied met minimale, schadelijke emissies door beter gebruik van bestaande waterwegen. zie [https://metropolitanhubsystem.nl/ metropolitanhubsystem.nl]", 
             zaal: "volgt", 
             spreker: "Peter de Bruin", 
@@ -151,36 +151,9 @@ const data = {
             zaal: "volgt", 
             spreker: "Marco van Burgsteden (CROW + KpVV)", 
           }, 
-          { 
-            session: "", 
-            title: "", 
-            details: " ", 
-            zaal: "volgt", 
-            spreker: "", 
-          }, 
-          { 
-            session: "", 
-            title: "", 
-            details: " ", 
-            zaal: "volgt", 
-            spreker: "", 
-          }, 
-          { 
-            session: "", 
-            title: "", 
-            details: " ", 
-            zaal: "volgt", 
-            spreker: "", 
-          }, 
-          { 
-            session: "", 
-            title: "", 
-            details: " ", 
-            zaal: "volgt", 
-            spreker: "", 
-          }, 
-
 
         null
       ]
     };
+
+    // Meer treingebruik bij verbeterd deelfietsaanbod  Nederlanders gebruiken vaak de fiets, maar als zij buiten hun eigen woonomgeving zijn, is dit fietsgebruik tenminste 2 tot 4 keer zo laag. Studio Bereikbaar neemt ons mee hoe dit zit en in de criteria én de data analyse over kansrijke plekken voor deelfietsen in Zuid-Holland. Meer info volgt. https://kennis.zuid-holland.nl/wp-content/uploads/2024/11/deelfiets_02-1024x315.jpg
