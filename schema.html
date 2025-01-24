@@ -115,7 +115,7 @@
         if (session) {
           const row = document.createElement('tr');
           row.innerHTML = `
-            <td>${session.title}</td>
+            <td>${session.session}. ${session.title}</td>
             <td>${session.tijd || ''}</td>
             <td>${session.zaal || ''}</td>
           `;

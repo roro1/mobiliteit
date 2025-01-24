@@ -6,17 +6,17 @@ const data = {
           details: "Nabijheid van voorzieningen en goed openbaar vervoer zijn cruciaal voor een goede bereikbaarheid. Waar mensen wonen, werken en recreëren, bepaalt grotendeels hun mobiliteit. Het Laboratorium voor verantwoorde mobiliteit en de provincie Zuid-Holland delen de resultaten van de [https://kennis.zuid-holland.nl/nabijheid/ snelstudie De kracht van nabijheid] en vragen input bij het compleet maken van de studie <br><br> [!https://kennis.zuid-holland.nl/wp-content/uploads/2024/11/compactestad-1536x864.png]", 
           tijd: "14:30 - 15:00", 
           zaal: "Schoonoord", 
-          spreker: "Igor en Sean", 
+          spreker: "Igor Koster en Sean van der Lee", 
           "mouse-over": "wordt interessant!"
         },
         { 
             session: "2", 
-            title: "Het loopt allemaal 🙂 De potentie van lopen ", 
-            details: "Provincie, Krimpen aan de IJssel en Goudappel nemen jullie mee om lopen op de kaart te zetten. Goudappel gaat met de deelnemers aan de slag gaat om een eerste aanzet en plannetje te maken om tot zo’n kaart te komen. Meer info volgt binnenkort.<BR><BR>[!https://ruimtevoorlopen.nl/wordpress/wp-content/uploads/2024/12/Schermafbeelding-2024-12-30-113223-720x400.png]", 
+            title: "Voetgangers op de kaart ", 
+            details: "In deze workshop gaan we in hoe het letterlijk op de kaart zetten van het gemeentelijk voetgangersnetwerk kan helpen om beleid te maken om lopen veiliger en aantrekkelijker te maken. Daarbij gaan we aan de slag gaan met het tekenen van jouw/jullie eigen (gemeentelijk) voetgangersnetwerk. Kies hiervoor een gebied van max 2 bij 2 km waar je het voetgangersnetwerk voor gaat ontwerpen tijdens de sessie. Stuur uiterlijk 3 februari een printscreen van dit gebied in jouw gemeente/plangebied naar Hetti van Hamersveld, ha.van.hamersveld@pzh.nl . De workshop wordt begeleid door Dennis van Sluijs (Goudappel). Hij zal ook inzicht geven in het Nederlands Loopstromenmodel wat kan bijdragen aan de onderbouwing van het voetgangersnetwerk.", 
             tijd: "15:00 - 16:00 (duur 1 uur)", 
             zaal: "Schoonoord", 
-            spreker: "Hetti Hamersveld en anderen", 
-            "mouse-over": "wordt interessant!"
+            spreker: " Dennis van Sluijs (Goudappel) & Hetti Hamersveld", 
+            "mouse-over": "Het loopt allemaal 🙂 "
           },
           { 
             session: "3", 
@@ -32,7 +32,6 @@ const data = {
             details: "Een sessie over wat er gebeurt op het gebied van innovatie met betrekking tot het woon-werk verkeer bij de Port of Rotterdam.<BR><BR>[!https://rotterdammakeithappen.nl/app/uploads/2018/06/Havenbedrijf-Rotterdam-N.V.-1111x700.jpg]", 
             zaal: "Evenementenhal", 
             tijd: "16:00 - 16:30", 
-
             spreker: "Aral Voskamp (Port of Rotterdam)", 
           },
           { 
@@ -40,7 +39,7 @@ const data = {
             title: "Handhaving , mobiele flitsers en meer door CVOM", 
             details: "volgt", 
             zaal: "volgt", 
-            spreker: "Jan-Willem Brouwers Het parket Centrale Verwerking Openbaar Ministerie (CVOM)", 
+            spreker: "Jan-Willem Brouwers, Het parket Centrale Verwerking Openbaar Ministerie (CVOM)", 
           },          
           { 
             session: "6", 
@@ -61,7 +60,7 @@ const data = {
             title: "Zelf rijdend OV", 
             details: " ", 
             zaal: "volgt", 
-            spreker: "Patrick", 
+            spreker: "Patrick van Norden", 
           },         
           { 
             session: "9", 
@@ -105,21 +104,21 @@ const data = {
             title: "Laboratorium verantwoorde mobiliteit – kansen voor samenwerking", 
             details: "Het Laboratorium verantwoorde mobiliteit is een groep Masterstudenten én recentelijk afgestudeerden uit heel Nederland die affiniteit hebben met duurzame mobiliteit. En ze werken graag samen met overheden en bedrijven. Zo doet provincie Zuid-Holland momenteel snelstudie De kracht van nabijheid samen met hen. In deze sessie wordt gekeken naar kansen voor samenwerking met jouw organisatie!.<BR><BR>[!https://labverantwoordemobiliteit.nl/wp-content/uploads/2021/12/vehicle-g85ba907a4_1920.jpg]", 
             zaal: "volgt", 
-            spreker: " ", 
+            spreker: "Team van Laboratorium verantwoorde mobiliteit ", 
           },         
           { 
             session: "15", 
             title: "Varen als het kan, rijden als het moet & elektrisch varen", 
-            details: "Peter de Bruijn, van Metropolitan Hub System,gaat voor betere bereikbaarheid van het stedelijk gebied met minimale, schadelijke emissies door beter gebruik van bestaande waterwegen. zie [https://metropolitanhubsystem.nl/ metropolitanhubsystem.nl]", 
+            details: "Peter gaat voor betere bereikbaarheid van het stedelijk gebied met minimale, schadelijke emissies door beter gebruik van bestaande waterwegen. zie [https://metropolitanhubsystem.nl/ metropolitanhubsystem.nl]", 
             zaal: "volgt", 
-            spreker: "Peter de Bruin", 
+            spreker: "Peter de Bruin (Metropolitan Hub System)", 
           },         
           { 
             session: "16", 
             title: "Hubrobbelspel 2.0 focus op de last mile ", 
             details: "Wat is eigenlijk jouw rol bij het realiseren van hubs? Ontdek dit aan de hand van 6 vragen! Samen met jou stellen we op een interactieve manier de diagnose op over welke rol het meest passend is bij jouw gemeente. Jouw antwoorden op de kaartvragen geven inzicht in hoe de hub goed aansluit op het mobiliteitssysteem. We focussen onder andere op het last mile vervoer, hoe je goed samenwerkt met marktpartijen en hoe je de business case rond krijgt. Daarna stellen we de diagnose: ben jij een Realisator, Facilitator of een Regulator? Welke verantwoordelijkheden passen eigenlijk bij die rol? En hoe ga je om met de dilemma's die je dan tegenkomt? Elke rol wordt nader ingevuld door de basiskeuzes die worden gemaakt, de doelen die worden nagestreefd en de werkwijze die daarbij wordt gehanteerd. Ben jij benieuwd naar dit gesprek en welke rol het beste bij jouw gemeente past? Leg samen met ons de kaarten tijdens het hubrollenspel 2.0!Meer lezen over de visie van AT Osborne? Bezoek [https://atosborne.nl/duurzame-leefomgeving/mobiliteitshubs de site]", 
-            zaal: "volgt", 
-            spreker: " ", 
+            zaal: "Marnixpassage ", 
+            spreker: "Edgar Huitema", 
           },         
           { 
             session: "17", 
