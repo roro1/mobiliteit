@@ -21,7 +21,7 @@ function parseW(zin) {
     }
     else if ( xteken == '!' ) {  // bij een ! afbeelding invoegen
         let xurl = zin.slice(2,positionB);
-        zinUit = zinUit + "<img src='" + xurl+"' style='max-width:100%'>" ;
+        zinUit = zinUit + "<img src='" + xurl+"' style='max-width:100%;max-height: 200px'>" ;
         zin = zin.slice(positionB+1);
     }
     else { //dus url

@@ -28,7 +28,7 @@ const data = {
           { 
             session: "4", 
             title: "Innovatie van Woon-werk verkeer in de Rotterdamse haven ", 
-            details: "Een sessie over wat er gebeurt op het gebied van innovatie met betrekking tot het woon-werk verkeer bij de Port of Rotterdam.<BR><BR>[!https://nl.wikipedia.org/wiki/Tweede_Maasvlakte#/media/Bestand:Periscoop_1_tcm81-31607.jpg]", 
+            details: "Een sessie over wat er gebeurt op het gebied van innovatie met betrekking tot het woon-werk verkeer bij de Port of Rotterdam.<BR><BR>[!https://rotterdammakeithappen.nl/app/uploads/2018/06/Havenbedrijf-Rotterdam-N.V.-1111x700.jpg]", 
             zaal: "volgt", 
             spreker: "Aral Voskamp (Port of Rotterdam)", 
           },
@@ -98,7 +98,7 @@ const data = {
           { 
             session: "14", 
             title: "Laboratorium verantwoorde mobiliteit – kansen voor samenwerking", 
-            details: "Het Laboratorium verantwoorde mobiliteit is een groep Masterstudenten én recentelijk afgestudeerden uit heel Nederland die affiniteit hebben met duurzame mobiliteit. En ze werken graag samen met overheden en bedrijven. Zo doet provincie Zuid-Holland momenteel snelstudie De kracht van nabijheid samen met hen. In deze sessie wordt gekeken naar kansen voor samenwerking met jouw organisatie!. [!https://labverantwoordemobiliteit.nl/wp-content/uploads/2021/12/vehicle-g85ba907a4_1920.jpg]", 
+            details: "Het Laboratorium verantwoorde mobiliteit is een groep Masterstudenten én recentelijk afgestudeerden uit heel Nederland die affiniteit hebben met duurzame mobiliteit. En ze werken graag samen met overheden en bedrijven. Zo doet provincie Zuid-Holland momenteel snelstudie De kracht van nabijheid samen met hen. In deze sessie wordt gekeken naar kansen voor samenwerking met jouw organisatie!.<BR><BR>[!https://labverantwoordemobiliteit.nl/wp-content/uploads/2021/12/vehicle-g85ba907a4_1920.jpg]", 
             zaal: "volgt", 
             spreker: " ", 
           },         
