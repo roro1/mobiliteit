@@ -129,9 +129,11 @@ const data = {
           }, 
           { 
             session: "18", 
-            title: "Zero-emissie zones en schone stadslogistiek - RAZES: Wat betekent dit ?", 
+            title: "Zero-emissie zones en schone stadslogistiek - Regionale Agenda Zero Emisse Stadslogistiek (RAZES)", 
             details: "De Zero Emissie Zones zijn nu een feit vanaf nu in vijf Zuid-Hollandse steden: Rotterdam, Delft Den Haag, Gouda en Leiden. Wat betekent dat voor de regionale economie. Het is nieuw en wat betekent dit voor ondernemers en de gemeenten eromheen. De Regionale Agenda Zero Emissie Stadslogistiek (RAZES) heeft hier de afgelopen drie jaar intensief naartoe gewerkt en zet zich nog steeds in voor een succesvolle transitie naar emissievrije, schonere en slimmere stadslogistiek. In deze sessie zal de RAZES worden toegelicht en worden er praktijkvoorbeelden gegeven door de gemeente Rotterdam en onderzoeksbureaus Enmorgen en ECO2city. Hierin worden de aanpak en inzichten gedeeld rondom stadslogistiek en beleidsontwikkeling. Komt allen voor een schonere stadslogsiek!", 
             zaal: "volgt", 
+            tijd: "16:00 - 16:30", 
+           
             spreker: "Liselotte Rasch Rogier Brinkhof", 
           }, 
           { 
