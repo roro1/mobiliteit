@@ -169,8 +169,6 @@ const data = {
          
           spreker: "...", 
         }, 
-
-
         null
       ]
     };
