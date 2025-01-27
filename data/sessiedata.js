@@ -39,6 +39,8 @@ const data = {
             title: "Handhaving , mobiele flitsers en meer door CVOM", 
             details: "volgt", 
             zaal: "volgt", 
+            tijd: "45 minuten", 
+           
             spreker: "Jan-Willem Brouwers, Het parket Centrale Verwerking Openbaar Ministerie (CVOM)", 
           },          
           { 
@@ -118,7 +120,7 @@ const data = {
             title: "Hubrobbelspel 2.0 focus op de last mile ", 
             details: "Wat is eigenlijk jouw rol bij het realiseren van hubs? Ontdek dit aan de hand van 6 vragen! Samen met jou stellen we op een interactieve manier de diagnose op over welke rol het meest passend is bij jouw gemeente. Jouw antwoorden op de kaartvragen geven inzicht in hoe de hub goed aansluit op het mobiliteitssysteem. We focussen onder andere op het last mile vervoer, hoe je goed samenwerkt met marktpartijen en hoe je de business case rond krijgt. Daarna stellen we de diagnose: ben jij een Realisator, Facilitator of een Regulator? Welke verantwoordelijkheden passen eigenlijk bij die rol? En hoe ga je om met de dilemma's die je dan tegenkomt? Elke rol wordt nader ingevuld door de basiskeuzes die worden gemaakt, de doelen die worden nagestreefd en de werkwijze die daarbij wordt gehanteerd. Ben jij benieuwd naar dit gesprek en welke rol het beste bij jouw gemeente past? Leg samen met ons de kaarten tijdens het hubrollenspel 2.0!Meer lezen over de visie van AT Osborne? Bezoek [https://atosborne.nl/duurzame-leefomgeving/mobiliteitshubs de site]", 
             zaal: "Marnixpassage ", 
-            tijd: "14:30 - 15:00",            
+            tijd: "14:30 - 15:15 (duur 45 of 60 minuten)",            
             spreker: "Anna Bootsma en Rachelle Weerst", 
           },         
           { 
@@ -158,6 +160,15 @@ const data = {
             zaal: "volgt", 
             spreker: "Marco van Burgsteden (CROW + KpVV)", 
           }, 
+          session: "22", 
+          title: "Door een 3D op reis over de 'oude lijn'(spoorweg Leiden Dordrecht", 
+          details: "Zet een van de 3D-brillen op en laat je verrassen langs de oude lijn!", 
+          zaal: "volgt", 
+          tijd: "doorlopend", 
+         
+          spreker: "...", 
+        }, 
+
 
         null
       ]
