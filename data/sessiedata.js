@@ -160,6 +160,7 @@ const data = {
             zaal: "volgt", 
             spreker: "Marco van Burgsteden (CROW + KpVV)", 
           }, 
+          {
           session: "22", 
           title: "Door een 3D op reis over de 'oude lijn'(spoorweg Leiden Dordrecht", 
           details: "Zet een van de 3D-brillen op en laat je verrassen langs de oude lijn!", 
