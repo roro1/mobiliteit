@@ -52,10 +52,10 @@ const data = {
           },         
           { 
             session: "7", 
-            title: "Region of the future", 
-            details: "..", 
-            zaal: "volgt", 
-            spreker: "Helene", 
+            title: "Met de Quest VR bril langs de oude lijn - probeer het zelf!", 
+            details: "Om de mogelijkheden van VR brillen te laten zien, krijg je de mogelijkheid om op een aantal punten langs de oude lijn (spoorlijn Leiden- Dordrecht) letterelijk rond te kijken.", 
+            zaal: "Bij de koffie / borrel in tuinzaal", 
+            tijd: "Hele middag vanaf 13 uur", 
           },         
           { 
             session: "8", 
@@ -90,8 +90,10 @@ const data = {
           { 
             session: "12", 
             title: "Publieke laadvoorzieningen & Economisch Vestigheidsklimaat", 
-            details: "Details volgen <BR><BR>[!https://kennis.zuid-holland.nl/wp-content/uploads/2024/05/stekker.png]", 
+            details: "Als regio ondersteunen we gemeenten en bedrijventerreinen bij de transitie naar elektrische mobiliteit ten tijde van de energietransitie. Er speelt veel in onze provincie, van netcongestie tot laadinfrastructuur, en dat heeft impact op vele. In deze sessie gaan we (PZH en MRDH) daarom in op wat, hoe en waarom we doen wat we doen, en gaan daarna graag met jullie in gesprek over deze aanpak. <BR><BR>[!https://kennis.zuid-holland.nl/wp-content/uploads/2024/05/stekker.png]", 
             zaal: "volgt", 
+            tijd: "45 minuten", 
+           
             spreker: "Dante Londema en Vivienne", 
           },         
           { 
@@ -120,15 +122,15 @@ const data = {
             title: "Hubrobbelspel 2.0 focus op de last mile ", 
             details: "Wat is eigenlijk jouw rol bij het realiseren van hubs? Ontdek dit aan de hand van 6 vragen! Samen met jou stellen we op een interactieve manier de diagnose op over welke rol het meest passend is bij jouw gemeente. Jouw antwoorden op de kaartvragen geven inzicht in hoe de hub goed aansluit op het mobiliteitssysteem. We focussen onder andere op het last mile vervoer, hoe je goed samenwerkt met marktpartijen en hoe je de business case rond krijgt. Daarna stellen we de diagnose: ben jij een Realisator, Facilitator of een Regulator? Welke verantwoordelijkheden passen eigenlijk bij die rol? En hoe ga je om met de dilemma's die je dan tegenkomt? Elke rol wordt nader ingevuld door de basiskeuzes die worden gemaakt, de doelen die worden nagestreefd en de werkwijze die daarbij wordt gehanteerd. Ben jij benieuwd naar dit gesprek en welke rol het beste bij jouw gemeente past? Leg samen met ons de kaarten tijdens het hubrollenspel 2.0!Meer lezen over de visie van AT Osborne? Bezoek [https://atosborne.nl/duurzame-leefomgeving/mobiliteitshubs de site]", 
             zaal: "Marnixpassage ", 
-            tijd: "14:30 - 15:15 (duur 45 of 60 minuten)",            
-            spreker: "Anna Bootsma en Rachelle Weerst", 
+            tijd: "14:30 - 15:15 (duur 45  minuten)",            
+            spreker: "Anna Bootsma en Rachelle Weerts", 
           },         
           { 
             session: "17", 
-            title: "Samen werken & samen rijden (carpoolen) met Nabogo in Zuid-Holland en Zeeland", 
+            title: "Samen werken & samen rijden (carpoolen) met Nabogo", 
             details: "Tobias van Muijden van [https://nabogo.com/nl/ Nabogo], verkent in zijn sessie hoe ketenreizen het combineren van verschillende vervoersmiddelen en het bieden van extra mobiliteitsopties bijdragen aan het oplossen van de groeiende mobiliteitsuitdagingen in Nederland, zoals mobiliteitsarmoede, files en parkeerproblemen. Hij benadrukt de kracht van samenwerking tussen vervoerders, overheden en technologiepartners, met als voorbeeld de samenwerking tussen Nabogo en Qbuzz.<BR><BR>[!https://nabogo.com/wp-content/uploads/2022/11/Group-22-min.png]", 
             zaal: "volgt", 
-            spreker: "", 
+            spreker: "Tobias van Muijden", 
           }, 
           { 
             session: "18", 
@@ -160,15 +162,7 @@ const data = {
             zaal: "volgt", 
             spreker: "Marco van Burgsteden (CROW + KpVV)", 
           }, 
-          {
-          session: "22", 
-          title: "Door een 3D op reis over de 'oude lijn'(spoorweg Leiden Dordrecht", 
-          details: "Zet een van de 3D-brillen op en laat je verrassen langs de oude lijn!", 
-          zaal: "volgt", 
-          tijd: "doorlopend", 
-         
-          spreker: "...", 
-        }, 
+
         null
       ]
     };
