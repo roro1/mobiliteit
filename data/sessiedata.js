@@ -46,9 +46,9 @@ const data = {
           { 
             session: "6", 
             title: "Samenwerken met campussen voor extra innovatiekracht", 
-            details: "Een sessie over wat er gebeurt op het gebied van innovatie op de compussen", 
+            details: "Een sessie over wat er gebeurt op het gebied van innovatie op de campussen", 
             zaal: "volgt", 
-            spreker: "Renee en Tamara", 
+            spreker: "René en Tamara", 
           },         
           { 
             session: "7", 
@@ -162,6 +162,15 @@ const data = {
             zaal: "volgt", 
             spreker: "Marco van Burgsteden (CROW + KpVV)", 
           }, 
+          { 
+            session: "22", 
+            title: "Gesproken reisinformatie en 'large language models' (resultaten van hackathon)", 
+            details: "De afgelopen jaren is het begrip ‘brede welvaart’ in opmars. Daarbij is de vraag hoe je zoiets toepast in gemeentelijk of provinciaal mobiliteitsbeleid. Met een ‘Community of Practice’ probeert CROW hiervoor handvatten te maken en duikt hier met jullie graag verder in. Met een overzicht van de inzichten tot nu toe en de uitnodiging om over dit onderwerp mee te blijven denken. CROW-KpVV is er om gemeenten en provincies te helpen bij het maken van goed mobiliteitsbeleid.<BR><BR>[!https://www.kpvv.nl/getmedia/88f669a0-810c-48c4-91d0-ba1327ceb751/KpVV-jaarprogramma-2025_700x497.jpg.aspx]", 
+            zaal: "volgt", 
+            tijd: "16:00 - 16:30", 
+            spreker: "Stefan de Konink en anderen van OpenOV", 
+          }, 
+
 
         null
       ]
