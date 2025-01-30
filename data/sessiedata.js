@@ -143,8 +143,10 @@ const data = {
             session: "17", 
             title: "Samen werken & samen rijden (carpoolen) met Nabogo", 
             details: "Tobias van Muijden van [https://nabogo.com/nl/ Nabogo], verkent in zijn sessie hoe ketenreizen het combineren van verschillende vervoersmiddelen en het bieden van extra mobiliteitsopties bijdragen aan het oplossen van de groeiende mobiliteitsuitdagingen in Nederland, zoals mobiliteitsarmoede, files en parkeerproblemen. Hij benadrukt de kracht van samenwerking tussen vervoerders, overheden en technologiepartners, met als voorbeeld de samenwerking tussen Nabogo en Qbuzz.<BR><BR>[!https://nabogo.com/wp-content/uploads/2022/11/Group-22-min.png]", 
-            zaal: "volgt", 
+            zaal: "Clingendael", 
             spreker: "Tobias van Muijden", 
+            tijd: "14:30 - 15:00",           
+
           }, 
           { 
             session: "18", 
@@ -175,7 +177,7 @@ const data = {
             title: "Brede welvaart en kennisplatform CROW-KpVV", 
             details: "De afgelopen jaren is het begrip ‘brede welvaart’ in opmars. Daarbij is de vraag hoe je zoiets toepast in gemeentelijk of provinciaal mobiliteitsbeleid. Met een ‘Community of Practice’ probeert CROW hiervoor handvatten te maken en duikt hier met jullie graag verder in. Met een overzicht van de inzichten tot nu toe en de uitnodiging om over dit onderwerp mee te blijven denken. CROW-KpVV is er om gemeenten en provincies te helpen bij het maken van goed mobiliteitsbeleid.<BR><BR>[!https://www.kpvv.nl/getmedia/88f669a0-810c-48c4-91d0-ba1327ceb751/KpVV-jaarprogramma-2025_700x497.jpg.aspx]", 
             zaal: "Cromvliet ", 
-            tijd: "15:30 - 16:00", 
+            tijd: "16:00 - 16:30", 
             spreker: "Marco van Burgsteden (CROW + KpVV)", 
           }, 
           { 
