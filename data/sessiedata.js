@@ -187,7 +187,6 @@ const data = {
             spreker: "Stefan de Konink en anderen van OpenOV", 
           }, 
 
-
         null
       ]
     };
