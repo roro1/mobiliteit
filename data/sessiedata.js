@@ -147,6 +147,7 @@ const data = {
             spreker: "Tobias van Muijden", 
             tijd: "14:30 - 15:00",           
 
+            
           }, 
           { 
             session: "18", 
