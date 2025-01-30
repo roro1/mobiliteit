@@ -54,7 +54,7 @@ const data = {
             session: "7", 
             title: "Met de Quest VR bril langs de oude lijn - probeer het zelf!", 
             details: "Om de mogelijkheden van VR brillen te laten zien, krijg je de mogelijkheid om op een aantal punten langs de oude lijn (spoorlijn Leiden- Dordrecht) letterelijk rond te kijken.", 
-            zaal: "Tuinzaal (naast evenementenhal bij koffie / borrel", 
+            zaal: "Tuinzaal (bij koffie & borrel", 
             tijd: "Hele middag vanaf 13 uur", 
           },         
           { 
