@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sessies Tabel</title>
+  <script src="data/sessiedata.js"></script> <!-- JSON-data wordt ingeladen -->
+  <script src="scr/parseW.js"></script>
+
   <style>
-    body {    color: #281f6b;
+        body {    color: #281f6b;
       font-family: Sans-serif;}
 
     H1 {
@@ -14,7 +17,6 @@
   font-weight: 500;
   line-height: 1em;
 }
-    
     table {
       width: 100%;
       border-collapse: collapse;
@@ -37,11 +39,11 @@
       left: 50%;
       transform: translate(-50%, -50%);
       padding: 20px;
-      border: 2px solid #281f6b;
+      border: 2px solid #333;
       background: #f1db7e;
       z-index: 1000;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-      max-width: 800px;
+      max-width: 400px;
       width: 100%;
       border-radius: 10px;
     }
@@ -68,16 +70,17 @@
   </style>
 </head>
 <body>
+  <h1>Sessies Overzicht</h1>
   <table>
     <thead>
       <tr>
-        <th>Parallelsessies Innovatie & Bereikbaar</th>  
+        <th>Title</th>
         <th>Tijd</th>
         <th>Zaal</th>
       </tr>
     </thead>
     <tbody id="sessionsTable">
-      <!-- Tabelrijen worden hier dynamisch toegevoegd -->
+      <!-- Dynamische rijen worden hier toegevoegd -->
     </tbody>
   </table>
 
@@ -91,89 +94,94 @@
     <p id="popupSpeakerContainer"><strong>Spreker:</strong> <span id="popupSpeaker"></span></p>
     <span class="close" onclick="closePopup()">Sluiten</span>
   </div>
-  <script src="scr/parseW.js"></script>
-  <script src="data/sessiedata.js"></script>
 
   <script>
-   
+    // Functie om de URL-parameter op te halen
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
 
-    const tableBody = document.getElementById('sessionsTable');
-    const popup = document.getElementById('sessionPopup');
-    const overlay = document.getElementById('overlay');
-    const popupTitle = document.getElementById('popupTitle');
-    const popupDetails = document.getElementById('popupDetails');
-    const popupTimeContainer = document.getElementById('popupTimeContainer');
-    const popupRoomContainer = document.getElementById('popupRoomContainer');
-    const popupSpeakerContainer = document.getElementById('popupSpeakerContainer');
-    const popupTime = document.getElementById('popupTime');
-    const popupRoom = document.getElementById('popupRoom');
-    const popupSpeaker = document.getElementById('popupSpeaker');
+    function sortSessions(sessions) {
+  return sessions
+    .filter(session => session !== null) // Verwijder null-waardes vóór het sorteren
+    .sort((a, b) => {
+      if (!a || !b) return 0; // Extra check om fouten te voorkomen
+
+      const sortParam = getQueryParam('sort');
+
+      if (sortParam === 'zaal') {
+        const zaalA = a.zaal || "ZZZ"; // Lege zaal naar onderen
+        const zaalB = b.zaal || "ZZZ";
+        if (zaalA !== zaalB) return zaalA.localeCompare(zaalB);
+
+        // Binnen dezelfde zaal, sorteer op tijd als string
+        const tijdA = a.tijd || "99:99"; 
+        const tijdB = b.tijd || "99:99";
+        return tijdA.localeCompare(tijdB);
+      }
+
+      if (sortParam === 'tijd') {
+        const tijdA = a.tijd || "99:99"; // Laat lege tijden onderaan staan
+        const tijdB = b.tijd || "99:99";
+        return tijdA.localeCompare(tijdB);
+      }
+
+      return 0; // Geen sortering als geen geldige parameter is opgegeven
+    });
+}
+
 
     // Functie om de tabel te genereren
     function generateTable() {
-      data.sessions.forEach((session) => {
+      const tableBody = document.getElementById('sessionsTable');
+      const sortedSessions = sortSessions([...data.sessions]); // Kopie van array maken
+
+      sortedSessions.forEach((session) => {
         if (session) {
           const row = document.createElement('tr');
           row.innerHTML = `
-            <td>${session.session}. ${session.title}</td>
+            <td>${session.title}</td>
             <td>${session.tijd || ''}</td>
             <td>${session.zaal || ''}</td>
           `;
-          if (session["mouse-over"]) {
-            row.title = session["mouse-over"]; // Mouse-over tekst instellen
-          }
           row.addEventListener('click', () => showPopup(session));
           tableBody.appendChild(row);
         }
       });
     }
 
-
     // Functie om de pop-up te tonen
     function showPopup(session) {
       sessieHTML = parseW(session.details)
-      popupTitle.textContent = session.title;
-      popupDetails.innerHTML = sessieHTML; // Details met HTML
+  
+      document.getElementById('popupTitle').textContent = session.title;
+      document.getElementById('popupDetails').innerHTML = sessieHTML;
 
-      // Tijd tonen of verbergen
-      if (session.tijd) {
-        popupTimeContainer.style.display = 'block';
-        popupTime.textContent = session.tijd;
-      } else {
-        popupTimeContainer.style.display = 'none';
-      }
+      document.getElementById('popupTimeContainer').style.display = session.tijd ? 'block' : 'none';
+      document.getElementById('popupTime').textContent = session.tijd || '';
 
-      // Zaal tonen of verbergen
-      if (session.zaal) {
-        popupRoomContainer.style.display = 'block';
-        popupRoom.textContent = session.zaal;
-      } else {
-        popupRoomContainer.style.display = 'none';
-      }
+      document.getElementById('popupRoomContainer').style.display = session.zaal ? 'block' : 'none';
+      document.getElementById('popupRoom').textContent = session.zaal || '';
 
-      // Spreker tonen of verbergen
-      if (session.spreker) {
-        popupSpeakerContainer.style.display = 'block';
-        popupSpeaker.innerHTML = session.spreker; // Spreker met HTML
-      } else {
-        popupSpeakerContainer.style.display = 'none';
-      }
+      document.getElementById('popupSpeakerContainer').style.display = session.spreker ? 'block' : 'none';
+      document.getElementById('popupSpeaker').innerHTML = session.spreker || '';
 
-      popup.style.display = 'block';
-      overlay.style.display = 'block';
+      document.getElementById('sessionPopup').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block';
     }
 
     // Functie om de pop-up te sluiten
     function closePopup() {
-      popup.style.display = 'none';
-      overlay.style.display = 'none';
+      document.getElementById('sessionPopup').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
     }
 
     // Sluit pop-up bij klikken op de overlay
-    overlay.addEventListener('click', closePopup);
+    document.getElementById('overlay').addEventListener('click', closePopup);
 
-    // Tabel genereren bij het laden van de pagina
-    generateTable();
+    // Wacht tot de JSON is ingeladen en genereer dan de tabel
+    window.onload = generateTable;
   </script>
 </body>
 </html>
