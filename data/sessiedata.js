@@ -96,11 +96,11 @@ const data = {
           },  
           { 
             session: "23", 
-            title: "Fietskluizen en deelfietsen ", 
+            title: "Elektrische deelfietsen & Fietskluizen in landelijke gebieden", 
             details: " ", 
-            zaal: "volgt", 
+            zaal: "Clingendael", 
             spreker: "Oumar Sylla (van Deelfiets Nederland)", 
-            tijd: "volgt",           
+            tijd: "16:00 - 16:30",           
 
           },  
 
