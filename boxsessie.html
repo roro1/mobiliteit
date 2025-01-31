@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sessie Details</title>
+    <script src="data/sessiedata.js"></script>
+    <style>
+        body {
+            background-color: #c6a410;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: left;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <p><strong>Spreker:</strong> <span id="spreker"></span></p>
+    <p><strong>Tijd & Zaal:</strong> <span id="tijdzaal"></span></p>
+
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        function displaySession() {
+            const sessionName = getQueryParam('s');
+            if (!sessionName) return;
+
+            const session = data.sessions.find(s => s.session === sessionName);
+            if (session) {
+                document.getElementById('title').textContent = session.title;
+                document.getElementById('spreker').textContent = session.spreker;
+                document.getElementById('tijdzaal').textContent = `${session.tijd} - ${session.zaal}`;
+            } else {
+                document.body.innerHTML = '<h1>Sessie niet gevonden</h1>';
+            }
+        }
+
+        window.onload = displaySession;
+    </script>
+</body>
+</html>

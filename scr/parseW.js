@@ -1,9 +1,10 @@
 //  parse  [http://www.example.org linktext]  wiki external link
 //  hiden van [+.....]  dus tweede teken een +
-//  [!   ]  =img
+//  [!   ]  =img  Met na | styleinfo
 
 function parseW(zin) {
   let zinUit ="";
+  let stylex ="style='max-width:100%'"
   let p2 ="";
   while (zin  != null && zin != "") {
     let positionA = zin.indexOf("[");    if (positionA >0 ) {positionSL = positionA};
@@ -21,8 +22,28 @@ function parseW(zin) {
     }
     else if ( xteken == '!' ) {  // bij een ! afbeelding invoegen
         let xurl = zin.slice(2,positionB);
-        zinUit = zinUit + "<img src='" + xurl+"' style='max-width:100%;max-height: 200px'>" ;
-        zin = zin.slice(positionB+1);
+        let positionl = xurl.indexOf("|"); // test of er een | in zit voor afmetingen img
+        if (positionl !=-1 ) {
+            console.log("er is een |");   
+            console.log(xurl)
+            
+            styleinf = xurl.slice(positionl+1) 
+            console.log(styleinf)
+            xurl = xurl.slice(0,positionl) 
+            console.log(xurl)
+            if (styleinf != "") {
+                stylex = style=styleinf
+                console.log(stylex)
+               
+            }
+         }  
+    
+
+
+        zinUit = zinUit + "<img src='" + xurl+"' " +stylex+">" ;
+        console.log(zinUit)
+
+        zin = zin.slice(positionB+1); 
     }
     else { //dus url
         let positionC = zin.indexOf(" ");

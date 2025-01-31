@@ -3,7 +3,7 @@ const data = {
         { 
           session: "1", 
           title: "De kracht van nabijheid", 
-          details: "Nabijheid van voorzieningen en goed openbaar vervoer zijn cruciaal voor een goede bereikbaarheid. Waar mensen wonen, werken en recreëren, bepaalt grotendeels hun mobiliteit. Het Laboratorium voor verantwoorde mobiliteit en de provincie Zuid-Holland delen de resultaten van de [https://kennis.zuid-holland.nl/nabijheid/ snelstudie De kracht van nabijheid] en vragen input bij het compleet maken van de studie <br><br> [!https://kennis.zuid-holland.nl/wp-content/uploads/2024/11/compactestad-1536x864.png]", 
+          details: "Nabijheid van voorzieningen en goed openbaar vervoer zijn cruciaal voor een goede bereikbaarheid. Waar mensen wonen, werken en recreëren, bepaalt grotendeels hun mobiliteit. Het Laboratorium voor verantwoorde mobiliteit en de provincie Zuid-Holland delen de resultaten van de [https://kennis.zuid-holland.nl/nabijheid/ snelstudie De kracht van nabijheid] en vragen input bij het compleet maken van de studie <br><br> [!https://kennis.zuid-holland.nl/wp-content/uploads/2024/11/compactestad-1536x864.png|style='max-width:100%;height:200px']", 
           tijd: "14:30 - 15:00", 
           zaal: "Schoonoord", 
           spreker: "Igor Koster en Sean van der Lee", 
@@ -21,10 +21,11 @@ const data = {
           { 
             session: "3", 
             title: "Zuid-Holland: Ga gewoon fietsen!", 
-            details: "volgt<BR><BR>[!https://kennis.zuid-holland.nl/wp-content/uploads/2022/06/Fietsers-op-een-brug-edited.jpg]", 
+            details: "volgt<BR><BR>[!img\scholierenroutes.png]", 
             tijd: "16:00 - 16:30", 
             zaal: "Schoonoord", 
             spreker: "Wiesje Hofstede en Joost de Kruijf ", 
+            back : "img\scholierenroutes.png"
           }, 
           { 
             session: "4", 
