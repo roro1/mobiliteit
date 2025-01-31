@@ -95,6 +95,16 @@ const data = {
 
           },  
           { 
+            session: "23", 
+            title: "Fietskluizen en deelfietsen ", 
+            details: " ", 
+            zaal: "volgt", 
+            spreker: "Oumar Sylla (van Deelfiets Nederland)", 
+            tijd: "volgt",           
+
+          },  
+
+          { 
             session: "12", 
             title: "Slim Laden voor Iedereen: Van de markt tot netcongestie ", 
             details: "Twan Kramer van [https://krachtwerk.nl/ Krachtwerk] neemt jullie mee in de spannede wereld van balans houden in elektriciteit<br><br>[!https://krachtwerk.nl/wp-content/uploads/2024/03/20240212_082610-1024x768.jpg]", 
@@ -115,7 +125,7 @@ const data = {
 
           },         
         
-          
+
           { 
             session: "14", 
             title: "Laboratorium verantwoorde mobiliteit - kansen voor samenwerking", 
