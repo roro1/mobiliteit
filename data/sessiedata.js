@@ -82,7 +82,6 @@ const data = {
             details: "Meer info [https://xcarcity.nl Website van X Car City ] <br><br> [!https://xcarcity.nl/wp-content/uploads/xcarcity-logo-300x223.png] ", 
             zaal: "Evenementenhal", 
             tijd: "14:30 - 15:00", 
-
             spreker: "Canmanie Ponnambalam van TNO (in het Engels) ", 
           },         
           { 

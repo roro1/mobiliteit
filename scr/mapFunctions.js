@@ -49,7 +49,7 @@ function maakLegenda(inp){
   legend.addTo(map);
 }
 
-function gemKleur(erin) {
+function gemKleur(str) {
   if (str < 60 &&  Instellingen["gemeentes"] !='grijs'  ) {
     reg = gemData[str]["regio"];
     if (Instellingen["gemeentes"]=='regio'){
