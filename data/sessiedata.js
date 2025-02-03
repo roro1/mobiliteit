@@ -89,7 +89,7 @@ const data = {
             title: "Regionale Deelmobiliteit", 
             details: " ", 
             zaal: "Arentsburgh", 
-            spreker: "Jelske ", 
+            spreker: "Jelske Koopstra & Frank Bus ", 
             tijd: "15:00 - 15:30",           
 
           },  
@@ -131,7 +131,7 @@ const data = {
             details: "Het Laboratorium verantwoorde mobiliteit is een groep Masterstudenten én recentelijk afgestudeerden uit heel Nederland die affiniteit hebben met duurzame mobiliteit. En ze werken graag samen met overheden en bedrijven. Zo doet provincie Zuid-Holland momenteel snelstudie De kracht van nabijheid samen met hen. In deze sessie wordt gekeken naar kansen voor samenwerking met jouw organisatie!.<BR><BR>[!https://labverantwoordemobiliteit.nl/wp-content/uploads/2021/12/vehicle-g85ba907a4_1920.jpg]", 
             zaal: "Arentsburgh", 
             tijd: "15:30 - 16:00",           
-            spreker: "Team van Laboratorium verantwoorde mobiliteit ", 
+            spreker: " Felix Marseille & teamgenoten", 
 
           },         
           { 
