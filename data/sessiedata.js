@@ -24,7 +24,7 @@ const data = {
             details: "volgt<BR><BR>[!img\scholierenroutes.png]", 
             tijd: "16:00 - 16:30", 
             zaal: "Schoonoord", 
-            spreker: "Wiesje Hofstede en Joost de Kruijf ", 
+            spreker: "Wiesje Hofstede", 
             back : "img\scholierenroutes.png"
           }, 
           { 
