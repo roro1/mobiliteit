@@ -1,103 +1,92 @@
 <!DOCTYPE html>
 <html>
-<head>
+ <head>
   <meta name="robots" content="noindex">
   <meta charset="UTF-8">
   <title>Zuid-Holland</title>
   <link rel=icon href="img/favicon.png">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
-   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
-   crossorigin=""/>
-   <!-- Make sure you put this AFTER Leaflet's CSS -->
-  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
-    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
-    crossorigin=""></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="css/mapstyles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
  </head>
  <body>
-    <div id="map"></div>
-    <script src="data/vkdata4.js"></script>
-    <script src="scr/vierkant.js"></script>
-    <script>
-      const labels= ["Voorzieningen","Winkels","Onderwijs","Zorg","Sport&Cultuur", "Horeca", "Groen", "OV lokaal(1=beste)","OV omg(1=beste)","Nabijheidklasse","aantal inwoners","aantal woningen","aantal banen" ]
-      const labelK= ["Voorzieningen","Winkels","Onderwijs","Zorg","Sport&Cultuur", "Horeca", "Groen", "OV lokaal(1=beste)","OV","Nabijheidklasse","aantal inwoners","aantal woningen","aantal banen" ]
+  <div id="map"></div>
+  <script src="data/deelmdata.js"></script>
+  <script src="data/haltesa.js"></script>
+  <script src="scr/parseW.js"></script>
+  <script src="scr/mapFunctions.js"></script>
+  <script src="data/vkdata4.js"></script>
+  <script src="scr/vierkant.js"></script>
+  <script>
+    const labels= ["Voorzieningen","Winkels","Onderwijs","Zorg","Sport&Cultuur", "Horeca", "Groen", "OV lokaal(1=beste)","OV omg(1=beste)","Stedelijkheidsklasse","aantal inwoners","aantal woningen","aantal banen" ]
+    const labelK= ["Voorzieningen","Winkels","Onderwijs","Zorg","Sport&Cultuur", "Horeca", "Groen", "OV lokaal(1=beste)","OV","Stedelijkheidsklasse","aantal inwoners","aantal woningen","aantal banen" ]
 
-      const urlParams = new URLSearchParams(window.location.search);
-      const par = urlParams.get('par')
-      console.log(par);
-      if (par == null) {kolom = 1; } else { kolom = parseInt(par) }
+    const urlParams = new URLSearchParams(window.location.search);  //URL instellingen
+    const par = urlParams.get('par')
+    if (par == null) {kolom = 10; } else { kolom = parseInt(par) } // bepaal kolom die kleur bepaard
 
-      var mapOptions = {center: [52.03, 4.584],  zoom: 11 }
-      var map = new L.map('map', mapOptions);         // Creating a map object
-      var layer = new L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> © <a href="https://www.mapbox.com/">Mapbox</a>',
-        maxZoom: 18,
-        id: 'mapbox/light-v10',
-        tileSize: 512,
-        zoomOffset: -1,
-        accessToken: 'pk.eyJ1Ijoicm9yb3JvIiwiYSI6ImNsMWIzcjhiZDI0ZG8zaXF6eXE4dXE5emUifQ.gt3tunhffMqPmsInRj0mGQ'
-        });         // Creating a Layer object
-      map.addLayer(layer);
+    var Instellingen = { }
+    var mapOptions = { center: [52.03, 4.584], zoom: 10 }
+    var map = new L.map('map', mapOptions);  createMap();       // Creating a map object
+    vulling =1;
+    plotVierkanten4(vkdata,kolom,0); //vulling doet
 
-      /*Legend specific*/
-      var legendHTML = '<H4><img src="img/favicon.png"style="float:left;">Nabijheid '
-      legendHTML += labelK[kolom-1];
-      legendHTML +='</H4><details open><summary>klapin/meer</summary>Deze kaarten horen bij de Snelstudie de Ideale woonwijk die gaat over nabijheid van voorzieningen en OV. Klik in de kaart om de scores van een tegel (van 500 x 500 meter) te zien. Er is een kaart met een totaalscore voor voorzieningen zoals die ook in het rapport is afgedrukt. En er zijn kaarten per deelaspect. De score voor voorzieningen loopt van 1(slecht) tot 9(uitstekend), voor OV loopt de schaal andersom: van 1 (primair IC station binnen 2,5km) tot 6 (laagste klasse). Tevens is het aantal inwoners, woningen en banen per tegel vermeld.<BR>';
-      if (kolom != 9) {
-        legendHTML += '<BR><i style="background: #004529; text-align: center">9</i> ';
-        legendHTML += '<i style="background: #006837; text-align: center">8</i> ';
-        legendHTML += '<i style="background: #238443; text-align: center">7</i> ';
-        legendHTML += '<i style="background: #41ab5d; text-align: center">6</i> ';
-        legendHTML += '<i style="background: #78c679; text-align: center">5</i> ';
-        legendHTML += '<i style="background: #addd8e; text-align: center">4</i> ';
-        legendHTML += '<i style="background: #d9f0a3; text-align: center">3</i> ';
-        legendHTML += '<i style="background: #f7fcb9; text-align: center">2</i> ';
-        legendHTML += '<i style="background: #ffffe5; text-align: center">1</i> ';
-      } else {
-        legendHTML += '<BR><i style="background: #004529; text-align: center">1</i><span>Primair IC station op max 2,5km</span><BR>';
-        legendHTML += '<i style="background: #238443; text-align: center">2</i><span>Secundair IC station op max 1,75km of *</span><BR>';
-        legendHTML += '<i style="background: #78c679; text-align: center">3</i><span>Sprinter station op max 1,25km of *</span><BR>';
-        legendHTML += '<i style="background: #addd8e; text-align: center">4</i><span>Hoogwaardig OV op max 750m</span><BR>';
-        legendHTML += '<i style="background: #d9f0a3; text-align: center">5</i><span>Basis OV op max 500m</span><BR>';
-        legendHTML += '<i style="background: #ffffe5; text-align: center">6</i><span>BeperktOV op max 500m</span>';
+    var properties ={ logo: true } // logo: true
+    properties.titel =labelK[kolom-1];
+
+/*Legend specific*/
+var lHTML = ''
+      if (kolom == 9) {
+
+        lHTML += '<BR><i style="background: #004529; text-align: center">1</i><span>Primair IC station op max 2,5km</span><BR>';
+        lHTML += '<i style="background: #238443; text-align: center">2</i><span>Secundair IC station op max 1,75km of *</span><BR>';
+        lHTML += '<i style="background: #78c679; text-align: center">3</i><span>Sprinter station op max 1,25km of *</span><BR>';
+        lHTML += '<i style="background: #addd8e; text-align: center">4</i><span>Hoogwaardig OV op max 750m</span><BR>';
+        lHTML += '<i style="background: #d9f0a3; text-align: center">5</i><span>Basis OV op max 500m</span><BR>';
+        lHTML += '<i style="background: #ffffe5; text-align: center">6</i><span>BeperktOV op max 500m</span><br>';
       }
-      legendHTML += '<br><br><a href="mapv.html" target="_blank">Voorzieningen (tot)</a><br>';
-      legendHTML += '<a href="mapv.html?par=9" target="_blank">OV</a><br>';
-      legendHTML += '<a href="mapv.html?par=2" target="_blank">Winkels</a><br>';
-      legendHTML += '<a href="mapv.html?par=3" target="_blank">Onderwijs</a><br>';
-      legendHTML += '<a href="mapv.html?par=4" target="_blank">Zorg</a><br>';
-      legendHTML += '<a href="mapv.html?par=5" target="_blank">Sport&C</a><br>';
-      legendHTML += '<a href="mapv.html?par=6" target="_blank">Horeca</a><br>';
-      legendHTML += '<a href="mapv.html?par=7" target="_blank">Groen</a><br></details>';
-      legendHTML += '<button onclick="openFullscreen();">Fullscreen Mode</button>;';
-
-      var legend = L.control({ position: "topright" });
-      legend.onAdd = function(map) {
-        var div = L.DomUtil.create("div", "legend");
-        div.innerHTML += legendHTML;
-        div.style.maxWidth = "30%";
-        div.style.minWidth = "200px";
-        return div;
-      };
-      legend.addTo(map);
-
-      vulling =1;
-      plotVierkanten4(vkdata,kolom,vulling);
-
-      /* Get the documentElement (<html>) to display the page in fullscreen */
-      var elem = document.getElementById("map");
-      function openFullscreen() {
-        if (elem.requestFullscreen) {
-          elem.requestFullscreen();
-        } else if (elem.webkitRequestFullscreen) { /* Safari */
-          elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) { /* IE11 */
-          elem.msRequestFullscreen();
-        }
+      else if(kolom == 10)  {
+        for (let i = 1; i < SchaalStedelijk.length; i++) {
+           lHTML += '<i style=" opacity: 0.8; background-color:' + SchaalStedelijk[i] + '; text-align: center"></i><span>'+LabelNabij[i] +'</span><BR>' ;
       }
-    </script>
+
+      }
+
+        else {
+        lHTML += '<BR><i style="background: #004529; text-align: center">9</i> ';
+        lHTML += '<i style="background: #006837; text-align: center">8</i> ';
+        lHTML += '<i style="background: #238443; text-align: center">7</i> ';
+        lHTML += '<i style="background: #41ab5d; text-align: center">6</i> ';
+        lHTML += '<i style="background: #78c679; text-align: center">5</i> ';
+        lHTML += '<i style="background: #addd8e; text-align: center">4</i> ';
+        lHTML += '<i style="background: #d9f0a3; text-align: center">3</i> ';
+        lHTML += '<i style="background: #f7fcb9; text-align: center">2</i> ';
+        lHTML += '<i style="background: #ffffe5; text-align: center">1</i><br> ';
+      } 
+
+    
+      var meer = 'Kaarten bij de <a href="mapv.html" target="_blank">Snelstudie "De kracht van nabijheid"</a>. Klik in de kaart om de scores van een tegel (van 500 x 500 meter) te zien. Er is een kaart met een totaalscore voor voorzieningen. En er zijn kaarten per deelaspect. De score voor voorzieningen loopt van 1(slecht) tot 9(uitstekend), voor OV loopt de schaal andersom: van 1 (primair IC station binnen 2,5km) tot 6 (laagste klasse). Tevens is het aantal inwoners, woningen en banen per tegel vermeld.<BR>'
+      meer += '<a href="mapv.html" target="_blank">Stedelijkheidsklasses</a><br>';
+      meer += '<a href="mapv.html?par=1" target="_blank">Voorzieningen (tot)</a><br>';
+      meer += '<a href="mapv.html?par=9" target="_blank">OV</a><br>';
+      meer += '<a href="mapv.html?par=2" target="_blank">Winkels</a><br>';
+      meer += '<a href="mapv.html?par=3" target="_blank">Onderwijs</a><br>';
+      meer += '<a href="mapv.html?par=4" target="_blank">Zorg</a><br>';
+      meer += '<a href="mapv.html?par=5" target="_blank">Sport&C</a><br>';
+      meer += '<a href="mapv.html?par=6" target="_blank">Horeca</a><br>';
+      meer += '<a href="mapv.html?par=7" target="_blank">Groen</a><br></details>';
+
+      properties.html = lHTML
+      properties.meer = meer
+
+      properties.minWidth ="300px"
+    maakLegenda(properties);
+
+    if (Instellingen["pointer"] !=null) {plaatsPointer();}
+    if (Instellingen["click"] ==1) {map.on('click', onMapClick);}
+
+  </script>
  </body>
-
 </html>

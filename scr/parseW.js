@@ -31,15 +31,15 @@ function parseW(zin) {
             console.log(styleinf)
             xurl = xurl.slice(0,positionl) 
             console.log(xurl)
-            if (styleinf != "") {
-                stylex = style=styleinf
-                console.log(stylex)
+            if (styleinf != "") {  //voeg format voor plaatje in , dit kan nog uitgewerkt.
+                stylex = styleinf
+              
                
             }
          }  
     
 
-
+         console.log(stylex)
         zinUit = zinUit + "<img src='" + xurl+"' " +stylex+">" ;
         console.log(zinUit)
 

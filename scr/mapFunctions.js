@@ -10,9 +10,19 @@ function createMap() {
   map.addLayer(layer);
 }
 
-function maakLegenda(inp){
-  var legendHTML = '<span id="legendSpan"><H4><img src="img/favicon.png"style="float:left;">Zuid-Holland</H4><span id="legendContent"></span>'
-  if (inp != null) {legendHTML += inp;}
+function maakLegenda(properties){  // logo // titel // html // positie 
+  var legendHTML ='<span id="legendSpan"><H4>';
+  if (properties['logo'] != false ){  legendHTML+= '<img src="img/favicon.png"style="float:left;">' }
+  if (properties['titel']  ){  legendHTML+= properties['titel']+ '</H4>' } else {legendHTML+='Zuid-Holland</H4>'}
+  legendHTML+= '<span id="legendContent">'
+  if (properties['html'] != null) {legendHTML +=properties['html'] ;}
+  if (properties['meer'] != null) {legendHTML += '<BR><details><summary>info & instellingen</summary>' + properties['meer'] + '</details>' ;}
+
+  legendHTML+= '</span>'
+
+  inp ="";
+
+  
   if (Instellingen['deelm'] == 'oranje' || Instellingen['deelm'] == 'live' || inp != null ) { }
   else if (Instellingen['gemeentes'] == 'regio' ) {
     for (let x in regio) {
@@ -36,14 +46,17 @@ function maakLegenda(inp){
       }
 
 
-    if (window.location == window.parent.location) { legendHTML += '<BR><button onclick="openFullscreen();">Fullscreen</button></span>';}
+  if (window.location == window.parent.location) { legendHTML += '<BR><button onclick="openFullscreen();">Fullscreen</button></span>';}
+  if (properties['positie'] == null){ pos ="topright" } else {pos = properties['positie']}
 
-  var legend = L.control({ position: "topright" });
+  var legend = L.control({ position: pos });
   legend.onAdd = function(map) {
     var div = L.DomUtil.create("div", "legend");
     div.innerHTML += legendHTML;
     div.style.maxWidth = "30%";
-    div.style.minWidth = "200px";
+    if (properties['minWidth'] == null){  div.style.minWidth = "200px";  } else {div.style.minWidth =properties['minWidth']  }
+
+    //div.style.minWidth = "300px";
     return div;
   };
   legend.addTo(map);
