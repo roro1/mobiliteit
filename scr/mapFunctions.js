@@ -19,31 +19,14 @@ function maakLegenda(properties){  // logo // titel // html // positie
   if (properties['meer'] != null) {legendHTML += '<BR><details><summary>info & instellingen</summary>' + properties['meer'] + '</details>' ;}
 
   legendHTML+= '</span>'
-
-  inp ="";
-
   
-  if (Instellingen['deelm'] == 'oranje' || Instellingen['deelm'] == 'live' || inp != null ) { }
-  else if (Instellingen['gemeentes'] == 'regio' ) {
-    for (let x in regio) {
-      if (regio[x]["site"]  != null) {strx  =  '<a href="'+regio[x]["site"]+'"target="_blank">'+regio[x]["naam"]+'</a>'}
-      else {strx  =  regio[x]["naam"]}
-      legendHTML += '<i style=" opacity: 0.1; background-color:' + regio[x]["kleur"] + '; text-align: center"></i><span>'+strx +'</span><BR>' ;
-      }
-    }
-  else if (Instellingen['gemeentes'] == 'concessie' ){
-        for (let x in concessie) {
-          strx  =  concessie[x]["naam"]
-          legendHTML += '<i style=" opacity: 0.1; background-color:' + concessie[x]["kleur"] + '; text-align: center"></i><span>'+strx +'</span><BR>' ;
-        }
-    }
-    else if (Instellingen['schaal'] == 'A' ) {  // test schaal voor fiets-score
-      legendHTML += "fiets-score (x1000): <br>"
-      for (let x in range) {
-        strx = range_legenda[x]
-        legendHTML += '<i style=" opacity: 0.8; background-color:' + range[x] + '; text-align: center"></i><span>'+strx +'</span><BR>' ;
-        }
-      }
+ //   else if (Instellingen['schaal'] == 'A' ) {  // test schaal voor fiets-score
+ //     legendHTML += "fiets-score (x1000): <br>"
+ //     for (let x in range) {
+ //       strx = range_legenda[x]
+ //       legendHTML += '<i style=" opacity: 0.8; background-color:' + range[x] + '; text-align: center"></i><span>'+strx +'</span><BR>' ;
+ //       }
+ //     }
 
 
   if (window.location == window.parent.location) { legendHTML += '<BR><button onclick="openFullscreen();">Fullscreen</button></span>';}

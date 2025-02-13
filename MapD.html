@@ -28,7 +28,11 @@
       leesURL(); // om instellingen aan te passen
       console.log("instellingen")
       console.log(Instellingen)
-      var map = new L.map('map', mapOptions);  createMap(); maakLegenda();      // Creating a map object
+      var map = new L.map('map', mapOptions);  createMap();
+      
+      var properties ={ logo: true } // logo: true
+      properties.html = regioLegenda;
+      maakLegenda(properties);      // Creating a map object
       if (Instellingen['gemeentes'] != 'geen' ) { tekenGemeentes();}
       plotOVLijnen(ovLijnen);
       if (Instellingen['deelm'] == 'oranje' ) {console.log("start plot donkeys");  plotOVDonkeys(mapDonkeys);}
