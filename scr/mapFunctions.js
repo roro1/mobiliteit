@@ -46,11 +46,11 @@ function maakLegenda(properties){  // logo // titel // html // positie
 }
 
 function gemKleur(str) {
-  if (str < 60 &&  Instellingen["gemeentes"] !='grijs'  ) {
+  if (str < 60 ) {
     reg = gemData[str]["regio"];
-    if (Instellingen["gemeentes"]=='regio'){
+    if (Instellingen["regio"]=='gem'){
       klr = regio[reg]["kleur"];
-    } else if (Instellingen["gemeentes"]=='fiets'){
+    } else if (Instellingen["gemeentes"]=='fiets'){  //dit nog uitzoeken
 //       klr = 'Tomato';
       if ( groepDeelfiets.includes(gemData[str]["naam"]) ) {  klr = 'orange'} else {klr = 'grey'}
     }  else {

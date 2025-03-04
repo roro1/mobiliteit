@@ -20,6 +20,9 @@
   <script>
     console.log("start js")
     var Instellingen = {deelmob:'geen', gemOpacity : 0.2 , gemFill : 0.07, popup : 9 } //nog nalopen##
+    var mapOptions = { center: [52.03, 4.584], zoom: 10 }
+    var map = new L.map('map', mapOptions);  createMap(); 
+
 
     function loadScript(scriptje) {
         const script = document.createElement('script');
@@ -34,13 +37,23 @@
             Instellingen.regio=urlParams.get('regio');
             loadScript('data/gemeentesZH')
             loadScript('data/gemDat')
-            if (Instellingen.regio == 'gem') { Instellingen.gemeentes= 'regio'}  // nog weghalen
         }
     if (urlParams.get('ov')) {
         console.log('load files related to lijnen  deelfiets')
         loadScript('data/deelmdata')
         Instellingen.ov=urlParams.get('ov');
     }
+    const urlC = urlParams.get('@')  //mapcenter + pointer
+    if (urlC != null ){
+      console.log(urlC)
+      const myArray = urlC.split(",");
+      mapOptions['center'] =  [Number(myArray[0]), Number(myArray[1])]
+      if (myArray[2] !=null) {mapOptions['zoom'] =  Number(myArray[2])}
+      if (myArray[3] !=null) {Instellingen["pointer"]=myArray[3]}
+    }
+    const urlI = urlParams.get('i') // edit functie : click geeft coordinaten
+    if (urlI == 'c') {  Instellingen["click"]=1;   }
+
 
 
   const urlP = urlParams.get('p')
@@ -52,22 +65,26 @@
   if (urlP == 'c') { Instellingen["gemeentes"]='concessie'; Instellingen["popup"]=1;   }
   if (urlP == 'g') { Instellingen["gemeentes"]='grijs'; Instellingen["popup"]=1;   }
   if (urlP == 'f') { Instellingen["gemeentes"]='fiets'; Instellingen['gemFill'] = 0.2; Instellingen["deelm"]='oranje' }
-  const urlC = urlParams.get('@')  //mapcenter + pointer
-  if (urlC != null ){
-    const myArray = urlC.split(",");
-    mapOptions['center'] =  [Number(myArray[0]), Number(myArray[1])]
-    if (myArray[2] !=null) {mapOptions['zoom'] =  Number(myArray[2])}
-    if (myArray[3] !=null) {Instellingen["pointer"]=myArray[3]}
-  }
-  const urlI = urlParams.get('i') // edit functie : click geeft coordinaten
-  if (urlI == 'c') { Instellingen["gemeentes"]='geen'; Instellingen["click"]=1;   }
-//}
+
+
 
     
     function windowGeladen() {
         console.log("window geladen");
-        if (Instellingen['regio'] == "gem" ){ console.log("teken gemeentes!!!"); tekenGemeentes(); }
+        if (Instellingen['regio'] ){ 
+          console.log("teken gemeentes!!!"); tekenGemeentes(); 
+          if (Instellingen['regio'] ) { 
+            var properties ={ logo: true } // logo: true
+            properties.html = regioLegenda;
+            maakLegenda(properties);      // Creating a map object
+          }
+
+
+        }
         if (Instellingen['ov']  ){ console.log("teen ov lijnen");   plotOVLijnen(ovLijnen); }
+
+
+
 
     }
 
@@ -75,8 +92,6 @@
     window.onload = windowGeladen;
 
 
-      var mapOptions = { center: [52.03, 4.584], zoom: 10 }
-      var map = new L.map('map', mapOptions);  createMap(); 
 
       
       //maakLegenda();      // Creating a map object
