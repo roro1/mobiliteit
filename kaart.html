@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta name="robots" content="noindex">
+  <meta charset="UTF-8">
+  <title>Zuid-Holland</title>
+  <link rel=icon href="img/favicon.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/mapstyles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+ </head>
+ <body>
+  <div id="map"></div>
+  <script src="scr/parseW.js"></script>
+  <script src="scr/mapFunctions.js"></script>
+
+  <script>
+    console.log("start js")
+    var Instellingen = {deelmob:'geen', gemOpacity : 0.2 , gemFill : 0.07, popup : 9 } //nog nalopen##
+
+    function loadScript(scriptje) {
+        const script = document.createElement('script');
+            script.src = `${scriptje}.js`; // Dynamische bestandsnaam
+            script.type = 'text/javascript';
+            script.onload = () => { Instellingen[scriptje]   = 1;  } // zodat main de onload kan controleren                        
+            document.body.appendChild(script);
+    }
+
+  const urlParams = new URLSearchParams(window.location.search);  //   function leesURL() {
+    if (urlParams.get('regio')) {
+            Instellingen.regio=urlParams.get('regio');
+            loadScript('data/gemeentesZH')
+            loadScript('data/gemDat')
+            if (Instellingen.regio == 'gem') { Instellingen.gemeentes= 'regio'}  // nog weghalen
+        }
+    if (urlParams.get('ov')) {
+        console.log('load files related to lijnen  deelfiets')
+        loadScript('data/deelmdata')
+        Instellingen.ov=urlParams.get('ov');
+    }
+
+
+  const urlP = urlParams.get('p')
+  if (urlP == 'oranje') { Instellingen["deelm"]='oranje'; Instellingen["popup"]=1; mapOptions = { center: [51.95, 4.584], zoom: 10 };   }
+  if (urlP == 'os') { Instellingen["deelm"]='os'; Instellingen["popup"]=1; mapOptions = { center: [51.95, 4.584], zoom: 10 };   }
+  if (urlP == 'issues') { Instellingen["deelm"]='issues'; }
+
+  if (urlP == 'proj') {Instellingen["project"]='ja'; }
+  if (urlP == 'c') { Instellingen["gemeentes"]='concessie'; Instellingen["popup"]=1;   }
+  if (urlP == 'g') { Instellingen["gemeentes"]='grijs'; Instellingen["popup"]=1;   }
+  if (urlP == 'f') { Instellingen["gemeentes"]='fiets'; Instellingen['gemFill'] = 0.2; Instellingen["deelm"]='oranje' }
+  const urlC = urlParams.get('@')  //mapcenter + pointer
+  if (urlC != null ){
+    const myArray = urlC.split(",");
+    mapOptions['center'] =  [Number(myArray[0]), Number(myArray[1])]
+    if (myArray[2] !=null) {mapOptions['zoom'] =  Number(myArray[2])}
+    if (myArray[3] !=null) {Instellingen["pointer"]=myArray[3]}
+  }
+  const urlI = urlParams.get('i') // edit functie : click geeft coordinaten
+  if (urlI == 'c') { Instellingen["gemeentes"]='geen'; Instellingen["click"]=1;   }
+//}
+
+    
+    function windowGeladen() {
+        console.log("window geladen");
+        if (Instellingen['regio'] == "gem" ){ console.log("teken gemeentes!!!"); tekenGemeentes(); }
+        if (Instellingen['ov']  ){ console.log("teen ov lijnen");   plotOVLijnen(ovLijnen); }
+
+    }
+
+
+    window.onload = windowGeladen;
+
+
+      var mapOptions = { center: [52.03, 4.584], zoom: 10 }
+      var map = new L.map('map', mapOptions);  createMap(); 
+
+      
+      //maakLegenda();      // Creating a map object
+      if (Instellingen['deelm'] == 'oranje' ) {console.log("start plot donkeys");  plotOVDonkeys(mapDonkeys);}
+      if (Instellingen['deelm'] == 'os' ) {console.log("start plot donkeys");  plotOVDonkeys(mapDonkeys);console.log("start plot suggesties");  plotSuggesties(deelfietsSuggesties);}
+      if (Instellingen["pointer"] !=null) {plaatsPointer();}
+      if (Instellingen["click"] ==1) {map.on('click', onMapClick);}
+
+  </script>
+ </body>
+</html>

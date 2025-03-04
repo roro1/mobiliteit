@@ -267,27 +267,7 @@ function plotDots(json) {
   }
 }
 
-function leesURL() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const urlP = urlParams.get('p')
-  if (urlP == 'oranje') { Instellingen["deelm"]='oranje'; Instellingen["popup"]=1; mapOptions = { center: [51.95, 4.584], zoom: 10 };   }
-  if (urlP == 'os') { Instellingen["deelm"]='os'; Instellingen["popup"]=1; mapOptions = { center: [51.95, 4.584], zoom: 10 };   }
-  if (urlP == 'issues') { Instellingen["deelm"]='issues'; }
 
-  if (urlP == 'proj') {Instellingen["project"]='ja'; }
-  if (urlP == 'c') { Instellingen["gemeentes"]='concessie'; Instellingen["popup"]=1;   }
-  if (urlP == 'g') { Instellingen["gemeentes"]='grijs'; Instellingen["popup"]=1;   }
-  if (urlP == 'f') { Instellingen["gemeentes"]='fiets'; Instellingen['gemFill'] = 0.2; Instellingen["deelm"]='oranje' }
-  const urlC = urlParams.get('@')  //mapcenter + pointer
-  if (urlC != null ){
-    const myArray = urlC.split(",");
-    mapOptions['center'] =  [Number(myArray[0]), Number(myArray[1])]
-    if (myArray[2] !=null) {mapOptions['zoom'] =  Number(myArray[2])}
-    if (myArray[3] !=null) {Instellingen["pointer"]=myArray[3]}
-  }
-  const urlI = urlParams.get('i') // edit functie : click geeft coordinaten
-  if (urlI == 'c') { Instellingen["gemeentes"]='geen'; Instellingen["click"]=1;   }
-}
 
 function plaatsPointer(e) {
   var marker = L.marker(mapOptions['center']).addTo(map);

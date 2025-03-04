@@ -1,3 +1,4 @@
+
 regio = [
   {"code": 0, "kleur": "orange", "naam" : "Holland Rijnland","concessie" : 0, "site" : "https://hollandrijnland.nl/", "extra":"Acounthouder Minke"},
   {"code": 1, "kleur": "green", "naam" :"Midden Holland","concessie" : 0, "site": "https://www.regiomiddenholland.nl/","extra":"Acounthouder Edwin+Jordy"},
@@ -70,3 +71,15 @@ gemData =  [
 ];
 
 groepDeelfiets = ["Capelle aan den IJssel","Den Haag","Dordrecht","Gorinchem","Hardinxveld-Giessendam","Hendrik-Ido-Ambacht","Katwijk","Leiden","Leidschendam-Voorburg","Molenlanden","Oegstgeest","Papendrecht","Rijswijk","Rotterdam","Schiedam","Sliedrecht","Zwijndrecht"];
+
+regioLegenda='';
+for (let x in regio) {
+  if (regio[x]["site"]  != null) {strx  =  '<a href="'+regio[x]["site"]+'"target="_blank">'+regio[x]["naam"]+'</a>'}
+  else {strx  =  regio[x]["naam"]}
+  regioLegenda += '<i style=" opacity: 0.1; background-color:' + regio[x]["kleur"] + '; text-align: center"></i><span>'+strx +'</span><BR>' ;
+  }
+concessieLegenda ='';
+for (let x in concessie) {
+  strx  =  concessie[x]["naam"]
+  concessieLegenda += '<i style=" opacity: 0.1; background-color:' + concessie[x]["kleur"] + '; text-align: center"></i><span>'+strx +'</span><BR>' ;
+}  
