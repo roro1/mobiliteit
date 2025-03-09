@@ -67,18 +67,18 @@ function tekenGemeentes() {
   if (Instellingen['gemFill'] != null ) {gemFill = Instellingen['gemFill'] } else {gemFill= 0.2}
   if (Instellingen['gemOpacity'] != null ) {gemOpacity = Instellingen['gemOpacity'] } else {gemOpacity= 0.1}
 
-       L.geoJSON(gemeentes, {
-           style: function(feature) {
-             var myStyle = {
-                 "color": "Black",
-                 "fillColor" : gemKleur(feature.properties.code),
-                 "weight": 1,
-                   "opacity": gemOpacity,
-                "fillOpacity" : gemFill,
-             };
-                return myStyle;
-           }
-       }).bindPopup(function (layer) {
+  L.geoJSON(gemeentes, {
+      style: function(feature) {
+        var myStyle = {
+            "color": "Black",
+            "fillColor" : gemKleur(feature.properties.code),
+            "weight": 1,
+              "opacity": gemOpacity,
+          "fillOpacity" : gemFill,
+        };
+          return myStyle;
+      }
+    }).bindPopup(function (layer) {
          nr = layer.feature.properties.code
          nrRegio = gemData[nr]["regio"]
          gem = gemData[nr]["naam"]
@@ -115,7 +115,6 @@ function plotOVLijnen(json) {
     if (item["type"] == "OV") {kleur = '#847062';gewicht = 4}
     if (item["type"] == "waterbus") {kleur = 'blue';gewicht = 2;opac=0.3}
     if (item["type"] == "bus") {kleur = 'brown';gewicht = 2;opac=0.4}
-
     marker = L.polyline(item["polylijn"],{color: kleur , weight: gewicht, opacity: opac}).addTo(map);
     text =  item["titel"];
     marker.bindPopup(text);

@@ -81,5 +81,9 @@ for (let x in regio) {
 concessieLegenda ='';
 for (let x in concessie) {
   strx  =  concessie[x]["naam"]
-  concessieLegenda += '<i style=" opacity: 0.1; background-color:' + concessie[x]["kleur"] + '; text-align: center"></i><span>'+strx +'</span><BR>' ;
+  concessieLegenda += `<div style="display: flex; align-items: center; margin-bottom: 5px;">
+                         <i style="width: 15px; height: 15px; opacity: 0.1;display: inline-block; background-color: ${concessie[x]["kleur"]}; margin-right: 8px;"></i>
+                         <span>${strx}</span>
+                       </div>`;
+  //concessieLegenda += '<i style=" opacity: 0.1; background-color:' + concessie[x]["kleur"] + '; text-align: center"></i><span>'+strx +'</span><BR>' ;
 }  

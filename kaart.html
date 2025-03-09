@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
- <head>
+<head>
   <meta name="robots" content="noindex">
   <meta charset="UTF-8">
   <title>Zuid-Holland</title>
@@ -10,95 +10,90 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="css/mapstyles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+<div id="map"></div>
+<script src="scr/parseW.js"></script>
+<script src="scr/mapFunctions.js"></script>
+<script>
+  console.log("start js")
+  var Instellingen = {gemOpacity : 0.2 , gemFill : 0.07, popup : 9 } //nog nalopen##
+  var mapOptions = { center: [51.95, 4.584], zoom: 10 }
+  var map = new L.map('map', mapOptions);  createMap(); 
+
+  function loadScript(scriptje) {
+      const script = document.createElement('script');
+          script.src = `${scriptje}.js`; // Dynamische bestandsnaam
+          script.type = 'text/javascript';
+          script.onload = () => { Instellingen[scriptje]   = 1;  } // zodat main de onload kan controleren                        
+          document.body.appendChild(script);
+  }
+  const urlParams = new URLSearchParams(window.location.search);  // URL parameters inlezen en overlays laden
+  if (urlParams.get('regio')) {   //gemeentekaart loaden
+    Instellingen.regio=urlParams.get('regio'); loadScript('data/gemeentesZH'); loadScript('data/gemDat') }
+  if (urlParams.get('ov') || urlParams.get('p') ){ //ov lijnen en deelmob loaden
+    loadScript('data/deelmdata');  Instellingen.ov=urlParams.get('ov'); Instellingen.p=urlParams.get('p'); }
+  if (urlParams.get('live')  ){ //load api
+    loadScript('scr/api'); Instellingen.live=urlParams.get('live'); }
+    if (urlParams.get('haltes')  ){ // haltes deelm potentie 
+      loadScript('data/haltesa'); Instellingen.live=urlParams.get('haltes'); }    
+  if (urlParams.get('par')  ){ //load vierkant
+    loadScript('scr/vierkant'); loadScript('scr/mapFunctions'); loadScript('data/vkdata4'); Instellingen.par=urlParams.get('par'); }
+  const urlC = urlParams.get('@')  //mapcenter + pointer
+  if (urlParams.get('i') == 'c') {  Instellingen["click"]=1;   } // edit functie : click geeft coordinaten
+  if (urlC != null ){
+    console.log(urlC)
+    const myArray = urlC.split(",");
+    mapOptions['center'] =  [Number(myArray[0]), Number(myArray[1])]
+    if (myArray[2] !=null) {mapOptions['zoom'] =  Number(myArray[2])}
+    if (myArray[3] !=null) {Instellingen["pointer"]=myArray[3]}
+  }
+  
+  function windowGeladen() {
+    console.log("window geladen, instellingen: ");
+    console.log(Instellingen)
+    if (Instellingen['regio'] ){ 
+      console.log("teken gemeentes!!!"); tekenGemeentes(); 
+      var properties ={ logo: true } // logo: true
+      if (Instellingen.regio == 'gem' ) { properties.html = regioLegenda; } else { properties.html = concessieLegenda;properties.titel = 'OV concessies';properties.minWidth='300px' }
+        maakLegenda(properties);      // Creating a map object
+    }
+
+
+    if (Instellingen['ov'] ||Instellingen['p']  ){ plotOVLijnen(ovLijnen); }
+    if (Instellingen.p == 'oranje' || Instellingen.p == 'os') {  mapOptions = { center: [51.95, 4.584], zoom: 10 };  console.log("start plot donkeys");  plotOVDonkeys(mapDonkeys); }
+    if (Instellingen.p == 'os' ) {console.log("start plot suggesties");  plotSuggesties(deelfietsSuggesties);}
+    if (Instellingen.haltes) {console.log("start plot haltes");  
+    labels =["latlon", "haltenaam", "ov-niveau", "id-gtfs", "cbs-vrk500", "pc4", "woonplaats", "gemeente", "rank-1.5km", "rank-3km", "fiets-score", "fiets-rank-1.5km", "fiets-rank-3km", "nearby-fiets-rank1-1.5km", "nearby-fiets-rank1-3km", "ov-score", "ov-rank-1.5km", "ov-rank-3km", "nearby-ov-rank1-1.5km", "nearby-ov-rank1-3km"]
+    console.log("start plot haltes");  plotHaltesArray(haltes);;}
+    if (Instellingen.par ){ 
+      console.log("vierantstatistiek plotten")
+      if (Instellingen.par == null) {kolom = 10; } else { kolom = parseInt(Instellingen.par) } // bepaal kolom die kleur bepaard
+      plotVierkanten4(vkdata,kolom,0); //vulling doet
+      console.log("Legenda plotten")
+      var properties ={ logo: true } // logo: true
+      ontwerpLegenda(properties,kolom) //nog fixen
+    }
+
+    if (Instellingen['live']  ){ 
+      leg ='Aantal bij Hub<br>';
+      for (let i in verloopRoodGroen) {
+        strx  = verloopLeg[i];
+        leg += '<i style=" opacity: 0.8; background-color:' + verloopRoodGroen[i] + '; text-align: center"></i><span>'+strx +'</span><BR>' ;
+        }
+      var properties ={ logo: true } 
+      properties.titel = "Donkey beschikbaarheid"
+      properties.minWidth = '300px'
+      properties.html = leg
+      maakLegenda(properties);
+      getInfo();
+       }
+
+  }
+  window.onload = windowGeladen;
  
- </head>
- <body>
-  <div id="map"></div>
-  <script src="scr/parseW.js"></script>
-  <script src="scr/mapFunctions.js"></script>
-
-  <script>
-    console.log("start js")
-    var Instellingen = {deelmob:'geen', gemOpacity : 0.2 , gemFill : 0.07, popup : 9 } //nog nalopen##
-    var mapOptions = { center: [52.03, 4.584], zoom: 10 }
-    var map = new L.map('map', mapOptions);  createMap(); 
-
-
-    function loadScript(scriptje) {
-        const script = document.createElement('script');
-            script.src = `${scriptje}.js`; // Dynamische bestandsnaam
-            script.type = 'text/javascript';
-            script.onload = () => { Instellingen[scriptje]   = 1;  } // zodat main de onload kan controleren                        
-            document.body.appendChild(script);
-    }
-
-  const urlParams = new URLSearchParams(window.location.search);  //   function leesURL() {
-    if (urlParams.get('regio')) {
-            Instellingen.regio=urlParams.get('regio');
-            loadScript('data/gemeentesZH')
-            loadScript('data/gemDat')
-        }
-    if (urlParams.get('ov')) {
-        console.log('load files related to lijnen  deelfiets')
-        loadScript('data/deelmdata')
-        Instellingen.ov=urlParams.get('ov');
-    }
-    const urlC = urlParams.get('@')  //mapcenter + pointer
-    if (urlC != null ){
-      console.log(urlC)
-      const myArray = urlC.split(",");
-      mapOptions['center'] =  [Number(myArray[0]), Number(myArray[1])]
-      if (myArray[2] !=null) {mapOptions['zoom'] =  Number(myArray[2])}
-      if (myArray[3] !=null) {Instellingen["pointer"]=myArray[3]}
-    }
-    const urlI = urlParams.get('i') // edit functie : click geeft coordinaten
-    if (urlI == 'c') {  Instellingen["click"]=1;   }
-
-
-
-  const urlP = urlParams.get('p')
-  if (urlP == 'oranje') { Instellingen["deelm"]='oranje'; Instellingen["popup"]=1; mapOptions = { center: [51.95, 4.584], zoom: 10 };   }
-  if (urlP == 'os') { Instellingen["deelm"]='os'; Instellingen["popup"]=1; mapOptions = { center: [51.95, 4.584], zoom: 10 };   }
-  if (urlP == 'issues') { Instellingen["deelm"]='issues'; }
-
-  if (urlP == 'proj') {Instellingen["project"]='ja'; }
-  if (urlP == 'c') { Instellingen["gemeentes"]='concessie'; Instellingen["popup"]=1;   }
-  if (urlP == 'g') { Instellingen["gemeentes"]='grijs'; Instellingen["popup"]=1;   }
-  if (urlP == 'f') { Instellingen["gemeentes"]='fiets'; Instellingen['gemFill'] = 0.2; Instellingen["deelm"]='oranje' }
-
-
-
-    
-    function windowGeladen() {
-        console.log("window geladen");
-        if (Instellingen['regio'] ){ 
-          console.log("teken gemeentes!!!"); tekenGemeentes(); 
-          if (Instellingen['regio'] ) { 
-            var properties ={ logo: true } // logo: true
-            properties.html = regioLegenda;
-            maakLegenda(properties);      // Creating a map object
-          }
-
-
-        }
-        if (Instellingen['ov']  ){ console.log("teen ov lijnen");   plotOVLijnen(ovLijnen); }
-
-
-
-
-    }
-
-
-    window.onload = windowGeladen;
-
-
-
-      
-      //maakLegenda();      // Creating a map object
-      if (Instellingen['deelm'] == 'oranje' ) {console.log("start plot donkeys");  plotOVDonkeys(mapDonkeys);}
-      if (Instellingen['deelm'] == 'os' ) {console.log("start plot donkeys");  plotOVDonkeys(mapDonkeys);console.log("start plot suggesties");  plotSuggesties(deelfietsSuggesties);}
-      if (Instellingen["pointer"] !=null) {plaatsPointer();}
-      if (Instellingen["click"] ==1) {map.on('click', onMapClick);}
+  if (Instellingen["pointer"] !=null) {plaatsPointer();}
+  if (Instellingen["click"] ==1) {map.on('click', onMapClick);}
 
   </script>
  </body>
