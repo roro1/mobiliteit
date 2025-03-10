@@ -39,20 +39,22 @@ var lHTML = ''
       } 
 
     
-      var meer = 'Kaarten bij de <a href="mapv.html" target="_blank">Snelstudie "De kracht van nabijheid"</a>. Klik in de kaart om de scores van een tegel (van 500 x 500 meter) te zien. Er is een kaart met een totaalscore voor voorzieningen. En er zijn kaarten per deelaspect. De score voor voorzieningen loopt van 1(slecht) tot 9(uitstekend), voor OV loopt de schaal andersom: van 1 (primair IC station binnen 2,5km) tot 6 (laagste klasse). Tevens is het aantal inwoners, woningen en banen per tegel vermeld.<BR>'
-      meer += '<a href="mapv.html" target="_blank">Stedelijkheidsklasses</a><br>';
-      meer += '<a href="mapv.html?par=1" target="_blank">Voorzieningen (tot)</a><br>';
-      meer += '<a href="mapv.html?par=9" target="_blank">OV</a><br>';
-      meer += '<a href="mapv.html?par=2" target="_blank">Winkels</a><br>';
-      meer += '<a href="mapv.html?par=3" target="_blank">Onderwijs</a><br>';
-      meer += '<a href="mapv.html?par=4" target="_blank">Zorg</a><br>';
-      meer += '<a href="mapv.html?par=5" target="_blank">Sport&C</a><br>';
-      meer += '<a href="mapv.html?par=6" target="_blank">Horeca</a><br>';
-      meer += '<a href="mapv.html?par=7" target="_blank">Groen</a><br></details>';
+      var meer = 'Kaarten bij de <a href="mapv.html" target="_blank">Snelstudie "De kracht van nabijheid"</a>. Klik in de kaart om de scores van een tegel (van 500 x 500 meter) te zien. Er is een kaart met een totaalscore voor voorzieningen. En er zijn kaarten per deelaspect. De score voor voorzieningen loopt van 1(slecht) tot 9(uitstekend), voor OV loopt de schaal andersom: van 1 (primair IC station binnen 2,5km) tot 6 (laagste klasse). Tevens is het aantal inwoners, woningen en banen per tegel vermeld.<BR><br>'
+      meer += '<h2>Menu:</h2><a href="kaart.html?par=10" target="_blank">Stedelijkheidsklasses</a><br>';
+      meer += '<a href="kaart.html?par=1" target="_blank">Voorzieningen (gewogen)</a><br>';
+      meer += '<a href="kaart.html?par=9" target="_blank">OV</a><br>';
+      meer += '<a href="kaart.html?par=2" target="_blank">Winkels</a><br>';
+      meer += '<a href="kaart.html?par=3" target="_blank">Onderwijs</a><br>';
+      meer += '<a href="kaart.html?par=4" target="_blank">Zorg</a><br>';
+      meer += '<a href="kaart.html?par=5" target="_blank">Sport&C</a><br>';
+      meer += '<a href="kaart.html?par=6" target="_blank">Horeca</a><br>';
+      meer += '<a href="kaart.html?par=7" target="_blank">Groen</a><br></details>';
 
       
-      properties.html = lHTML
-      properties.meer = meer
+      properties.html = lHTML;
+      properties.meer = meer;
+      properties.titel = labelK[kolom-1]
+
 
       properties.minWidth ="300px"
     maakLegenda(properties);
