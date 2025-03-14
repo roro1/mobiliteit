@@ -111,6 +111,16 @@ var mapDonkeys = [
 { "titel":"Amsterdam Amstel" , "latlon": [52.34661398841303, 4.9175568908830956]},
 { "titel":"Noordhoek waterbus" , "latlon":[51.834014, 4.67361]},
 { "titel":"Erasmusbrug waterbus" , "latlon":[51.909512, 4.483044]},
+{ "titel":"Voorschoten", "latlon": [52.12631531608, 4.43353122748]},
+{ "titel":"Waddinxveen Noord", "latlon": [52.0553388041, 4.64834236701]},
+{ "titel":"Waddinxveen", "latlon": [52.04392749585, 4.64987396331] },
+{ "titel":"Waddinxveen Triangel ", "latlon": [52.0267910163, 4.6491039418] },
+{ "titel":"P+R A12", "latlon": [52.0214394585, 4.61747815498]},
+{ "titel":"Waddinxveen Noord Ringdijk ", "latlon": [52.0224447233, 4.66655709746]},
+{ "titel":"Gouda", "latlon": [52.0180142866, 4.706094592501]},
+{ "titel":"Gouda Goverwelle", "latlon": [52.014844860, 4.741193993251]},
+{ "titel":"Stolwijk Dorp", "latlon": [51.972424325, 4.7679993431]},
+
 { "titel":"Leiden CS" , "latlon":[52.16658273, 4.4820674385]}
 
 ];
@@ -123,17 +133,12 @@ var deelfietsSuggesties = [
   { "titel":"Alphen", "latlon": [52.12528185709, 4.65773131607]},
   { "titel":"Boskoop", "latlon": [52.0769834093, 4.646863551671] },
   { "titel":"Boskoop Snijdelwijk", "latlon": [52.06772783517, 4.64627375721]},
-  { "titel":"Waddinxveen Noord", "latlon": [52.0553388041, 4.64834236701]},
-  { "titel":"Waddinxveen", "latlon": [52.04392749585, 4.64987396331] },
-  { "titel":"Waddinxveen Triangel ", "latlon": [52.0267910163, 4.6491039418] },
-  { "titel":"Gouda", "latlon": [52.0180142866, 4.706094592501]},
+
   { "titel":"Zoeterwoude, A4 P+R", "latlon": [52.1267069412, 4.49516044475]},
   { "titel":"Zoeterwoude, Dorp", "latlon": [52.1185295964, 4.49122021852]},
 //  { "titel":"Stompwijk", "latlon": [52.0929054820, 4.473831093431]},
   { "titel":"Nieuwerkerk a/d IJssel", "latlon": [51.9658532962, 4.61700452142]},
-  { "titel":"Gouda Goverwelle", "latlon": [52.01484486024, 4.741193993251]},
   { "titel":"Bodegraven", "latlon": [52.0818418371, 4.74578999616]},
-  { "titel":"Voorschoten", "latlon": [52.12631531608, 4.43353122748]},
   { "titel":"Leiden de Vink", "latlon": [52.1480069573, 4.45609178238]},
   { "titel":"Voorhout", "latlon": [52.2243798653, 4.48448499401]},
   { "titel":"Sassenheim", "latlon": [52.2154081439, 4.51711906120]}
