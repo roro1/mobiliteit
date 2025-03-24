@@ -141,6 +141,9 @@ var deelfietsSuggesties = [
   { "titel":"Bodegraven", "latlon": [52.0818418371, 4.74578999616]},
   { "titel":"Leiden de Vink", "latlon": [52.1480069573, 4.45609178238]},
   { "titel":"Voorhout", "latlon": [52.2243798653, 4.48448499401]},
+  { "titel":"Station Delft", "latlon": [52.0073266863, 4.35714881834]},
+  { "titel":"Delft Campus station", "latlon": [51.9907568380, 4.36488805513]},
+  
   { "titel":"Sassenheim", "latlon": [52.2154081439, 4.51711906120]}
 //  { "titel":"", "latlon": []}
 //  { "titel":"", "latlon": []}
