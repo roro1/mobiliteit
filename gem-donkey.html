@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Gemeenten met Deelfiets</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    ul {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <h1>Gemeenten met Donkey Deelfiets in Zuid-Holland</h1>
+  <ol id="gemeenteLijst"></ol>
+  <script src="data/gemDat.js"></script>
+
+  <script>
+   
+
+    const lijstElement = document.getElementById("gemeenteLijst");
+
+    groepDeelfiets.forEach(gemeente => {
+      const li = document.createElement("li");
+      li.textContent = gemeente;
+      lijstElement.appendChild(li);
+    });
+  </script>
+</body>
+</html>
+
+
