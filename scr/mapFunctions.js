@@ -50,7 +50,7 @@ function gemKleur(str) {
     reg = gemData[str]["regio"];
     if (Instellingen["regio"]=='gem'){
       klr = regio[reg]["kleur"];
-    } else if (Instellingen["gemeentes"]=='fiets'){  //dit nog uitzoeken
+    } else if (Instellingen["regio"]=='deelfiets'){  //dit nog uitzoeken
 //       klr = 'Tomato';
       if ( groepDeelfiets.includes(gemData[str]["naam"]) ) {  klr = 'orange'} else {klr = 'grey'}
     }  else {
@@ -66,6 +66,7 @@ function tekenGemeentes() {
   console.log(Instellingen);
   if (Instellingen['gemFill'] != null ) {gemFill = Instellingen['gemFill'] } else {gemFill= 0.2}
   if (Instellingen['gemOpacity'] != null ) {gemOpacity = Instellingen['gemOpacity'] } else {gemOpacity= 0.1}
+  if (Instellingen['regio'] = 'deelfiets' ) {gemFill =0.3 ;gemOpacity= 0.2}
 
   L.geoJSON(gemeentes, {
       style: function(feature) {

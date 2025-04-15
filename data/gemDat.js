@@ -70,7 +70,9 @@ gemData =  [
 {"code": "51",   "naam": "Zwijndrecht", "regio": "4", "site": "http://www.zwijndrecht.nl/","WM":"[https://www.zwijndrecht.nl/Bestuur_en_organisatie/Alle_onderwerpen/College_van_BW/Samenstelling_portefeuilleverdeling/R_Robert_Kreukniet Robert Kreukniet, VVD]"}
 ];
 
-groepDeelfiets = ["Capelle aan den IJssel","Den Haag","Dordrecht","Gorinchem","Hardinxveld-Giessendam","Hendrik-Ido-Ambacht","Katwijk","Leiden","Leidschendam-Voorburg","Molenlanden","Oegstgeest","Papendrecht","Rijswijk","Rotterdam","Schiedam","Sliedrecht","Zwijndrecht"];
+groepDeelfiets = ["Alphen aan den Rijn","Capelle aan den IJssel","Den Haag","Dordrecht","Gorinchem","Gouda","Hardinxveld-Giessendam","Hendrik-Ido-Ambacht",
+  "Hillegom","Katwijk","Krimpenerwaard","Leiden","Leidschendam-Voorburg","Lisse","Molenlanden","Noordwijk","Oegstgeest","Papendrecht","Rijswijk",
+  "Rotterdam","Schiedam","Sliedrecht","Teylingen","Voorschoten","Waddinxveen","Zwijndrecht"];
 
 regioLegenda='';
 for (let x in regio) {

@@ -129,6 +129,15 @@ var mapDonkeys = [
 
 { "titel":"Katwijk, Vuurbaak", "latlon": [52.200586037347, 4.3912180690509]},
 { "titel":"Katwijk, Boulevard-Zuid", "latlon": [52.19633834230, 4.385639056613]},
+{ "titel":"Sasenheim station", "latlon": [52.21541894674, 4.517093904644]},
+{ "titel":"Voorhout station", "latlon": [52.2245027730, 4.48421849008]},
+{ "titel":"Hillegom station", "latlon": [52.30320587959, 4.5664072482]},
+{ "titel":"Alphen aan de rijn station", "latlon": [52.1247902695, 4.65768592173]},
+{ "titel":"Boskoop station", "latlon": [52.0769425816, 4.64686503707]},
+
+
+
+
 
 { "titel":"Leiden CS" , "latlon":[52.16658273, 4.4820674385]}
 
@@ -139,8 +148,6 @@ var mapDonkeys = [
 
 var deelfietsSuggesties = [
   { "titel":"Lammenschans , Leiden", "latlon": [52.1470200953, 4.492661180828] },
-  { "titel":"Alphen", "latlon": [52.12528185709, 4.65773131607]},
-  { "titel":"Boskoop", "latlon": [52.0769834093, 4.646863551671] },
   { "titel":"Boskoop Snijdelwijk", "latlon": [52.06772783517, 4.64627375721]},
 
   { "titel":"Zoeterwoude, A4 P+R", "latlon": [52.1267069412, 4.49516044475]},
@@ -149,11 +156,9 @@ var deelfietsSuggesties = [
   { "titel":"Nieuwerkerk a/d IJssel", "latlon": [51.9658532962, 4.61700452142]},
   { "titel":"Bodegraven", "latlon": [52.0818418371, 4.74578999616]},
   { "titel":"Leiden de Vink", "latlon": [52.1480069573, 4.45609178238]},
-  { "titel":"Voorhout", "latlon": [52.2243798653, 4.48448499401]},
   { "titel":"Station Delft", "latlon": [52.0073266863, 4.35714881834]},
   { "titel":"Delft Campus station", "latlon": [51.9907568380, 4.36488805513]},
   
-  { "titel":"Sassenheim", "latlon": [52.2154081439, 4.51711906120]}
 //  { "titel":"", "latlon": []}
 //  { "titel":"", "latlon": []}
 
