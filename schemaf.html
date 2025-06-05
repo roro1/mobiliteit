@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twee Popups</title>
+    <style>
+        /* Achtergrond-overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+        }
+
+        /* Container om beide popups te groeperen */
+        .popup-container {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Linksboven box */
+        .popup-box {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 300px;
+            height: 80px; /* Vaste hoogte */
+            background: #c6a410;
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Linksonder afbeelding */
+        .popup-image {
+            position: absolute;
+            left: 20px;
+            top: 120px; /* 80px (tekstbox) + 10px ruimte erboven en eronder = 120px */
+            width: 600px;
+            height: calc(100vh - 120px - 20px); /* 100vh - tekstbox + ruimte - marge onderaan */
+        }
+
+        .popup-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Houdt de afbeelding goed passend */
+            border-radius: 10px;
+        }
+
+        /* Sluitknop */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            background: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Overlay die beide popups bevat -->
+<div class="overlay" id="popupContainer">
+    <div class="popup-container">
+        <!-- Linksboven box -->
+        <div class="popup-box">
+            Dit is een informatieve box
+            <button class="close-btn" onclick="closePopups()">✖</button>
+        </div>
+
+        <!-- Linksonder afbeelding -->
+        <div class="popup-image">
+            <img src="https://kennis.zuid-holland.nl/wp-content/uploads/2024/11/compactestad-1536x864.png" alt="Afbeelding">
+        </div>
+    </div>
+</div>
+
+<script>
+    function closePopups() {
+        document.getElementById('popupContainer').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>

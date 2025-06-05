@@ -1,0 +1,37 @@
+<html>
+<head>
+  <meta name="robots" content="noindex">
+  <meta charset="UTF-8">
+  <title>Zuid-Holland plannen</title>
+  <link rel=icon href="img/favicon.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <div class="logobar">
+    <img src="img/PZHlogo253x84.png" alt="Provincie Zuid-Holland logo" width="253" height="84">
+  </div>
+  <div class="topnav" id="myTopnav">
+    <a href="map.html">Kaart met plannen</a>
+    <a href="https://pzh.maps.arcgis.com/apps/webappviewer/index.html?id=74e23812a85e40b9be7d14e731ad0e4b">DBI Kaart</a>
+    <a href="mapv.html">VierkantKaart</a>
+    <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+      <span class="material-icons">dehaze</span>
+    </a>
+  </div>
+  <div class="topImage" id="topI">
+  <img src="img/Pontje.jpg" alt="Zuid-Holland" width="100%" height="auto" >
+
+  </div>
+  <div class="content" id="content">      </div>
+  <script src="data/snelstudiedata.js"></script>
+  <script src="scr/app.js"></script>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id')
+    console.log(id);
+    renderLijst(snelstudieData,id,"snelstudies") 
+  </script>
+</body>
+</html>

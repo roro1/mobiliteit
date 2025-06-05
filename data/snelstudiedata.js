@@ -1,5 +1,12 @@
 // naast HTML kan bij LINK mark-up link gebruikt worden voorafgegaan door $ dus $[..](..)
 var snelstudieData = [
+
+  {"id":"6",
+    "titel":"Achtk kansen voor mobililiteit",
+    "link" :"$[Rapport](https://kennis.zuid-holland.nl/kansen-voor-mobiliteit)",
+    "kort" :"Hoofdboodschap: Woningen: bij voorzieningen en hoogwaardig OV (15-minutenwijk).<br>Vervoer: prioriteit voor lopen en fietsen, ruim baan voor openbaar vervoer, deel meer voertuigen en creëer naadloze overstap tussen fiets, OV, deelvervoer & auto.<br>Technologie: groene mobiliteit, circulaire infrastructuur en smart mobility.<br>En dat moet veilig en voor iedereen zijn. Gedragsverandering speelt hierbij een cruciale rol." },
+
+
   {"id":"1",
    "titel":"Hoe verleiden we reizigers om slimmer (dan met een auto) te reizen?"  ,
    "link" :"$[Rapport-pdf](https://www.zuid-holland.nl/publish/pages/27681/hoeverleidenwereizigersomslimmertereizen.pdf)",
@@ -28,10 +35,6 @@ var snelstudieData = [
       "link" :"$[What is a 15-minute city](https://youtu.be/McGyONofhi4)",
       "kort" :"In Zuid-Holland gaan we heel veel woningen bijbouwen. Waar en hoe kunnen we dat het beste doen ? Hoe ziet de ideale wijk er eigenlijk uit? Waar ligt die (dicht bij OV?) en hoe zit het met de nabijheid voorzieningen als winkels, gezondheidszorg, werkgelegenheid en recreatie. Hoeveel is bereikbaar binnen 15 minuten te voet of per fiets? In welke dichtheid moet er (minimaal) gebouwd worden? Speelt functiemenging (wonen/werken/recreatie) een belangrijke rol? Hoe verhogen we de kwaliteit van leven en de duurzaamheid?" },
 
-      {"id":"6",
-       "titel":"Zuid Holland in transitie (studie loopt t/m maart 2022)",
-       "link" :"$[Valkenhorst ontwikkeling](https://www.zuid-holland.nl/actueel/nieuws/december-2021/ontwikkeling-valkenhorst-forse-stap-dichterbij/)",
-       "kort" :"In de laatste snelstudie van deze serie doen we een wrap-up van de inzichten tot nu toe, uit voorgaande snelstudies, en kijken hoe we dat kunnen omzetten in beleid, actie en realisatie. We verbinden het met speerpunten van beleid en actuele programma’s voor realisatie. We pakken de rode draad aan de hand van de case HOV Hubs Valkenhorst. En liefst nog een andere case." },
 
 
 ];

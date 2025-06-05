@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>Using anchor Tag</title>
+    <style>
+        h1 {
+            color: green;
+            text-align: center;
+        }
+
+        body {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+            margin-top: 40px;
+        }
+
+        .tooltip-text {
+            border: 1px solid black;
+        }
+
+        .tooltip .tooltip-text {
+            visibility: hidden;
+            width: 160px;
+            padding: 10px;
+            background-color: whitesmoke;
+            color: black;
+            text-align: center;
+            border-radius: 10px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+            opacity: 0;
+            transition: opacity 0.3s, visibility 0s linear 0.3s;
+        }
+
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+            transition: opacity 0.3s, visibility 0s linear 0s;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>GeeksforGeeks</h1>
+    Snelstudiesgeven inzicht in de richtingen die we kunnen gaan. Snelstudies zijn als een fietstocht: Ver vooruitkijken en dichtbij sturen. We schetsen toekomstperspectieven en brengen die terug naar mogelijke keuzes voor overheden in Zuid-Holland die nu al gemaakt kunnen worden. Deze Snelstudies vallen binnen kennis Zuid-Holland van de provincie Zuid-Holland.
+<br>
+    <div class="tooltip">
+        Hover to Visit
+        <div class="tooltip-text">
+            Visit 
+              <a href="https://www.geeksforgeeks.org/" target="_blank">
+              GeeksforGeeks
+              </a>
+        </div>
+    </div>
+    <h1>GeeksforGeeks</h1>
+    <h3>Using anchor Tag</h3>
+    <div class="tooltip">
+        Hover to Visit nog eentje
+        <div class="tooltip-text">
+            Visit nu
+              <a href="https://www.geeksforgeeks.org/" target="_blank">
+              GeeksforGeeks
+              </a>
+        </div>
+    </div>   
+</body>
+
+</html>

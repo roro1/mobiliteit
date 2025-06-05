@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Oranje Vierkantje</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            background:  #847062;
+        }
+        #square {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: #ff6b02;
+            top: 0;
+            left: 0;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            const square = document.getElementById('square');
+            const duration = 6000; // ms
+            const start = performance.now();
+            const body = document.body;
+            const maxLeft = window.innerWidth - 200;
+            const maxTop = window.innerHeight - 200;
+
+            function animate(now) {
+                const elapsed = Math.min(now - start, duration);
+                const progress = elapsed / duration;
+                square.style.left = (maxLeft * progress) + 'px';
+                square.style.top = (maxTop * progress) + 'px';
+                if (elapsed < duration) {
+                    requestAnimationFrame(animate);
+                }
+            }
+            requestAnimationFrame(animate);
+        };
+    </script>
+</head>
+<body>
+    <div id="square"></div>
+</body>
+</html>

@@ -30,6 +30,8 @@
   }
   const urlParams = new URLSearchParams(window.location.search);  // URL parameters inlezen en overlays laden
   if (urlParams.get('regio')) {   //gemeentekaart loaden
+    console.log("url par regio is: ");
+    console.log(urlParams.get('regio'))
     Instellingen.regio=urlParams.get('regio'); loadScript('data/gemeentesZH'); loadScript('data/gemDat') }
   if (urlParams.get('ov') || urlParams.get('p') ){ //ov lijnen en deelmob loaden
     loadScript('data/deelmdata');  Instellingen.ov=urlParams.get('ov'); Instellingen.p=urlParams.get('p'); }

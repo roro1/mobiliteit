@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sessies Tabel</title>
+  <script src="data/sessiedata.js"></script> <!-- JSON-data wordt ingeladen -->
+  <script src="scr/parseW.js"></script>
+
+  <style>
+        body {    color: #281f6b;
+      font-family: Sans-serif;}
+
+    H1 {
+  font-family: "Karbon", Sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1em;
+}
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      border: 2px solid #333;
+      background: #c6a410;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+      width: 90%;
+      border-radius: 10px;
+    }
+    .popup h2 {
+      margin-top: 0;
+    }
+    .popup .close {
+      display: block;
+      margin-top: 10px;
+      text-align: right;
+      color: #007bff;
+      cursor: pointer;
+    }
+    #overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+    .dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode table {
+  border: 1px solid white;
+}
+
+.dark-mode th, 
+.dark-mode td {
+  border: 1px solid white;
+  color: white;
+}
+
+.dark-mode th {
+  background-color: #222;
+}
+
+.dark-mode tr:hover {
+  background-color: #333;
+}
+
+.dark-popup {
+  background: #c6a410 !important; /* Geelachtige achtergrond */
+  color: black !important; /* Zwarte tekst voor contrast */
+  width: 90vw !important;
+  height: 90vh !important;
+  position: fixed !important;
+  top: 5% !important;
+  left: 5% !important;
+  padding: 20px !important;
+  border-radius: 10px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5) !important; /* Mooie schaduw */
+  border: 2px solid black !important;
+}
+
+#popup {
+  background-color: rgba(0, 0, 0, 0.8); /* Donkere overlay als er geen afbeelding is */
+  color: white;
+  width: 90vw;
+  height: 90vh;
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border: 2px solid white;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Tijd</th>
+        <th>Zaal</th>
+      </tr>
+    </thead>
+    <tbody id="sessionsTable">
+      <!-- Dynamische rijen worden hier toegevoegd -->
+    </tbody>
+  </table>
+
+  <!-- Pop-up -->
+  <div id="overlay"><span id-popup-content></span></div>
+
+
+    <span class="close" onclick="closePopup()">Sluiten</span>
+  </div>
+
+  <script>
+ if (getQueryParam('mode') === 'dark') {
+  document.body.classList.add('dark-mode');
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const popup = document.getElementById("popup");
+    if (popup) {
+      popup.classList.add("dark-popup");
+    }
+  });
+
+  // Zorg dat de pop-up correct de class krijgt bij elke klik
+  document.addEventListener("click", function (event) {
+    const popup = document.getElementById("popup");
+    if (popup && popup.style.display === "block") {
+      popup.classList.add("dark-popup");
+    }
+  });
+}
+
+
+
+    // Functie om de URL-parameter op te halen
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    function sortSessions(sessions) {
+  return sessions
+    .filter(session => session !== null) // Verwijder null-waardes vóór het sorteren
+    .sort((a, b) => {
+      if (!a || !b) return 0; // Extra check om fouten te voorkomen
+
+      const sortParam = getQueryParam('sort');
+
+      if (sortParam === 'zaal') {
+        const zaalA = a.zaal || "ZZZ"; // Lege zaal naar onderen
+        const zaalB = b.zaal || "ZZZ";
+        if (zaalA !== zaalB) return zaalA.localeCompare(zaalB);
+
+        // Binnen dezelfde zaal, sorteer op tijd als string
+        const tijdA = a.tijd || "99:99"; 
+        const tijdB = b.tijd || "99:99";
+        return tijdA.localeCompare(tijdB);
+      }
+
+      if (sortParam === 'tijd') {
+        const tijdA = a.tijd || "99:99"; // Laat lege tijden onderaan staan
+        const tijdB = b.tijd || "99:99";
+        return tijdA.localeCompare(tijdB);
+      }
+
+      return 0; // Geen sortering als geen geldige parameter is opgegeven
+    });
+}
+
+
+    // Functie om de tabel te genereren
+    function generateTable() {
+      const tableBody = document.getElementById('sessionsTable');
+      const sortedSessions = sortSessions([...data.sessions]); // Kopie van array maken
+
+      sortedSessions.forEach((session) => {
+        if (session) {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td>${session.title}</td>
+            <td>${session.tijd || ''}</td>
+            <td>${session.zaal || ''}</td>
+          `;
+          row.addEventListener('click', () => showPopup(session));
+          tableBody.appendChild(row);
+        }
+      });
+    }
+
+    function showPopup(session) {
+  const popup = document.getElementById("popup");
+  const popupContent = document.getElementById("popup-content");
+
+  if (!popup || !popupContent) return;
+
+  // Vul de pop-up met content
+  popupContent.innerHTML = `
+    <h2>${session.title}</h2>
+    <p>${session.details}</p>
+    ${session.tijd ? `<p><strong>Tijd:</strong> ${session.tijd}</p>` : ""}
+    ${session.zaal ? `<p><strong>Zaal:</strong> ${session.zaal}</p>` : ""}
+    ${session.spreker ? `<p><strong>Spreker:</strong> ${session.spreker}</p>` : ""}
+  `;
+
+  // Zet de achtergrondafbeelding als die bestaat
+  if (session.back) {
+    popup.style.backgroundImage = `url('${session.back}')`;
+    popup.style.backgroundSize = "cover";
+    popup.style.backgroundPosition = "center";
+  } else {
+    popup.style.backgroundImage = "none"; // Geen achtergrond als er geen afbeelding is
+  }
+
+  popup.style.display = "block";
+}
+
+
+    // Functie om de pop-up te sluiten
+    function closePopup() {
+      document.getElementById('Popup').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+    }
+
+    // Sluit pop-up bij klikken op de overlay
+    document.getElementById('overlay').addEventListener('click', closePopup);
+
+    // Wacht tot de JSON is ingeladen en genereer dan de tabel
+    window.onload = generateTable;
+  </script>
+</body>
+</html>

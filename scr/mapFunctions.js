@@ -50,8 +50,8 @@ function gemKleur(str) {
     reg = gemData[str]["regio"];
     if (Instellingen["regio"]=='gem'){
       klr = regio[reg]["kleur"];
-    } else if (Instellingen["regio"]=='deelfiets'){  //dit nog uitzoeken
-//       klr = 'Tomato';
+    } else if (Instellingen["regio"]=='deelfiets')
+      {  
       if ( groepDeelfiets.includes(gemData[str]["naam"]) ) {  klr = 'orange'} else {klr = 'grey'}
     }  else {
       conse = regio[reg]["concessie"];
