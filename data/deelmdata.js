@@ -126,7 +126,6 @@ var mapDonkeys = [
 { "titel":"Katwijk Duinvallei/N206", "latlon": [52.19252086424, 4.420188389156]},
 { "titel":"Katwijk, Gemeentehuis", "latlon": [52.200268753411, 4.413939047319]},
 { "titel":"Katwijk, Centrum", "latlon": [52.20441300679, 4.39885851779]},
-
 { "titel":"Katwijk, Vuurbaak", "latlon": [52.200586037347, 4.3912180690509]},
 { "titel":"Katwijk, Boulevard-Zuid", "latlon": [52.19633834230, 4.385639056613]},
 { "titel":"Sasenheim station", "latlon": [52.21541894674, 4.517093904644]},
@@ -134,16 +133,12 @@ var mapDonkeys = [
 { "titel":"Hillegom station", "latlon": [52.30320587959, 4.5664072482]},
 { "titel":"Alphen aan de rijn station", "latlon": [52.1247902695, 4.65768592173]},
 { "titel":"Boskoop station", "latlon": [52.0769425816, 4.64686503707]},
-
-
-
-
-
+{ "titel":"Leiden de Vink", "latlon": [52.1480069573, 4.45609178238]},
+{ "titel":"Station Delft", "latlon": [52.0073266863, 4.35714881834]},
+{ "titel":"Delft Campus station", "latlon": [51.9907568380, 4.36488805513]},
 { "titel":"Leiden CS" , "latlon":[52.16658273, 4.4820674385]}
-
 ];
 
-// geo" :"polylijn", "polylijn" : [[],[],[],[],[],[],[]],
 
 
 var deelfietsSuggesties = [
@@ -155,13 +150,8 @@ var deelfietsSuggesties = [
 //  { "titel":"Stompwijk", "latlon": [52.0929054820, 4.473831093431]},
   { "titel":"Nieuwerkerk a/d IJssel", "latlon": [51.9658532962, 4.61700452142]},
   { "titel":"Bodegraven", "latlon": [52.0818418371, 4.74578999616]},
-  { "titel":"Leiden de Vink", "latlon": [52.1480069573, 4.45609178238]},
-  { "titel":"Station Delft", "latlon": [52.0073266863, 4.35714881834]},
-  { "titel":"Delft Campus station", "latlon": [51.9907568380, 4.36488805513]},
-  
-//  { "titel":"", "latlon": []}
-//  { "titel":"", "latlon": []}
 
+  
 ];
 
 //",[],[],[],[52.0635507707, 4.48291236114]],
