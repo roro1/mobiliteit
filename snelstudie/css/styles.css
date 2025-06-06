@@ -81,29 +81,6 @@ h3{
 
 
 
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border-top: 1px solid #ddd;
-}
-
-li{
-    padding: 8px 16px;
-    border-bottom: 1px solid #ddd;
-    padding: 20px;
-
-}
-
-ul li:last-child {
-  border-bottom: none
-}
-
-li span{
-    cursor:  pointer;
-
-}
-
 
 /* Column container */
 .row {
