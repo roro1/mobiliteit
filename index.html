@@ -2,7 +2,7 @@
 <head>
   <meta name="robots" content="noindex">
   <meta charset="UTF-8">
-  <title>Zuid-Holland in transitie</title>
+  <title>Snelstudies</title>
   <link rel=icon href="img/favicon.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="css/styles.css">
@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="logobar">
-    <img src="img/PZHlogo253x84.png" alt="Provincie Zuid-Holland logo" width="253" height="84">
+    <img src="img/PZHlogo253x84.png" alt="Provincie Zuid-Holland logo" >
   </div>
   <div class="topnav" id="myTopnav">
     <a href="mapv.html">VierkantKaart</a>
@@ -24,15 +24,29 @@
   <div class="topImage">
     <img src="img/VoorkantPZH.jpg" alt="Provinciehuis Zuid-Holland" width="100%" height="auto" >
   </div>
-  <div class="content">
-    <H1>Zuid-Holland bereikbaar</H1>
-    <p>Zie <a href="https://kennis.zuid-holland.nl/snelstudie-2022-brede-kansen-voor-slimme-mobiliteit/">Brede kansen voor slimme mobiliteit</a> voor de meest recente snelstudie.
-  </p>
-  <p><i>Deze site is voor mobiliteitsexperts ter inspiratie en voor kennisoverdracht. Inhoud is niet vastgesteld beleid.</i></p>
-  <p><i> <a href="https://www.zuid-holland.nl/algemeen/toegankelijkheid/">Toegankelijkheid</a></i></P>
+</div>
+<div class="content" id="content">      </div>
+<script src="data/snelstudiedata.js"></script>
+<script src="scr/app.js"></script>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id')
+    console.log(id);
+    renderLijst(snelstudieData,id,"snelstudies") 
+</script>
 
+  <p><i>Deze site is ter inspiratie en voor kennisoverdracht. De inhoud is geen vastgesteld beleid. <a href="https://www.zuid-holland.nl/algemeen/toegankelijkheid/">Toegankelijkheid</a></i></P>
+    <p>
+
+      voor meer info.
+    </p>Beetje naar rechts en nog meer  nnnen en ene n 
+    <div class="tooltip">Hover to Visit<div class="tooltip-text">
+          Visit 
+            <a href="https://www.geeksforgeeks.org/" target="_blank"> GeeksforGeeks</a>
+      </div>
   </div>
-
-  <script src="scr/app.js"></script>
+<br>
+<br>
+....
 </body>
 </html>
