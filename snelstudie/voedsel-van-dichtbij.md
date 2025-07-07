@@ -6,7 +6,7 @@ title: Voedsel van dichtbij
 
 
 <div class="tekstblok">
-  Deze snelstudie is onlangs gestart. Na de snelstudie ["Kracht van nabijheid"](https://kennis.zuid-holland.nl/nabijheid/) waar de nadruk op personenmobiliteit lag, duiken we nu in logistiek om lokaal geproduceerd voedsel. Neem contact met ons op als je mee wilt doen. Zie verder <a href="snelstudie-werkwijzer.html" target="_blank">toelichting Snelstudies</a>. Snelstudies vallen binnen het programma <a href="https://kennis.zuid-holland.nl/" target="_blank">kennis Zuid-Holland</a>.
+  Deze snelstudie is onlangs gestart. Na de snelstudie <a href="https://kennis.zuid-holland.nl/nabijheid" target="_blank">"Kracht van nabijheid"</a>  waar de nadruk op personenmobiliteit lag, duiken we nu in de logistiek om lokaal geproduceerd voedsel snel en vers op je bord te krijgen. Zie verder <a href="snelstudie-werkwijzer.html" target="_blank">toelichting Snelstudies</a>. Snelstudies vallen binnen het programma <a href="https://kennis.zuid-holland.nl/" target="_blank">kennis Zuid-Holland</a>.
  
 </div>
 
