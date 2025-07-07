@@ -34,6 +34,12 @@ h3{
     border-radius: 10px 100px 10px 10px;
 }
 
+.tekstblok {
+  background-color: #efcc36;
+  padding: 1em;
+  border-radius: 6px;
+}
+
 .tooltip {
   position: relative;
   display: inline-block;
