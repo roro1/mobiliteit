@@ -17,6 +17,18 @@ title: Voedsel van dichtbij
 
 Hierbij zal gekeken worden naar de huidige situatie van de logistieke korte keten partijen. Welke oplossingen er mogelijk zijn, maar ook of er combinaties mogelijk zijn met andere ketens? Waarom voor pakketjes en voedsel apart een busje laten rijden? En wat als deze busjes dan ook nog eens gebruik kunnen maken van voedselhubs om makkelijker bij jou goederen te kunnen leveren? Misschien levert het naast vers lokaal voedsel op je bord ook nog wel andere positieve effecten op. Zoals een betere band tussen boer en consument.
 
-We streven naar concrete aanbevelingen voor de lange én korte termijn. Om zo te zorgen dat het lokale voedsel straks ook echt op je bord belandt.  
+We streven naar concrete aanbevelingen voor de lange én korte termijn. Om zo te zorgen dat lokaal voedsel straks ook echt op je bord belandt.  
 
-Voor meer informatie en meedoen: kenniszuidholland@pzh.nl
+
+
+## Achtergrond info en links:
+- [De Tuin van Holland](https://www.detuinvanholland.nl/)
+- [Rotterdam de boer op!](https://www.rotterdamdeboerop.nl/)
+- [Oogst, de zelf-service boerenwinkel](https://www.oogst.shop/)
+- [ Hoeve Biesland](https://hoevebiesland.nl/)
+
+<div class="tekstblok">
+Voor meer informatie en meedoen: mail projectleider Igor Koster: i.koster@student.tue.nl of ra.haverman@pzh.nl
+</div>
+
+<details> <summary>Click voor details</summary>additional content...</details>
