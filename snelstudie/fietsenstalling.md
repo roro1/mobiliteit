@@ -1,8 +1,8 @@
 ---
 layout: pzh
-title: Slim benutten fietsenstallingen
+title: fietsenstallingen
 ---
-# Slim benutten fietsenstallingen en stationspleinen
+# Efficiënt ruimtegebruik fietsenstallingen en stationspleinen
 
 
 <div class="tekstblok">
@@ -15,14 +15,12 @@ Bij (stations)fietsenstallingen geldt, net als bij andere infra, dat beter benut
 
 Het blijkt dat er voor verschillende doelgroepen van stallers grote verschillen zijn in de tijd die de fiets stilstaat tussen 2 ritten. In deze snelstudie kijken we hoe we stations stallingen efficiënter kunnen benutten zodat we er minder bij hoeven te bouwen.
 
-Deze studie is relevant omdat de ruimtelijke puzzel enorm is in Zuid-Holland en in het bijzonder bij OV-knooppunten en stadcentra is de ruimte erg schaars. Grote hoeveelheden fietsen zorgen hier voor problemen en daarmee (investerings)kosten terwijl we de fiets-trein combinatie natuurlijk wel volop willen faciliteren.
-
- ..... De hoofdvraag is: 
+Deze studie is relevant omdat de ruimtelijke puzzel enorm is in Zuid-Holland en in het bijzonder bij OV-knooppunten en stadcentra is de ruimte erg schaars. Grote hoeveelheden fietsen zorgen hier voor problemen en daarmee (investerings)kosten terwijl we de fiets-trein combinatie natuurlijk wel volop willen faciliteren. De hoofdvraag is: 
 
 
 **Hoe kunnen fietsenstallingen (op stations) efficiënter benut worden zodat stallen  kosten-efficiënter worden en de combinatie fiets-trein aantrekkelijker wordt?**
 
-Deelvragen kunnen daarij zijn:
+### Deelvragen:
 - Wat is de huidige efficiëntie van fietsenstallingen (doorlooptijd en bezettingsgraad)?
 - Welke type gebruikers van stallingen zijn er (korte vs lange duur) (normaal vs e-bike)?
 - Welke mogelijkheden zijn er om stallingen beter te benutten?
