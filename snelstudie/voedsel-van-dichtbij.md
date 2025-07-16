@@ -6,7 +6,7 @@ title: Voedsel van dichtbij
 
 
 <div class="tekstblok">
-  Na de snelstudie <a href="https://kennis.zuid-holland.nl/nabijheid" target="_blank">"Kracht van nabijheid"</a>  waar de nadruk op personenmobiliteit lag, duiken we nu in de logistiek om lokaal geproduceerd voedsel snel en vers op je bord te krijgen. Deze snelstudie is net gestart en hopen we in septermber/oktober 2025 te voltooien (het resultaat komt op deze webpagina). Het is een samenwerking van provincie Zuid-Holland (<a href="https://kennis.zuid-holland.nl/" target="_blank">kennis Zuid-Holland</a>) en <a href="https://labverantwoordemobiliteit.nl/" target="_blank">LVM</a>. Toelichting <a href="snelstudie-werkwijzer.html" target="_blank">Snelstudie programma</a>.
+  Na de snelstudie <a href="https://kennis.zuid-holland.nl/nabijheid" target="_blank">"Kracht van nabijheid"</a>  waar de nadruk op personenmobiliteit lag, duiken we nu in de logistiek om lokaal geproduceerd voedsel snel en vers op je bord te krijgen. Deze snelstudie is net gestart en gaan we in oktober 2025 voltooien (het resultaat komt op deze webpagina). Het is een samenwerking van provincie Zuid-Holland (<a href="https://kennis.zuid-holland.nl/" target="_blank">kennis Zuid-Holland</a>) en <a href="https://labverantwoordemobiliteit.nl/" target="_blank">LVM</a>. Toelichting <a href="snelstudie-werkwijzer.html" target="_blank">Snelstudie programma</a>.
  
 </div>
 
@@ -40,5 +40,8 @@ Lokaal geproduceerd voedsel beland maar zelden op de borden van mensen in de buu
 Maar waarom gebeurt dit eigenlijk niet? En hoe verbeteren we de situatie? Vaak zitten hier ook logistieke problemen in, ons systeem is er nog niet op ingericht. In deze snelstudie zal naar dit systeem en haar logistiek gekeken worden door antwoord te zoeken op: 
 </p><p><i>
 “Hoe kan de logistiek van de korte voedselketen in Zuid-Holland verbeterd worden, zodat het makkelijk wordt om meer mensen van meer lokaal geproduceerd voedsel te voorzien?” 
-</i></p>
+</i></p><p>
+Want uiteindelijk zou het mooi zijn als we allemaal wat meer lokaal voedsel op ons bord hebben. Om hier inzicht in te krijgen zal er eerst een schets gegeven worden van de huidige situatie. Gevolgd door het kijken naar mogelijke oplossingen. Zijn er oplossingen mogelijk met andere ketens? Waarom zouden er immers aparte busje moeten rijden voor pakketjes en voedsel? En wat als deze busjes dan ook nog eens gebruik kunnen maken van (voedsel) hubs om het voedsel makkelijker en efficiënter te kunnen leven? Misschien levert dit alles ook nog wel ander positieve effecten op waar zowel boer en consument van kunnen profiteren, bijvoorbeeld beter begrip voor elkaar.
+</p>
 </details>
+<br>
