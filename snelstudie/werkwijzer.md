@@ -2,6 +2,8 @@
 layout: lijst
 title: Snelstudielijst
 header_image: img/zandmotorstrand.jpg
+menu: |
+    <a href="snelstudies.html">meer snelstudies</a>
 ---
 ## Wat is een Snelstudie?
 
