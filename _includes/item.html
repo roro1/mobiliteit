@@ -1,9 +1,12 @@
-<div class="item">
-  <div class="item-left">
-    <a href="{{ include.item.url }}">🔗 {{ include.item.title }}</a>
-    <img src="{{ include.item.image }}" alt="{{ include.item.title }}">
-     </div>
-  <div class="item-right">
-    <p>{{ include.item.description }}</p> ==abc==
+<a href="{{ include.item.url }}" class="item-link">
+  <div class="item">
+    <div class="item-left">
+      <img src="{{ include.item.image }}" alt="{{ include.item.title }}">
+    </div>
+    <div class="item-right">
+      <h2>{{ include.item.title }}</h2>
+      <p>{{ include.item.description }}</p>
+    </div>
   </div>
-</div>
+</a>
+
