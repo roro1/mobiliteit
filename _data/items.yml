@@ -1,17 +1,27 @@
+- title: Logistiek voor korte voedselketens
+  url: https://provincie-zuid-holland.github.io/mobiliteit/snelstudie/voedsel-van-dichtbij.html
+  image: 
+  description: Na de snelstudie "Kracht van nabijheid" waar de nadruk op personenmobiliteit lag, duiken we nu in de logistiek om lokaal geproduceerd voedsel snel en vers op je bord te krijgen. Deze snelstudie is net gestart en gaan we in oktober 2025 voltooien
+
+- title: Efficiënt ruimtegebruik fietsenstallingen
+  url: https://provincie-zuid-holland.github.io/mobiliteit/snelstudie/fietsenstalling
+  image: 
+  description: Deze snelstudie is net gestart en hopen we in oktober 2025 te voltooien. De vraag is "Hoe kunnen fietsenstallingen (op stations) efficiënter benut worden zodat stallen kosten-efficiënter worden en de combinatie fiets-trein aantrekkelijker wordt?"
+
 - title: De Kracht van nabijheid
   url: https://kennis.zuid-holland.nl/nabijheid/
   image: https://kennis.zuid-holland.nl/wp-content/uploads/2024/11/compactestad-1536x864.png
-  description: Korte beschrijving over Kracht van nabijheid
-
-- title: Acht kansen
-  url: https://kennis.zuid-holland.nl/kansen-voor-mobiliteit/
-  image: /img/busstationleiden.jpg
-  description: Deze studie is ter inspiratie voor aansprekend mobiliteitsbeleid en doordachte ruimtelijke ordening die passen bij de grote opgaven van deze tijd (energie, klimaat, stikstof & woningen). Graag gaan we samen op weg naar een duurzaam en prettig Zuid-Holland waar het voor iedereen goed wonen, werken en leven is.
+  description: Met voorzieningen dichtbij hoeven bewoners minder ver te reizen, lopen ze vaker, fietsen ze meer, pakken ze vaker het OV en verbetert hun bereikbaarheid. Als mensen minder afhankelijk van de auto zijn, schept dat ook ruimte voor compacter bouwen van woningen, bedrijvigheid en voorzieningen.
 
 - title: Zuid-Holland, Ga gewoon fietsen
   url: https://kennis.zuid-holland.nl/fiets/
   image: https://kennis.zuid-holland.nl/wp-content/uploads/elementor/thumbs/15045-edited-scaled-qotueulajhdr4p6cevdgfngiceeklnhtc71tft1fx0.jpg
   description: Hoe mooi kan Zuid-Holland worden als we de komende tien jaar flink meer gaan fietsen? En welke maatregelen kunnen we dan nemen? Dat zijn de vragen van deze snelstudie, een compact onderzoek binnen Kennis Zuid-Holland ter inspiratie. Fietsen is een leuke gezonde en goedkope manier van verplaatsen met veel voordelen voor de hele samenleving. Daarom doet de provincie Zuid-Holland de oproep Ga gewoon fietsen. 
+
+- title: Acht kansen voor mobiliteit
+  url: https://kennis.zuid-holland.nl/kansen-voor-mobiliteit/
+  image: img/busstationleiden.jpg
+  description: Deze studie is ter inspiratie voor aansprekend mobiliteitsbeleid en doordachte ruimtelijke ordening die passen bij de grote opgaven van deze tijd (energie, klimaat, stikstof & woningen). Graag gaan we samen op weg naar een duurzaam en prettig Zuid-Holland waar het voor iedereen goed wonen, werken en leven is.
 
 - title: OV verbreden naar publiek vervoer
   url: https://kennis.zuid-holland.nl/ov/
@@ -23,6 +33,23 @@
   image: https://kennis.zuid-holland.nl/onderzoeken/snelstudie-de-ideale-woonwijk-voorzieningen-en-ov-nabij/
   description: Hoe ziet de ideale wijk er uit? Waar ligt die (dicht bij OV?) en hoe zit het met de nabijheid voorzieningen als winkels, gezondheidszorg, werkgelegenheid en recreatie?
 
+- title: Sneller reizen met de bus in Zuid-Holland
+  url: https://kennis.zuid-holland.nl/onderzoeken/snelstudie-sneller-reizen-met-de-bus-in-zuid-holland/
+  image: img/bus.jpg
+  description: Het busvervoer staat onder druk door de grote overheidsbijdrage die nodig is om het systeem draaiende te houden. (2021)
 
+- title: Dicht bij huis werken in de Thuiswerkhub
+  url: https://kennis.zuid-holland.nl/onderzoeken/snelstudie-dicht-bij-huis-werken-in-de-thuiswerkhub/
+  image: img/thuiswerkhub.jpg
+  description: Dichter bij huis werken (in zogenoemde thuiswerkhubs) kan bijdragen aan een beter bereikbare provincie waarin het goed toeven is. (2021)
 
+- title: Kansen voor deelfiets en deelscooter in Zuid-Holland
+  url: https://kennis.zuid-holland.nl/onderzoeken/snelstudie-kansen-voor-deelfiets-en-deelscooter-in-zuid-holland/
+  image: img/Snelstudiedeelm.jpg
+  description: Er liggen kansen in Zuid-Holland voor deelfietsen en deelscooters. Vooral in de grote steden zijn deze deelvoertuigen al aan een flinke opmars bezig, maar dragen deelfietsen en deelscooters ook bij aan een betere mobiliteit? (2021)
+
+- title: hoe verleiden we reizigers om slimmer (dan met een auto) te reizen?
+  url: https://kennis.zuid-holland.nl/onderzoeken/snelstudie-hoe-verleiden-we-reizigers-om-slimmer-dan-met-een-auto-te-reizen/
+  image: 
+  description: In deze snelstudie staan een groot aantal maatregelen om mensen aan te zetten slimmer te reizen dan met een auto. Vervolgens zijn de gerangschikt op urgentie en kansrijkheid. (2020)
 
