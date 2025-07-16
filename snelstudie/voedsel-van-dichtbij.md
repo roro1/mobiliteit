@@ -6,7 +6,7 @@ title: Voedsel van dichtbij
 
 
 <div class="tekstblok">
-  Deze snelstudie is onlangs gestart. Na de snelstudie <a href="https://kennis.zuid-holland.nl/nabijheid" target="_blank">"Kracht van nabijheid"</a>  waar de nadruk op personenmobiliteit lag, duiken we nu in de logistiek om lokaal geproduceerd voedsel snel en vers op je bord te krijgen. Zie verder <a href="snelstudie-werkwijzer.html" target="_blank">toelichting Snelstudies</a>. Snelstudies vallen binnen het programma <a href="https://kennis.zuid-holland.nl/" target="_blank">kennis Zuid-Holland</a>.
+  Na de snelstudie <a href="https://kennis.zuid-holland.nl/nabijheid" target="_blank">"Kracht van nabijheid"</a>  waar de nadruk op personenmobiliteit lag, duiken we nu in de logistiek om lokaal geproduceerd voedsel snel en vers op je bord te krijgen. Deze snelstudie is net gestart en hopen we in septermber/oktober 2025 te voltooien (het resultaat komt op deze webpagina). Het is een samenwerking van provincie Zuid-Holland (<a href="https://kennis.zuid-holland.nl/" target="_blank">kennis Zuid-Holland</a>) en <a href="https://labverantwoordemobiliteit.nl/" target="_blank">LVM</a>. Toelichting <a href="snelstudie-werkwijzer.html" target="_blank">Snelstudie programma</a>.
  
 </div>
 
@@ -30,5 +30,15 @@ We streven naar concrete aanbevelingen voor de lange én korte termijn. Om zo te
 <div class="tekstblok">
 Voor meer informatie en meedoen: mail projectleider Igor Koster: i.koster@student.tue.nl of ra.haverman@pzh.nl
 </div>
-
-<details> <summary>Click voor details</summary>additional content...</details>
+<br>
+Hier gaan we de publicatie opbouwen. Doe je mee?
+<details> <summary>Introductie</summary>
+<p>Voedsel wordt op dit moment uit alle landen van de wereld gehaald. Van tomaten uit Marokko tot boontjes uit Senegal. Soms is dit verklaarbaar maar vraagt ook veel transport en daarmee uitstoot terwijl er dichtbij huis ook veel eten groeit. 
+</p><p>
+Lokaal geproduceerd voedsel beland maar zelden op de borden van mensen in de buurt. Kan dit niet slimmer aangepakt worden waarbij de lokale boer kan zorgen voor jouw eten, thuis, in de horeca en op het werk. Meer lokaal voedsel eten zorgt voor een veerkrachtiger voedselsystem, financieel betere positie van de boeren en is bovendien een duurzamer alternatief. Zeker als de boeren gestimuleerd en beloond worden om natuur-inclusief of biologisch te werken.    
+</p><p>
+Maar waarom gebeurt dit eigenlijk niet? En hoe verbeteren we de situatie? Vaak zitten hier ook logistieke problemen in, ons systeem is er nog niet op ingericht. In deze snelstudie zal naar dit systeem en haar logistiek gekeken worden door antwoord te zoeken op: 
+</p><p><i>
+“Hoe kan de logistiek van de korte voedselketen in Zuid-Holland verbeterd worden, zodat het makkelijk wordt om meer mensen van meer lokaal geproduceerd voedsel te voorzien?” 
+</i></p>
+</details>
