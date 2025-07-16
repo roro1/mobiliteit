@@ -3,8 +3,8 @@ layout: lijst
 title: Snelstudielijst
 header_image: img/zandmotorstrand.jpg
 menu: |
-  <a href="snelstudies.html">meer snelstudies</a>
-  <a href="werkwijzer.html">toelichting</a>
+    <a href="werkwijzer.html">toelichting</a>
+
 ---
 # Snelstudies
 
