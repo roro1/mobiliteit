@@ -1,6 +1,7 @@
 ---
 layout: pzh
 title: fietsenstallingen
+header_image: img/Pontje.jpg
 ---
 # Efficiënt ruimtegebruik fietsenstallingen
 

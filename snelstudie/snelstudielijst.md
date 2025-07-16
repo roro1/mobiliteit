@@ -1,7 +1,7 @@
 ---
 layout: lijst
 title: Snelstudielijst
-header_image: img/Pontje.jpg
+header_image: img/zandmotorstrand.jpg
 ---
 # Snelstudies
 

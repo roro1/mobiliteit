@@ -1,6 +1,7 @@
 ---
 layout: pzh
 title: Voedsel van dichtbij
+header_image: img/Pontje.jpg
 ---
 # Logistiek voor korte voedselketens
 
