@@ -69,6 +69,16 @@
 }
 
 </style>
+<script>
+  function menuFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
@@ -76,14 +86,14 @@
      <div class="logobar">
     <img src="img/PZHlogo253x84.png" alt="Provincie Zuid-Holland logo" width="253" height="84">
   </div>
-  <div class="topnav" id="myTopnav">
-    <a href="snelstudies">Snelstudies</a>
-    <a href="werkwijzer.html">Toelichting Snelstudies</a>
-
-    <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
-      <span class="material-icons">dehaze</span>
-    </a>
-  </div>
+  {% if page.menu %}
+    <div class="topnav" id="myTopnav">
+       {{ page.menu | safe }}
+      <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+        <span class="material-icons">dehaze</span>
+      </a>
+    </div>
+  {% endif %}
   <div class="topImage" id="topI">
   <img src="{{ page.header_image }}" alt="Zuid-Holland" width="100%" height="auto" >
 
