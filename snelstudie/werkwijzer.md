@@ -76,8 +76,8 @@ Een Snelstudie is tijdelijk. Na de presentatie wordt het team ontbonden. Vervolg
 
 
 {% include blok.html
-   img="img\deelfiets_vaker_trein.jpg"
+   img="img/deelfiets_vaker_trein.jpg"
    title="Meer weten?"
-   url="img\deelfiets_vaker_trein.jpg"
+   url="img/deelfiets_vaker_trein.jpg"
    bg="#efcc36"
    text="Klik voor meer informatie over dit onderwerp." %}

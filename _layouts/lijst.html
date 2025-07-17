@@ -27,7 +27,7 @@
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  margin: 1em 0;
+  /*margin: 1em 0;*/
   height: auto;
   background-color: inherit; /* zodat inline kleur werkt */
   transition: box-shadow 0.2s ease;
@@ -42,7 +42,7 @@
   max-width: 33%;
   min-width: 150px;
   padding: 10px;
-  background-color: #f8f8f8;
+  background-color: inherit; /* er stond  #f8f8f8; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,8 +51,11 @@
 
 .item-left img {
   max-width: 100%;
+  height: auto;
   max-height: 150px;
-  object-fit: contain;
+  /*object-fit: contain;*/
+  /* max-width: 100%;
+  height: auto; */
 }
 
 .item-right {
@@ -81,7 +84,7 @@
 }
 
 .single-block {
-  margin: 2em 0;
+  margin: 1.5em 0;
 }
 
 </style>
