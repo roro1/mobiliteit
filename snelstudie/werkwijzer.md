@@ -73,3 +73,11 @@ Een Snelstudie is tijdelijk. Na de presentatie wordt het team ontbonden. Vervolg
 - Houd wekelijks contact met het team
 - Selecteer reviewers in een vroeg stadium
 - Creëer draagvlak via interviews en communicatie
+
+
+{% include blok.html
+   img="img\deelfiets_vaker_trein.jpg"
+   title="Meer weten?"
+   url="img\deelfiets_vaker_trein.jpg"
+   bg="#efcc36"
+   text="Klik voor meer informatie over dit onderwerp." %}

@@ -1,0 +1,31 @@
+{% assign wrapper_start = '<div class="item single-block"' %}
+{% assign wrapper_end = '</div>' %}
+
+{% if include.bg %}
+  {% assign wrapper_start = wrapper_start | append: ' style="background-color:' | append: include.bg | append: ';"' %}
+{% endif %}
+{% assign wrapper_start = wrapper_start | append: '>' %}
+
+{% if include.url %}
+  <a href="{{ include.url }}" class="item-link" style="text-decoration: none; color: inherit;">
+    {{ wrapper_start }}
+{% else %}
+  {{ wrapper_start }}
+{% endif %}
+
+  <div class="item-left">
+    <img src="{{ include.img }}" alt="{{ include.alt | default: 'Afbeelding' }}">
+  </div>
+  <div class="item-right">
+    {% if include.title %}
+      <h2>{{ include.title }}</h2>
+    {% endif %}
+    <p>{{ include.text }}</p>
+  </div>
+
+{% if include.url %}
+    {{ wrapper_end }}
+  </a>
+{% else %}
+  {{ wrapper_end }}
+{% endif %}
