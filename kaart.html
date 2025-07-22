@@ -38,7 +38,7 @@
   if (urlParams.get('live')  ){ //load api
     loadScript('scr/api'); Instellingen.live=urlParams.get('live'); }
     if (urlParams.get('haltes')  ){ // haltes deelm potentie 
-      loadScript('data/haltesa'); Instellingen.live=urlParams.get('haltes'); }    
+      loadScript('data/haltesa'); Instellingen.haltes=urlParams.get('haltes'); }    
   if (urlParams.get('par')  ){ //load vierkant
     loadScript('scr/vierkant'); loadScript('scr/mapFunctions'); loadScript('data/vkdata4'); Instellingen.par=urlParams.get('par'); }
   const urlC = urlParams.get('@')  //mapcenter + pointer
