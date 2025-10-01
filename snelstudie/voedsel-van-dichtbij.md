@@ -1,7 +1,7 @@
 ---
 layout: pzh
 title: Voedsel van dichtbij
-header_image: img/Pontje.jpg
+header_image: /mobiliteit/img/Pontje.jpg
 menu: |
    <a href="werkwijzer.html">toelichting</a>
    <a href="snelstudies.html">andere snelstudies</a>

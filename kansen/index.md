@@ -15,7 +15,7 @@ Nederland -en daarmee Zuid-Holland- staat voor grote opgaven. Denk bijvoorbeeld 
 - En dat moet veilig en voor iedereen zijn. Gedragsverandering speelt hierbij een cruciale rol.
 
 <div class="item-list">
-  {% for item in site.data.items %}
+  {% for item in site.data.kansen %}
     {% include item.html item=item %}
   {% endfor %}
 </div>
