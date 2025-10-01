@@ -153,6 +153,7 @@ function kiesRadius(wat,hoeveel) {
 }
 
 function plotHaltesArray(json) {
+  // [0] = lat+lon; [1] = Clusterhaltenaam; [2]= ov niveau; [7] =gemeente; [10]= fiets-score; [15]=ov-score
   for(itemi in json) {
     kleur = '#efcc36'
     punt = json[itemi];

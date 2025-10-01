@@ -40,3 +40,4 @@ Alle bovenstaande aspecten zijn op een absolute schaal te bepalen. Wanneer er ec
 <div class="tekstblok">
 Deze studie is uitgevoerd door Studio Bereikbaar, de resultaten en data mogen alleen gebruikt worden in overleg met Studio Bereikbaar en/of de provincie Zuid-Holland.
 </div>
+<br>
