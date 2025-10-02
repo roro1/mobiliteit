@@ -8,7 +8,7 @@ menu: |
 ---
 # Snelstudies
 
-verplaatst naar index == Snelstudies zijn kortlopende onderzoeken waarin we in teamverband intensief aan kansen voor Zuid-Holland werken. Meer informatie [over snelstudies](werkwijzer).
+Snelstudies zijn kortlopende onderzoeken waarin we in teamverband intensief aan kansen voor Zuid-Holland werken. Meer informatie [over snelstudies](werkwijzer).
 
 <div class="item-list">
   {% for item in site.data.items %}

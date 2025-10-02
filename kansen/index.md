@@ -6,7 +6,7 @@ menu: |
     <a href="werkwijzer.html">toelichting</a>
 
 ---
-# Kansen voor bereikbaarheid (in opbouw voor 2026)
+# Kansen voor bereikbaarheid (draft 2026)
 Nederland -en daarmee Zuid-Holland- staat voor grote opgaven. Denk bijvoorbeeld aan het oplossen van de stikstofcrisis, zodat natuurgebieden weer kunnen ademen, de biodiversiteit weer toeneemt en we weer infrastructuur kunnen aanpassen en woningen kunnen bouwen.
 <div class="tekstblok">
 <b>Hoofdboodschap</b>
