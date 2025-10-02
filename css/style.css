@@ -29,7 +29,7 @@ h3{
     background: #fff;
     padding-top: 25px;
 
-    max-width: 866px;
+    max-width: 1030px;
     margin: auto;
     border-radius: 10px 100px 10px 10px;
 }
@@ -244,6 +244,7 @@ details[open] summary {
   .content{
       border-radius: 0px;
       padding-top: 10px;
+      padding-left: 10px;
 
   }
 
