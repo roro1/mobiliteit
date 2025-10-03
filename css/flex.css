@@ -1,0 +1,38 @@
+/* flex Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Create  unequal columns that sits next to each other */
+.b25 {
+  flex: 25%;
+  background-color: #f0f2f4;
+  padding: 20px;
+}
+.b33 {
+  flex: 33%;
+  background-color: #f0f2f4;
+  padding: 20px;
+}
+.b50 {
+  flex: 50%;
+  padding: 20px;
+}
+/* Main column */
+.b66 {
+  flex: 66%;
+  background-color: white;
+  padding: 20px;
+}
+.b75 {
+  flex: 75%;
+  background-color: #f0f2f4;
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}

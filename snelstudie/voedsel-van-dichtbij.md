@@ -49,3 +49,7 @@ Want uiteindelijk zou het mooi zijn als we allemaal wat meer lokaal voedsel op o
 </p>
 </details>
 <br>
+<div class="row">
+  <div class="b75">Want uiteindelijk zou het mooi zijn als we allemaal wat meer lokaal voedsel op ons bord hebben. Om hier inzicht in te krijgen zal er eerst een schets gegeven worden van de huidige situatie. Gevolgd door het kijken naar mogelijke oplossingen. Zijn er oplossingen mogelijk met andere ketens? Waarom zouden er immers aparte busje moeten rijden voor pakketjes en voedsel? En wat als deze busjes dan ook nog eens gebruik kunnen maken van (voedsel) hubs om het voedsel makkelijker en efficiënter te kunnen leven? Misschien levert dit alles ook nog wel ander positieve effecten op waar zowel boer en consument van kunnen profiteren, bijvoorbeeld beter begrip voor elkaar.</div>
+  <div class="b25">ernaast ernaast ernaast ............. ............... ........... .</div>
+</div>

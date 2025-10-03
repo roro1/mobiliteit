@@ -1,9 +1,9 @@
 ---
 layout: lijst
 title: Snelstudielijst
-header_image: img/zandmotorstrand.jpg
+header_image: /mobiliteit/img/zandmotorstrand.jpg
 menu: |
-    <a href="snelstudies.html">overzicht van snelstudies</a>
+    <a href="index.html">overzicht van snelstudies</a>
 ---
 ## Wat is een Snelstudie?
 
