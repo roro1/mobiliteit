@@ -22,7 +22,7 @@ Er zijn ook grote uitdagingen: in Zuid-Holland worden de komende jaren veel woni
 ## Ambitie
 Dat vraagt om slimmere, veiligere en duurzamere mobiliteit, waarbij woningbouw en bereikbaarheid in samenhang worden ontwikkeld. De provincie zet in op voorzieningen dichtbij, lopen, fietsen, openbaar vervoer, deelmobiliteit én de personenauto. Het optimaal benutten van alle vervoerswijzen zorgt voor ruimte op de weg en beperkt files. De provincie stimuleert ook vervoer over spoor en het water als alternatief voor vrachtverkeer over de weg. Zij zorgt er bij woningbouw voor dat de nieuwe bewoners vanaf het begin voldoende opties voor vervoer hebben.
 
-Het reisgedrag van mensen veranderen is niet eenvoudig. Samen met Zuid-Holland Bereikbaar doen we daar ons uiterste best voor, maar uiteindelijk kiest iedereen zelf hoe hij of zij reist. Daarom blijft het belangrijk dat ook de auto een goede en vlotte optie is. Met de toenemende druk op ons wegennet moeten we knelpunten blijven aanpakken en, waar dat nodig is, aanvullende infrastructuur realiseren. Dat vraagt om slimme keuzes, nieuwe toepassingen maar ultimo ook extra ruimte voor mobiliteit in een al volle provincie. Zonder dat, geen grootschalige woningbouw en geen gezonde economische groei.
+Het reisgedrag van mensen veranderen is niet eenvoudig. Samen met [Zuid-Holland Bereikbaar](https://www.zuidhollandbereikbaar.nl/) doen we daar ons uiterste best voor, maar uiteindelijk kiest iedereen zelf hoe hij of zij reist. Daarom blijft het belangrijk dat ook de auto een goede en vlotte optie is. Met de toenemende druk op ons wegennet moeten we knelpunten blijven aanpakken en, waar dat nodig is, aanvullende infrastructuur realiseren. Dat vraagt om slimme keuzes, nieuwe toepassingen maar ultimo ook extra ruimte voor mobiliteit in een al volle provincie. Zonder dat geen grootschalige woningbouw en geen gezonde economische groei.
 
 
 ## Doe je mee?
@@ -37,11 +37,14 @@ Bovenstaande is een vrije vertaling van het beleid van de Provincie. Hieronder v
 - [Ambitie 2. Bereikbaar Zuid-Holland (ontwerp voor herziening 2025)](https://omgevingsbeleid.zuid-holland.nl/omgevingsvisie/ambities/ontwerpversie/4/f1f7e4be-cd34-4609-a67b-74491baeedd6)
 - [Beleidskeuze 2.1.1 Stimuleren duurzaam, veilig en slim personenvervoer (ontwerp)](https://omgevingsbeleid.zuid-holland.nl/omgevingsvisie/beleidskeuzes/ontwerpversie/4/89483481-2f0d-44ba-abf3-6bf0fd1bf0f3)
 - [Beleidskeuze 2.1.2 Adequaat en duurzaam aanbod openbaar vervoer (ontwerp)](https://omgevingsbeleid.zuid-holland.nl/omgevingsvisie/beleidskeuzes/ontwerpversie/4/81570c0d-e5fd-41ba-8070-78cb421d2e4f)
+- [Ruimtelijke koers & puzzel](https://www.zuid-holland.nl/onderwerpen/ruimte/ruimtelijke-koers/)
+- [Ruimtelijk Economische Visie 2025-2050 (pdf)](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.zuid-holland.nl/publish/pages/34745/ruimtelijk_economische_visie_2025-2050.pdf&ved=2ahUKEwj4krGE2aOQAxXVhv0HHRopNTgQFnoECBQQAQ&usg=AOvVaw3xrb4pp59lMuROgeI85jsg)
+- [Acht kansen voor mobiliteit](https://kennis.zuid-holland.nl/kansen-voor-mobiliteit/)
 - [Lijst van snelstudies](snelstudie)
 
 ### Kaartjes
 - [Stedelijkheidsklasses in Zuid-Holland](https://provincie-zuid-holland.github.io/mobiliteit/kaart?par=10)
 - [Score op nabijheid van voorzieningen](https://provincie-zuid-holland.github.io/mobiliteit/kaart?par=1)
 - [ov knoopunten met deelfietsen](https://provincie-zuid-holland.github.io/mobiliteit/kaart?p=os)
-
-Deze site is ter inspiratie en voor kennisoverdracht. De inhoud is geen vastgesteld beleid. <a href="https://www.zuid-holland.nl/algemeen/toegankelijkheid/">Toegankelijkheid</
+<br>
+Deze site is ter inspiratie en voor kennisoverdracht. De inhoud is geen vastgesteld beleid. <a href="https://www.zuid-holland.nl/algemeen/toegankelijkheid/">Toegankelijkheid</a>
