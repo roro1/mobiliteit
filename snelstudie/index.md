@@ -1,7 +1,7 @@
 ---
 layout: lijst
 title: Snelstudielijst
-header_image: /mobiliteit/img/zandmotorstrand.jpg
+header_image: \mobiliteit\img\zandmotorstrand.jpg
 menu: |
     <a href="werkwijzer.html">toelichting</a>
 

@@ -1,16 +1,37 @@
 ---
 layout: lijst
 title: Bereikbaarheid
-header_image: img/VoorkantPZH.jpg
+header_image: /mobiliteit/img/zandmotorstrand.jpg
 menu: |
     <a href="snelstudie/snelstudies.html">overzicht van snelstudies</a>
     <a href="kaart.html">Kaart</a>
 ---
 # Hoe we Zuid-Holland bereikbaar houden
 
-De provincie streeft naar een vitaal Zuid-Holland waar iedereen op een makkelijke, veilige en duurzame manier zijn bestemming kan bereiken of goederen kan vervoeren. De provincie richt zich op de toekomst. Dat betekent dat zij gezondheid, kwaliteit en veiligheid van de leefomgeving nadrukkelijk meeweegt in haar beleid. 
+Zuid-Holland streeft naar een vitale provincie, met goed bereikbare steden en dorpscentra waar het fijn wonen, werken, leren en recreëren is. Waar mensen en goederen op een makkelijke, veilige en duurzame manier hun bestemming kunnen bereiken. De provincie richt zich op de toekomst. Dat betekent dat zij gezondheid, kwaliteit en veiligheid van de leefomgeving nadrukkelijk meeweegt in haar beleid.
 
-## Omgevingsbeleid bereikbaarheid
+## Uitstekende infrastructuur
+Zuid-Holland beschikt over uitstekende infrastructuur voor personen- en goederenvervoer, waaronder de grootste haven van Europa. De provincie beheert honderden kilometers wegen, vaarwegen en fietspaden met bijna 500 bruggen, viaducten, tunnels en sluizen. Om deze infrastructuur in goede staat te houden voeren we onderhoud en renovatie uit. De provincie verzorgt het bedienen van bruggen en sluizen, toezicht en handhaving op de weg en het water- en incidentmanagement. Daarbij stuurt ze op vlotte doorstroming en op zo min mogelijk hinder door calamiteiten en onderhoud.
+
+## Goed openbaar vervoer
+De provincie zorgt ook voor een goed aanbod van regionaal openbaar vervoer. De provincie is opdrachtgever voor vijf ov-concessies en contracten van bus, trein en waterbus. Samen met andere overheden zorgt de provincie zo voor aantrekkelijk openbaar vervoer dat snel, frequent, betrouwbaar en betaalbaar is, dat goed op elkaar aansluit en waar ook ander (deel)vervoer onderdeel van uitmaakt.
+
+## Uitdagingen
+Er zijn ook grote uitdagingen: in Zuid-Holland worden de komende jaren veel woningen bijgebouwd. Bevolkingsgroei en groeiende economie zorgen voor toenemende drukte. Dit geldt zowel voor personen- als goederenvervoer. Wegen en fietspaden worden steeds drukker en het openbaar vervoer komt verder onder druk, dat vraagt om extra infrastructuur en dat zal beslag leggen op schaarse ruimte. Het onderhoud van wegen en bruggen gaat de komende jaren voor hinder en extra kosten zorgen, terwijl klimaatverandering en stikstofuitstoot vragen om duurzamere mobiliteit. Tegelijk ontbreken het geld en de ruimte om veel nieuwe wegen, ov-verbindingen en fietspaden aan te leggen. Deze schaarste dwingt om heldere keuzes te maken en om de bestaande verbindingen nog beter te benutten. 
+
+## Ambitie
+Dat vraagt om slimmere, veiligere en duurzamere mobiliteit, waarbij woningbouw en bereikbaarheid in samenhang worden ontwikkeld. De provincie zet in op voorzieningen dichtbij, lopen, fietsen, openbaar vervoer, deelmobiliteit én de personenauto. Het optimaal benutten van alle vervoerswijzen zorgt voor ruimte op de weg en beperkt files. De provincie stimuleert ook vervoer over spoor en het water als alternatief voor vrachtverkeer over de weg. Zij zorgt er bij woningbouw voor dat de nieuwe bewoners vanaf het begin voldoende opties voor vervoer hebben.
+
+Het reisgedrag van mensen veranderen is niet eenvoudig. Samen met Zuid-Holland Bereikbaar doen we daar ons uiterste best voor, maar uiteindelijk kiest iedereen zelf hoe hij of zij reist. Daarom blijft het belangrijk dat ook de auto een goede en vlotte optie is. Met de toenemende druk op ons wegennet moeten we knelpunten blijven aanpakken en, waar dat nodig is, aanvullende infrastructuur realiseren. Dat vraagt om slimme keuzes, nieuwe toepassingen maar ultimo ook extra ruimte voor mobiliteit in een al volle provincie. Zonder dat, geen grootschalige woningbouw en geen gezonde economische groei.
+
+
+## Doe je mee?
+Door de veranderingen op het gebied van mobiliteit, wonen, energie en werken dienen zich kansen aan voor veilige, gezonde, slimme en duurzame mobiliteit die de provincie samen met andere overheden en maatschappelijke partners graag benut.  
+
+
+
+# Omgevingsbeleid bereikbaarheid
+Bovenstaande geeft ongeveer ons omgeveingsbeleid voor bereikbaar weer. Hieronder verwijzingen naar de teksten.
 ### Nu geldend (vigerend)
 [Ambitie 2. Bereikbaar Zuid-Holland (vigerend)](https://omgevingsbeleid.zuid-holland.nl/omgevingsvisie/ambities/44d0fb02-3625-464b-8c20-40947626a184)
 Vanuit de (vigerende) ambitie bereikbaarheid kan doorgeklikt worden naar ondeliggende doelen, keuzes en maatregelen.
