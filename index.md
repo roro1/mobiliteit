@@ -34,8 +34,8 @@ Bovenstaande is een vrije vertaling van het beleid van de Provincie. Hieronder v
 
 ### Meer info & links
 - [Ambitie 2. Bereikbaar Zuid-Holland (vigerend)](https://omgevingsbeleid.zuid-holland.nl/omgevingsvisie/ambities/44d0fb02-3625-464b-8c20-40947626a184). Vanuit de (vigerende) ambitie bereikbaarheid kan doorgeklikt worden naar ondeliggende doelen, keuzes en maatregelen.
-- [Ambitie 2. Bereikbaar Zuid-Holland (ontwerp voor herziening 2025)](https://omgevingsbeleid.zuid-holland.nl/omgevingsvisie/ambities/ontwerpversie/4/f1f7e4be-cd34-4609-a67b-74491baeedd6)
-- [Beleidskeuze 2.1.1 Stimuleren duurzaam, veilig en slim personenvervoer (ontwerp)](https://omgevingsbeleid.zuid-holland.nl/omgevingsvisie/beleidskeuzes/ontwerpversie/4/89483481-2f0d-44ba-abf3-6bf0fd1bf0f3)
+- [Ambitie 2. Bereikbaar Zuid-Holland (ontwerp voor herziening 2025)](https://omgevingsbeleid.zuid-holland.nl/omgevingsvisie/ambities/ontwerpversie/4/496c45da-6090-40be-957d-688be9c29c62)
+- [Beleidskeuze 2.1.1 Stimuleren duurzaam, veilig en slim personenvervoer (ontwerp)](https://omgevingsbeleid.zuid-holland.nl/omgevingsvisie/beleidskeuzes/ontwerpversie/4/d1d0762a-f255-40a5-b607-e0f9147c73f8)
 - [Beleidskeuze 2.1.2 Adequaat en duurzaam aanbod openbaar vervoer (ontwerp)](https://omgevingsbeleid.zuid-holland.nl/omgevingsvisie/beleidskeuzes/ontwerpversie/4/81570c0d-e5fd-41ba-8070-78cb421d2e4f)
 - [Ruimtelijke koers & puzzel](https://www.zuid-holland.nl/onderwerpen/ruimte/ruimtelijke-koers/)
 - [Ruimtelijk Economische Visie 2025-2050 (pdf)](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.zuid-holland.nl/publish/pages/34745/ruimtelijk_economische_visie_2025-2050.pdf&ved=2ahUKEwj4krGE2aOQAxXVhv0HHRopNTgQFnoECBQQAQ&usg=AOvVaw3xrb4pp59lMuROgeI85jsg)
@@ -46,5 +46,5 @@ Bovenstaande is een vrije vertaling van het beleid van de Provincie. Hieronder v
 - [Stedelijkheidsklasses in Zuid-Holland](https://provincie-zuid-holland.github.io/mobiliteit/kaart?par=10)
 - [Score op nabijheid van voorzieningen](https://provincie-zuid-holland.github.io/mobiliteit/kaart?par=1)
 - [ov knoopunten met deelfietsen](https://provincie-zuid-holland.github.io/mobiliteit/kaart?p=os)
-<br>
-Deze site is ter inspiratie en voor kennisoverdracht. De inhoud is geen vastgesteld beleid. <a href="https://www.zuid-holland.nl/algemeen/toegankelijkheid/">Toegankelijkheid</a>
+<br><br>
+Deze pagina is ter inspiratie en voor kennisoverdracht. De inhoud is geen vastgesteld beleid. <a href="https://www.zuid-holland.nl/algemeen/toegankelijkheid/">Toegankelijkheid</a>
