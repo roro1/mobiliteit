@@ -3,8 +3,8 @@ layout: lijst
 title: Bereikbaarheid
 header_image: /mobiliteit/img/zandmotorstrand.jpg
 menu: |
-    <a href="snelstudie/snelstudies.html">overzicht van snelstudies</a>
-    <a href="kaart.html">Kaart</a>
+    <a href="snelstudie/index.html">overzicht van snelstudies</a>
+
 ---
 # Hoe we Zuid-Holland bereikbaar houden
 
@@ -28,24 +28,18 @@ Het reisgedrag van mensen veranderen is niet eenvoudig. Samen met Zuid-Holland B
 ## Doe je mee?
 Door de veranderingen op het gebied van mobiliteit, wonen, energie en werken dienen zich kansen aan voor veilige, gezonde, slimme en duurzame mobiliteit die de provincie samen met andere overheden en maatschappelijke partners graag benut.  
 
+<div class="tekstblok">
+Bovenstaande is een vrije vertaling van het beleid van de Provincie. Hieronder vind je meer info & links. Ook naar de officieel vastgestelde beleidsteksten (omgevingsbeleid).
+</div>
 
+### Meer info & links
 
-# Omgevingsbeleid bereikbaarheid
-Bovenstaande geeft ongeveer ons omgeveingsbeleid voor bereikbaar weer. Hieronder verwijzingen naar de teksten.
 ### Nu geldend (vigerend)
-[Ambitie 2. Bereikbaar Zuid-Holland (vigerend)](https://omgevingsbeleid.zuid-holland.nl/omgevingsvisie/ambities/44d0fb02-3625-464b-8c20-40947626a184)
-Vanuit de (vigerende) ambitie bereikbaarheid kan doorgeklikt worden naar ondeliggende doelen, keuzes en maatregelen.
-
-### Ontwerp voor herziening 2025
+- [Ambitie 2. Bereikbaar Zuid-Holland (vigerend)](https://omgevingsbeleid.zuid-holland.nl/omgevingsvisie/ambities/44d0fb02-3625-464b-8c20-40947626a184). Vanuit de (vigerende) ambitie bereikbaarheid kan doorgeklikt worden naar ondeliggende doelen, keuzes en maatregelen.
 - [Ambitie 2. Bereikbaar Zuid-Holland (ontwerp voor herziening 2025)](https://omgevingsbeleid.zuid-holland.nl/omgevingsvisie/ambities/ontwerpversie/4/f1f7e4be-cd34-4609-a67b-74491baeedd6)
-- [Beleidskeuze 2.1.1 Stimuleren duurzaam, veilig en slim personenvervoer](https://omgevingsbeleid.zuid-holland.nl/omgevingsvisie/beleidskeuzes/ontwerpversie/4/89483481-2f0d-44ba-abf3-6bf0fd1bf0f3)
-- [Beleidskeuze 2.1.2 Adequaat en duurzaam aanbod openbaar vervoer](https://omgevingsbeleid.zuid-holland.nl/omgevingsvisie/beleidskeuzes/ontwerpversie/4/81570c0d-e5fd-41ba-8070-78cb421d2e4f)
-
-
-## Snelstudies
-[Lijst van snelstudies](snelstudie/snelstudies)
-
-
+- [Beleidskeuze 2.1.1 Stimuleren duurzaam, veilig en slim personenvervoer (ontwerp)](https://omgevingsbeleid.zuid-holland.nl/omgevingsvisie/beleidskeuzes/ontwerpversie/4/89483481-2f0d-44ba-abf3-6bf0fd1bf0f3)
+- [Beleidskeuze 2.1.2 Adequaat en duurzaam aanbod openbaar vervoer (ontwerp)](https://omgevingsbeleid.zuid-holland.nl/omgevingsvisie/beleidskeuzes/ontwerpversie/4/81570c0d-e5fd-41ba-8070-78cb421d2e4f)
+- [Lijst van snelstudies](snelstudie)
 
 ## Kaartjes
 - [Stedelijkheidsklasses in Zuid-Holland](https://provincie-zuid-holland.github.io/mobiliteit/kaart?par=10)
