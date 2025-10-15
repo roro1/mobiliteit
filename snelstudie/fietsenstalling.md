@@ -6,7 +6,7 @@ menu: |
    <a href="werkwijzer.html">toelichting</a>
    <a href="snelstudies.html">andere snelstudies</a>
 ---
-# Efficiënt ruimtegebruik fietsenstallingen
+# Efficiënt gebruik fietsenstallingen
 
 
 <div class="tekstblok">
