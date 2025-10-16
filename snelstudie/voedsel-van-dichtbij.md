@@ -6,7 +6,7 @@ menu: |
    <a href="werkwijzer.html">toelichting</a>
    <a href="snelstudies.html">andere snelstudies</a>
 ---
-# Logistiek voor korte voedselketens
+# Logistiek voor korte voedselketens.
 
 
 <div class="tekstblok">
