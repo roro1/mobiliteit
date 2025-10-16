@@ -6,7 +6,7 @@ menu: |
    <a href="werkwijzer.html">toelichting</a>
    <a href="snelstudies.html">andere snelstudies</a>
 ---
-# Efficiënt gebruik fietsenstallingen..
+# Efficiënt gebruik fietsenstallingen
 
 
 <div class="tekstblok">
@@ -65,7 +65,7 @@ De verdeling van het onderhoud en beheer van de Nederlandse fiets parkeergelegen
 3. De rol van de gemeente   
    1. De gemeente is dan weer verantwoordelijk voor het weghalen van fietsen. Worden fietsen als zwerffiets gelabeld, dan dient de gemeente deze op te halen. Hiervoor moet de NS dus een goede communicatie met de gemeente onderhouden. 
 
-![image1](img\Figuurbeheerfietsenstalling.jpg)
+![image1](img\Figuurbeheerfietsenstalling.jpg | width=100%)
 
 Door deze drieledige taakverdeling is coördinatie tussen deze partijen van groot belang. Echter blijkt juist dit een heikel punt. Bij veel stations is deze samenwerking beperkt, al zijn er enkele voorbeelden waar het wel goed gaat. Een factor van belang voor de kwaliteit van de samenwerking tussen deze drie partijen, is de druk op de beschikbare ruimte binnen de specifieke stalling. Een mooi voorbeeld hiervan is het verschil tussen de stallingen in Rotterdam en Delft. 
 
@@ -173,3 +173,6 @@ Hoe krijgen we mensen op de deelfiets?
 - [Wisselfiets](https://kennis.zuid-holland.nl/wisselfiets/)
 - ...
 
+<br>
+> [!NOTE]
+> Test van note: Useful information that users should know, even when skimming content.
